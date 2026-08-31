@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="神戸市灘区・妙本寺のご案内。寺院案内、参拝、アクセス、お問い合わせ。JR灘駅北口から徒歩約3分。">
+  <meta name="theme-color" content="#31463a">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="妙本寺｜神戸市灘区">
+  <meta property="og:description" content="神戸市灘区原田通にある妙本寺のご案内。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="images/og-myohonji.jpg">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"PlaceOfWorship",
+    "name":"妙本寺",
+    "alternateName":"Myohonji",
+    "telephone":"078-861-4144",
+    "address":{
+      "@type":"PostalAddress",
+      "postalCode":"657-0837",
+      "addressRegion":"兵庫県",
+      "addressLocality":"神戸市灘区",
+      "streetAddress":"原田通3丁目1-1",
+      "addressCountry":"JP"
+    }
+  }
+  </script>
+  <title>妙本寺｜神戸市灘区</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="images/myohonji-exterior.jpg">
+  <style>
+    :root{
+      --ink:#282822;
+      --paper:#f7f4ed;
+      --paper2:#eee8db;
+      --green:#31463a;
+      --gold:#9a7b43;
+      --white:#fff;
+      --line:rgba(40,40,34,.15);
+      --shadow:0 18px 50px rgba(38,37,31,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; color:var(--ink); background:var(--paper);
+      font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;
+      line-height:1.9; letter-spacing:.03em;
+    }
+    a{color:inherit}
+    .skip{position:absolute;left:-9999px;top:8px;background:#fff;padding:8px 12px;z-index:50}
+    .skip:focus{left:8px}
+    .wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+    header{
+      position:fixed; inset:0 0 auto; z-index:20;
+      background:rgba(247,244,237,.92); backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{text-decoration:none;font-size:22px;font-weight:700;letter-spacing:.16em}
+    .brand small{display:block;font-size:10px;font-family:system-ui,sans-serif;letter-spacing:.2em;font-weight:500;color:#666}
+    nav{display:flex;gap:24px;font-family:system-ui,sans-serif;font-size:13px}
+    nav a{text-decoration:none}
+    .menu-btn{display:none;border:1px solid var(--line);background:transparent;padding:8px 11px;
+      font:600 12px system-ui,sans-serif;letter-spacing:.08em;color:var(--ink)}
+    .hero{
+      min-height:92vh;display:grid;place-items:center;padding:120px 0 70px;overflow:hidden;position:relative;
+      background:
+        linear-gradient(rgba(24,30,25,.38),rgba(24,30,25,.52)),
+        image-set(
+          url("images/myohonji-exterior-640.webp") type("image/webp") 1x,
+          url("images/myohonji-exterior-1280.webp") type("image/webp") 2x
+        ) center 43% / cover no-repeat;
+    }
+    .hero:before,.hero:after{display:none}
+    .hero-inner{position:relative;z-index:1;text-align:center}
+    .hero .eyebrow{font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.32em;color:#f2dfb7;font-weight:700;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+    .hero h1{font-size:clamp(52px,10vw,106px);letter-spacing:.24em;margin:.18em 0 .12em;padding-left:.24em;font-weight:500;color:#fff;text-shadow:0 3px 24px rgba(0,0,0,.5)}
+    .hero .lead{font-size:clamp(16px,2vw,21px);letter-spacing:.14em;margin:0 0 34px;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+    .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;min-width:170px;padding:13px 20px;
+      border:1px solid var(--green);text-decoration:none;font-family:system-ui,sans-serif;font-size:13px;
+      transition:.2s ease;
+    }
+    .btn.primary{background:var(--green);color:#fff}
+    .hero .btn{border-color:#fff;color:#fff;background:rgba(20,28,23,.32);backdrop-filter:blur(4px)}
+    .hero .btn.primary{background:#fff;color:var(--green)}
+    .btn:hover{transform:translateY(-2px)}
+    a:focus-visible,button:focus-visible,summary:focus-visible{
+      outline:3px solid #c59a52;outline-offset:4px;border-radius:2px;
+    }
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{transition:none!important;animation:none!important}
+    }
+    section{padding:100px 0}
+    .section-head{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:start;margin-bottom:44px}
+    .kicker{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.28em;color:var(--gold);font-weight:700}
+    h2{font-size:clamp(30px,5vw,50px);font-weight:500;letter-spacing:.12em;margin:0;line-height:1.5}
+    .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}
+    .visual{margin:0;position:relative;box-shadow:var(--shadow);overflow:hidden;background:#ddd}
+    .visual picture,.visual img{display:block;width:100%}
+    .visual img{aspect-ratio:4/3;object-fit:cover}
+    .visual figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 26px 16px;color:#fff;
+      background:linear-gradient(transparent,rgba(0,0,0,.62));font-size:13px;letter-spacing:.15em}
+    .copy p{margin:0 0 1.2em}
+    .notice{background:var(--green);color:#fff}
+    .notice .kicker{color:#dccba8}
+    .notice-list{border-top:1px solid rgba(255,255,255,.25)}
+    .notice-row{
+      display:grid;grid-template-columns:140px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.2)
+    }
+    .notice-row time{font-family:system-ui,sans-serif;font-size:12px;opacity:.75}
+    .notice-row span{font-size:15px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);padding:28px;min-height:230px;box-shadow:0 8px 30px rgba(38,37,31,.04)}
+    .num{font-family:system-ui,sans-serif;color:var(--gold);font-size:12px;letter-spacing:.2em}
+    .card h3{font-size:22px;letter-spacing:.08em;font-weight:500;margin:18px 0 10px}
+    .card p{font-size:14px;margin:0;color:#555}
+
+
+    .quick-info{padding:0;background:#fff;border-bottom:1px solid var(--line)}
+    .quick-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+    .quick-item{padding:22px 18px;text-align:center;border-right:1px solid var(--line)}
+    .quick-item:last-child{border-right:0}
+    .quick-item small{display:block;font:600 10px system-ui,sans-serif;letter-spacing:.18em;color:var(--gold);margin-bottom:5px}
+    .quick-item strong{font-size:15px;font-weight:500}
+    @media(max-width:760px){
+      .quick-grid{grid-template-columns:1fr}
+      .quick-item{border-right:0;border-bottom:1px solid var(--line)}
+      .quick-item:last-child{border-bottom:0}
+    }
+    .contact{padding:70px 0;background:#31463a;color:#fff}
+    .contact-box{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .contact h2{font-size:clamp(26px,4vw,40px);margin:0 0 8px}
+    .contact p{margin:0;color:rgba(255,255,255,.82);font-size:14px}
+    .contact .btn{border-color:#fff;color:#31463a;background:#fff}
+    @media(max-width:760px){.contact-box{grid-template-columns:1fr}.contact .btn{width:100%}}
+
+
+    .first-visit{background:#f2eee5}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{background:#fff;padding:28px;border:1px solid var(--line)}
+    .step b{display:block;font:700 11px system-ui,sans-serif;letter-spacing:.18em;color:var(--gold);margin-bottom:12px}
+    .step h3{font-size:20px;font-weight:500;margin:0 0 8px}
+    .step p{font-size:14px;color:#555;margin:0}
+    @media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+    .faq{background:#fff}
+    .faq-list{max-width:850px;margin-left:auto}
+    details{border-top:1px solid var(--line);padding:0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;padding:22px 4px;font-size:17px;letter-spacing:.06em}
+    details p{margin:0;padding:0 4px 22px;color:#555;font-size:14px}
+
+    .access{background:var(--paper2)}
+    .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+    .info{background:#fff;padding:34px;border:1px solid var(--line)}
+    .info dl{display:grid;grid-template-columns:90px 1fr;margin:0}
+    .info dt,.info dd{padding:12px 0;border-bottom:1px solid var(--line);margin:0}
+    .info dt{font-family:system-ui,sans-serif;font-size:12px;color:#666}
+    .map{
+      min-height:360px;background:
+      linear-gradient(rgba(247,244,237,.55),rgba(247,244,237,.55)),
+      repeating-linear-gradient(0deg,#d9d2c5 0 1px,transparent 1px 52px),
+      repeating-linear-gradient(90deg,#d9d2c5 0 1px,transparent 1px 52px);
+      border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:30px;
+    }
+    .map strong{display:block;font-size:24px;margin-bottom:12px}
+    footer{background:#22251f;color:#eee;padding:50px 0 30px}
+    .foot{display:flex;justify-content:space-between;gap:30px;align-items:end}
+    .foot-name{font-size:25px;letter-spacing:.16em}
+    .foot small{font-family:system-ui,sans-serif;color:#aaa}
+    .note{font-size:12px;color:#777;margin-top:18px}
+    @media(max-width:760px){
+      .menu-btn{display:block}
+      nav{display:none;position:absolute;left:0;right:0;top:62px;background:rgba(247,244,237,.98);
+        padding:18px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}
+      nav.open{display:flex}
+      .wrap{width:min(100% - 28px,1100px)}
+      .nav{height:62px}.hero{min-height:84vh}
+      .section-head,.intro-grid,.access-grid{grid-template-columns:1fr}
+      .section-head{gap:8px}.cards{grid-template-columns:1fr}
+      section{padding:72px 0}.notice-row{grid-template-columns:1fr;gap:4px}
+      .foot{display:block}.foot small{display:block;margin-top:18px}
+      h1{letter-spacing:.16em;padding-left:.16em}
+    }
+      @media print{
+      header,.hero-actions,.menu-btn,.contact,.map .btn{display:none!important}
+      body{background:#fff;color:#000;font-size:11pt}
+      .hero{min-height:auto;padding:30px 0;background:none!important}
+      .hero h1,.hero .lead,.hero .eyebrow{color:#000;text-shadow:none}
+      section{padding:32px 0}
+      .notice{background:#fff;color:#000}
+      .card,.info{box-shadow:none}
+      a{text-decoration:none}
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">妙本寺<small>MYOHONJI · KOBE</small></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">メニュー</button>
+    <nav id="main-nav" aria-label="メインメニュー">
+      <a href="#about">妙本寺について</a>
+      <a href="#news">お知らせ</a>
+      <a href="#guide">ご案内</a>
+      <a href="annual-events.html">年間行事</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="#faq">よくあるご質問</a>
+      <a href="#access">アクセス</a>
+    </nav>
+  </div>
+</header>
+
+<noscript><div style="padding:76px 16px 8px;text-align:center;font-size:13px">JavaScriptが無効でもページ本文と電話・地図はご利用いただけます。</div></noscript>
+<main id="main">
+  <div id="top"></div>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">KOBE · NADA</div>
+      <h1>妙本寺</h1>
+      <p class="lead">静かに手を合わせ、心をととのえる場所。</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#access">参拝・アクセス</a>
+        <a class="btn" href="tel:0788614144">電話で問い合わせ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick-info" class="quick-info" aria-label="妙本寺 基本情報">
+    <div class="wrap quick-grid">
+      <div class="quick-item"><small>LOCATION</small><strong>神戸市灘区 原田通</strong></div>
+      <div class="quick-item"><small>STATION</small><strong>JR灘駅 北口から徒歩約3分</strong></div>
+      <div class="quick-item"><small>PHONE</small><strong><a href="tel:0788614144">078-861-4144</a></strong></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">ABOUT</div>
+        <h2>神戸のまちにある、<br>祈りの場。</h2>
+      </div>
+      <div class="intro-grid">
+        <figure class="visual">
+          <picture>
+            <source type="image/webp"
+              srcset="images/myohonji-exterior-640.webp 640w,
+                      images/myohonji-exterior-960.webp 960w,
+                      images/myohonji-exterior-1280.webp 1280w"
+              sizes="(max-width:760px) calc(100vw - 28px), 520px">
+            <img src="images/myohonji-exterior.jpg" width="640" height="480"
+              loading="lazy" decoding="async" alt="神戸市灘区にある妙本寺の外観">
+          </picture>
+          <figcaption>妙本寺 外観</figcaption>
+        </figure>
+        <div class="copy">
+          <p>妙本寺は、神戸市灘区原田通にある寺院です。日々の参拝やご相談など、寺院へのご用件はお電話にてお問い合わせください。</p>
+          <p>このホームページは、初めてお越しになる方にも必要な情報が分かりやすく届くことを大切にした、シンプルなご案内サイトです。</p>
+          <p class="note">※寺院の沿革・住職ご挨拶・行事内容などは、確認済みの原稿をご提供いただければ掲載できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="notice">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">NEWS</div>
+        <h2>お知らせ</h2>
+      </div>
+      <p style="margin:0 0 20px"><a href="news.html" style="color:#fff">お知らせ一覧を見る →</a></p>
+      <div class="notice-list">
+        <div class="notice-row">
+          <time>掲載準備中</time>
+          <span>今後、行事や寺院からのお知らせをこちらに掲載します。</span>
+        </div>
+        <div class="notice-row">
+          <time>ご案内</time>
+          <span>最新の予定については、お電話でお問い合わせください。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">GUIDE</div>
+        <h2>ご案内</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="num">01 · VISIT</div>
+          <h3>ご参拝</h3>
+          <p>初めてお越しになる方は、アクセス情報をご確認ください。ご不明な点は事前にお問い合わせいただけます。</p>
+        </article>
+        <article class="card">
+          <div class="num">02 · CEREMONY</div>
+          <h3>法要・行事</h3>
+          <p>2026年の定例行事・主な法要予定を掲載しています。</p>
+          <p><a href="annual-events.html">年間行事を見る →</a></p>
+        </article>
+        <article class="card">
+          <div class="num">03 · CONTACT</div>
+          <h3>お問い合わせ</h3>
+          <p>寺院へのお問い合わせはお電話で承ります。内容により、改めてご案内する場合があります。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="first-visit" class="first-visit">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FIRST VISIT</div>
+        <h2>初めてお越しになる方へ</h2>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <b>01 · CHECK</b>
+          <h3>アクセスを確認</h3>
+          <p>妙本寺は神戸市灘区原田通にあります。JR灘駅北口から徒歩約3分です。</p>
+        </article>
+        <article class="step">
+          <b>02 · CONTACT</b>
+          <h3>必要に応じて事前連絡</h3>
+          <p>参拝時間や当日の予定を確実に確認したい場合は、事前にお電話でお問い合わせください。</p>
+        </article>
+        <article class="step">
+          <b>03 · VISIT</b>
+          <h3>当日は落ち着いてお越しください</h3>
+          <p>ご不明な点がある場合は、現地またはお電話で寺院へお尋ねください。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-box">
+      <div>
+        <div class="kicker" style="color:#dccba8">CONTACT</div>
+        <h2 id="contact-title">お問い合わせ</h2>
+        <p>参拝や法要など、個別のご用件は妙本寺へお電話でお問い合わせください。</p>
+      </div>
+      <a class="btn" href="tel:0788614144" aria-label="妙本寺へ電話 078-861-4144">078-861-4144</a>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FAQ</div>
+        <h2>よくあるご質問</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>初めて参拝する場合、事前連絡は必要ですか？</summary>
+          <p>参拝時間や当日の予定について確実なご案内が必要な場合は、事前にお電話でお問い合わせください。</p>
+        </details>
+        <details>
+          <summary>法要やご相談について問い合わせできますか？</summary>
+          <p>個別の内容は寺院へ直接お問い合わせください。電話番号はアクセス欄に掲載しています。</p>
+        </details>
+        <details>
+          <summary>電車で行く場合の最寄駅はどこですか？</summary>
+          <p>JR灘駅北口から徒歩約3分です。詳しい位置はアクセス欄の地図ボタンから確認できます。</p>
+        </details>
+        <details>
+          <summary>駐車場はありますか？</summary>
+          <p>駐車場については、このホームページへの正式情報掲載前のため、寺院へお問い合わせください。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="access">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">ACCESS</div>
+        <h2>アクセス</h2>
+      </div>
+      <div class="access-grid">
+        <div class="info">
+          <dl>
+            <dt>寺院名</dt><dd>妙本寺（みょうほんじ）</dd>
+            <dt>所在地</dt><dd>〒657-0837<br>兵庫県神戸市灘区原田通3丁目1-1</dd>
+            <dt>電話</dt><dd><a href="tel:0788614144">078-861-4144</a></dd>
+            <dt>最寄駅</dt><dd>JR灘駅 北口から徒歩約3分</dd>
+          </dl>
+          <p class="note">住所・電話番号・最寄駅情報は公開情報を照合して掲載しています。公開前に寺院側で最終確認してください。</p>
+        </div>
+        <div class="map">
+          <div>
+            <strong>妙本寺</strong>
+            <p>兵庫県神戸市灘区原田通3丁目1-1</p>
+            <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E6%9C%AC%E5%AF%BA%20%E7%A5%9E%E6%88%B8%E5%B8%82%E7%81%98%E5%8C%BA%E5%8E%9F%E7%94%B0%E9%80%9A3%E4%B8%81%E7%9B%AE1-1">地図を開く</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="foot-name">妙本寺</div>
+      <small>〒657-0837 兵庫県神戸市灘区原田通3丁目1-1</small>
+    </div>
+    <small><a href="news.html">お知らせ</a> ｜ <a href="privacy.html">プライバシーポリシー</a><br>最終更新：2026年8月<br>© Myohonji. All rights reserved.</small>
+  </div>
+</footer>
+<script>
+  (() => {
+    const button = document.querySelector(".menu-btn");
+    const nav = document.querySelector("#main-nav");
+    if (!button || !nav) return;
+    button.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      button.setAttribute("aria-expanded", String(open));
+      button.textContent = open ? "閉じる" : "メニュー";
+    });
+    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      button.setAttribute("aria-expanded", "false");
+      button.textContent = "メニュー";
+    }));
+  })();
+  </script>
+</body>
+</html>
