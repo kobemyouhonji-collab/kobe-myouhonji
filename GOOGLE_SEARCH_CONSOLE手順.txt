@@ -1,0 +1,17 @@
+Google検索登録の準備
+
+対象URL:
+https://kobemyouhonji-collab.github.io/kobe-myouhonji/
+
+1. Google Search Consoleを開く
+2. 「プロパティを追加」
+3. 「URLプレフィックス」を選ぶ
+4. 上記URLをそのまま入力
+5. 所有権確認を行う
+6. 左メニュー「サイトマップ」
+7. sitemap.xml を送信
+8. URL検査でトップページを検査
+9. 「インデックス登録をリクエスト」
+
+このパッケージには robots.txt と sitemap.xml を追加済みです。
+写真ファイルを直してから、この一式をGitHubへ上書きアップロードしてください。

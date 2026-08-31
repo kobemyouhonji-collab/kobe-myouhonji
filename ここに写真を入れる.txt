@@ -1,0 +1,12 @@
+公開ページの写真修復には、妙本寺の実際の外観写真が必要です。
+
+必要なファイル名:
+myohonji-exterior.jpg
+
+推奨追加ファイル（なくてもJPEGだけで表示できますが、index.htmlは現在これらも参照します）:
+myohonji-exterior-640.webp
+myohonji-exterior-960.webp
+myohonji-exterior-1280.webp
+og-myohonji.jpg
+
+元写真を再度ChatGPTへアップロードすれば、Web用4種類をこちらで作成できます。
