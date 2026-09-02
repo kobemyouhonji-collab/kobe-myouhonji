@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="神戸市灘区・妙本寺のご案内。寺院案内、参拝、アクセス、お問い合わせ。JR灘駅北口から徒歩約3分。">
+  <meta name="description" content="神戸市灘区原田通の妙本寺公式ホームページ。悩みや迷いがある方も、特に用事のない方も、年間行事・アクセス・寺院案内を気軽にご覧いただけます。JR灘駅北口から徒歩約3分。">
   <meta name="theme-color" content="#31463a">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://kobemyouhonji-collab.github.io/kobe-myouhonji/">
@@ -12,7 +12,7 @@
   <meta property="og:title" content="妙本寺｜神戸市灘区">
   <meta property="og:description" content="神戸市灘区原田通にある妙本寺のご案内。">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:image" content="https://kobemyouhonji-collab.github.io/kobe-myouhonji/images/og-myohonji.jpg">
+  <meta property="og:image" content="https://kobemyouhonji-collab.github.io/kobe-myouhonji/14521_1.jpg">
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -30,7 +30,7 @@
     }
   }
   </script>
-  <title>妙本寺｜神戸市灘区</title>
+  <title>妙本寺｜神戸市灘区・JR灘駅北口から徒歩約3分</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" as="image" href="images/myohonji-exterior.jpg">
@@ -72,10 +72,7 @@
       min-height:92vh;display:grid;place-items:center;padding:120px 0 70px;overflow:hidden;position:relative;
       background:
         linear-gradient(rgba(24,30,25,.38),rgba(24,30,25,.52)),
-        image-set(
-          url("images/myohonji-exterior-640.webp") type("image/webp") 1x,
-          url("images/myohonji-exterior-1280.webp") type("image/webp") 2x
-        ) center 43% / cover no-repeat;
+        url("14521_1.jpg") center 43% / cover no-repeat;
     }
     .hero:before,.hero:after{display:none}
     .hero-inner{position:relative;z-index:1;text-align:center}
@@ -144,6 +141,50 @@
     @media(max-width:760px){.contact-box{grid-template-columns:1fr}.contact .btn{width:100%}}
 
 
+
+
+    .purpose{background:#f2eee5}
+    .purpose-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .purpose-card{display:block;background:#fff;border:1px solid var(--line);padding:25px;
+      text-decoration:none;min-height:190px;transition:.2s ease}
+    .purpose-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .purpose-card b{font:700 10px system-ui,sans-serif;letter-spacing:.18em;color:var(--gold)}
+    .purpose-card h3{font-size:20px;font-weight:500;margin:12px 0 7px}
+    .purpose-card p{font-size:13px;color:#666;margin:0}
+    .floating-contact{position:fixed;right:18px;bottom:18px;z-index:30;background:#31463a;
+      color:#fff!important;text-decoration:none;padding:13px 18px;border-radius:999px;
+      box-shadow:0 7px 25px rgba(0,0,0,.22);font:700 13px system-ui,sans-serif}
+    .trust-note{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .trust-note .wrap{padding-top:18px;padding-bottom:18px;font-size:13px;color:#666}
+    @media(max-width:850px){.purpose-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.purpose-grid{grid-template-columns:1fr}.floating-contact{right:12px;bottom:12px}}
+
+    .feature-hub{background:#fff}
+    .feature-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:18px}
+    .feature-card{position:relative;min-height:260px;padding:30px;border:1px solid var(--line);
+      background:#f7f4ed;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;
+      overflow:hidden;transition:.2s ease}
+    .feature-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .feature-card.photo{color:#fff;background:
+      linear-gradient(rgba(24,30,25,.22),rgba(24,30,25,.65)),
+      url("14521_1.jpg") center/cover no-repeat}
+    .feature-card .tag{font:700 10px system-ui,sans-serif;letter-spacing:.2em;color:var(--gold);margin-bottom:8px}
+    .feature-card.photo .tag{color:#f2dfb7}
+    .feature-card h3{font-size:25px;font-weight:500;margin:0 0 8px;letter-spacing:.05em}
+    .feature-card p{font-size:14px;margin:0;color:#555}
+    .feature-card.photo p{color:rgba(255,255,255,.88)}
+    .month-highlight{background:#22251f;color:#fff}
+    .month-box{display:grid;grid-template-columns:220px 1fr;gap:42px;align-items:start}
+    .month-title{font-size:clamp(30px,5vw,46px);font-weight:500;line-height:1.5;margin:0}
+    .month-list{border-top:1px solid rgba(255,255,255,.2)}
+    .month-item{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+    .month-item time{font:12px system-ui,sans-serif;color:#d9c89e}
+    .month-item strong{font-weight:500}
+    .month-link{display:inline-block;margin-top:24px;color:#fff}
+    @media(max-width:900px){.feature-grid{grid-template-columns:1fr 1fr}.feature-card.photo{grid-column:1/-1}}
+    @media(max-width:760px){.feature-grid{grid-template-columns:1fr}.feature-card.photo{grid-column:auto}
+      .month-box{grid-template-columns:1fr}.month-item{grid-template-columns:90px 1fr}}
+
     .first-visit{background:#f2eee5}
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .step{background:#fff;padding:28px;border:1px solid var(--line)}
@@ -201,9 +242,94 @@
       .card,.info{box-shadow:none}
       a{text-decoration:none}
     }
-  </style>
+  
+    /* v4: findability, accessibility, trust, mobile UX */
+    html{scroll-behavior:smooth}
+    section[id]{scroll-margin-top:90px}
+    .skip-link{position:absolute;left:-9999px;top:8px;z-index:1000;background:#fff;color:#222;padding:10px 14px}
+    .skip-link:focus{left:8px}
+    a:focus-visible,button:focus-visible{outline:3px solid #9a7b43;outline-offset:3px}
+    .today-guide{background:#31463a;color:#fff}
+    .today-grid{display:grid;grid-template-columns:220px 1fr;gap:38px;align-items:start}
+    .today-guide h2{margin:0;font-size:clamp(28px,5vw,42px);font-weight:500}
+    .today-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .today-card{border:1px solid rgba(255,255,255,.22);padding:22px;min-height:165px}
+    .today-card small{font:700 10px system-ui,sans-serif;letter-spacing:.15em;color:#dccba8}
+    .today-card strong{display:block;font-size:18px;font-weight:500;margin:9px 0}
+    .today-card a{color:#fff}
+    .faq-short{background:#fff}
+    .faq-short details{border-top:1px solid var(--line);padding:17px 0}
+    .faq-short details:last-child{border-bottom:1px solid var(--line)}
+    .faq-short summary{cursor:pointer;font-size:17px;font-weight:500}
+    .faq-short p{margin:10px 0 0;color:#5f5f58;font-size:14px}
+    .cta-band{background:#eee7d9}
+    .cta-inner{display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
+    .cta-inner h2{font-size:clamp(24px,4vw,34px);font-weight:500;margin:0 0 6px}
+    .cta-inner p{margin:0;color:#5f5f58}
+    .cta-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .cta-button{display:inline-block;padding:13px 18px;border:1px solid #31463a;text-decoration:none}
+    .cta-button.primary{background:#31463a;color:#fff}
+    .updated{font:12px system-ui,sans-serif;color:#777;margin-top:14px}
+    @media(max-width:850px){.today-grid{grid-template-columns:1fr}.today-list{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.today-list{grid-template-columns:1fr}.cta-inner{grid-template-columns:1fr}}
+
+
+    .welcome-wide{background:#fff}
+    .welcome-lead{max-width:820px;font-size:18px;line-height:2.1;margin:0 0 34px}
+    .welcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .welcome-card{border:1px solid var(--line);padding:28px;background:#faf8f3;min-height:205px}
+    .welcome-card small{font:700 10px system-ui,sans-serif;letter-spacing:.17em;color:var(--gold)}
+    .welcome-card h3{font-size:21px;font-weight:500;margin:12px 0 9px}
+    .welcome-card p{font-size:14px;color:#5d5d56;margin:0}
+    .welcome-note{margin-top:26px;padding:20px 22px;border-left:3px solid var(--gold);background:#f4efe5;font-size:14px}
+    .soft-entry{background:#eef1ec}
+    .soft-entry-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .soft-entry h2{font-size:clamp(28px,5vw,44px);font-weight:500;line-height:1.6;margin:0}
+    .soft-entry p{font-size:15px;color:#4f554f}
+    .soft-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .soft-link{display:inline-block;padding:12px 17px;border:1px solid #31463a;text-decoration:none}
+    .soft-link.primary{background:#31463a;color:#fff}
+    @media(max-width:800px){.welcome-grid{grid-template-columns:1fr}.soft-entry-grid{grid-template-columns:1fr}}
+
+.vision-entry{background:#26352d;color:#fff}.vision-entry-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}.vision-entry h2{font-size:clamp(32px,5vw,50px);font-weight:500;line-height:1.6}.vision-entry p{color:rgba(255,255,255,.85)}.vision-entry a{color:#fff}@media(max-width:760px){.vision-entry-grid{grid-template-columns:1fr}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "name":"妙本寺",
+      "url":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"妙本寺の最寄駅はどこですか？",
+          "acceptedAnswer":{"@type":"Answer","text":"JR灘駅北口から徒歩約3分です。"}
+        },
+        {
+          "@type":"Question",
+          "name":"年間行事はどこで確認できますか？",
+          "acceptedAnswer":{"@type":"Answer","text":"妙本寺ホームページの年間行事ページで2026年の主な予定をご案内しています。"}
+        },
+        {
+          "@type":"Question",
+          "name":"参拝時間を確認したい場合はどうすればよいですか？",
+          "acceptedAnswer":{"@type":"Answer","text":"参拝時間や当日の予定を確実に確認したい場合は、事前に妙本寺へお電話でお問い合わせください。"}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
+<a class="skip-link" href="#purpose">本文へ移動</a>
 <a class="skip" href="#main">本文へ移動</a>
 <header>
   <div class="wrap nav">
@@ -211,6 +337,10 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">メニュー</button>
     <nav id="main-nav" aria-label="メインメニュー">
       <a href="#about">妙本寺について</a>
+      <a href="#welcome">はじめての方へ</a>
+      <a href="discover.html">妙本寺を知る</a>
+      <a href="vision.html">住職のことば</a>
+      <a href="#purpose">目的から探す</a>
       <a href="#news">お知らせ</a>
       <a href="#guide">ご案内</a>
       <a href="annual-events.html">年間行事</a>
@@ -228,7 +358,7 @@
     <div class="wrap hero-inner">
       <div class="eyebrow">KOBE · NADA</div>
       <h1>妙本寺</h1>
-      <p class="lead">静かに手を合わせ、心をととのえる場所。</p>
+      <p class="lead">悩みがある日も、何気ない日も。ふと立ち寄れるお寺です。</p>
       <div class="hero-actions">
         <a class="btn primary" href="#access">参拝・アクセス</a>
         <a class="btn" href="tel:0788614144">電話で問い合わせ</a>
@@ -243,6 +373,11 @@
       <div class="quick-item"><small>PHONE</small><strong><a href="tel:0788614144">078-861-4144</a></strong></div>
     </div>
   </section>
+
+
+  <div class="trust-note">
+    <div class="wrap">このホームページでは、妙本寺で確認できた情報を中心に掲載しています。行事や参拝に関する最新情報は、お知らせまたは寺院へのお問い合わせでご確認ください。</div>
+  </div>
 
   <section id="about">
     <div class="wrap">
@@ -259,10 +394,132 @@
           <figcaption>妙本寺 外観</figcaption>
         </figure>
         <div class="copy">
-          <p>妙本寺は、神戸市灘区原田通にある寺院です。日々の参拝やご相談など、寺院へのご用件はお電話にてお問い合わせください。</p>
-          <p>このホームページは、初めてお越しになる方にも必要な情報が分かりやすく届くことを大切にした、シンプルなご案内サイトです。</p>
+          <p>妙本寺は、神戸市灘区原田通にある寺院です。悩みや迷いを抱えている方も、特に困りごとのない方も、日々の暮らしの中でふと寺院に触れてみたい方も。どなたにも分かりやすく、入り口のひらかれたホームページを目指しています。</p>
+          <p>このホームページでは、参拝・行事・アクセスなどの基本情報を、初めての方にも見つけやすくご案内します。何かを相談したいときだけでなく、行事を知りたい、近くを通る、寺院について少し知ってみたい、というきっかけでもご覧ください。</p>
           <p class="note">※寺院の沿革・住職ご挨拶・行事内容などは、確認済みの原稿をご提供いただければ掲載できます。</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  
+  <section class="vision-entry" id="vision"><div class="wrap vision-entry-grid"><div><div class="kicker" style="color:#dccba8">MYOHONJI VISION</div><h2>生活（人生）とともにある寺院へ。</h2></div><div><p style="font-size:20px">「お寺は困った時だけの場所ではない。」</p><p>悩みがある時も、何気ない日も。先人から受け継いだものを、若い世代、子や孫、そして未来へ。御住職の言葉を通して、妙本寺が目指す姿をご紹介します。</p><p><a href="vision.html">住職のことば・妙本寺の未来を読む →</a></p></div></div></section>
+<section class="welcome-wide" id="welcome">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">WELCOME</div>
+        <h2>いろいろなきっかけで、<br>妙本寺へ。</h2>
+      </div>
+      <p class="welcome-lead">
+        寺院を訪れる理由は、人それぞれです。悩みや迷いがあるとき、人生の節目を迎えたとき、
+        日々の暮らしを見つめたいとき。あるいは、特に困りごとはなくても、行事を知りたい、
+        地域のお寺に少し触れてみたい、というときにも。このホームページを気軽な入口としてご利用ください。
+      </p>
+      <div class="welcome-grid">
+        <a class="welcome-card" href="for-troubled.html" style="text-decoration:none;color:inherit">
+          <small>WHEN LIFE FEELS HEAVY</small><h3>悩みがある方へ</h3><p>答えを急がず、まず寺院について知るところから。</p>
+        </a>
+        <a class="welcome-card" href="for-everyday.html" style="text-decoration:none;color:inherit">
+          <small>ORDINARY DAYS</small><h3>何もなくても来てよい方へ</h3><p>特別な用事がなくても、寺院に触れる入口を。</p>
+        </a>
+        <a class="welcome-card" href="for-youth.html" style="text-decoration:none;color:inherit">
+          <small>NEXT GENERATION</small><h3>若い世代へ</h3><p>青年部・少年部合同部会など、若い世代との接点をご紹介。</p>
+        </a>
+        <a class="welcome-card" href="for-family.html" style="text-decoration:none;color:inherit">
+          <small>FAMILY & COMMUNITY</small><h3>家族で寺院に触れたい方へ</h3><p>家族で寺院を知る、小さなきっかけから。</p>
+        </a>
+      </div>
+      <p style="margin-top:24px"><a href="readings.html">4つの読み物を一覧で見る →</a></p>
+<div class="welcome-note">
+        参拝時間、行事の変更、個別のご相談など、確実な確認が必要な場合は妙本寺へお電話でお問い合わせください。
+      </div>
+    </div>
+  </section>
+
+  <section class="today-guide" aria-labelledby="today-title">
+    <div class="wrap today-grid">
+      <div>
+        <div class="kicker" style="color:#dccba8">QUICK GUIDE</div>
+        <h2 id="today-title">参拝前に<br>確認したいこと</h2>
+      </div>
+      <div class="today-list">
+        <div class="today-card"><small>ACCESS</small><strong>JR灘駅 北口から徒歩約3分</strong><a href="#access">アクセスを見る →</a></div>
+        <div class="today-card"><small>EVENTS</small><strong>法要・行事の予定</strong><a href="annual-events.html">年間行事を見る →</a></div>
+        <div class="today-card"><small>CONFIRM</small><strong>参拝時間・当日の予定</strong><a href="tel:0788614144">電話で確認する →</a></div>
+      </div>
+    </div>
+  </section>
+
+<section class="purpose" id="purpose">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">VISIT MYOHONJI</div>
+        <h2>目的から探す</h2>
+      </div>
+      <div class="purpose-grid">
+        <a class="purpose-card" href="discover.html">
+          <b>FIRST VISIT</b><h3>初めて参拝される方</h3>
+          <p>場所・アクセス・参拝前に確認しておきたいことをまとめています。</p>
+        </a>
+        <a class="purpose-card" href="annual-events.html">
+          <b>EVENTS</b><h3>行事予定を知りたい</h3>
+          <p>2026年の法要・定例行事・青年部少年部合同部会などをご案内します。</p>
+        </a>
+        <a class="purpose-card" href="#contact">
+          <b>CONTACT</b><h3>寺院へ相談・確認したい</h3>
+          <p>参拝時間や当日の予定など、確実な情報はお電話でご確認ください。</p>
+        </a>
+        <a class="purpose-card" href="#access">
+          <b>ACCESS</b><h3>妙本寺へ行きたい</h3>
+          <p>所在地、最寄駅、地図への入口をすぐ確認できます。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="discover" class="feature-hub">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">DISCOVER</div>
+        <h2>妙本寺を、もう少し身近に。</h2>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card photo" href="discover.html">
+          <div class="tag">1 MINUTE GUIDE</div>
+          <h3>1分でわかる妙本寺</h3>
+          <p>初めての方に向けて、場所・参拝前の確認・年間行事への入口をまとめました。</p>
+        </a>
+        <a class="feature-card" href="annual-events.html">
+          <div class="tag">ANNUAL EVENTS</div>
+          <h3>年間行事</h3>
+          <p>2026年の主な法要・行事予定を一覧で確認できます。</p>
+        </a>
+        <a class="feature-card" href="#access">
+          <div class="tag">ACCESS</div>
+          <h3>参拝への道案内</h3>
+          <p>JR灘駅北口から徒歩約3分。初めてでも迷いにくい情報をまとめています。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="month-highlight" aria-labelledby="month-title">
+    <div class="wrap month-box">
+      <div>
+        <div class="kicker" style="color:#dccba8">SEPTEMBER 2026</div>
+        <h2 class="month-title" id="month-title">9月の主な予定</h2>
+      </div>
+      <div>
+        <div class="month-list">
+          <div class="month-item"><time>9月18日〜19日</time><div><strong>寛師会</strong><br><span>総本山</span></div></div>
+          <div class="month-item"><time>9月22日</time><div><strong>秋季彼岸会</strong><br><span>午後1時</span></div></div>
+          <div class="month-item"><time>9月23日</time><div><strong>秋季彼岸会</strong><br><span>午前10時・午後1時</span></div></div>
+        </div>
+        <a class="month-link" href="annual-events.html">2026年の年間行事をすべて見る →</a>
       </div>
     </div>
   </section>
@@ -354,7 +611,17 @@
     </div>
   </section>
 
-  <section id="faq" class="faq">
+  
+  <section class="faq-short" id="visit-faq">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">QUICK FAQ</div><h2>よく確認されること</h2></div>
+      <details><summary>妙本寺の最寄駅は？</summary><p>JR灘駅北口から徒歩約3分です。詳しくはアクセスをご覧ください。</p></details>
+      <details><summary>年間行事はどこで確認できますか？</summary><p>年間行事ページに2026年の主な予定を掲載しています。</p></details>
+      <details><summary>参拝時間や当日の予定を確認したい</summary><p>確実なご案内のため、事前に妙本寺へお電話でお問い合わせください。</p></details>
+    </div>
+  </section>
+
+<section id="faq" class="faq">
     <div class="wrap">
       <div class="section-head">
         <div class="kicker">FAQ</div>
@@ -407,6 +674,38 @@
       </div>
     </div>
   </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <div><h2>初めてお越しになる方へ</h2><p>場所や行事を確認してからお越しいただくと安心です。</p></div>
+      <div class="cta-actions">
+        <a class="cta-button" href="discover.html">1分でわかる妙本寺</a>
+        <a class="cta-button primary" href="#access">アクセスを見る</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="soft-entry">
+    <div class="wrap soft-entry-grid">
+      <div>
+        <div class="kicker">START WHERE YOU ARE</div>
+        <h2>「少し見てみよう」からでも、<br>かまいません。</h2>
+      </div>
+      <div>
+        <p>
+          ホームページを見る、年間行事を確認する、場所を調べる。
+          まずはそのくらいの距離感からでも大丈夫です。必要なときに、必要な情報へたどり着けるようにしています。
+        </p>
+        <div class="soft-links">
+          <a class="soft-link" href="discover.html">1分でわかる妙本寺</a>
+          <a class="soft-link" href="annual-events.html">年間行事を見る</a>
+          <a class="soft-link primary" href="#access">アクセスを見る</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -417,6 +716,7 @@
     </div>
     <small><a href="news.html">お知らせ</a> ｜ <a href="privacy.html">プライバシーポリシー</a><br>最終更新：2026年8月<br>© Myohonji. All rights reserved.</small>
   </div>
+<div class="wrap updated">最終更新：2026年9月</div>
 </footer>
 <script>
   (() => {
@@ -435,5 +735,6 @@
     }));
   })();
   </script>
+<a class="floating-contact" href="tel:0788614144" aria-label="妙本寺へ電話する">電話で問い合わせ</a>
 </body>
 </html>

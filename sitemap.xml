@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/</loc>
-  </url>
-  <url>
-    <loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/annual-events.html</loc>
-  </url>
-  <url>
-    <loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html</loc>
-  </url>
-  <url>
-    <loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/privacy.html</loc>
-  </url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/annual-events.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/privacy.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/discover.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/readings.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-troubled.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-everyday.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-youth.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-family.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/site-guide.html</loc></url>
+  <url><loc>https://kobemyouhonji-collab.github.io/kobe-myouhonji/vision.html</loc></url>
 </urlset>
