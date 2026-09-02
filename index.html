@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="神戸市灘区原田通の妙本寺公式ホームページ。悩みがある時も何気ない日も、生活（人生）とともにある寺院を目指しています。初めての方、年間行事、住職のことば、青年部・少年部、アクセスをご案内します。">
+  <meta name="description" content="神戸市灘区原田通の妙本寺公式ホームページ。初めて参詣される方、年間行事、住職のことば、青年部・少年部、150周年、アクセスをご案内します。">
   <meta name="theme-color" content="#31463a">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://kobemyouhonji-collab.github.io/kobe-myouhonji/">
@@ -330,7 +330,40 @@
       .hero .hero-message{font-size:clamp(30px,9vw,46px)}
     }
 
-</style>
+
+    /* V10: confidence, navigation and conversion */
+    .visit-flow{background:#fff}
+    .visit-flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .visit-step{border:1px solid var(--line);padding:26px;background:#faf8f3}
+    .visit-step .num{font:700 11px system-ui,sans-serif;letter-spacing:.18em;color:var(--gold)}
+    .visit-step h3{font-size:20px;font-weight:500;margin:10px 0 8px}
+    .visit-step p{font-size:14px;color:#62625b;margin:0}
+    .faq-v10{background:#f7f4ed}
+    .faq-v10 details{border-top:1px solid var(--line);padding:18px 0}
+    .faq-v10 details:last-child{border-bottom:1px solid var(--line)}
+    .faq-v10 summary{cursor:pointer;font-size:17px;font-weight:500}
+    .faq-v10 p{font-size:14px;color:#62625b;margin:10px 0 0}
+    .trust-v10{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .trust-v10-inner{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+    .trust-v10 h2{font-size:26px;font-weight:500;margin-top:0}
+    .trust-v10 p{font-size:14px;color:#62625b}
+    .mobile-quickbar{display:none}
+    .site-footer-v10{background:#22251f;color:#fff;padding:42px 0}
+    .site-footer-v10 a{color:#fff}
+    .site-footer-v10-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:28px}
+    .site-footer-v10 h3{font-size:16px;font-weight:500;margin-top:0}
+    .site-footer-v10 p,.site-footer-v10 li{font-size:13px;color:rgba(255,255,255,.75)}
+    .site-footer-v10 ul{list-style:none;padding:0;margin:0}
+    @media(max-width:760px){
+      .visit-flow-grid,.trust-v10-inner,.site-footer-v10-grid{grid-template-columns:1fr}
+      .mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;border-top:1px solid var(--line)}
+      .mobile-quickbar a{padding:13px 8px;text-align:center;text-decoration:none;font:700 13px system-ui,sans-serif}
+      .mobile-quickbar a:first-child{background:#31463a;color:#fff}
+      body{padding-bottom:54px}
+      .floating-contact{display:none!important}
+    }
+
+.deep-v12{background:#f1ede3}.deep-v12-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.deep-v12-card{display:block;background:#fff;border:1px solid var(--line);padding:26px;text-decoration:none;color:inherit}.deep-v12-card small{font:700 10px system-ui;letter-spacing:.15em;color:var(--gold)}.deep-v12-card h3{font-size:22px;font-weight:500;margin:8px 0}@media(max-width:760px){.deep-v12-grid{grid-template-columns:1fr}}</style>
 
 <script type="application/ld+json">
 {
@@ -365,6 +398,22 @@
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Place",
+  "name":"妙本寺",
+  "url":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/",
+  "telephone":"078-861-4144",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"神戸市灘区",
+    "streetAddress":"原田通",
+    "addressCountry":"JP"
+  }
+}
+</script>
 </head>
 <body>
 <a class="skip-link" href="#first-visit-v9">本文へ移動</a>
@@ -399,7 +448,7 @@
       <h1 class="hero-message">生活（人生）とともにある寺院へ。</h1>
       <p class="lead">悩みがあるときも、何もない日も。<br>妙本寺は、人生のさまざまな時に訪れていただける寺院でありたいと考えています。</p>
       <div class="hero-actions">
-        <a class="btn primary" href="discover.html">はじめての妙本寺</a>
+        <a class="btn primary" href="first-visit.html">初めて参詣される方へ</a>
         <a class="btn" href="#your-entry">今のあなたに近い入口から</a>
         <a class="btn" href="vision.html">住職のことばを読む</a>
       </div>
@@ -502,6 +551,45 @@
     </div>
   </section>
 
+
+  
+  
+  <section id="site-map-v11" style="background:#fff">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">START HERE</div><h2>どこから見ればよいか迷ったら</h2></div>
+      <div class="feature-grid">
+        <a class="feature-card" href="first-visit.html"><div class="tag">FIRST VISIT</div><h3>初めて参詣される方へ</h3><p>場所・予定・事前確認の方法をまとめています。</p></a>
+        <a class="feature-card" href="readings.html"><div class="tag">READINGS</div><h3>4つの読み物</h3><p>今の自分に近い入口から、妙本寺との接点を見つけられます。</p></a>
+        <a class="feature-card" href="vision.html"><div class="tag">VISION</div><h3>住職のことば</h3><p>妙本寺が大切にしている考えと、150周年の先の未来像を紹介します。</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit-flow" id="visit-flow">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FIRST VISIT FLOW</div>
+        <h2>初めての参詣まで、3つだけ。</h2>
+      </div>
+      <div class="visit-flow-grid">
+        <article class="visit-step">
+          <div class="num">STEP 01</div>
+          <h3>まず、妙本寺を知る</h3>
+          <p>初めての方向けページや住職のことばから、妙本寺が大切にしていることをご覧ください。</p>
+        </article>
+        <article class="visit-step">
+          <div class="num">STEP 02</div>
+          <h3>予定と場所を確認する</h3>
+          <p>年間行事とアクセスを確認できます。参拝時間や当日の予定は、確実なご案内のためお電話でご確認ください。</p>
+        </article>
+        <article class="visit-step">
+          <div class="num">STEP 03</div>
+          <h3>一歩、参詣へ</h3>
+          <p>作法や信仰について詳しく知らなくても、初めから完璧な人はいません。まずは一歩から。</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <section class="today-guide" aria-labelledby="today-title">
     <div class="wrap today-grid">
@@ -668,7 +756,8 @@
 
   
   
-  <section class="future-v9" id="future-150">
+  <section class="deep-v12" id="deeper"><div class="wrap"><div class="section-head"><div class="kicker">EXPLORE MYOHONJI</div><h2>もう少し深く、妙本寺を知る。</h2></div><div class="deep-v12-grid"><a class="deep-v12-card" href="150th.html"><small>150 YEARS</small><h3>150周年、そしてその先へ</h3><p>2030年を未来への出発点として。</p></a><a class="deep-v12-card" href="history-future.html"><small>HISTORY & FUTURE</small><h3>先人から未来へ</h3><p>受け継がれてきたものを、次の世代へ。</p></a><a class="deep-v12-card" href="youth-group.html"><small>NEXT GENERATION</small><h3>青年部・少年部</h3><p>伝統を受け継ぎ、教学を学び、未来へ紡ぐ。</p></a><a class="deep-v12-card" href="chief-priest-words.html"><small>WORDS</small><h3>御住職の言葉</h3><p>妙本寺の考えを、テーマ別に読む。</p></a></div></div></section>
+<section class="future-v9" id="future-150">
     <div class="wrap vision-entry-grid">
       <div>
         <div class="kicker" style="color:#dccba8">2030 · 150 YEARS</div>
@@ -715,6 +804,21 @@
           <p>駐車場については、このホームページへの正式情報掲載前のため、寺院へお問い合わせください。</p>
         </details>
       </div>
+    </div>
+  </section>
+
+  
+  <section class="faq-v10" id="faq-v10">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">FIRST VISIT FAQ</div>
+        <h2>初めての方が気になりやすいこと</h2>
+      </div>
+      <details><summary>作法が分からなくても大丈夫ですか？</summary><p>初めから完璧な人はいません。分からないことは一つずつ知っていけばよい、という考えでご案内しています。</p></details>
+      <details><summary>信仰について詳しく知らなくても見てよいですか？</summary><p>まず妙本寺を知るところからご覧いただけます。初めての方向けページもご用意しています。</p></details>
+      <details><summary>法華講員ではありません。入りづらくないですか？</summary><p>「入りづらい」「敷居が高い」と感じる方にも、一歩を踏み出せる入口でありたいと考えています。</p></details>
+      <details><summary>参拝時間や当日の予定はどこで確認できますか？</summary><p>行事予定は年間行事ページで確認できます。参拝時間や当日の予定を確実に確認したい場合は、寺院へお電話でお問い合わせください。</p></details>
+      <details><summary>子どもや家族と一緒に寺院について知ることはできますか？</summary><p>家族向けの読み物や、青年部・少年部合同部会についての案内をご覧いただけます。</p></details>
     </div>
   </section>
 
@@ -791,6 +895,22 @@
     </div>
   </section>
 
+
+  <section class="trust-v10">
+    <div class="wrap trust-v10-inner">
+      <div>
+        <div class="kicker">OFFICIAL INFORMATION</div>
+        <h2>公式ホームページとして</h2>
+        <p>このホームページでは、妙本寺で確認できた情報を中心に掲載しています。未確認の歴史・行事内容・寺院固有の情報を推測で掲載しない方針です。</p>
+      </div>
+      <div>
+        <h2>最新情報の確認</h2>
+        <p>行事予定や参拝に関する案内は変更になる場合があります。確実な確認が必要な内容は、お知らせまたは寺院へのお問い合わせでご確認ください。</p>
+        <p><a href="site-guide.html">ホームページのご利用案内 →</a><br><a href="site-map.html">サイト案内 →</a><br><a href="glossary.html">はじめての用語案内 →</a></p>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -821,5 +941,6 @@
   })();
   </script>
 <a class="floating-contact" href="tel:0788614144" aria-label="妙本寺へ電話する">電話で問い合わせ</a>
+<div class="mobile-quickbar"><a href="#access">アクセス</a><a href="tel:0788614144">電話で確認</a></div>
 </body>
 </html>
