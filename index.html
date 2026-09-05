@@ -363,7 +363,16 @@
       .floating-contact{display:none!important}
     }
 
-.deep-v12{background:#f1ede3}.deep-v12-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.deep-v12-card{display:block;background:#fff;border:1px solid var(--line);padding:26px;text-decoration:none;color:inherit}.deep-v12-card small{font:700 10px system-ui;letter-spacing:.15em;color:var(--gold)}.deep-v12-card h3{font-size:22px;font-weight:500;margin:8px 0}@media(max-width:760px){.deep-v12-grid{grid-template-columns:1fr}}</style>
+.deep-v12{background:#f1ede3}.deep-v12-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.deep-v12-card{display:block;background:#fff;border:1px solid var(--line);padding:26px;text-decoration:none;color:inherit}.deep-v12-card small{font:700 10px system-ui;letter-spacing:.15em;color:var(--gold)}.deep-v12-card h3{font-size:22px;font-weight:500;margin:8px 0}@media(max-width:760px){.deep-v12-grid{grid-template-columns:1fr}}
+    .contact-v16{background:#fff}
+    .contact-v16-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .contact-v16-card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);padding:24px;background:#faf8f3;min-height:190px}
+    .contact-v16-card small{font:700 10px system-ui,sans-serif;letter-spacing:.15em;color:var(--gold)}
+    .contact-v16-card h3{font-size:21px;font-weight:500;margin:10px 0 8px}
+    .contact-v16-card p{font-size:14px;color:#666;margin:0}
+    @media(max-width:760px){.contact-v16-grid{grid-template-columns:1fr}}
+
+</style>
 
 <script type="application/ld+json">
 {
@@ -434,6 +443,7 @@
       <a href="#contact">お問い合わせ</a>
       <a href="#faq">よくあるご質問</a>
       <a href="#access">アクセス</a>
+      <a href="contact.html">お問い合わせ</a>
     </nav>
   </div>
 </header>
@@ -743,20 +753,38 @@
     </div>
   </section>
 
-  <section id="contact" class="contact" aria-labelledby="contact-title">
-    <div class="wrap contact-box">
-      <div>
-        <div class="kicker" style="color:#dccba8">CONTACT</div>
-        <h2 id="contact-title">お問い合わせ</h2>
-        <p>参拝や法要など、個別のご用件は妙本寺へお電話でお問い合わせください。</p>
+  
+  <section class="contact-v16" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">CONTACT</div>
+        <h2>お問い合わせ・ご案内</h2>
       </div>
-      <a class="btn" href="tel:0788614144" aria-label="妙本寺へ電話 078-861-4144">078-861-4144</a>
+      <div class="contact-v16-grid">
+        <a class="contact-v16-card" href="tel:0788614144">
+          <small>PHONE</small>
+          <h3>電話</h3>
+          <p>078-861-4144<br>参拝時間や当日の予定など、確実な確認はこちら。</p>
+        </a>
+        <a class="contact-v16-card" href="mailto:kobe.myouhonji@gmail.com">
+          <small>EMAIL</small>
+          <h3>メール</h3>
+          <p>kobe.myouhonji@gmail.com<br>お急ぎでないお問い合わせはこちら。</p>
+        </a>
+        <a class="contact-v16-card" href="#access">
+          <small>ACCESS</small>
+          <h3>アクセス</h3>
+          <p>神戸市灘区原田通<br>JR灘駅北口から徒歩約3分。</p>
+        </a>
+      </div>
+      <p style="margin-top:22px"><a href="contact.html">お問い合わせページを開く →</a></p>
     </div>
   </section>
 
+
   
   
-  <section class="deep-v12" id="deeper"><div class="wrap"><div class="section-head"><div class="kicker">EXPLORE MYOHONJI</div><h2>もう少し深く、妙本寺を知る。</h2></div><div class="deep-v12-grid"><a class="deep-v12-card" href="150th.html"><small>150 YEARS</small><h3>150周年、そしてその先へ</h3><p>2030年を未来への出発点として。</p></a><a class="deep-v12-card" href="history-future.html"><small>HISTORY & FUTURE</small><h3>先人から未来へ</h3><p>受け継がれてきたものを、次の世代へ。</p></a><a class="deep-v12-card" href="youth-group.html"><small>NEXT GENERATION</small><h3>青年部・少年部</h3><p>伝統を受け継ぎ、教学を学び、未来へ紡ぐ。</p></a><a class="deep-v12-card" href="chief-priest-words.html"><small>WORDS</small><h3>御住職の言葉</h3><p>妙本寺の考えを、テーマ別に読む。</p></a></div></div></section>
+  <section class="deep-v12" id="deeper"><div class="wrap"><div class="section-head"><div class="kicker">EXPLORE MYOHONJI</div><h2>もう少し深く、妙本寺を知る。</h2></div><div class="deep-v12-grid"><a class="deep-v12-card" href="150th.html"><small>150 YEARS</small><h3>150周年、そしてその先へ</h3><p>2030年を未来への出発点として。</p></a><a class="deep-v12-card" href="history-future.html"><small>HISTORY & FUTURE</small><h3>先人から未来へ</h3><p>受け継がれてきたものを、次の世代へ。</p></a><a class="deep-v12-card" href="youth-group.html"><small>NEXT GENERATION</small><h3>青年部・少年部</h3><p>伝統を受け継ぎ、教学を学び、未来へ紡ぐ。</p></a><a class="deep-v12-card" href="chief-priest-words.html"><small>WORDS</small><h3>御住職の言葉</h3><p>「信心は、水のように。」行動と継続の御指導も新たに掲載。</p></a></div></div></section>
 <section class="future-v9" id="future-150">
     <div class="wrap vision-entry-grid">
       <div>
@@ -922,6 +950,7 @@
     <small><a href="news.html">お知らせ</a> ｜ <a href="privacy.html">プライバシーポリシー</a><br>最終更新：2026年8月<br>© Myohonji. All rights reserved.</small>
   </div>
 <div class="wrap updated">最終更新：2026年9月</div>
+<p class="contact-email">メール：<a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></p>
 </footer>
 <script>
   (() => {
