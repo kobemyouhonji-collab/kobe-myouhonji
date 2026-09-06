@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://kobemyouhonji-collab.github.io/kobe-myouhonji/sitemap.xml
