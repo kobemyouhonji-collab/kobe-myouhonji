@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<rect width="64" height="64" rx="10" fill="#31463a"/>
-<text x="32" y="43" text-anchor="middle" font-size="34" fill="white"
- font-family="serif">妙</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#26382f"/><text x="32" y="43" text-anchor="middle" font-size="34" fill="#f7f4ed" font-family="serif">妙</text></svg>

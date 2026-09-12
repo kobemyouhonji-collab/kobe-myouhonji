@@ -1,9 +1,10 @@
 {
   "name": "妙本寺",
   "short_name": "妙本寺",
-  "lang": "ja",
-  "start_url": "./",
+  "start_url": "/kobe-myouhonji/",
+  "scope": "/kobe-myouhonji/",
   "display": "standalone",
   "background_color": "#f7f4ed",
-  "theme_color": "#31463a"
+  "theme_color": "#26382f",
+  "lang": "ja"
 }
