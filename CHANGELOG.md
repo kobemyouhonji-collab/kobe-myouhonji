@@ -1,3 +1,9 @@
+# v25
+- 新規ページ `hokeko-dayori.html`（法華講便り）を追加。
+- 提供資料「法華講便り貼付用 11月」をもとに、御供養・立正安国論・御法主上人御指南を読みやすく整理。
+- `news.html`、`index.html`、`site-map.html` から法華講便りへの導線を追加。
+- `sitemap.xml`、`robots.txt`、`.nojekyll` を再生成・同梱。
+
 # 更新履歴
 
 ## 2026-08-30
