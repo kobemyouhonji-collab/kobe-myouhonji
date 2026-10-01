@@ -20,6 +20,22 @@ a:focus-visible,button:focus-visible{outline:3px solid #c39a52;outline-offset:3p
 @media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}section{padding:66px 0}.event-grid,.cards,.path-grid{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr}.quick a,.quick div{border-right:0;border-bottom:1px solid var(--line)}.hero h1{font-size:36px}.foot{display:block}.foot small{display:block;margin-top:14px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"PlaceOfWorship","name":"妙本寺","url":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/","image":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/14521_1.jpg","telephone":"078-861-4144","email":"kobe.myouhonji@gmail.com","address":{"@type":"PostalAddress","postalCode":"657-0837","addressRegion":"兵庫県","addressLocality":"神戸市灘区","streetAddress":"原田通3丁目1-1","addressCountry":"JP"}}</script>
+
+<style>
+.myohonji-photo-section{padding-top:clamp(3rem,7vw,6rem);padding-bottom:clamp(3rem,7vw,6rem)}
+.myohonji-photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(.8rem,2vw,1.4rem);margin-top:2rem}
+.myohonji-photo-card{grid-column:span 4;margin:0;border-radius:18px;overflow:hidden;background:#f6f2e8;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.myohonji-photo-card--wide{grid-column:span 8}
+.myohonji-photo-card img{display:block;width:100%;height:280px;object-fit:cover}
+.myohonji-photo-card--wide img{height:420px}
+.myohonji-photo-card figcaption{padding:.8rem 1rem 1rem;font-size:.92rem;letter-spacing:.04em}
+.myohonji-photo-message{margin-top:2rem;padding:clamp(1.4rem,3vw,2.2rem);border-radius:18px;background:#f7f4ec}
+@media(max-width:760px){
+ .myohonji-photo-card,.myohonji-photo-card--wide{grid-column:span 12}
+ .myohonji-photo-card img,.myohonji-photo-card--wide img{height:auto;aspect-ratio:4/3;object-fit:cover}
+}
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
@@ -36,6 +52,46 @@ a:focus-visible,button:focus-visible{outline:3px solid #c39a52;outline-offset:3p
 <section class="future"><div class="wrap future-grid"><div><div class="kicker" style="color:#e5d1a5">2030 · 150 YEARS</div><h2>150周年、<br>そしてその先へ。</h2></div><div><p class="quote">「令和12年に150周年を迎える妙本寺が未来永劫地域の活動の土台となり、総本山大石寺を守っていける力強い、その力強さで世界に届く、そんな寺院を目指しています。」</p><p>150周年を、これまでを振り返るだけでなく、次の世代へ歩みを進める出発点として。</p><p><a href="150th.html">150周年への歩みを見る →</a></p></div></div></section>
 <section class="access" id="access"><div class="wrap"><div class="head"><div class="kicker">ACCESS & CONTACT</div><h2>妙本寺へ</h2></div><div class="access-grid"><div class="panel"><dl><dt>寺院名</dt><dd>妙本寺（みょうほんじ）</dd><dt>所在地</dt><dd>〒657-0837<br>兵庫県神戸市灘区原田通3丁目1-1</dd><dt>最寄駅</dt><dd>JR灘駅 北口から徒歩約5分<br>阪急王子公園駅から徒歩約5分</dd><dt>電話</dt><dd><a href="tel:0788614144">078-861-4144</a></dd><dt>メール</dt><dd><a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></dd></dl></div><div class="panel"><h3>参詣前の確認</h3><p>行事予定は年間行事ページでご覧いただけます。参拝時間や当日の予定を確実に確認したい場合は、事前に寺院へお問い合わせください。</p><div class="contact-actions"><a class="btn" href="tel:0788614144">電話する</a><a class="btn" href="contact.html">お問い合わせ</a><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%E5%A6%99%E6%9C%AC%E5%AF%BA%20%E7%A5%9E%E6%88%B8%E5%B8%82%E7%81%98%E5%8C%BA%E5%8E%9F%E7%94%B0%E9%80%9A3%E4%B8%81%E7%9B%AE1-1">地図を開く</a></div><p class="notice">行事・参詣に関する最新情報は、お知らせまたは寺院へのお問い合わせでご確認ください。</p></div></div></div></section>
 <section class="final"><div class="wrap"><div class="kicker">ONE STEP</div><h2>ご縁を、一歩へ。</h2><p>「この機会を逃すことなく、一歩勇気を出して参詣していただければ必ず未来は開かれていきます。」</p><div class="actions"><a class="btn primary" href="first-visit.html">初めて参詣される方へ</a><a class="btn" href="annual-events.html">行事予定を見る</a></div></div></section>
+
+<section class="section myohonji-photo-section" aria-labelledby="myohonji-photo-title">
+  <div class="container">
+    <p class="section-kicker">MYOHONJI SCENES</p>
+    <h2 id="myohonji-photo-title">妙本寺の風景</h2>
+    <p class="lead">初めて寺院を訪れる方にも、妙本寺の雰囲気を身近に感じていただけるよう、本堂や仏具、境内を彩る緑をご紹介します。</p>
+    <div class="myohonji-photo-grid">
+      <figure class="myohonji-photo-card myohonji-photo-card--wide">
+        <img src="myohonji-hondo.jpg" alt="妙本寺の本堂内の様子" loading="lazy">
+        <figcaption>妙本寺の本堂</figcaption>
+      </figure>
+      <figure class="myohonji-photo-card">
+        <img src="myohonji-greenery.jpg" alt="妙本寺を彩る緑の葉" loading="lazy">
+        <figcaption>寺院を彩る緑</figcaption>
+      </figure>
+      <figure class="myohonji-photo-card">
+        <img src="myohonji-incense.jpg" alt="妙本寺の香炉" loading="lazy">
+        <figcaption>香炉</figcaption>
+      </figure>
+      <figure class="myohonji-photo-card">
+        <img src="myohonji-lotus.jpg" alt="妙本寺の蓮をかたどった仏具" loading="lazy">
+        <figcaption>本堂の荘厳</figcaption>
+      </figure>
+      <figure class="myohonji-photo-card">
+        <img src="myohonji-offerings.jpg" alt="妙本寺の供物を供える仏具" loading="lazy">
+        <figcaption>本堂の仏具</figcaption>
+      </figure>
+      <figure class="myohonji-photo-card">
+        <img src="myohonji-cranes-pair.jpg" alt="鶴をかたどった一対の仏具" loading="lazy">
+        <figcaption>受け継がれる仏具</figcaption>
+      </figure>
+    </div>
+    <div class="myohonji-photo-message">
+      <h3>初めての方も、どうぞお気軽に</h3>
+      <p>寺院に馴染みのない方にも、妙本寺を知っていただけるよう心がけています。参詣や信仰について分からないこと、先祖供養・法事・葬儀についてのご相談も、住職・信徒がお話を伺います。</p>
+      <p><a class="button" href="first-visit.html">初めての方へ</a> <a class="button button-secondary" href="contact.html">相談・お問い合わせ</a></p>
+    </div>
+  </div>
+</section>
+
 </main>
 <footer><div class="wrap foot"><div><strong style="font-size:22px;letter-spacing:.14em">日蓮正宗 妙本寺</strong><br><small>〒657-0837 兵庫県神戸市灘区原田通3丁目1-1</small></div><small><a href="site-map.html">サイト案内</a> ｜ <a href="privacy.html">プライバシーポリシー</a><br>最終更新：2026年9月13日<br>© Myohonji. All rights reserved.</small></div></footer>
 <div class="mobilebar"><a href="tel:0788614144">電話で確認</a><a href="#access">アクセス</a></div>
