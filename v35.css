@@ -1,0 +1,13 @@
+/* v35: 法話会の意義と、人生を歩むために大切にしたい三つのこと */
+.life-guidance{background:#f3eee4}
+.life-guidance .life-intro{max-width:820px;font-size:17px}
+.life-three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.life-item{background:#fff;border:1px solid rgba(40,40,34,.15);padding:26px;min-height:220px}
+.life-item small{font:700 10px system-ui,sans-serif;letter-spacing:.16em;color:#9a7b43}
+.life-item h3{font-size:20px;font-weight:500;line-height:1.7;margin:10px 0 8px}
+.life-item p{font-size:14px;color:#5f5f58;margin:0}
+.life-callout{margin-top:24px;padding:22px 24px;border-left:3px solid #9a7b43;background:#fff}
+.life-callout p{margin:.35em 0}
+.howakai-purpose{margin-top:18px;padding:18px 20px;background:#eef1ec;border-left:3px solid #31463a}
+.howakai-purpose strong{display:block;margin-bottom:4px}
+@media(max-width:760px){.life-three{grid-template-columns:1fr}.life-item{min-height:auto}}
