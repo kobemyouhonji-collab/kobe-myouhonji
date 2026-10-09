@@ -1,0 +1,81 @@
+{
+  "method": "in-memory Chromium render, HTML/CSS and local images embedded; no external network",
+  "page": "first-visit.html",
+  "checks": [
+    {
+      "viewport": 320,
+      "documentWidth": 320,
+      "cardCount": 3,
+      "columns": 1,
+      "visible": true,
+      "links": [
+        "history-future.html",
+        "150th.html",
+        "chief-priest-words.html"
+      ],
+      "brokenImages": [],
+      "width": 320
+    },
+    {
+      "viewport": 360,
+      "documentWidth": 360,
+      "cardCount": 3,
+      "columns": 1,
+      "visible": true,
+      "links": [
+        "history-future.html",
+        "150th.html",
+        "chief-priest-words.html"
+      ],
+      "brokenImages": [],
+      "width": 360
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "cardCount": 3,
+      "columns": 1,
+      "visible": true,
+      "links": [
+        "history-future.html",
+        "150th.html",
+        "chief-priest-words.html"
+      ],
+      "brokenImages": [],
+      "width": 390
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "cardCount": 3,
+      "columns": 3,
+      "visible": true,
+      "links": [
+        "history-future.html",
+        "150th.html",
+        "chief-priest-words.html"
+      ],
+      "brokenImages": [],
+      "width": 768
+    },
+    {
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "cardCount": 3,
+      "columns": 3,
+      "visible": true,
+      "links": [
+        "history-future.html",
+        "150th.html",
+        "chief-priest-words.html"
+      ],
+      "brokenImages": [],
+      "width": 1024
+    }
+  ],
+  "limitations": [
+    "Not physical-device QA",
+    "No live website or external sharing checks",
+    "Link navigation not tested; static targets checked separately"
+  ]
+}

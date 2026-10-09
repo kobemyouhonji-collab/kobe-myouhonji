@@ -1,0 +1,21 @@
+{
+  "version": "v35.4",
+  "basis": "v35.3",
+  "date": "2026-10-08",
+  "scope": "Local static QA, no external requests",
+  "html_files_total": 26,
+  "html_files_checked": 25,
+  "local_asset_and_link_references": 319,
+  "internal_anchors_checked": 49,
+  "image_references": 16,
+  "missing_local_references": [],
+  "missing_alt_count": 0,
+  "duplicate_ids": [],
+  "canonical_og_url_mismatches": [],
+  "gohozo_mislabel_as_hondo": [],
+  "sitemap_urls": 24,
+  "first_visit_faq_items": 3,
+  "homepage_faq_link_to_first_visit": true,
+  "real_device_test": "not performed",
+  "external_operations": "none"
+}

@@ -1,0 +1,81 @@
+{
+  "first-visit.html": {
+    "320": {
+      "bodyWidth": 320,
+      "docWidth": 320,
+      "viewport": 320,
+      "faqCount": 3,
+      "faqVisible": true,
+      "firstFaqExpanded": true
+    },
+    "360": {
+      "bodyWidth": 360,
+      "docWidth": 360,
+      "viewport": 360,
+      "faqCount": 3,
+      "faqVisible": true,
+      "firstFaqExpanded": true
+    },
+    "390": {
+      "bodyWidth": 390,
+      "docWidth": 390,
+      "viewport": 390,
+      "faqCount": 3,
+      "faqVisible": true,
+      "firstFaqExpanded": true
+    },
+    "768": {
+      "bodyWidth": 768,
+      "docWidth": 768,
+      "viewport": 768,
+      "faqCount": 3,
+      "faqVisible": true,
+      "firstFaqExpanded": true
+    },
+    "1024": {
+      "bodyWidth": 1024,
+      "docWidth": 1024,
+      "viewport": 1024,
+      "faqCount": 3,
+      "faqVisible": true,
+      "firstFaqExpanded": true
+    }
+  },
+  "index.html": {
+    "320": {
+      "bodyWidth": 320,
+      "docWidth": 320,
+      "viewport": 320,
+      "faqCount": 0,
+      "faqVisible": false
+    },
+    "360": {
+      "bodyWidth": 360,
+      "docWidth": 360,
+      "viewport": 360,
+      "faqCount": 0,
+      "faqVisible": false
+    },
+    "390": {
+      "bodyWidth": 390,
+      "docWidth": 390,
+      "viewport": 390,
+      "faqCount": 0,
+      "faqVisible": false
+    },
+    "768": {
+      "bodyWidth": 768,
+      "docWidth": 768,
+      "viewport": 768,
+      "faqCount": 0,
+      "faqVisible": false
+    },
+    "1024": {
+      "bodyWidth": 1024,
+      "docWidth": 1024,
+      "viewport": 1024,
+      "faqCount": 0,
+      "faqVisible": false
+    }
+  }
+}

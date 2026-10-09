@@ -1,0 +1,134 @@
+{
+  "checks": 16,
+  "method": "Chromium set_content with local CSS/JS/images inlined; not actual HTTP navigation",
+  "results": [
+    {
+      "page": "404.html",
+      "width": 320,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "404.html",
+      "width": 390,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "404.html",
+      "width": 768,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "404.html",
+      "width": 1024,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "site-map.html",
+      "width": 320,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "site-map.html",
+      "width": 390,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "site-map.html",
+      "width": 768,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "site-map.html",
+      "width": 1024,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "annual-events.html",
+      "width": 320,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "annual-events.html",
+      "width": 390,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "annual-events.html",
+      "width": 768,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "annual-events.html",
+      "width": 1024,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "first-visit.html",
+      "width": 320,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "first-visit.html",
+      "width": 390,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "first-visit.html",
+      "width": 768,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    },
+    {
+      "page": "first-visit.html",
+      "width": 1024,
+      "horizontal_overflow_px": 0,
+      "image_failures": [],
+      "page_errors": [],
+      "main_found": true
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "static": {
+    "html": 26,
+    "internal_link_targets": 239,
+    "internal_anchor_targets": 41,
+    "image_references": 16,
+    "missing_alt": 0
+  },
+  "issues": [],
+  "changed": [
+    "CHANGELOG.md",
+    "v33.css"
+  ],
+  "contrast": {
+    "before": 2.17,
+    "after": 10.05
+  },
+  "render": [
+    {
+      "version": "before",
+      "viewport": 320,
+      "documentWidth": 320,
+      ".path-more summary": {
+        "height": 40,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 22,
+        "font": "13.76px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 730,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "after",
+      "viewport": 320,
+      "documentWidth": 320,
+      ".path-more summary": {
+        "height": 50,
+        "font": "15px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 53,
+        "font": "15px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 24,
+        "font": "14px",
+        "color": "rgb(241, 230, 208)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 680,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "before",
+      "viewport": 360,
+      "documentWidth": 360,
+      ".path-more summary": {
+        "height": 40,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 22,
+        "font": "13.76px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 706,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "after",
+      "viewport": 360,
+      "documentWidth": 360,
+      ".path-more summary": {
+        "height": 50,
+        "font": "15px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 53,
+        "font": "15px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 24,
+        "font": "14px",
+        "color": "rgb(241, 230, 208)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 680,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "before",
+      "viewport": 390,
+      "documentWidth": 390,
+      ".path-more summary": {
+        "height": 40,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 22,
+        "font": "13.76px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 706,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "after",
+      "viewport": 390,
+      "documentWidth": 390,
+      ".path-more summary": {
+        "height": 50,
+        "font": "15px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 53,
+        "font": "15px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 24,
+        "font": "14px",
+        "color": "rgb(241, 230, 208)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 680,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "before",
+      "viewport": 768,
+      "documentWidth": 768,
+      ".path-more summary": {
+        "height": 40,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 22,
+        "font": "13.76px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 362,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "after",
+      "viewport": 768,
+      "documentWidth": 768,
+      ".path-more summary": {
+        "height": 48,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 24,
+        "font": "14px",
+        "color": "rgb(241, 230, 208)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 362,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 49,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "before",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      ".path-more summary": {
+        "height": 40,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 22,
+        "font": "13.76px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 208,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 0,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "none"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    },
+    {
+      "version": "after",
+      "viewport": 1024,
+      "documentWidth": 1024,
+      ".path-more summary": {
+        "height": 48,
+        "font": "14px",
+        "color": "rgb(40, 40, 34)",
+        "display": "list-item"
+      },
+      ".path-card p": {
+        "height": 49,
+        "font": "13px",
+        "color": "rgb(102, 102, 102)",
+        "display": "block"
+      },
+      ".v34-photo-figure figcaption": {
+        "height": 24,
+        "font": "14px",
+        "color": "rgb(241, 230, 208)",
+        "display": "block"
+      },
+      ".path-grid": {
+        "height": 208,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "grid"
+      },
+      ".mobilebar": {
+        "height": 0,
+        "font": "16px",
+        "color": "rgb(40, 40, 34)",
+        "display": "none"
+      },
+      "expanded": true,
+      "secondaryVisible": true
+    }
+  ]
+}

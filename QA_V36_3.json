@@ -1,0 +1,137 @@
+{
+  "version": "v36.3",
+  "date_jst": "2026-10-09",
+  "base_version": "v36.2",
+  "priority": "⑩ 地域の具体的なニーズに対応する入口",
+  "scope": "local unpublished static files",
+  "html_pages": 25,
+  "local_references_checked": 345,
+  "fragment_references_checked": 52,
+  "images_checked": 16,
+  "jsonld_checked": 24,
+  "indexable_pages": 24,
+  "sitemap_urls": 24,
+  "image_assets_modified": [],
+  "hard_failures": [],
+  "render": {
+    "method": "Chromium set_content with local CSS and images inlined; no network, not live HTTP or device test",
+    "page": "for-troubled.html",
+    "widths_px": [
+      320,
+      360,
+      390,
+      768,
+      1024
+    ],
+    "checks": [
+      {
+        "viewport": 320,
+        "overflow": false,
+        "broken_images": 0,
+        "js_errors": 0,
+        "cta_sizes_px": [
+          {
+            "width": 296,
+            "height": 58
+          },
+          {
+            "width": 296,
+            "height": 58
+          }
+        ]
+      },
+      {
+        "viewport": 360,
+        "overflow": false,
+        "broken_images": 0,
+        "js_errors": 0,
+        "cta_sizes_px": [
+          {
+            "width": 336,
+            "height": 58
+          },
+          {
+            "width": 336,
+            "height": 58
+          }
+        ]
+      },
+      {
+        "viewport": 390,
+        "overflow": false,
+        "broken_images": 0,
+        "js_errors": 0,
+        "cta_sizes_px": [
+          {
+            "width": 362,
+            "height": 58
+          },
+          {
+            "width": 362,
+            "height": 58
+          }
+        ]
+      },
+      {
+        "viewport": 768,
+        "overflow": false,
+        "broken_images": 0,
+        "js_errors": 0,
+        "cta_sizes_px": [
+          {
+            "width": 228,
+            "height": 58
+          },
+          {
+            "width": 228,
+            "height": 58
+          }
+        ]
+      },
+      {
+        "viewport": 1024,
+        "overflow": false,
+        "broken_images": 0,
+        "js_errors": 0,
+        "cta_sizes_px": [
+          {
+            "width": 228,
+            "height": 58
+          },
+          {
+            "width": 228,
+            "height": 58
+          }
+        ]
+      }
+    ],
+    "overflow_cases": 0,
+    "broken_images_cases": 0,
+    "javascript_error_cases": 0
+  },
+  "changed_site_content": [
+    "for-troubled.html: one new howakai route section + scoped CSS"
+  ],
+  "changed_support_files": [
+    "sitemap.xml: for-troubled lastmod",
+    "CHANGELOG.md",
+    "README.md",
+    "QA_V36_3.json",
+    "V36_3_UPDATE_REPORT.md",
+    "24h summary and free outreach plan"
+  ],
+  "verified_unchanged": [
+    "news.html: three user-provided points, 正徳 and invitation",
+    "index.html",
+    "first-visit.html",
+    "memorial-funeral.html",
+    "all existing jpg/png/webp/svg assets"
+  ],
+  "external_actions": [],
+  "limits": [
+    "No iPhone/Android real device testing",
+    "No public HTTP navigation or external link validation",
+    "No temple verification of 正徳, event dates, participation, contact",
+    "No Search Console submission or published OG crawl"
+  ]
+}

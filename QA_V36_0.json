@@ -1,0 +1,90 @@
+{
+  "version": "v36.0",
+  "date": "2026-10-08",
+  "baseline": "v35.4",
+  "counts": {
+    "html_pages": 25,
+    "local_links": 338,
+    "fragment_links": 50,
+    "images": 16,
+    "alt_missing": 0,
+    "local_missing": 0,
+    "fragment_missing": 0,
+    "duplicate_ids": 0,
+    "canonical_og_mismatch": 0,
+    "gohozo_as_hondo": 0,
+    "sitemap_urls": 24,
+    "render_checks": 10,
+    "overflow_failures": 0,
+    "broken_image_render_failures": 0
+  },
+  "errors": [],
+  "render": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "index.html",
+      "width": 360,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "news.html",
+      "width": 360,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "index.html",
+      "width": 1024,
+      "overflow_px": 0,
+      "broken_images": 0
+    },
+    {
+      "page": "news.html",
+      "width": 1024,
+      "overflow_px": 0,
+      "broken_images": 0
+    }
+  ],
+  "notes": [
+    "Chromium in-memory HTML/CSS/image render only, no navigation or external upload",
+    "Mobile physical-device QA still pending",
+    "Content themes from user-provided wording; no claim of official doctrinal summary",
+    "正徳 as supplied; final editorial confirmation before publication"
+  ]
+}

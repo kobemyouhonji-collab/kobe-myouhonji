@@ -1,0 +1,26 @@
+{
+  "version": "v36.1",
+  "date": "2026-10-09",
+  "base": "v36.0",
+  "scope": "static local HTML and references",
+  "public_html_pages": 25,
+  "local_references_checked": 342,
+  "fragment_references_checked": 50,
+  "images_checked": 16,
+  "missing_references": [],
+  "missing_image_alt": [],
+  "duplicate_ids": [],
+  "canonical_og_mismatch": [],
+  "gohozo_alt_mislabeled_hondo": [],
+  "sitemap_urls": 24,
+  "new_links": [
+    "history-future.html",
+    "150th.html",
+    "chief-priest-words.html"
+  ],
+  "notes": [
+    "No publication, Search Console, SNS, messages or permission changes.",
+    "No new photos, religious factual assertions or unverified temple facts.",
+    "Browser rendering and physical-device QA are separate from static QA."
+  ]
+}

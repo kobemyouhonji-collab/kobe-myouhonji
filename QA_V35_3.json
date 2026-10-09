@@ -1,0 +1,64 @@
+{
+  "html_files_total": 26,
+  "html_pages_checked": 25,
+  "internal_links": 234,
+  "same_page_anchors": 38,
+  "image_references": 16,
+  "script_references": 8,
+  "images_missing_alt": 0,
+  "missing_local_targets": 0,
+  "duplicate_ids": 0,
+  "canonical_og_mismatch": 0,
+  "og_description_mismatch": 0,
+  "missing_og_locale": [
+    "404.html"
+  ],
+  "share_pages": [
+    "annual-events.html",
+    "discover.html",
+    "first-visit.html",
+    "for-family.html",
+    "for-youth.html",
+    "index.html",
+    "memorial-funeral.html",
+    "news.html"
+  ],
+  "sitemap_url_count": 24,
+  "browser_share_payload": {
+    "title": "お知らせ・行事予定・活動報告｜神戸市灘区 妙本寺",
+    "text": "2026年の行事予定と確認先をご案内しています。開催状況は寺院へご確認ください。",
+    "url": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html"
+  },
+  "browser_fallback_url": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html",
+  "browser_home_share_url": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/",
+  "browser_clipboard_url": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html",
+  "browser_share_urls": {
+    "annual-events.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/annual-events.html",
+    "discover.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/discover.html",
+    "first-visit.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/first-visit.html",
+    "for-family.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-family.html",
+    "for-youth.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/for-youth.html",
+    "index.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/",
+    "memorial-funeral.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/memorial-funeral.html",
+    "news.html": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html"
+  },
+  "browser_horizontal_overflow_px": {
+    "index.html": {
+      "320": 0,
+      "360": 0,
+      "390": 0,
+      "768": 0,
+      "1024": 0
+    },
+    "news.html": {
+      "320": 0,
+      "360": 0,
+      "390": 0,
+      "768": 0,
+      "1024": 0
+    }
+  },
+  "qr_target": "https://kobemyouhonji-collab.github.io/kobe-myouhonji/",
+  "errors": [],
+  "passed": true
+}

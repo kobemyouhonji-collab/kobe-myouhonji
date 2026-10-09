@@ -1,0 +1,137 @@
+[
+  {
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "mainH1": "お知らせ・活動報告",
+    "sectionOrder": [
+      "news",
+      "shakubuku",
+      "dayori",
+      "reports"
+    ],
+    "visibleButtons": [
+      {
+        "text": "2026年の年間行事を見る",
+        "height": 48
+      },
+      {
+        "text": "寺院への問い合わせ方法を見る",
+        "height": 48
+      },
+      {
+        "text": "電話で確認する",
+        "height": 48
+      }
+    ],
+    "viewport": 320,
+    "overflow_px": 0
+  },
+  {
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "mainH1": "お知らせ・活動報告",
+    "sectionOrder": [
+      "news",
+      "shakubuku",
+      "dayori",
+      "reports"
+    ],
+    "visibleButtons": [
+      {
+        "text": "2026年の年間行事を見る",
+        "height": 48
+      },
+      {
+        "text": "寺院への問い合わせ方法を見る",
+        "height": 48
+      },
+      {
+        "text": "電話で確認する",
+        "height": 48
+      }
+    ],
+    "viewport": 360,
+    "overflow_px": 0
+  },
+  {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "mainH1": "お知らせ・活動報告",
+    "sectionOrder": [
+      "news",
+      "shakubuku",
+      "dayori",
+      "reports"
+    ],
+    "visibleButtons": [
+      {
+        "text": "2026年の年間行事を見る",
+        "height": 48
+      },
+      {
+        "text": "寺院への問い合わせ方法を見る",
+        "height": 48
+      },
+      {
+        "text": "電話で確認する",
+        "height": 48
+      }
+    ],
+    "viewport": 390,
+    "overflow_px": 0
+  },
+  {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "mainH1": "お知らせ・活動報告",
+    "sectionOrder": [
+      "news",
+      "shakubuku",
+      "dayori",
+      "reports"
+    ],
+    "visibleButtons": [
+      {
+        "text": "2026年の年間行事を見る",
+        "height": 48
+      },
+      {
+        "text": "寺院への問い合わせ方法を見る",
+        "height": 48
+      },
+      {
+        "text": "電話で確認する",
+        "height": 48
+      }
+    ],
+    "viewport": 768,
+    "overflow_px": 0
+  },
+  {
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "mainH1": "お知らせ・活動報告",
+    "sectionOrder": [
+      "news",
+      "shakubuku",
+      "dayori",
+      "reports"
+    ],
+    "visibleButtons": [
+      {
+        "text": "2026年の年間行事を見る",
+        "height": 48
+      },
+      {
+        "text": "寺院への問い合わせ方法を見る",
+        "height": 48
+      },
+      {
+        "text": "電話で確認する",
+        "height": 48
+      }
+    ],
+    "viewport": 1024,
+    "overflow_px": 0
+  }
+]

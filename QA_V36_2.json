@@ -1,0 +1,68 @@
+{
+  "version": "v36.2",
+  "date_jst": "2026-10-09",
+  "base_version": "v36.1",
+  "priority": "⑨ サイトマップ・メタ情報・リンク切れ・表記揺れの横断QA",
+  "scope": "local unpublished static files",
+  "html_pages": 25,
+  "indexable_pages": 24,
+  "sitemap_urls": 24,
+  "local_references_checked": 339,
+  "fragment_references_checked": 49,
+  "images_checked": 16,
+  "hard_failures": {},
+  "editorial_followups": {
+    "short_description": [
+      [
+        "organization.html",
+        35
+      ],
+      [
+        "privacy.html",
+        35
+      ],
+      [
+        "site-guide.html",
+        39
+      ]
+    ]
+  },
+  "render": {
+    "method": "Chromium set_content with local CSS/JS/images inlined; not actual HTTP navigation",
+    "pages": [
+      "404.html",
+      "annual-events.html",
+      "first-visit.html",
+      "site-map.html"
+    ],
+    "widths_px": [
+      320,
+      390,
+      768,
+      1024
+    ],
+    "checks": 16,
+    "overflow_cases": 0,
+    "image_failure_cases": 0,
+    "javascript_error_cases": 0
+  },
+  "changes": [
+    "404.html: robots noindex,follow",
+    "site-map.html: stale history description corrected and news freshness wording corrected",
+    "annual-events.html: latest-news wording clarified",
+    "first-visit.html: latest-news wording clarified",
+    "sitemap.xml: lastmod updated for the three changed indexable pages",
+    "CHANGELOG.md: v36.2 entry"
+  ],
+  "verified_unchanged": [
+    "all jpg/png/webp files",
+    "news.html user-provided three points and invitation"
+  ],
+  "external_actions": [],
+  "limits": [
+    "No real device tests",
+    "No published HTTP navigation or external link validation",
+    "No Search Console or search engine crawl check",
+    "Temple must verify 正徳 meaning and dates"
+  ]
+}

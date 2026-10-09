@@ -1,0 +1,132 @@
+{
+  "version": "35.1",
+  "date": "2026-10-08",
+  "static_counts": {
+    "local_links": 243,
+    "fragment_links": 50,
+    "images": 16,
+    "html": 26
+  },
+  "issues": [],
+  "rendered_annual_events": [
+    {
+      "scrollWidth": 320,
+      "viewportWidth": 320,
+      "arrivalVisible": true,
+      "links": [
+        {
+          "text": "場所・地図を見る所在地・最寄駅を確認",
+          "width": 262,
+          "height": 77
+        },
+        {
+          "text": "初めての方へ来寺前の確認事項を読む",
+          "width": 262,
+          "height": 77
+        },
+        {
+          "text": "日程・参加について相談電話・メールで問い合わせる",
+          "width": 262,
+          "height": 77
+        }
+      ],
+      "width": 320
+    },
+    {
+      "scrollWidth": 360,
+      "viewportWidth": 360,
+      "arrivalVisible": true,
+      "links": [
+        {
+          "text": "場所・地図を見る所在地・最寄駅を確認",
+          "width": 302,
+          "height": 77
+        },
+        {
+          "text": "初めての方へ来寺前の確認事項を読む",
+          "width": 302,
+          "height": 77
+        },
+        {
+          "text": "日程・参加について相談電話・メールで問い合わせる",
+          "width": 302,
+          "height": 77
+        }
+      ],
+      "width": 360
+    },
+    {
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "arrivalVisible": true,
+      "links": [
+        {
+          "text": "場所・地図を見る所在地・最寄駅を確認",
+          "width": 328,
+          "height": 77
+        },
+        {
+          "text": "初めての方へ来寺前の確認事項を読む",
+          "width": 328,
+          "height": 77
+        },
+        {
+          "text": "日程・参加について相談電話・メールで問い合わせる",
+          "width": 328,
+          "height": 77
+        }
+      ],
+      "width": 390
+    },
+    {
+      "scrollWidth": 768,
+      "viewportWidth": 768,
+      "arrivalVisible": true,
+      "links": [
+        {
+          "text": "場所・地図を見る所在地・最寄駅を確認",
+          "width": 220,
+          "height": 77
+        },
+        {
+          "text": "初めての方へ来寺前の確認事項を読む",
+          "width": 220,
+          "height": 77
+        },
+        {
+          "text": "日程・参加について相談電話・メールで問い合わせる",
+          "width": 220,
+          "height": 77
+        }
+      ],
+      "width": 768
+    },
+    {
+      "scrollWidth": 1024,
+      "viewportWidth": 1024,
+      "arrivalVisible": true,
+      "links": [
+        {
+          "text": "場所・地図を見る所在地・最寄駅を確認",
+          "width": 302,
+          "height": 77
+        },
+        {
+          "text": "初めての方へ来寺前の確認事項を読む",
+          "width": 302,
+          "height": 77
+        },
+        {
+          "text": "日程・参加について相談電話・メールで問い合わせる",
+          "width": 302,
+          "height": 77
+        }
+      ],
+      "width": 1024
+    }
+  ],
+  "limitations": [
+    "HTML/CSSをChromiumのメモリに読み込んだレイアウト計測。実画像、iPhone/Android実機と外部SNSカード表示は未確認",
+    "外部URL到達性・公開サイトの検索インデックスは未検証"
+  ]
+}
