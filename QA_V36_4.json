@@ -1,0 +1,16 @@
+{
+  "version": "36.4",
+  "source": "v36.3-under100",
+  "html_pages": 26,
+  "total_files": 87,
+  "images_checked": 16,
+  "anchor_links_checked": 45,
+  "broken_references": [],
+  "seo_pages_changed": [
+    "index.html",
+    "first-visit.html",
+    "news.html"
+  ],
+  "browser_visual_check": "not performed",
+  "external_actions": "none"
+}
