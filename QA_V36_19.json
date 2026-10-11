@@ -1,0 +1,18 @@
+{
+  "version": "v36.19",
+  "date": "2026-10-11",
+  "previous_version": "v36.18",
+  "checks": {
+    "html_pages": 49,
+    "local_references": 698,
+    "anchor_references": 125,
+    "images": 23,
+    "alt_missing": 0,
+    "broken_local_references": 0,
+    "broken_anchors": 0,
+    "file_count": 95
+  },
+  "issues": [],
+  "responsive_browser": "pending",
+  "external_operations": "none"
+}
