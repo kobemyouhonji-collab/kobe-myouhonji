@@ -1,0 +1,25 @@
+{
+  "version": "v36.18",
+  "date": "2026-10-11",
+  "source": "v36.17-under100.zip",
+  "html_pages": 49,
+  "local_references": 695,
+  "image_references": 23,
+  "anchor_references": 124,
+  "added_photos": [
+    "photo-altar-detail.jpg",
+    "photo-fuji-temple.jpg",
+    "photo-stone-monuments.jpg",
+    "photo-green-offering.jpg",
+    "photo-fuji-lantern.jpg",
+    "photo-lotus-flower.jpg"
+  ],
+  "error_count": 1,
+  "errors": [
+    "browser check unavailable: Error('Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:38321/\\nCall log:\\n  - navigating to \"http://127.0.0.1:38321/\", waiting until \"domcontentloaded\"\\n')"
+  ],
+  "warnings": [],
+  "browser_checks": [],
+  "screenshots": [],
+  "publication": "not performed"
+}
