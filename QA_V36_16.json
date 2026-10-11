@@ -1,0 +1,17 @@
+{
+  "version": "v36.16",
+  "date": "2026-10-11",
+  "html_files": 49,
+  "source_word_files_reviewed": 22,
+  "monthly_pages": 22,
+  "monthly_draft_text_count": 19,
+  "fully_approved_pages": 0,
+  "monthly_pending_only": 3,
+  "local_links_checked": 686,
+  "missing_local_refs": [],
+  "missing_hash_targets": [],
+  "images_without_alt": [],
+  "published": false,
+  "real_mobile_device_qa": false,
+  "notes": "復元された本文は校閲前であり完全転記を保証しない。元のWordの複雑な段組・途中で途切れた文章は補作せずに保留。"
+}

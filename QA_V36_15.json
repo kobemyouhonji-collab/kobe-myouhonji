@@ -1,0 +1,38 @@
+{
+  "version": "v36.15",
+  "date": "2026-10-11",
+  "source_month": "2026-10",
+  "published": false,
+  "html_pages": 49,
+  "local_references_checked": 679,
+  "anchor_references_checked": 122,
+  "images_checked": 17,
+  "source_confirmed": {
+    "2026-10-24": {
+      "event": "御会式・御逮夜",
+      "time": "14:00"
+    },
+    "2026-10-25": {
+      "event": "御会式・御正当会",
+      "time": "14:00"
+    }
+  },
+  "regular_events": "Prior annual recurring schedule only; actual occurrence not confirmed",
+  "file_count_including_this_qa": 98,
+  "issues": [],
+  "browser_visual_check": "not performed",
+  "mobile_390px_simulated": {
+    "checked_pages": [
+      "index.html",
+      "annual-events.html",
+      "news.html"
+    ],
+    "horizontal_overflow_pages": [],
+    "method": "Browser set_content rendering, local CSS inlined, images omitted; real website navigation not tested"
+  },
+  "sitemap_lastmod_updated": [
+    "https://kobemyouhonji-collab.github.io/kobe-myouhonji/annual-events.html",
+    "https://kobemyouhonji-collab.github.io/kobe-myouhonji/",
+    "https://kobemyouhonji-collab.github.io/kobe-myouhonji/news.html"
+  ]
+}
