@@ -1,0 +1,75 @@
+{
+  "version": "v36.12",
+  "date": "2026-10-11",
+  "file_count": 88,
+  "html_count": 39,
+  "uploaded_issues_reviewed": 12,
+  "published_monthly_excerpts": 12,
+  "month_keys": [
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10"
+  ],
+  "verbatim_quote_checks": {
+    "checked": 12,
+    "passed": 12,
+    "method": "Exact Unicode substring of named source DOCX OOXML paragraph"
+  },
+  "site_references_checked": 542,
+  "missing_local_references": [],
+  "anchors_checked": 91,
+  "missing_anchors": [],
+  "images_checked": 17,
+  "missing_img_alt": [],
+  "browser_visual_test": {
+    "method": "Chromium headless set_content of generated HTML; direct navigation is blocked by execution policy",
+    "archive_widths_checked_px": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "archive_horizontal_overflow_count": 0,
+    "year_disclosure_click": "passed at 390px",
+    "month_links_count": 12,
+    "individual_months_checked_at_390px": 12,
+    "month_horizontal_overflow_count": 0,
+    "individual_month_quote_blocks_each": 1,
+    "full_live_site_navigation": "not_tested"
+  },
+  "publication_status": "local_draft_only",
+  "pruned_archive_files": [
+    "V33_IMPLEMENTATION.md",
+    "V36_3_UPDATE_REPORT.md",
+    "V36_4_UPDATE_REPORT.md",
+    "V36_5_UPDATE_REPORT.md",
+    "V36_6_UPDATE_REPORT.md",
+    "V36_8_UPDATE_REPORT.md",
+    "V36_9_UPDATE_REPORT.md",
+    "V36_10_UPDATE_REPORT.md",
+    "QA_V36_7.json",
+    "QA_V36_8.json",
+    "QA_V36_9.json",
+    "QA_V36_10.json",
+    "IMPROVEMENT_ROADMAP_V4.md",
+    "IMPROVEMENT_ROADMAP_V5.md",
+    "DEPLOY_V13.md",
+    "FINAL_COPY_V5.md",
+    "BUTTON_COPY_V5.md",
+    "PAGE_STRUCTURE_V5.md"
+  ],
+  "pending": [
+    "寺院側の本文照合/転載許可",
+    "実機表示検査",
+    "公開URLでの最終確認"
+  ]
+}
