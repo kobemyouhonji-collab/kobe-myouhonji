@@ -1,0 +1,61 @@
+{
+  "version": "v36.17",
+  "date": "2026-10-11",
+  "html_count": 49,
+  "references_validated": 626,
+  "anchors_validated": 123,
+  "broken_refs": [],
+  "missing_image_alt": [],
+  "original_image_file": "myohonji-incense.jpg",
+  "original_image_pixel_dimensions": [
+    640,
+    480
+  ],
+  "source_photo_unchanged": true,
+  "implementation": "intrinsic-size full-image rendering; object-fit contain; fixed-height crop disabled",
+  "browser_checks": [
+    {
+      "viewport": 390,
+      "image": {
+        "complete": true,
+        "naturalWidth": 480,
+        "naturalHeight": 640,
+        "renderWidth": 310,
+        "renderHeight": 408,
+        "fit": "contain",
+        "aspect": "auto"
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": 768,
+      "image": {
+        "complete": true,
+        "naturalWidth": 480,
+        "naturalHeight": 640,
+        "renderWidth": 305,
+        "renderHeight": 401.328125,
+        "fit": "contain",
+        "aspect": "auto"
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "viewport": 1280,
+      "image": {
+        "complete": true,
+        "naturalWidth": 480,
+        "naturalHeight": 640,
+        "renderWidth": 312,
+        "renderHeight": 410.65625,
+        "fit": "contain",
+        "aspect": "auto"
+      },
+      "horizontal_overflow": false
+    }
+  ],
+  "browser_status": "passed (headless Chromium; inline local assets)",
+  "source_photo_sha256": "b83f6e81906ed87eea779332b0c930d86d400ee93cee85de75edd31a91d6d2db",
+  "notes": "実機検査は未実施。ブラウザ確認はローカルアセットをインライン化した模擬環境。",
+  "total_file_count": 96
+}
