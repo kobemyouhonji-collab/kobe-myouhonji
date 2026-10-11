@@ -1,0 +1,32 @@
+{
+  "version": "v36.11",
+  "files": 94,
+  "html": 28,
+  "references_checked": 349,
+  "anchors_checked": 56,
+  "images_checked": 17,
+  "images_missing_alt": [],
+  "missing_references_or_anchors": [],
+  "functional_checks": {
+    "yearly_archive": "pass",
+    "shikimi_description_and_photo_unverified_flag": "pass",
+    "reader_friendly_source_label": "pass"
+  },
+  "pending": [
+    "shikimi image botanical identification",
+    "temple editorial approval",
+    "new old issues and authorship permission",
+    "published site test",
+    "full browser navigation test (environment blocked file/http navigation)"
+  ],
+  "external_changes": "none",
+  "browser_preview": {
+    "method": "Chromium set_content with embedded local styles and image (direct file/http navigation blocked by environment)",
+    "viewport": "390x844",
+    "archive_horizontal_overflow": false,
+    "shikimi_page_horizontal_overflow": false,
+    "yearly_disclosure_open_close_verified": true,
+    "shikimi_image_rendered": true,
+    "note": "This was simulated mobile-width rendering; not an actual device or deployed-site test."
+  }
+}

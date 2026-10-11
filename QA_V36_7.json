@@ -1,0 +1,9 @@
+{
+  "version": "v36.7",
+  "files": 84,
+  "html_pages": 26,
+  "missing_local_references": [],
+  "browser_test": "not performed",
+  "external_publication": "not performed",
+  "note": "Missing four shared assets in unpacked baseline were restored from verified v36.6 ZIP; link checks rerun."
+}

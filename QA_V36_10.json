@@ -1,0 +1,34 @@
+{
+  "version": "v36.10",
+  "updated": "2026-10-11",
+  "total_files": 89,
+  "html_files_total": 28,
+  "local_refs_checked": 382,
+  "missing_local_references": [],
+  "missing_internal_anchors": [],
+  "images_without_alt": [],
+  "restored_support_files": [
+    "v33.css",
+    "favicon.svg",
+    "site.webmanifest",
+    "share-v353.js",
+    "sitemap.xml"
+  ],
+  "zip_integrity_pass": true,
+  "site_pages_added": [
+    "kongetsu-shishin.html",
+    "hokeko-dayori-2024-09.html"
+  ],
+  "content_policy": "鈴木御住職のお言葉のみ。2026年10月分は著者・原稿確認中で本文未掲載。2024年9月号は要約と明記。",
+  "not_checked": [
+    "actual mobile device",
+    "deployed website",
+    "full editorial approval"
+  ],
+  "not_performed": [
+    "GitHub publishing",
+    "Search Console",
+    "SNS posting",
+    "billing"
+  ]
+}
