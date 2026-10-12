@@ -30,3 +30,10 @@
 
 ## 次回
 - 法華講便りのページ本文を公開前に全号校閲、検索で到達した場合の閲覧導線とアクセシビリティ点検。
+
+## ブラウザ検査（実機検査ではない）
+- {"browser_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:37639/\nCall log:\n  - navigating to \"http://127.0.0.1:37639/\", waiting until \"domcontentloaded\"\n"}
+
+## ブラウザ検査（HTML単独表示・実機検査ではない）
+- {"width": 320, "scroll_width": 360, "client_width": 320, "horizontal_overflow": true, "feature_visible": true, "cta_count": 2, "mode": "inline HTML render (external assets not loaded)"}
+- {"browser_error": ""}

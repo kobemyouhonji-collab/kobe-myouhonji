@@ -1,0 +1,43 @@
+{
+  "version": "v36.21",
+  "checked": "2026-10-12",
+  "html_pages": 49,
+  "local_references_checked": 713,
+  "missing_local_references": [],
+  "broken_local_anchors": [],
+  "images_checked": 23,
+  "images_missing_alt": [],
+  "duplicate_ids": {},
+  "newsletter_monthly_pages": 22,
+  "email_draft_links": 3,
+  "new_pages": [
+    "index.html",
+    "first-visit.html",
+    "hokeko-dayori.html",
+    "kongetsu-shishin.html",
+    "contact.html"
+  ],
+  "render": {
+    "attempted": true,
+    "method": "chromium file URL",
+    "succeeded": false,
+    "width_checks": {
+      "320": {
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/kobe-myohonji-v36.21/index.html\nCall log:\n  - navigating to \"file:///mnt/data/kobe-myohonji-v36"
+      },
+      "390": {
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/kobe-myohonji-v36.21/index.html\nCall log:\n  - navigating to \"file:///mnt/data/kobe-myohonji-v36"
+      },
+      "768": {
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/kobe-myohonji-v36.21/index.html\nCall log:\n  - navigating to \"file:///mnt/data/kobe-myohonji-v36"
+      },
+      "1280": {
+        "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/kobe-myohonji-v36.21/index.html\nCall log:\n  - navigating to \"file:///mnt/data/kobe-myohonji-v36"
+      }
+    }
+  },
+  "zip_test": "passed",
+  "external_changes": false,
+  "file_count": 95,
+  "zip_bytes": 2933293
+}

@@ -1,0 +1,46 @@
+{
+  "version": "v36.22",
+  "source": "user supplied 令和9年度 妙本寺年間行事予定 (検討資料) photo",
+  "file_count_before_qa": 97,
+  "html_pages": 49,
+  "local_references": 719,
+  "missing_files": [],
+  "broken_anchors": [],
+  "missing_alt": [],
+  "2027_event_rows": 20,
+  "2027_regular_rows": 7,
+  "weekday_checks_passed": 16,
+  "draft_not_confirmed": true,
+  "published_externally": false,
+  "browser_render_checked": true,
+  "browser_set_content_layout": {
+    "type": "isolated HTML and embedded CSS; removed external media; not live site",
+    "widths": {
+      "320": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "cards": 27,
+        "headlineVisible": true
+      },
+      "390": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "cards": 27,
+        "headlineVisible": true
+      },
+      "768": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "cards": 27,
+        "headlineVisible": true
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "cards": 27,
+        "headlineVisible": true
+      }
+    },
+    "horizontal_overflow": false
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "version": "v36.20",
+  "date": "2026-10-11",
+  "previous_version": "v36.19",
+  "checks": {
+    "html_pages": 49,
+    "local_references": 701,
+    "anchor_references": 119,
+    "images": 23,
+    "alt_missing": 0,
+    "broken_local_references": 0,
+    "file_count": 97
+  },
+  "issues": [],
+  "responsive_browser": [
+    {
+      "viewport": 320,
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "heroLink": true,
+      "featureAfterHero": true,
+      "featureWidth": 320,
+      "actions": [
+        "hokeko-dayori.html",
+        "kongetsu-shishin.html#past-issues",
+        "hokeko-dayori-2026-10.html",
+        "kongetsu-shishin.html#past-issues"
+      ],
+      "overflowElements": [],
+      "horizontal_overflow": false,
+      "mode": "HTML content injected with local stylesheet inlined; background images unavailable"
+    },
+    {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "heroLink": true,
+      "featureAfterHero": true,
+      "featureWidth": 390,
+      "actions": [
+        "hokeko-dayori.html",
+        "kongetsu-shishin.html#past-issues",
+        "hokeko-dayori-2026-10.html",
+        "kongetsu-shishin.html#past-issues"
+      ],
+      "overflowElements": [],
+      "horizontal_overflow": false,
+      "mode": "HTML content injected with local stylesheet inlined; background images unavailable"
+    },
+    {
+      "viewport": 768,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "heroLink": true,
+      "featureAfterHero": true,
+      "featureWidth": 768,
+      "actions": [
+        "hokeko-dayori.html",
+        "kongetsu-shishin.html#past-issues",
+        "hokeko-dayori-2026-10.html",
+        "kongetsu-shishin.html#past-issues"
+      ],
+      "overflowElements": [],
+      "horizontal_overflow": false,
+      "mode": "HTML content injected with local stylesheet inlined; background images unavailable"
+    },
+    {
+      "viewport": 1280,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "heroLink": true,
+      "featureAfterHero": true,
+      "featureWidth": 1280,
+      "actions": [
+        "hokeko-dayori.html",
+        "kongetsu-shishin.html#past-issues",
+        "hokeko-dayori-2026-10.html",
+        "kongetsu-shishin.html#past-issues"
+      ],
+      "overflowElements": [],
+      "horizontal_overflow": false,
+      "mode": "HTML content injected with local stylesheet inlined; background images unavailable"
+    }
+  ],
+  "external_operations": "none"
+}
