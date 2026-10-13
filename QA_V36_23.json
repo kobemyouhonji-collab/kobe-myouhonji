@@ -1,0 +1,27 @@
+{
+  "version": "v36.23",
+  "date": "2026-10-13",
+  "html_pages": 49,
+  "monthly_articles": 22,
+  "local_references_checked": 796,
+  "missing_references_or_anchors": 0,
+  "duplicate_ids": 0,
+  "images_missing_alt": 0,
+  "links_ok": true,
+  "real_browser_testing": "Direct file access blocked by administrator; isolated inlined HTML/CSS browser test only; published site/real device untested.",
+  "publication": "not performed",
+  "zip_file_count": 94,
+  "zip_integrity": "pass",
+  "file_exclusions_from_zip": [
+    "QA_V36_20.json",
+    "QA_V36_21.json",
+    "QA_V36_22.json",
+    "V36_15_UPDATE_REPORT.md",
+    "V36_16_UPDATE_REPORT.md",
+    "V36_17_UPDATE_REPORT.md",
+    "V36_18_UPDATE_REPORT.md"
+  ],
+  "inlined_browser_viewports_tested": 16,
+  "inlined_browser_overflow_count": 0,
+  "inlined_browser_errors": 0
+}
