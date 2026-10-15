@@ -1,0 +1,45 @@
+{
+  "version": "v36.30",
+  "date": "2026-10-14",
+  "source_zip": "kobe-myohonji-v36.29-under100.zip",
+  "zip_files_expected": 99,
+  "html_pages": 50,
+  "monthly_pages": 22,
+  "monthly_article_files_unchanged_sha256": true,
+  "monthly_article_original_fulltext_verified_new": 0,
+  "publication_permissions_new": 0,
+  "internal_refs_checked": 841,
+  "anchors_checked": 235,
+  "images_checked": 23,
+  "static_issues": [],
+  "external_scripts": [],
+  "browser_checks": 24,
+  "browser_viewports": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "browser_pages": [
+    "first-visit.html",
+    "site-map.html",
+    "news.html",
+    "contact.html",
+    "kongetsu-shishin.html",
+    "hokeko-dayori-2026-10.html"
+  ],
+  "horizontal_overflows": [],
+  "javascript_errors": [],
+  "interactions": {
+    "new_faq_open": true,
+    "new_faq_has_status_link": true,
+    "howakai_fallback_link": true,
+    "archive_search_input": "抜粋",
+    "archive_visible_items": 5,
+    "reader_enlarged": true
+  },
+  "browser_method": "Chromium set_content with local CSS/JS inline and local image placeholder; NOT live site, actual photos, or physical device",
+  "public_live_site_checked": false,
+  "real_phone_checked": false,
+  "release_status": "BLOCKED: 22 monthly articles lack verified fulltext/author scope/publication permission; do not publish this ZIP"
+}

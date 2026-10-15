@@ -1,0 +1,234 @@
+{
+  "version": "v36.29",
+  "date": "2026-10-14",
+  "source_zip": "kobe-myohonji-v36.28-under100.zip",
+  "html_pages": 50,
+  "monthly_pages": 22,
+  "monthly_article_files_unmodified": true,
+  "internal_refs_checked": 838,
+  "anchors_checked": 232,
+  "ids_checked": 177,
+  "images_checked": 23,
+  "static_issues": [],
+  "browser_checks": 32,
+  "browser_viewports": [
+    320,
+    390,
+    768,
+    1280
+  ],
+  "horizontal_overflows": [],
+  "javascript_errors": [],
+  "interactions": {
+    "faq_link_visible": true,
+    "contact_details_open": true,
+    "contact_template_visible": true,
+    "presets_count": 3,
+    "preset_2026": 8,
+    "preset_抜粋": 3,
+    "preset_唱題": 3,
+    "reset": 22,
+    "reader_enlarged": true,
+    "js_disabled_22": 22,
+    "js_disabled_search_hidden": true
+  },
+  "browser_method": "Chromium set_content with inline local CSS/JS and placeholder images; file:// and HTTP are blocked; NOT live-site or physical device test",
+  "public_live_site_checked": false,
+  "real_phone_checked": false,
+  "official_fulltext_verifications_new": 0,
+  "publication_permissions_new": 0,
+  "browser_page_details": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "first-visit.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "contact.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "visit-note.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "scroll": 320,
+      "client": 320
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "first-visit.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "visit-note.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "scroll": 390,
+      "client": 390
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "first-visit.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "contact.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "visit-note.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "scroll": 768,
+      "client": 768
+    },
+    {
+      "page": "index.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "first-visit.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "contact.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "visit-note.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    },
+    {
+      "page": "news.html",
+      "width": 1280,
+      "scroll": 1280,
+      "client": 1280
+    }
+  ]
+}

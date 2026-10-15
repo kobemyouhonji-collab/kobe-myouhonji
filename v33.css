@@ -129,3 +129,13 @@ a,button,summary{overflow-wrap:anywhere}
 
 /* v36.5: contextual next-reading links */
 .v365-related-reading{margin-top:1.5rem;padding:1rem;border:1px solid #d8ddd6;border-radius:12px}.v365-related-reading h3{font-size:1.1rem;margin:0 0 .75rem}.v365-related-reading a{display:inline-block;margin:.25rem 1rem .25rem 0;text-decoration:underline;text-underline-offset:3px}
+
+/* v36.26: 初参詣ページの短い目次 */
+.v3626-visit-quick{background:#f4f8f1;border-top:1px solid #d4dfd1;border-bottom:1px solid #d4dfd1;padding:14px 0}
+.v3626-visit-quick .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:9px 12px}
+.v3626-visit-quick strong{font-size:14px;color:#284732;margin-right:8px}
+.v3626-visit-quick a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #9fb39e;background:#fff;border-radius:8px;color:#23432c;text-decoration:none;font-size:14px;font-weight:700}
+.v3626-visit-quick a:hover,.v3626-visit-quick a:focus-visible{outline:2px solid #284732;outline-offset:2px}
+#visit-ready,#visit-faq{scroll-margin-top:24px}
+@media(max-width:600px){.v3626-visit-quick .wrap{display:grid;grid-template-columns:1fr 1fr;gap:8px}.v3626-visit-quick strong{grid-column:1/-1}.v3626-visit-quick a{font-size:13px;line-height:1.5;justify-content:center;text-align:center}}
+@media print{.v3626-visit-quick{display:none}}
