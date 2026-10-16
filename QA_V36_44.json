@@ -1,0 +1,208 @@
+{
+  "version": "v36.44",
+  "date": "2026-10-16",
+  "base_zip": "kobe-myohonji-v36.43-under100.zip",
+  "base_read": true,
+  "base_zip_files": 99,
+  "html_pages": 50,
+  "monthly_issues": 22,
+  "monthly_sha256_identical_to_base": 22,
+  "archive_status_counts": {
+    "抜粋のみ・全文確認待ち": 3,
+    "長文原稿候補・未校閲": 16,
+    "本文復元案・未校閲": 3
+  },
+  "faq_count": 11,
+  "local_refs_checked": 867,
+  "local_anchor_refs_checked": 257,
+  "images_checked_for_alt": 23,
+  "static_issues": [],
+  "browser_render_mode": "set_content with local CSS/JS/images inlined; NOT real navigation",
+  "browser_patterns": 28,
+  "browser_errors": [],
+  "screenshots": {
+    "first-visit.html": "/mnt/data/V36_44_faq_status_390.png",
+    "kongetsu-shishin.html": "/mnt/data/V36_44_archive_status_390.png"
+  },
+  "source_document_new_full_comparisons": 0,
+  "formal_proofreading_completed": 0,
+  "publication_permissions_confirmed": 0,
+  "limitations": [
+    "file:// navigation blocked by administrator",
+    "no real page-to-page navigation",
+    "no public site check",
+    "no mobile device test",
+    "no screen reader test",
+    "no external communications"
+  ],
+  "browser_detail": [
+    {
+      "page": "first-visit.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "site-guide.html",
+      "width": 320,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "site-guide.html",
+      "width": 390,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "site-guide.html",
+      "width": 768,
+      "overflow_px": 0,
+      "javascript_errors": []
+    },
+    {
+      "page": "site-guide.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "javascript_errors": []
+    }
+  ]
+}

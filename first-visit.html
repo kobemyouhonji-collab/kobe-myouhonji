@@ -50,8 +50,33 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 .v3623-visit{background:#f6f8f3;padding:48px 0}.v3623-visit h2{margin-top:8px}.v3623-visit ol{counter-reset:visit;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0;padding:0;list-style:none}.v3623-visit li{background:#fff;border:1px solid #dee6dc;border-radius:14px;padding:20px;min-width:0}.v3623-visit li:before{counter-increment:visit;content:'0' counter(visit);display:inline-block;color:#437353;font-weight:700;margin-bottom:8px}.v3623-visit strong{display:block;margin:0 0 8px;font-size:1.08rem}.v3623-visit p{line-height:1.9}.v3623-visit .v3623-note{margin:12px 0 0;padding:12px 16px;border-left:3px solid #6d8a78}.v3623-visit .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
 @media(max-width:640px){.v3623-visit{padding:28px 0}.v3623-visit ol{grid-template-columns:minmax(0,1fr)}.v3623-visit li{padding:16px}}
 @media print{.v3623-visit{background:#fff;break-before:page}.v3623-visit li{break-inside:avoid;border-color:#888}}
+/* v36.31: duplicated FAQ consolidated, clear grouped navigation */
+.v3631-faq-index{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 24px}
+.v3631-faq-index a{display:inline-flex;align-items:center;min-height:44px;padding:9px 14px;background:#edf3eb;border:1px solid #9ab39e;border-radius:8px;color:#234632;text-decoration:underline;text-underline-offset:3px;font:600 15px/1.5 system-ui,sans-serif}
+.v3631-faq-index a:focus-visible{outline:3px solid #b7812d;outline-offset:3px}
+.v3631-faq-group{scroll-margin-top:24px;font-size:clamp(19px,3vw,23px);line-height:1.5;margin:32px 0 12px;color:#254433}
+@media(max-width:520px){.v3631-faq-index{display:grid;grid-template-columns:minmax(0,1fr)}.v3631-faq-index a{width:100%;box-sizing:border-box}}
+/* v36.34: FAQのまとめ読みとキーボード操作 */
+.v3634-faq-controls[hidden]{display:none!important}
+.v3634-faq-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 22px;padding:12px 16px;border:1px solid #cbd9cb;background:#f4f8f3;border-radius:10px}
+.v3634-faq-controls button{font:700 15px/1.5 system-ui,sans-serif;background:#fff;color:#1d442c;border:2px solid #42684b;border-radius:8px;padding:10px 14px;min-height:44px;cursor:pointer}
+.v3634-faq-controls button:focus-visible{outline:3px solid #a87626;outline-offset:3px}
+.v3634-faq-controls p{font:14px/1.6 system-ui,sans-serif;margin:0;color:#304b36}
+@media(max-width:500px){.v3634-faq-controls{display:grid;grid-template-columns:minmax(0,1fr)}.v3634-faq-controls button{width:100%}}
+@media print{.v3634-faq-controls{display:none!important}.visit-faq details{break-inside:avoid}}
 </style>
-</head>
+<style>/* v36.38: FAQの質問文だけを端末内で絞り込み。JavaScript無効時は全11問を表示 */
+.v3638-faq-search[hidden],.visit-faq details[hidden],.visit-faq h3[hidden],.visit-faq nav[hidden]{display:none!important}
+.v3638-faq-search{padding:16px 18px;margin:18px 0;background:#f5f9f3;border:1px solid #bfcfbe;border-radius:12px}
+.v3638-faq-search label{display:block;font:700 1rem/1.7 system-ui,sans-serif;color:#23472f}
+.v3638-faq-search-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.v3638-faq-search input{flex:1 1 220px;min-width:0;min-height:46px;border:2px solid #42684b;border-radius:8px;padding:10px 12px;font:16px system-ui,sans-serif}
+.v3638-faq-search button{min-height:44px;padding:8px 14px;border:2px solid #42684b;border-radius:8px;background:#fff;color:#20442e;font:700 15px system-ui,sans-serif;cursor:pointer}
+.v3638-faq-search button:focus-visible,.v3638-faq-search input:focus-visible{outline:3px solid #ad7725;outline-offset:3px}
+.v3638-faq-search p{font:14px/1.75 system-ui,sans-serif;margin:10px 0 0;color:#3a5141}
+#v3638-faq-result{font-weight:700}
+@media print{.v3638-faq-search{display:none!important}}
+</style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <nav aria-label="パンくずリスト" class="breadcrumb-v11"><div class="wrap"><a href="./">トップ</a> › <span aria-current="page">初めて参詣される方へ</span></div></nav>
@@ -116,38 +141,50 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <p>御住職は、初めから完璧な人はいないこと、信徒も互いに学び成長していく同志であることを伝えています。</p>
 </div>
 </div></section>
-<section aria-labelledby="v3621-questions-title" class="v3621-questions" id="v3621-questions">
-<div class="wrap"><span class="eyebrow">WELCOME QUESTIONS</span><h2 id="v3621-questions-title">参詣を考えるときの、四つの疑問</h2>
-<p>初めての方が不安に感じやすい点を、事前に確認できるようにしました。信仰や行事への参加は、十分に説明を聞き、ご自身で判断することが大切です。</p>
-<div class="v3621-faqgrid">
-<div class="v3621-q"><h3>Q. 日蓮正宗について詳しくありません。</h3><p>まずは<a href="discover.html">1分でわかる妙本寺</a>や<a href="hokeko-dayori.html">法華講便り</a>を読むところから始められます。分からないことは寺院に確認できます。</p></div>
-<div class="v3621-q"><h3>Q. 法話会の内容を先に知りたいです。</h3><p><a href="news.html#howakai">法話会の案内</a>にテーマの概要があります。開催日時、参加条件、具体的な進行などは寺院へお問い合わせください。</p></div>
-<div class="v3621-q"><h3>Q. 参詣すると入信しなければなりませんか。</h3><p>このHPだけで参加条件や入信の手続きを断定することはしません。教えを聞いたうえで、ご本人が納得して判断できるよう、不明点は御住職・寺院にご確認ください。</p></div>
-<div class="v3621-q"><h3>Q. 服装や費用、子ども連れでの訪問は？</h3><p>行事や訪問の目的によって異なる可能性があります。決めつけず、希望する日時やご事情を<a href="contact.html#v3621-contact-topics">電話・メールで確認</a>してください。</p></div>
-</div>
-<div class="v3621-next"><p><strong>確認したいことが一つでもあれば、まず質問から。</strong> 「初めて参詣を考えています」と伝えるための文例もご用意しました。</p><a class="button primary" href="contact.html#v3621-contact-topics">問い合わせの文例を見る →</a></div>
-</div></section><section aria-labelledby="visit-faq-title" class="visit-faq" data-v354="first-visit-faq" id="visit-faq"><div class="wrap">
+<section aria-labelledby="visit-faq-title" class="visit-faq" data-v354="first-visit-faq" id="visit-faq"><div class="wrap">
 <div class="eyebrow">QUESTIONS BEFORE VISITING</div>
 <h2 id="visit-faq-title">初めての参詣で、気になること</h2>
-<p>来寺前に迷いやすい点をまとめました。ここに掲載のない受け入れ条件や当日の対応は、推測せず寺院へ直接ご確認ください。</p>
-<details class="v33-faq"><summary>参詣の時間や、事前の連絡は必要ですか？</summary>
-<p>行事予定は<a href="annual-events.html">年間行事</a>、直近の案内は<a href="news.html">お知らせ</a>で確認できます。参拝時間や事前連絡の要否など、個別の来寺条件は<a href="contact.html">寺院へお問い合わせ</a>ください。</p></details>
-<details class="v33-faq"><summary>服装・持ち物や作法が分からない場合は？</summary>
+<p>気になる項目だけを選んで読めるよう、質問を3つのグループに整理しました。ここに掲載のない参加条件や当日の対応は、寺院へ直接ご確認ください。聞き慣れない言葉があれば、<a href="glossary.html">はじめての用語案内</a>もご覧いただけます。用語案内は詳細な教義解説ではなく、公開前の寺院確認が必要な説明も含みます。</p>
+<div class="v3638-faq-search" id="v3638-faq-search" hidden>
+<label for="v3638-faq-query">質問を言葉で探す（このページ内のみ）</label>
+<div class="v3638-faq-search-row"><input id="v3638-faq-query" type="search" autocomplete="off" placeholder="例：予約、費用、法話会、読み方" aria-describedby="v3638-faq-help"/><button type="button" id="v3638-faq-clear">検索を消す</button></div>
+<p id="v3638-faq-help">質問文と関連する言葉（例：申し込み・参加費・子ども・途中退出）から探せます。予約や費用など未確認の事項は、確定情報と区別して案内します。入力内容は送信・保存されません。質問を開くと回答を読めます。</p>
+<p id="v3638-faq-result" role="status" aria-live="polite" aria-atomic="true"></p>
+<p id="v3638-faq-empty" hidden>一致する質問がありません。<button type="button" id="v3638-faq-reset">すべての質問に戻す</button>か、<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>をご覧ください。</p>
+</div>
+<nav class="v3631-faq-index" aria-label="よくある質問の分類">
+<a href="#faq-before-visit">参詣前の準備（5問）</a><a href="#faq-choose">自分のペースで知る（3問）</a><a href="#faq-contact-reading">連絡・記事の確認（3問）</a>
+</nav>
+<div class="v3634-faq-controls" id="v3634-faq-controls" hidden aria-label="質問の表示切替">
+  <button type="button" id="v3634-faq-open">11問の回答をまとめて開く</button>
+  <button type="button" id="v3634-faq-close">すべて閉じる</button>
+  <p id="v3634-faq-state" role="status" aria-live="polite">質問を選んで開けます。</p>
+</div>
+<h3 class="v3631-faq-group" id="faq-before-visit">参詣前の準備</h3>
+<details class="v33-faq" id="faq-visit-terms" data-search-terms="予約 予約不要 申込 申し込み 申込み 料金 費用 参加費 お金 受付 参拝時間 開門 訪問 当日 事前連絡 法話会"><summary>参詣・法話会の予約や費用、受付時間はどう確認できますか？</summary>
+<p>この非公開版では、参詣や法話会の予約の要否、費用、受付時間、参加条件を確定情報として案内していません。<a href="annual-events.html">行事予定</a>や<a href="news.html#howakai">法話会の案内</a>を参考に、訪問を決める前に<a href="contact.html#v3621-contact-topics">寺院へ必要なことだけ確認</a>してください。確認のために質問するだけでも構いません。</p></details>
+<details class="v33-faq" data-search-terms="服 装い 手ぶら マナー 持参"><summary>服装・持ち物や作法が分からない場合は？</summary>
 <p>服装・持ち物・当日の作法について、このページでは一律の決まりを案内していません。気になる点は、来寺前に<a href="contact.html">電話・メールで確認</a>できます。</p></details>
-<details class="v33-faq"><summary>子どもや家族と一緒に行きたい場合は？</summary>
+<details class="v33-faq" data-search-terms="子供 子連れ 親子 乳児 幼児 同伴"><summary>子どもや家族と一緒に行きたい場合は？</summary>
 <p><a href="for-family.html">家族向けの案内</a>から関連情報をご覧いただけます。行事への参加対象や当日の受け入れについては、<a href="contact.html">寺院にご確認</a>ください。</p></details>
-<details class="v33-faq"><summary>移動や聞こえ方などに不安がある場合は？</summary>
-<p>段差、移動経路、座席、聞こえ方など、必要な配慮がある場合は事前に<a href="contact.html#v3621-contact-topics">寺院へお問い合わせ</a>ください。設備や当日の対応を、このページだけで保証するものではありません。</p></details>
-<details class="v33-faq"><summary>まだ訪問を決めていません。読むだけでもよいですか？</summary>
+<details class="v33-faq" data-search-terms="段差 車椅子 車いす バリアフリー 座席 聴覚 聞こえにくい"><summary>移動や聞こえ方などに不安がある場合は？</summary>
+<p>段差、移動経路、座席、聞こえ方などについて、<a href="contact.html#v3632-access-question">事前確認用のメール文例</a>を用意しています。診断名や詳しい個人情報を記載する必要はありません。設備や当日の対応は寺院へ確認してください。</p></details>
+<details class="v33-faq" data-search-terms="法話 法話会 時間 途中退出 遅刻 早退 参加"><summary id="v3637-howakai-faq">法話会の所要時間や、途中での入退室が気になる場合は？</summary>
+<p>開始・終了時刻、途中からの参加や途中退出が可能かどうかは、行事や当日の状況によって確認が必要です。<a href="news.html#howakai">法話会の案内</a>をご覧のうえ、必要であれば<a href="contact.html#v3636-howakai-mail">法話会についての質問文例</a>から寺院へ確認できます。参加を決める前に質問するだけでも構いません。</p></details>
+<h3 class="v3631-faq-group" id="faq-choose">自分のペースで知る</h3>
+<details class="v33-faq" data-search-terms="見学 見るだけ 読むだけ 迷う 検討"><summary>まだ訪問を決めていません。読むだけでもよいですか？</summary>
 <p><a href="hokeko-dayori.html">法華講便り</a>や<a href="discover.html">妙本寺の紹介</a>は、HP上でご覧いただけます。気になる点が出てきたときに、<a href="contact.html">質問方法</a>を確かめてください。閲覧にあたって連絡や入信の申し込みは必要ありません。</p></details>
-<details class="v33-faq"><summary>信仰や入信について、すぐに決める必要がありますか？</summary>
+<details class="v33-faq" data-search-terms="入会 法華講員 強制 勧誘 信徒 宗教"><summary>信仰や入信について、すぐに決める必要がありますか？</summary>
 <p>このHPには入信の申込機能はありません。教えや入信の条件、説明の進め方など、分からないことは<a href="contact.html#v3621-contact-topics">寺院へ質問</a>できます。説明を受けた内容について、ご自身の意思で判断してください。</p></details>
-<details class="v33-faq"><summary>行事予定が「検討中」になっている場合は？</summary>
+<details class="v33-faq" data-search-terms="予定 日程 未定 開催 中止 確定"><summary>行事予定が「検討中」になっている場合は？</summary>
 <p><a href="annual-events.html">年間行事予定</a>には検討段階の資料もあります。記載の日程だけで訪問を決めず、開催の有無・開始時刻・参加方法を<a href="contact.html#v3621-contact-topics">寺院へご確認</a>ください。</p></details>
-<details class="v33-faq"><summary>メールの文例を押しても何も起きない場合は？</summary>
+<h3 class="v3631-faq-group" id="faq-contact-reading">連絡・記事の確認</h3>
+<details class="v33-faq" data-search-terms="電話 話し方 相談 連絡"><summary>電話で問い合わせるとき、何から話せばよいですか？</summary>
+<p>最初に「初めての参詣（または法話会）について、確認したいことがあります」と伝え、知りたいことを一つずつ質問する方法があります。詳しい事情を最初からすべて話す必要はありません。<a href="contact.html#v3633-phone-guide">電話での確認例と連絡先を見る →</a>。寺院の受付時間や回答可否は事前に保証できません。</p></details>
+<details class="v33-faq" data-search-terms="メール メールアプリ 送信 コピー"><summary>メールの文例を押しても何も起きない場合は？</summary>
 <p>端末にメールアプリが設定されていない場合があります。<a href="contact.html#v3629-mail-fallback">コピーして使える文例</a>を用意しました。普段お使いのメールサービスで宛先を確認して送るか、<a href="contact.html">電話で確認</a>できます。このHPからは自動送信されません。</p></details>
-<details class="v33-faq" id="faq-dayori-status"><summary>法華講便りは、原文を確認した正式な全文ですか？</summary>
-<p>この非公開版の月別22号は、原文の正式な全文校閲と掲載許可がまだ完了していません。短い抜粋のみの号と、本文を掲載するために整理した校閲前の号があります。原本候補と一部の文字列が一致した場合も、全文や著者範囲の確認が終わった意味ではありません。<a href="hokeko-dayori.html#reading-guide">掲載状態の説明</a>と<a href="kongetsu-shishin.html#past-issues">号ごとの表示</a>をご確認ください。</p></details>
+<details class="v33-faq" data-search-terms="法華講便り 文章 校閲 原文 著者 掲載許可 読み方 全文 抜粋" id="faq-dayori-status"><summary>法華講便りは、原文を確認した正式な全文ですか？</summary>
+<p>この非公開版の月別22号は、原文の正式な全文校閲と掲載許可がまだ完了していません。掲載状態は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号（2024年9月・2026年7月・10月）です。どの区分も原本との正式な全文照合や掲載許可を意味しません。原本候補と一部の文字列が一致した場合も、全文や著者範囲の確認が終わった意味ではありません。<a href="hokeko-dayori.html#reading-guide">掲載状態の説明</a>と<a href="kongetsu-shishin.html#past-issues">号ごとの表示</a>をご確認ください。</p></details>
 <div aria-label="来寺前の確認先" class="buttons">
 <a class="button primary" href="tel:0788614144">電話で確認する</a>
 <a class="button" href="mailto:kobe.myouhonji@gmail.com">メールで問い合わせる</a>
@@ -173,5 +210,97 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 </main>
 <footer><p class="contact-email">メール：<a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></p></footer>
 <script defer="" src="share-v353.js"></script>
-</body>
+<script>
+/* v36.34: このページ内だけのFAQ開閉。保存・送信はしません。 */
+(function(){
+  var section=document.getElementById('visit-faq');
+  var controls=document.getElementById('v3634-faq-controls');
+  var openBtn=document.getElementById('v3634-faq-open');
+  var closeBtn=document.getElementById('v3634-faq-close');
+  var state=document.getElementById('v3634-faq-state');
+  if(!section||!controls||!openBtn||!closeBtn||!state)return;
+  var questions=Array.prototype.slice.call(section.querySelectorAll('details.v33-faq'));
+  if(!questions.length)return;
+  function announce(){
+    var n=questions.filter(function(item){return item.open;}).length;
+    state.textContent=n+'問の回答を表示中（全'+questions.length+'問）';
+    openBtn.disabled=n===questions.length;
+    closeBtn.disabled=n===0;
+  }
+  function setAll(value){questions.forEach(function(item){item.open=value;});announce();}
+  openBtn.addEventListener('click',function(){setAll(true);});
+  closeBtn.addEventListener('click',function(){setAll(false);});
+  questions.forEach(function(item){item.addEventListener('toggle',announce);});
+  /* v36.41: FAQの個別リンク先を開く。JavaScript無効時も通常のdetails操作は可能。 */
+  function revealLinkedQuestion(){
+    var id='';
+    try{id=decodeURIComponent((location.hash||'').slice(1));}catch(e){return;}
+    if(!id)return;
+    var target=document.getElementById(id);
+    var item=target&&target.closest('details.v33-faq');
+    if(!item||!section.contains(item))return;
+    var search=document.getElementById('v3638-faq-query');
+    if(search&&search.value){search.value='';search.dispatchEvent(new Event('input'));}
+    item.hidden=false;
+    item.open=true;
+    announce();
+  }
+  window.addEventListener('hashchange',revealLinkedQuestion);
+  revealLinkedQuestion();
+  var prior=null;
+  window.addEventListener('beforeprint',function(){prior=questions.map(function(item){return item.open;});setAll(true);});
+  window.addEventListener('afterprint',function(){if(prior){questions.forEach(function(item,i){item.open=prior[i];});prior=null;announce();}});
+  controls.hidden=false;announce();
+})();
+</script>
+<script>
+/* v36.38: FAQの質問文だけを絞り込む。通信・保存なし。 */
+(function(){
+  var root=document.getElementById('visit-faq');
+  var box=document.getElementById('v3638-faq-search');
+  var input=document.getElementById('v3638-faq-query');
+  var clear=document.getElementById('v3638-faq-clear');
+  var reset=document.getElementById('v3638-faq-reset');
+  var status=document.getElementById('v3638-faq-result');
+  var empty=document.getElementById('v3638-faq-empty');
+  var index=root&&root.querySelector('.v3631-faq-index');
+  var controls=document.getElementById('v3634-faq-controls');
+  if(!root||!box||!input||!clear||!reset||!status||!empty||!index)return;
+  var questions=Array.prototype.slice.call(root.querySelectorAll('details.v33-faq'));
+  var groups=Array.prototype.slice.call(root.querySelectorAll('h3.v3631-faq-group'));
+  if(questions.length!==11||groups.length!==3)return;
+  function normalize(s){return (s||'').normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/\s+/g,'');}
+  function render(){
+    var raw=(input.value||'').trim();
+    var terms=raw.normalize('NFKC').split(/\s+/).map(normalize).filter(Boolean);
+    var filtering=terms.length>0;
+    var matches=0;
+    questions.forEach(function(q){
+      var title=normalize(q.querySelector('summary').textContent+' '+(q.getAttribute('data-search-terms')||''));
+      var show=!filtering||terms.every(function(t){return title.indexOf(t)!==-1;});
+      q.hidden=!show;
+      if(show)matches++;
+    });
+    groups.forEach(function(h,i){
+      var end=groups[i+1],el=h.nextElementSibling,found=false;
+      while(el&&el!==end){if(el.matches('details.v33-faq')&&!el.hidden)found=true;el=el.nextElementSibling;}
+      h.hidden=filtering&&!found;
+    });
+    index.hidden=filtering;
+    if(controls)controls.hidden=filtering;
+    empty.hidden=matches!==0;
+    status.textContent=filtering?matches+'問が一致しました（全11問）':'全11問を表示中';
+  }
+  function restore(){input.value='';render();input.focus();}
+  input.addEventListener('input',render);
+  clear.addEventListener('click',restore);
+  reset.addEventListener('click',restore);
+  box.hidden=false;
+  render();
+  /* 印刷時はフィルターを解除し、全質問の回答を印刷できるようにする。 */
+  var prior='';
+  window.addEventListener('beforeprint',function(){prior=input.value;input.value='';render();});
+  window.addEventListener('afterprint',function(){input.value=prior;render();});
+})();
+</script></body>
 </html>

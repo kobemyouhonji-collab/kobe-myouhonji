@@ -33,7 +33,7 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 .month-card{display:block;padding:23px;background:#fff;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);transition:background .2s}.month-card:hover,.month-card:focus{background:#f8f0e5}.month-card strong{display:block;font-size:20px;color:var(--green)}.month-card span{display:block;font:14px system-ui,sans-serif;line-height:1.7;color:#57554f;margin-top:6px}
 .tag{display:inline-block;font:700 12px system-ui,sans-serif;padding:5px 9px;border:1px solid #b5a580;color:#6e562d;border-radius:99px}.notice{background:#f0e8db;border-left:4px solid #9a7b43;padding:18px 20px}.muted{font-size:13px;color:#666;font-family:system-ui,sans-serif}.footer{border-top:1px solid var(--border);padding:28px 0;color:#57554f;font-size:14px}
 
-/* Archive years are expandable without JavaScript; add only verified issues. */
+/* Archive years are expandable without JavaScript; these entries are NOT formally proofread or approved. */
 .year-archive{margin:20px 0 0;border:1px solid var(--border);border-radius:12px;background:#fffdf9;overflow:hidden}
 .year-archive summary{cursor:pointer;list-style:revert;padding:17px 20px;font:700 17px system-ui,sans-serif;color:var(--green)}
 .year-archive summary:focus-visible{outline:3px solid #a47e34;outline-offset:-4px}
@@ -70,6 +70,14 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 .v3629-search-presets button{min-height:44px;padding:9px 14px;border:1px solid #45634e;border-radius:999px;background:#f5f8f2;color:#1d422d;cursor:pointer;font:700 15px system-ui,sans-serif}
 .v3629-search-presets button:focus-visible{outline:3px solid #b7812d;outline-offset:3px}
 @media print{.v3629-search-presets{display:none!important}}
+</style><style>/* v36.37: year list controls, shown only when JS is available */
+.v3637-year-controls[hidden]{display:none!important}
+.v3637-year-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0 20px}
+.v3637-year-controls button{min-height:44px;border:2px solid #45634e;border-radius:8px;background:#fff;color:#173c26;padding:9px 13px;font:700 15px system-ui,sans-serif;cursor:pointer}
+.v3637-year-controls button:focus-visible{outline:3px solid #b7812d;outline-offset:3px}
+#v3637-year-state{font:14px/1.6 system-ui,sans-serif;color:#34513c}
+@media(max-width:500px){.v3637-year-controls button{flex:1 1 100%}}
+@media print{.v3637-year-controls{display:none!important}}
 </style></head>
 <body>
 <a class="skip" href="#main-content">本文へ移動</a>
@@ -77,47 +85,54 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 <nav aria-label="パンくずリスト" class="crumbs wrap"><a href="./">妙本寺</a> › <a href="hokeko-dayori.html">法華講便り</a> › <span aria-current="page">今月の指針</span></nav>
 <section class="hero"><div class="wrap"><div class="kicker">MONTHLY GUIDANCE</div><h1>今月の指針</h1><p>法華講便りから、鈴木御住職のお言葉を月別に紹介します。読みたい月を選んでください。</p></div></section>
 <main class="wrap" id="main-content">
-<section aria-labelledby="current"><h2 id="current">今月（2026年10月）</h2><div class="box"><p><span class="tag">令和8年10月号・掲載準備中</span></p><h3>継続は力なり</h3><p>鈴木道雅御尊師のお言葉のうち、現時点で確認できた一部を抜粋しています。全文の確認と寺院側の校閲・掲載許可は未完了です。</p><p><a class="cta" href="hokeko-dayori-2026-10.html">2026年10月号（抜粋・全文確認待ち）を読む →</a></p></div></section>
+<section aria-labelledby="current"><h2 id="current">今月（2026年10月）</h2><div class="box"><p><span class="tag">令和8年10月号・掲載準備中</span></p><h3>継続は力なり</h3><p>御住職のお言葉として整理した原稿候補から、短い抜粋を掲載しています。著者範囲の最終確認は未了です。全文の確認と寺院側の校閲・掲載許可は未完了です。</p><p><a class="cta" href="hokeko-dayori-2026-10.html">2026年10月号（抜粋・全文確認待ち）を読む →</a></p></div></section>
 
 <div class="v3623-issue-nav" aria-label="法華講便りの探し方"><h2>読みたいところから選べます</h2>
 <div class="links"><a href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）</a><a href="#past-issues">年・月別に探す</a><a href="hokeko-dayori.html#reading-guide">読み方と掲載状態を知る</a></div>
 <p>令和8年10月号は全文確認待ちです。月別の記事は寺院による原文校閲前の下書きであり、正式な全文確認済みではありません。</p>
 </div>
-<section aria-labelledby="archive" id="past-issues"><h2 id="archive">過去の法華講便り</h2><div class="v3621-archive-help"><strong>読みたい年をタップし、月を選んでください。</strong> 毎月のお言葉は「全文の校閲前」「短い抜粋」「本文確認中」を区別しています。確認待ちの文章を、校閲済みの全文として扱っていません。 <a href="hokeko-dayori.html#monthly-guidance">表示の違いを見る →</a></div>
-<p>年を開いて月を選ぶと、<strong>御住職 鈴木道雅御尊師の本文復元案・一部抜粋</strong>を読めます。過去号の行事予定や、他の執筆者の文章は掲載していません。</p>
+<section aria-labelledby="archive" id="past-issues"><h2 id="archive">過去の法華講便り</h2><div class="v3621-archive-help"><strong>読みたい年をタップし、月を選んでください。</strong> この非公開版の22号は「長文原稿候補・未校閲」16号、「本文復元案・未校閲」3号、「抜粋のみ・全文確認待ち」3号に分けています。いずれも原文全文校閲・著者範囲確認・掲載許可は未完了です。 <a href="hokeko-dayori.html#monthly-guidance">表示の違いを見る →</a></div>
+<p>年を開いて月を選ぶと、<strong>御住職のお言葉として整理した本文候補・一部抜粋</strong>を読めます。過去号の行事予定や他の執筆者の文章は掲載対象としていません。ただし、御住職の文章と他の執筆者の文章との境界は寺院による最終確認待ちです。</p>
 <p class="archive-explainer">HP掲載用に整理した令和5年11・12月、令和6年1〜11月、令和7年1月、および令和8年1・2・5〜10月の計22号を掲載。令和8年3月号は御住職の記名はありますが本文を確認できず、4月号は未提供のため、抜粋を掲載していません。</p>
-<p class="v3629-audit-note"><strong>原文確認について：</strong>22号すべて正式な全文校閲・掲載許可は未完了です。一部の号で原本候補と抜粋の文字列が一致した場合も、著者範囲や全文の正確さまで確認できたという意味ではありません。号ごとの「校閲前」「抜粋」等の表示をご確認ください。</p>
+<p class="v3629-audit-note"><strong>原文確認について：</strong>対象22号の内訳は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号です。22号すべて正式な全文校閲・著者範囲の確認・掲載許可は未完了です。一部の号で原本候補と抜粋の文字列が一致した場合も、著者範囲や全文の正確さまで確認できたという意味ではありません。号ごとの「校閲前」「抜粋」等の表示をご確認ください。<a href="first-visit.html#faq-dayori-status">「正式な全文ですか？」という質問への説明</a>も確認できます。用語が分からない場合は、<a href="glossary.html">はじめての用語案内</a>も参照できます（詳しい教義・掲載内容は寺院確認待ちです）。</p>
+<div class="v3637-year-controls" id="v3637-year-controls" hidden aria-label="年別一覧の表示切替">
+<button type="button" id="v3637-open-years">4年分をすべて開く</button>
+<button type="button" id="v3637-close-years">すべて閉じる</button>
+<span id="v3637-year-state" role="status" aria-live="polite"></span>
+</div>
 <div class="v3628-issue-filter" id="v3628-issue-filter" hidden>
 <label for="v3628-issue-search"><strong>題名・発行年・月・掲載状態から探す</strong></label>
-<p id="v3628-search-help">例：「2024」「9月」「唱題」「抜粋」。検索はこのページ内だけで行い、入力内容を送信・保存しません。</p>
+<p id="v3628-search-help">例：「2024年9月」「令和6年9月」「2024/9」「唱題」「抜粋」。西暦・令和の年と月を続けて入力したり、複数の言葉を空白で区切って探せます。検索内容は送信・保存しません。</p>
 <div class="v3628-search-row"><input id="v3628-issue-search" type="search" autocomplete="off" placeholder="22号から探す" aria-describedby="v3628-search-help"/><button type="button" id="v3628-search-clear">検索を消す</button></div>
 <div class="v3629-search-presets" id="v3629-search-presets" hidden aria-label="検索例">
 <span>ワンタップで探す：</span>
 <button type="button" data-v3629-query="2026">2026年</button>
 <button type="button" data-v3629-query="抜粋">抜粋のみ</button>
 <button type="button" data-v3629-query="唱題">唱題</button>
+<button type="button" data-v3629-query="本文復元案">本文復元案</button>
+<button type="button" data-v3629-query="2024年9月">2024年9月号</button>
 </div>
 <p id="v3628-result-count" role="status" aria-live="polite" aria-atomic="true">22号を表示中</p>
-<p id="v3628-no-results" hidden>一致する号がありません。別の言葉で探すか、検索を消してください。</p>
+<p id="v3628-no-results" hidden>一致する号がありません。別の言葉で探すか、検索を消してください。掲載のない月や原文確認については、<a href="first-visit.html#faq-dayori-status">原文確認状態のFAQ</a>をご覧ください。質問する場合は<a href="contact.html#v3629-mail-fallback">法華講便りの問い合わせ文例</a>を使えます。連絡は任意です。</p>
 </div>
-<details class="year-archive" open=""><summary>2026年（令和8年）｜8号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2026-10.html">2026年10月号（抜粋・全文確認待ち）を読む →</a><a class="month-card" href="hokeko-dayori-2026-09.html"><span class="tag">全文掲載用・校閲前</span><strong>9月号「唱題の意義を考える」</strong><span>鈴木道雅御住職の文章を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-08.html"><span class="tag">全文掲載用・校閲前</span><strong>8月号「三世の生命について」</strong><span>鈴木道雅御住職の文章を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-07.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>7月号「信心は清浄に」</strong><span>掲載中の短い抜粋を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-06.html"><span class="tag">全文掲載用・校閲前</span><strong>6月号「五濁悪世の不幸を救うために」</strong><span>鈴木道雅御住職の文章を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-05.html"><span class="tag">全文掲載用・校閲前</span><strong>5月号「心自体があなたの生活内容を決める」</strong><span>鈴木道雅御住職の文章を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-02.html"><span class="tag">全文掲載用・校閲前</span><strong>2月号「心の時間を有意義に」</strong><span>鈴木道雅御住職の文章を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-01.html"><span class="tag">全文掲載用・校閲前</span><strong>1月号「新年の辞」</strong><span>鈴木道雅御住職の文章を見る →</span></a><div class="notice">3月号：御住職の記名はありますが、提供Wordファイルに本文を確認できないため掲載保留。4月号：原稿未提供。</div></div></details><details class="year-archive" open=""><summary>2025年（令和7年）｜1号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2025-01.html"><span class="tag">全文掲載用・校閲前</span><strong>1月号「充ちる唱題・実る折伏」</strong><span>鈴木道雅御住職の文章を見る →</span></a></div></details><details class="year-archive"><summary>2024年（令和6年）｜11号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2024-11.html"><span class="tag">全文掲載用・校閲前</span><strong>11月号「日目上人さま」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-10.html"><span class="tag">全文掲載用・校閲前</span><strong>10月号「行動変容〜信心で人生を変える」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
+<details class="year-archive" open=""><summary>2026年（令和8年）｜8号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2026-10.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>10月号「継続は力なり」</strong><span>掲載中の短い抜粋を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-09.html"><span class="tag">長文原稿候補・未校閲</span><strong>9月号「唱題の意義を考える」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-08.html"><span class="tag">長文原稿候補・未校閲</span><strong>8月号「三世の生命について」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-07.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>7月号「信心は清浄に」</strong><span>掲載中の短い抜粋を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-06.html"><span class="tag">長文原稿候補・未校閲</span><strong>6月号「五濁悪世の不幸を救うために」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-05.html"><span class="tag">長文原稿候補・未校閲</span><strong>5月号「心自体があなたの生活内容を決める」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-02.html"><span class="tag">長文原稿候補・未校閲</span><strong>2月号「心の時間を有意義に」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-01.html"><span class="tag">長文原稿候補・未校閲</span><strong>1月号「新年の辞」</strong><span>校閲前の本文候補を見る →</span></a><div class="notice">3月号：御住職の記名はありますが、提供Wordファイルに本文を確認できないため掲載保留。4月号：原稿未提供。</div></div></details><details class="year-archive" open=""><summary>2025年（令和7年）｜1号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2025-01.html"><span class="tag">長文原稿候補・未校閲</span><strong>1月号「充ちる唱題・実る折伏」</strong><span>校閲前の本文候補を見る →</span></a></div></details><details class="year-archive"><summary>2024年（令和6年）｜11号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2024-11.html"><span class="tag">長文原稿候補・未校閲</span><strong>11月号「日目上人さま」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-10.html"><span class="tag">長文原稿候補・未校閲</span><strong>10月号「行動変容〜信心で人生を変える」</strong><span>校閲前の本文候補を見る →</span></a>
 <a class="month-card" href="hokeko-dayori-2024-09.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>9月号「御供養の功徳」</strong><span>掲載中の短い抜粋を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-08.html"><span class="tag">本文復元案・確認中</span><strong>8月号「第三十七回支部総会 御指導」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-07.html"><span class="tag">全文掲載用・校閲前</span><strong>7月号「立正安国論について」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-06.html"><span class="tag">本文復元案・確認中</span><strong>6月号「四月二十八日 宗旨建立会法話」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-05.html"><span class="tag">全文掲載用・校閲前</span><strong>5月号「御本尊へのお給仕について」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-04.html"><span class="tag">全文掲載用・校閲前</span><strong>4月号「五濁悪世に生きる意味」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-03.html"><span class="tag">全文掲載用・校閲前</span><strong>3月号「勇躍とは地涌の出現を顕わす」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-02.html"><span class="tag">全文掲載用・校閲前</span><strong>2月号「唱題のススメ」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2024-01.html"><span class="tag">全文掲載用・校閲前</span><strong>1月号「新年の辞」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-08.html"><span class="tag">本文復元案・未校閲</span><strong>8月号「第三十七回支部総会 御指導」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-07.html"><span class="tag">長文原稿候補・未校閲</span><strong>7月号「立正安国論について」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-06.html"><span class="tag">本文復元案・未校閲</span><strong>6月号「四月二十八日 宗旨建立会法話」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-05.html"><span class="tag">長文原稿候補・未校閲</span><strong>5月号「御本尊へのお給仕について」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-04.html"><span class="tag">長文原稿候補・未校閲</span><strong>4月号「五濁悪世に生きる意味」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-03.html"><span class="tag">長文原稿候補・未校閲</span><strong>3月号「勇躍とは地涌の出現を顕わす」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-02.html"><span class="tag">長文原稿候補・未校閲</span><strong>2月号「唱題のススメ」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2024-01.html"><span class="tag">長文原稿候補・未校閲</span><strong>1月号「新年の辞」</strong><span>校閲前の本文候補を見る →</span></a>
 </div></details>
 <details class="year-archive"><summary>2023年（令和5年）｜2号</summary><div class="year-items">
-<a class="month-card" href="hokeko-dayori-2023-12.html"><span class="tag">全文掲載用・校閲前</span><strong>12月号「本当の人生の醍醐味」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
-<a class="month-card" href="hokeko-dayori-2023-11.html"><span class="tag">本文復元案・確認中</span><strong>11月号「令和の新たな時代へ」</strong><span>鈴木道雅御住職の文章を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2023-12.html"><span class="tag">長文原稿候補・未校閲</span><strong>12月号「本当の人生の醍醐味」</strong><span>校閲前の本文候補を見る →</span></a>
+<a class="month-card" href="hokeko-dayori-2023-11.html"><span class="tag">本文復元案・未校閲</span><strong>11月号「令和の新たな時代へ」</strong><span>校閲前の本文候補を見る →</span></a>
 </div></details>
 <p class="muted">※2024年10月号は、現在の2026年10月号とは異なる過去の号です。本文の公開には寺院側の最終校閲・許可が必要です。</p></section>
-<section aria-labelledby="contact"><h2 id="contact">詳しくは、お寺でお話を聞いてください</h2><p>講便りに記載された教えや、お話について知りたい方は寺院へお問い合わせください。</p><div class="button-row"><a class="cta" href="contact.html">寺院へのお問い合わせ</a><a class="cta ghost" href="hokeko-dayori.html">法華講便りへ戻る</a></div></section>
+<section aria-labelledby="contact"><h2 id="contact">詳しくは、お寺でお話を聞いてください</h2><p>気になる号の発行年・月・題名を控えておきたい場合は、<a href="visit-note.html#questions">印刷用の確認メモ</a>を利用できます。質問する際には、<a href="contact.html#v3629-mail-fallback">法華講便りの問い合わせ文例（コピー可）</a>も利用できます。メモの使用や連絡は任意です。</p><p>講便りに記載された教えや、お話について知りたい方は寺院へお問い合わせください。</p><div class="button-row"><a class="cta" href="contact.html">寺院へのお問い合わせ</a><a class="cta ghost" href="hokeko-dayori.html">法華講便りへ戻る</a></div></section>
 </main>
 <footer class="footer"><div class="wrap">日蓮正宗 妙本寺　神戸市灘区<br/><a href="site-map.html">サイト案内</a>　｜　<a href="contact.html">お問い合わせ</a></div></footer>
 <script>
@@ -132,6 +147,20 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
   if(!area||!input||!clear||!count||!empty||!root)return;
   var years=Array.prototype.slice.call(root.querySelectorAll('details.year-archive'));
   var initial=years.map(function(y){return y.open;});
+  var yearControls=document.getElementById('v3637-year-controls');
+  var yearOpen=document.getElementById('v3637-open-years');
+  var yearClose=document.getElementById('v3637-close-years');
+  var yearState=document.getElementById('v3637-year-state');
+  if(yearControls&&yearOpen&&yearClose&&yearState){
+    yearControls.hidden=false;
+    function setYears(open){
+      years.forEach(function(y,i){y.open=open;initial[i]=open;});
+      yearState.textContent=open?'4年分の一覧を開きました':'4年分の一覧を閉じました';
+    }
+    yearOpen.addEventListener('click',function(){setYears(true);});
+    yearClose.addEventListener('click',function(){setYears(false);});
+  }
+
   var normalize=function(s){return (s||'').normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/\s+/g,'');};
   var entries=years.map(function(year){
     var ytext=year.querySelector('summary').textContent;
@@ -139,11 +168,17 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
     return {year:year, links:links.map(function(a){return {node:a,text:normalize(a.textContent+' '+a.getAttribute('href')+' '+ytext)};})};
   });
   function render(){
-    var q=normalize(input.value),matches=0;
+    /* v36.34: 「2024年9月」と複数語の両方を検索できるようにする */
+    var raw=(input.value||'').normalize('NFKC').toLocaleLowerCase('ja-JP')
+      .replace(/(\d{4}年|令和\s*\d{1,2}年)\s*(\d{1,2})月/g,function(_,year,month){return year+' '+Number(month)+'月';})
+      .replace(/(\d{4})[\/.-](\d{1,2})(?:月)?/g,function(_,year,month){return year+'年 '+Number(month)+'月';}).trim();
+    var terms=raw?raw.split(/\s+/).map(normalize):[];
+    var q=terms.length>0,matches=0;
+    if(yearControls)yearControls.hidden=q; // 検索中は一致号を優先表示
     entries.forEach(function(group,idx){
       var n=0;
       group.links.forEach(function(item){
-        var visible=!q||item.text.indexOf(q)!==-1;
+        var visible=!q||terms.every(function(term){return item.text.indexOf(term)!==-1;});
         item.node.hidden=!visible;
         if(visible)n++;
       });
