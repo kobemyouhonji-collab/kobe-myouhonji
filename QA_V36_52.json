@@ -1,0 +1,271 @@
+{
+  "version": "v36.52",
+  "date": "2026-10-17",
+  "base_zip": "kobe-myohonji-v36.51-under100.zip",
+  "base_zip_files": 99,
+  "base_zip_crc_ok": true,
+  "html_pages": 50,
+  "monthly_issues": 22,
+  "monthly_html_sha256_unchanged": 22,
+  "faq_count": 11,
+  "archive_cards": 22,
+  "local_href_refs": 846,
+  "anchor_refs": 275,
+  "images_alt": 23,
+  "aria_labelledby": 80,
+  "static_issues": [],
+  "monthly_noindex_count": 22,
+  "sitemap_monthly_inclusions": [],
+  "source_word_or_paper_compared_this_run": 0,
+  "formal_full_proofreads_this_run": 0,
+  "authorship_confirmed_this_run": 0,
+  "publication_permissions_confirmed_this_run": 0,
+  "browser_render_mode": "Chromium set_content with local CSS/JS/img inlined; file:// blocked by administrator; not actual navigation/public site; CSS background images not fully reproduced",
+  "browser_patterns": 36,
+  "browser_detail": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "first-visit.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "discover.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "discover.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "discover.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "discover.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "news.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "contact.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "hokeko-dayori-2026-10.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "visit-note.html",
+      "width": 320,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "visit-note.html",
+      "width": 390,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "visit-note.html",
+      "width": 768,
+      "overflow_px": 0,
+      "js_errors": []
+    },
+    {
+      "page": "visit-note.html",
+      "width": 1280,
+      "overflow_px": 0,
+      "js_errors": []
+    }
+  ],
+  "behavior": {
+    "faq_cost_matches": 1,
+    "faq_clear_matches": 11,
+    "safe_contact_links": [
+      "contact.html#v3633-phone-guide",
+      "contact.html#v3621-contact-topics",
+      "discover.html"
+    ],
+    "news_phone_route": "contact.html#v3633-phone-guide",
+    "reading_step3": "3. 読むだけで終えるか、必要なら質問する\n読後に連絡する必要はありません。疑問が残った場合だけ、月別ページ末尾の寺院への質問方法を確認できます。",
+    "archive_search_matches": 1,
+    "archive_clear_visible_matches": 9,
+    "archive_clear_dom_count": 22,
+    "archive_clear_status": "全22号を収録（年を開いて選べます）",
+    "archive_open_all_visible": 22
+  },
+  "screenshots_outside_zip": [
+    "V36_52_first_visit_safe_choices_390.png",
+    "V36_52_news_confirm_paths_390.png",
+    "V36_52_reading_choices_390.png"
+  ],
+  "changed_site_files": [
+    "first-visit.html",
+    "news.html",
+    "hokeko-dayori.html",
+    "kongetsu-shishin.html",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md"
+  ]
+}

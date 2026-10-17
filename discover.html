@@ -27,6 +27,8 @@ section{padding:80px 0}.intro{display:grid;grid-template-columns:220px 1fr;gap:4
 .steps{background:#31463a;color:#fff}.step-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
 .step{padding:26px;border:1px solid rgba(255,255,255,.25)}.step b{font:700 11px system-ui,sans-serif;color:#dccba8}
 .step h3{font-size:20px;font-weight:500;margin:12px 0 7px}.step p{font-size:14px;color:rgba(255,255,255,.82);margin:0}
+/* v36.51: 濃色背景にある案内リンクの文字を読めるようにする */
+.steps .step a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-weight:600}.steps .step a:focus-visible{outline:3px solid #f3d18d;outline-offset:3px}
 .links{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.link-card{background:#fff;border:1px solid var(--line);padding:24px;text-decoration:none}
 .link-card strong{font-size:20px;font-weight:500}.link-card span{display:block;font-size:13px;color:#666;margin-top:6px}
 .back{display:inline-block;margin-top:38px}
@@ -109,8 +111,8 @@ section{padding:80px 0}.intro{display:grid;grid-template-columns:220px 1fr;gap:4
 <h2 class="section-title">初めての参拝、3つの入口</h2>
 <div class="step-list">
 <div class="step"><b>01</b><h3>場所を確認</h3><p>アクセスページから所在地とGoogleマップを確認できます。</p></div>
-<div class="step"><b>02</b><h3>予定を確認</h3><p>2026年の主な行事・法要は年間行事ページにまとめています。</p></div>
-<div class="step"><b>03</b><h3>必要なら電話</h3><p>参拝時間や個別のご用件は、事前に寺院へお問い合わせください。</p></div>
+<div class="step"><b>02</b><h3>行事資料を確認</h3><p>2026年の行事資料は<a href="annual-events.html">年間行事ページ</a>にまとめています。掲載日程が現在の開催確定を意味するわけではありません。<a href="first-visit.html#faq-visit-terms">予約・費用の確認FAQ</a>も参考にできます。</p></div>
+<div class="step"><b>03</b><h3>必要なら質問</h3><p>訪問を検討する場合、受付時間や参加方法など未確認の点は<a href="contact.html#v3621-contact-topics">電話・メールの質問方法</a>から確認できます。連絡するかどうかは任意です。</p></div>
 </div>
 </div>
 </section>
@@ -119,9 +121,9 @@ section{padding:80px 0}.intro{display:grid;grid-template-columns:220px 1fr;gap:4
 <div class="eyebrow">NEXT</div>
 <h2 class="section-title">次に見たいページ</h2>
 <div class="links">
-<a class="link-card" href="annual-events.html"><strong>年間行事</strong><span>2026年の主な予定を見る</span></a>
+<a class="link-card" href="annual-events.html"><strong>年間行事</strong><span>2026年の行事資料を見る（開催は要確認）</span></a>
 <a class="link-card" href="./#access"><strong>アクセス</strong><span>住所・最寄駅・地図を見る</span></a>
-<a class="link-card" href="news.html"><strong>お知らせ</strong><span>寺院からの最新案内を見る</span></a>
+<a class="link-card" href="news.html"><strong>お知らせ</strong><span>掲載済みのお知らせを見る（開催は要確認）</span></a>
 </div>
 <a class="back" href="./">← トップページへ戻る</a>
 </div>

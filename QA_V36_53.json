@@ -1,0 +1,65 @@
+{
+  "version": "36.53",
+  "date": "2026-10-17",
+  "baseline": "v36.52",
+  "static": {
+    "html": 50,
+    "href_internal": 754,
+    "anchors": 274,
+    "images": 23,
+    "aria_labelledby": 80,
+    "labels_for": 12
+  },
+  "article_count": 22,
+  "article_html_unchanged": true,
+  "faq_count": 11,
+  "archive_cards": 22,
+  "browser_alternative": {
+    "method": "Playwright Chromium set_content with embedded local CSS/JS/images; file:// blocked",
+    "pages": [
+      "index.html",
+      "first-visit.html",
+      "hokeko-dayori.html",
+      "kongetsu-shishin.html",
+      "news.html",
+      "contact.html",
+      "visit-note.html",
+      "site-guide.html",
+      "discover.html",
+      "annual-events.html"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "cases": 40,
+    "max_overflow_px": 0,
+    "js_error_cases": 0,
+    "actual_page_navigation_tested": false,
+    "real_devices_tested": false,
+    "screenreader_tested": false
+  },
+  "interactions": {
+    "faq_cost_search": {
+      "match": 1,
+      "cleared": 11
+    },
+    "archive_search": {
+      "match": 1,
+      "all_years_open": 22
+    },
+    "news_dayori_links": 3,
+    "visit_note_direct_app_links": 0
+  },
+  "issues": [],
+  "screenshots": [
+    "/mnt/data/V36_53_news_dayori_390.png",
+    "/mnt/data/V36_53_visit_note_390.png",
+    "/mnt/data/V36_53_site_guide_390.png"
+  ],
+  "formal_original_word_collation_new": 0,
+  "author_scope_verified": false,
+  "publication_permission_verified": false
+}
