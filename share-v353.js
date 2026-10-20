@@ -37,9 +37,14 @@
       say('共有先のURLを確認できません。公開前にcanonical設定をご確認ください。');
       return;
     }
-    // ローカル下書きから、公開済みの旧内容を誤って共有しない。
-    if (location.protocol === 'file:') {
-      say('この下書きの変更は公開ページに未反映です。公開後に共有してください。');
+    // v36.54: ローカルだけでなくプレビュー用ホスト・about:blank等も共有不可。
+    // 共有操作は「実際に公開されているcanonicalと同じURL」の画面に限定する。
+    const current = new URL(location.href);
+    const canonical = new URL(publicUrl);
+    const normalizePath = path => path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/');
+    if (current.protocol !== 'https:' || current.origin !== canonical.origin ||
+        normalizePath(current.pathname) !== normalizePath(canonical.pathname)) {
+      say('これは公開URLの画面ではありません。非公開の確認画面からは共有せず、公開後にご確認ください。');
       return;
     }
     const shareText = button.dataset.shareText ||

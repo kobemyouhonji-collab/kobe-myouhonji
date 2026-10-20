@@ -65,6 +65,34 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 @media(max-width:500px){.v3634-faq-controls{display:grid;grid-template-columns:minmax(0,1fr)}.v3634-faq-controls button{width:100%}}
 @media print{.v3634-faq-controls{display:none!important}.visit-faq details{break-inside:avoid}}
 </style>
+<style>
+/* v36.67: 印刷したFAQが寺院名・未承認状態を失わないようにする。
+   画面では重複させず、FAQのみの印刷時だけ表示。 */
+.v3667-faq-print-notice{display:none!important}
+@media print{
+ body.v3665-faq-only #visit-faq .v3667-faq-print-notice{
+   display:block!important; margin:0 0 12px!important; padding:9px 12px!important;
+   border:1.5px solid #333!important; background:#fff!important; color:#111!important;
+   font:700 11pt/1.5 sans-serif!important; break-inside:avoid-page;
+ }
+}
+
+/* v36.65: FAQのみを印刷する任意操作。印刷時だけ他セクションを隠す。 */
+.v3665-faq-print-control[hidden]{display:none!important}
+.v3665-faq-print-control{margin:16px 0;padding:14px 18px;border:1px solid #c6d6c4;border-radius:12px;background:#f6faf4}
+.v3665-faq-print-control button{min-height:44px;padding:10px 16px;border:2px solid #42684b;border-radius:8px;background:#fff;color:#20442e;font:700 16px/1.5 system-ui,sans-serif;cursor:pointer}
+.v3665-faq-print-control button:focus-visible{outline:3px solid #ad7725;outline-offset:3px}
+.v3665-faq-print-control p{font:14px/1.7 system-ui,sans-serif;margin:8px 0 0;color:#304b36}
+@media print{
+ .v3665-faq-print-control{display:none!important}
+ body.v3665-faq-only > :not(main){display:none!important}
+ body.v3665-faq-only main#main-content > :not(#visit-faq){display:none!important}
+ body.v3665-faq-only main#main-content{margin:0!important;padding:0!important;max-width:none!important}
+ body.v3665-faq-only #visit-faq{margin:0!important;padding:0!important;background:#fff!important}
+ body.v3665-faq-only #visit-faq .wrap{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+ body.v3665-faq-only #visit-faq details{break-inside:avoid-page}
+}
+</style>
 <style>/* v36.38: FAQの質問文だけを端末内で絞り込み。JavaScript無効時は全11問を表示 */
 .v3638-faq-search[hidden],.visit-faq details[hidden],.visit-faq h3[hidden],.visit-faq nav[hidden]{display:none!important}
 .v3638-faq-search{padding:16px 18px;margin:18px 0;background:#f5f9f3;border:1px solid #bfcfbe;border-radius:12px}
@@ -76,6 +104,20 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 .v3638-faq-search p{font:14px/1.75 system-ui,sans-serif;margin:10px 0 0;color:#3a5141}
 #v3638-faq-result{font-weight:700}
 @media print{.v3638-faq-search{display:none!important}}
+/* v36.73: 検索結果へ任意で移動。入力中は焦点を奪わず、質問は開かない。 */
+#v3673-faq-jump-first[hidden]{display:none!important}
+#v3673-faq-jump-first{display:inline-block;margin-top:10px;min-height:44px;max-width:100%;white-space:normal;text-align:left}
+#visit-faq details.v33-faq summary.v3673-faq-search-focus{outline:3px solid #8a6428;outline-offset:4px;border-radius:6px;scroll-margin-top:24px}
+@media print{#v3673-faq-jump-first{display:none!important}}
+/* v36.63: FAQの直リンク先を視覚的に識別。JavaScript無効時も維持 */
+#visit-faq details.v33-faq:target,#visit-faq details.v33-faq summary:target{outline:3px solid #8a6428;outline-offset:3px;border-radius:6px;scroll-margin-top:28px}
+</style><style>/* v36.54: FAQ原文照合状態の短い箇条書き。本文・引用は不変更。 */
+.v3654-dayori-status-list{margin:0 0 16px;padding-left:1.55em;line-height:1.85;max-width:820px;color:#35483a}
+.v3654-dayori-status-list li{margin:0 0 9px}
+.v3654-dayori-status-list strong{color:#20452e}
+@media(max-width:560px){.v3654-dayori-status-list{padding-left:1.25em}}</style><style>/* v36.69: 淡色背景上の小さな見出し・注記の文字コントラストを改善。暗色ヒーローは従来色を維持。 */
+main section:not(.hero) .eyebrow, main .card small{color:#795d31}
+.breadcrumb-v11{color:#605d57}
 </style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
@@ -143,25 +185,31 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 </div></section>
 <section aria-labelledby="visit-faq-title" class="visit-faq" data-v354="first-visit-faq" id="visit-faq"><div class="wrap">
 <div class="eyebrow">QUESTIONS BEFORE VISITING</div>
+<p class="v3667-faq-print-notice" role="note">神戸妙本寺｜初参詣FAQ（非公開・制作中）<br>この印刷物は校閲・公開承認前の確認用です。配布・公開しないでください。参詣・法話会の日時、場所、費用、参加条件はこの紙では確定できません。寺院への確認が必要です。</p>
 <h2 id="visit-faq-title">初めての参詣で、気になること</h2>
 <p>気になる項目だけを選んで読めるよう、質問を3つのグループに整理しました。ここに掲載のない参加条件や当日の対応は、寺院へ直接ご確認ください。聞き慣れない言葉があれば、<a href="glossary.html">はじめての用語案内</a>もご覧いただけます。用語案内は詳細な教義解説ではなく、公開前の寺院確認が必要な説明も含みます。</p>
-<div class="v3638-faq-search" id="v3638-faq-search" hidden>
+<div class="v3638-faq-search" hidden="" id="v3638-faq-search">
 <label for="v3638-faq-query">質問を言葉で探す（このページ内のみ）</label>
-<div class="v3638-faq-search-row"><input id="v3638-faq-query" type="search" autocomplete="off" placeholder="例：予約、費用、法話会、読み方" aria-describedby="v3638-faq-help"/><button type="button" id="v3638-faq-clear">検索を消す</button></div>
-<p id="v3638-faq-help">質問文と関連する言葉（例：申し込み・参加費・子ども・途中退出）から探せます。予約や費用など未確認の事項は、確定情報と区別して案内します。入力内容は送信・保存されません。質問を開くと回答を読めます。</p>
-<p id="v3638-faq-result" role="status" aria-live="polite" aria-atomic="true"></p>
-<p id="v3638-faq-empty" hidden>一致する質問がありません。<button type="button" id="v3638-faq-reset">すべての質問に戻す</button>か、<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>をご覧ください。</p>
+<div class="v3638-faq-search-row"><input aria-describedby="v3638-faq-help" autocomplete="off" id="v3638-faq-query" placeholder="例：予約、費用、法話会、読み方" type="search"/><button id="v3638-faq-clear" type="button">検索を消す</button></div>
+<p id="v3638-faq-help">質問文と関連する言葉（例：申し込み・参加費・子ども・途中退出）から探せます。予約や費用など未確認の事項は、確定情報と区別して案内します。入力内容は送信・保存されません。質問を開くと回答を読めます。印刷時は全11問の回答を印刷対象にし、印刷後は検索と開閉状態を元に戻します。</p>
+<p aria-atomic="true" aria-live="polite" id="v3638-faq-result" role="status"></p>
+<button type="button" id="v3673-faq-jump-first" hidden>一致した最初の質問へ移動（回答は自動で開きません）</button>
+<p hidden="" id="v3638-faq-empty">一致する質問がありません。<button id="v3638-faq-reset" type="button">すべての質問に戻す</button>か、<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>をご覧ください。</p>
 </div>
-<nav class="v3631-faq-index" aria-label="よくある質問の分類">
+<nav aria-label="よくある質問の分類" class="v3631-faq-index">
 <a href="#faq-before-visit">参詣前の準備（5問）</a><a href="#faq-choose">自分のペースで知る（3問）</a><a href="#faq-contact-reading">連絡・記事の確認（3問）</a>
 </nav>
-<div class="v3634-faq-controls" id="v3634-faq-controls" hidden aria-label="質問の表示切替">
-  <button type="button" id="v3634-faq-open">11問の回答をまとめて開く</button>
-  <button type="button" id="v3634-faq-close">すべて閉じる</button>
-  <p id="v3634-faq-state" role="status" aria-live="polite">質問を選んで開けます。</p>
+<div class="v3665-faq-print-control" hidden id="v3665-faq-print-control">
+<button id="v3665-faq-print" type="button">FAQの11問だけを印刷する</button>
+<p>このボタンはFAQの質問と回答だけを印刷対象にします。印刷するかどうかはブラウザの画面で選べます。検索中でも11問すべてが対象です。非公開の制作版のため、印刷した紙も配布しないでください。</p>
+</div>
+<div aria-label="質問の表示切替" class="v3634-faq-controls" hidden="" id="v3634-faq-controls">
+<button id="v3634-faq-open" type="button">11問の回答をまとめて開く</button>
+<button id="v3634-faq-close" type="button">すべて閉じる</button>
+<p aria-live="polite" id="v3634-faq-state" role="status">質問を選んで開けます。</p>
 </div>
 <h3 class="v3631-faq-group" id="faq-before-visit">参詣前の準備</h3>
-<details class="v33-faq" id="faq-visit-terms" data-search-terms="予約 予約不要 申込 申し込み 申込み 料金 費用 参加費 お金 受付 参拝時間 開門 訪問 当日 事前連絡 法話会"><summary>参詣・法話会の予約や費用、受付時間はどう確認できますか？</summary>
+<details class="v33-faq" data-search-terms="予約 予約不要 申込 申し込み 申込み 料金 費用 参加費 お金 受付 参拝時間 開門 訪問 当日 事前連絡 法話会" id="faq-visit-terms"><summary>参詣・法話会の予約や費用、受付時間はどう確認できますか？</summary>
 <p>この非公開版では、参詣や法話会の予約の要否、費用、受付時間、参加条件を確定情報として案内していません。<a href="annual-events.html">行事予定</a>や<a href="news.html#howakai">法話会の案内</a>を参考に、訪問を決める前に<a href="contact.html#v3621-contact-topics">寺院へ必要なことだけ確認</a>してください。確認のために質問するだけでも構いません。</p></details>
 <details class="v33-faq" data-search-terms="服 装い 手ぶら マナー 持参"><summary>服装・持ち物や作法が分からない場合は？</summary>
 <p>服装・持ち物・当日の作法について、このページでは一律の決まりを案内していません。気になる点は、来寺前に<a href="contact.html">電話・メールで確認</a>できます。</p></details>
@@ -184,7 +232,7 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <details class="v33-faq" data-search-terms="メール メールアプリ 送信 コピー"><summary>メールの文例を押しても何も起きない場合は？</summary>
 <p>端末にメールアプリが設定されていない場合があります。<a href="contact.html#v3629-mail-fallback">コピーして使える文例</a>を用意しました。普段お使いのメールサービスで宛先を確認して送るか、<a href="contact.html">電話で確認</a>できます。このHPからは自動送信されません。</p></details>
 <details class="v33-faq" data-search-terms="法華講便り 文章 校閲 原文 著者 掲載許可 読み方 全文 抜粋" id="faq-dayori-status"><summary>法華講便りは、原文を確認した正式な全文ですか？</summary>
-<p>この非公開版の月別22号は、原文の正式な全文校閲と掲載許可がまだ完了していません。掲載状態は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号（2024年9月・2026年7月・10月）です。どの区分も原本との正式な全文照合や掲載許可を意味しません。原本候補と一部の文字列が一致した場合も、全文や著者範囲の確認が終わった意味ではありません。<a href="hokeko-dayori.html#reading-guide">掲載状態の説明</a>と<a href="kongetsu-shishin.html#past-issues">号ごとの表示</a>をご確認ください。</p></details>
+<p>この非公開版に収録した法華講便り22号は、すべて原文の正式な全文校閲・著者範囲の確認・掲載許可が未完了です。現在の掲載状態は次の3区分です。</p><ul class="v3654-dayori-status-list"><li><strong>16号：長文原稿候補・未校閲</strong> — 原本との正式な全文照合が未完了です。</li><li><strong>3号：本文復元案・未校閲</strong> — 本文のつながりなどを原本で確認する必要があります。</li><li><strong>3号：抜粋のみ・全文確認待ち</strong> — 2024年9月号、2026年7月号、2026年10月号です。全文の確認は未完了です。</li></ul><p>原本候補と一部の文字列が一致しても、正式な全文照合・著者範囲の確認・掲載許可が済んだことにはなりません。詳しくは<a href="hokeko-dayori.html#editorial-status">掲載状態の説明</a>と<a href="kongetsu-shishin.html#past-issues">号ごとの表示</a>をご確認ください。</p></details>
 <p>下のリンクは連絡方法の説明ページへ移動します。押すだけで電話やメールが送信されることはありません。連絡するかどうかはご自身で選べます。</p>
 <div aria-label="来寺前の確認先" class="buttons">
 <a class="button primary" href="contact.html#v3633-phone-guide">電話番号と質問方法を見る</a>
@@ -246,12 +294,17 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
     item.hidden=false;
     item.open=true;
     announce();
+    /* v36.63: FAQへの直リンク時は質問見出しにキーボード焦点を置く。
+       回答を開いてから移動し、リンク先の所在を伝える。外部操作なし。 */
+    var summary=item.querySelector('summary');
+    if(summary){
+      try{summary.focus({preventScroll:true});}catch(e){summary.focus();}
+      summary.scrollIntoView({block:'start'});
+    }
   }
   window.addEventListener('hashchange',revealLinkedQuestion);
   revealLinkedQuestion();
-  var prior=null;
-  window.addEventListener('beforeprint',function(){prior=questions.map(function(item){return item.open;});setAll(true);});
-  window.addEventListener('afterprint',function(){if(prior){questions.forEach(function(item,i){item.open=prior[i];});prior=null;announce();}});
+  /* v36.64: 印刷時の開閉状態管理は下の検索スクリプトに一本化。 */
   controls.hidden=false;announce();
 })();
 </script>
@@ -264,6 +317,9 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
   var clear=document.getElementById('v3638-faq-clear');
   var reset=document.getElementById('v3638-faq-reset');
   var status=document.getElementById('v3638-faq-result');
+  var jumpFirst=document.getElementById('v3673-faq-jump-first');
+  var faqPrintBox=document.getElementById('v3665-faq-print-control');
+  var faqPrintButton=document.getElementById('v3665-faq-print');
   var empty=document.getElementById('v3638-faq-empty');
   var index=root&&root.querySelector('.v3631-faq-index');
   var controls=document.getElementById('v3634-faq-controls');
@@ -273,6 +329,7 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
   if(questions.length!==11||groups.length!==3)return;
   function normalize(s){return (s||'').normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/\s+/g,'');}
   function render(){
+    root.querySelectorAll('.v3673-faq-search-focus').forEach(function(s){s.classList.remove('v3673-faq-search-focus');});
     var raw=(input.value||'').trim();
     var terms=raw.normalize('NFKC').split(/\s+/).map(normalize).filter(Boolean);
     var filtering=terms.length>0;
@@ -292,17 +349,50 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
     if(controls)controls.hidden=filtering;
     empty.hidden=matches!==0;
     status.textContent=filtering?matches+'問が一致しました（全11問）':'全11問を表示中';
+    if(jumpFirst)jumpFirst.hidden=!filtering||matches===0;
   }
+  /* 明示的に押した場合だけ、最初の一致質問へ移動する。開閉状態は変更しない。 */
+  if(jumpFirst){jumpFirst.addEventListener('click',function(){
+    var first=questions.find(function(q){return !q.hidden;});
+    var summary=first&&first.querySelector('summary');
+    if(!summary)return;
+    summary.classList.add('v3673-faq-search-focus');
+    summary.addEventListener('blur',function(){summary.classList.remove('v3673-faq-search-focus');},{once:true});
+    try{summary.focus({preventScroll:true});}catch(e){summary.focus();}
+    summary.scrollIntoView({block:'center',behavior:'auto'});
+  });}
   function restore(){input.value='';render();input.focus();}
   input.addEventListener('input',render);
   clear.addEventListener('click',restore);
   reset.addEventListener('click',restore);
   box.hidden=false;
   render();
-  /* 印刷時はフィルターを解除し、全質問の回答を印刷できるようにする。 */
-  var prior='';
-  window.addEventListener('beforeprint',function(){prior=input.value;input.value='';render();});
-  window.addEventListener('afterprint',function(){input.value=prior;render();});
+  if(faqPrintBox&&faqPrintButton&&typeof window.print==='function'){
+    faqPrintBox.hidden=false;
+    faqPrintButton.addEventListener('click',function(){
+      document.body.classList.add('v3665-faq-only');
+      try{window.print();}catch(e){document.body.classList.remove('v3665-faq-only');}
+    });
+  }
+  /* v36.64: 検索中や回答を閉じていても、印刷時は11問すべての回答を含める。
+     元の入力・開閉状態は印刷後に復元する（通信・保存なし）。 */
+  var printState=null;
+  window.addEventListener('beforeprint',function(){
+    if(printState)return;
+    printState={query:input.value,open:questions.map(function(q){return q.open;})};
+    input.value='';
+    render();
+    questions.forEach(function(q){q.open=true;});
+  });
+  window.addEventListener('afterprint',function(){
+    if(!printState)return;
+    var previous=printState;
+    printState=null;
+    input.value=previous.query;
+    questions.forEach(function(q,i){q.open=previous.open[i];});
+    render();
+    document.body.classList.remove('v3665-faq-only');
+  });
 })();
 </script></body>
 </html>

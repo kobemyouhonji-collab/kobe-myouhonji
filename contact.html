@@ -45,7 +45,18 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 .v3629-mail-fallback details[open] summary{border-bottom:1px solid #d6e0d3}
 .v3629-mail-fallback .v3629-template{padding:12px 16px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9;margin:0;font:16px/1.9 system-ui,sans-serif}
 .v3629-mail-fallback summary:focus-visible{outline:3px solid #9b7130;outline-offset:2px}
+/* v36.68: FAQから文例一覧に来たとき、読み上げ・キーボードの移動先を明確にする。 */
+#v3629-mail-fallback{scroll-margin-top:24px}
+#v3629-mail-fallback:target,#v3629-mail-fallback:focus{outline:3px solid #88621d;outline-offset:4px}
+@media print{#v3629-mail-fallback:target,#v3629-mail-fallback:focus{outline:none}}
 @media print{.v3629-mail-fallback details{break-inside:avoid}}
+</style><style>/* v36.61: mailtoリンクへの直リンクを安全な説明位置に変更 */
+.v3661-mail-entry{border:1px solid #b7cbb9;border-radius:12px;background:#f4f8f3;padding:clamp(14px,2.5vw,20px);margin:18px 0 8px}
+.v3661-mail-entry p{margin:0 0 12px;line-height:1.85;font-size:15px;overflow-wrap:anywhere}
+.v3661-mail-entry p:last-child{margin-bottom:0}
+.v3661-mail-entry [id]{scroll-margin-top:18px}
+.v3661-mail-entry [id]:target{outline:3px solid #85601d;outline-offset:4px;border-radius:4px}
+.v3661-mail-entry a:focus-visible{outline:3px solid #85601d;outline-offset:3px}
 </style><style>/* v36.32: 誰でも質問しやすい4種の文例 */
 .v3632-email-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
 .v3632-access-note{font:15px/1.8 system-ui,sans-serif;color:#36513d}
@@ -60,6 +71,18 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 .v3634-contact-shortcuts p{width:100%;margin:2px 0 0;font:14px/1.7 system-ui,sans-serif}
 @media(max-width:560px){.v3634-contact-shortcuts .wrap{display:grid;grid-template-columns:minmax(0,1fr)}.v3634-contact-shortcuts a{width:100%}}
 @media print{.v3634-contact-shortcuts{display:none!important}}
+</style><style>/* v36.66: 電話・メール案内の直リンク先を目視できるようにする */
+#v3621-contact-topics:target,#v3621-contact-topics:focus,
+#v3633-phone-guide:target,#v3633-phone-guide:focus{
+  outline:3px solid #88621d;outline-offset:4px;border-radius:8px;
+}
+#v3633-phone-guide{scroll-margin-top:24px}
+@media print{
+ #v3621-contact-topics:target,#v3621-contact-topics:focus,
+ #v3633-phone-guide:target,#v3633-phone-guide:focus{outline:none}
+}
+</style><style>/* v36.69: 淡色背景の小見出し・カードラベルを濃くする。暗色ヒーローの配色は変更しない。 */
+main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
 </style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
@@ -87,14 +110,14 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <h2>電話</h2>
 <p>参拝時間や当日の予定など、確実な確認が必要な場合はお電話でお問い合わせください。</p>
 <p><strong>078-861-4144</strong></p>
-<a class="action" href="tel:0788614144">電話をかける</a>
+<a class="action" href="tel:0788614144">電話アプリを開く（発信は端末で確認）</a>
 </article>
 <article class="contact-card">
 <small>EMAIL</small>
 <h2>メール</h2>
 <p>お急ぎでないお問い合わせは、メールでもご連絡いただけます。</p>
 <p><strong>kobe.myouhonji@gmail.com</strong></p>
-<a class="action" href="mailto:kobe.myouhonji@gmail.com">メールを送る</a>
+<a class="action" href="mailto:kobe.myouhonji@gmail.com">メールアプリを開く（送信前に確認）</a>
 </article>
 <article class="contact-card">
 <small>ACCESS</small>
@@ -104,7 +127,7 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 </article>
 </div>
 </div>
-</section><section aria-labelledby="v3621-contact-title" class="v3621-contact-topics" id="v3621-contact-topics"><div class="wrap">
+</section><section aria-labelledby="v3621-contact-title" class="v3621-contact-topics" id="v3621-contact-topics" tabindex="-1"><div class="wrap">
 <p class="eyebrow">ASK A QUESTION</p>
 <h2 id="v3621-contact-title">何を伝えればよいか迷う方へ</h2>
 <p>お問い合わせでは、最初から詳しく説明する必要はありません。目的に近い文例を選ぶと、メールアプリに下書きが表示されます。内容を確認・修正してから、ご自身で送信してください。</p>
@@ -115,7 +138,7 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <ol style="padding-left:1.5em;line-height:1.9;margin:9px 0 10px"><li>下の文例を選び、必要な箇所だけ編集する。</li><li>送信内容を確認し、ご自身でメールを送る。または電話で尋ねる。</li><li>寺院に日時・参加条件を確認してから、訪問を検討する。</li></ol>
 <p style="margin:0">このHPには自動予約・自動送信機能はありません。返信までの時間や受け入れ可否は確約していません。</p>
 </div>
-<div class="v3633-phone-guide" id="v3633-phone-guide" aria-labelledby="v3633-phone-title" style="border:1px solid #cbd7ca;border-radius:12px;background:#f7faf6;padding:18px;margin:18px 0">
+<div class="v3633-phone-guide" id="v3633-phone-guide" tabindex="-1" aria-labelledby="v3633-phone-title" style="border:1px solid #cbd7ca;border-radius:12px;background:#f7faf6;padding:18px;margin:18px 0">
 <h3 id="v3633-phone-title" style="margin-top:0">電話で質問したい方へ｜短い話し方の例</h3>
 <p>メールが苦手な場合は、<strong>電話で確認する方法</strong>もあります。次は、話し始めるときの一例です。読むだけで電話はかかりません。</p>
 <details><summary>初めての参詣・法話会についての電話例を表示</summary>
@@ -124,8 +147,13 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <p><a href="tel:0788614144">電話番号 078-861-4144 を確認する・発信する →</a></p>
 <p style="font-size:.95em">電話の受付時間、つながるかどうか、参加可否、費用はこのページでは確約していません。個人情報や詳しい事情は必要な範囲でのみお伝えください。</p>
 </div>
-<div class="v3621-email-actions v3632-email-actions"><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%81%B8%E3%81%AE%E5%8F%82%E8%A9%A3%E3%82%92%E8%80%83%E3%81%88%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E6%99%82%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">初めての参詣について：メール文例を開く →</a><a id="v3636-howakai-mail" href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%8A%E5%B0%8B%E3%81%AD%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%E9%96%A2%E5%BF%83%E3%81%AE%E3%81%82%E3%82%8B%E8%A1%8C%E4%BA%8B%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E7%A8%8B%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法話会・行事について：メール文例を開く →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%82%92%E8%AA%AD%E3%81%BF%E3%80%81%E8%B3%AA%E5%95%8F%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%AF%BE%E8%B1%A1%E3%81%AE%E7%99%BA%E8%A1%8C%E5%B9%B4%E6%9C%88%EF%BC%9A%0A%E8%A8%98%E4%BA%8B%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%EF%BC%9A%0A%E8%B3%AA%E5%95%8F%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法華講便りについて：メール文例を開く →</a><a id="v3632-access-question" href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E7%A7%BB%E5%8B%95%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%AE%E4%BA%8B%E5%89%8D%E7%A2%BA%E8%AA%8D&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%83%BB%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E8%A8%AA%E5%95%8F%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E8%A1%8C%E4%BA%8B%E3%83%BB%E6%97%A5%E6%99%82%EF%BC%9A%EF%BC%88%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8C%E3%81%B0%E8%A8%98%E5%85%A5%EF%BC%89%0A%E7%A7%BB%E5%8B%95%E7%B5%8C%E8%B7%AF%E3%83%BB%E5%BA%A7%E5%B8%AD%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%EF%BC%88%E5%BF%85%E8%A6%81%E3%81%AA%E7%AF%84%E5%9B%B2%E3%81%A7%E8%A8%98%E5%85%A5%EF%BC%89%0A">移動・聞こえ方などの事前確認：メール文例を開く →</a></div>
-<div class="v3629-mail-fallback" id="v3629-mail-fallback" aria-labelledby="v3629-mail-title">
+<div class="v3661-mail-entry" aria-label="メール文例を選ぶ前の案内">
+<p id="v3636-howakai-mail" tabindex="-1"><strong>法話会・行事について確認したい方へ：</strong> 下の「法話会・行事について」の文例を選ぶと、メールアプリの下書き画面が開きます。<strong>選ぶだけでは送信されません。</strong> まだ連絡しない場合は、<a href="#v3629-mail-fallback">画面上で読める文例</a>をご覧ください。</p>
+<p id="v3632-access-question" tabindex="-1"><strong>移動・座席・聞こえ方について確認したい方へ：</strong> 下の専用文例を利用できます。必要なことだけ質問し、診断名など詳しい個人情報は書かなくても構いません。<a href="#v3629-mail-fallback">アプリを開かずに文例を見る</a>こともできます。</p>
+<p id="v3661-email-action-help">以下の4つのリンクはメールアプリを開く操作です。このページからメールは自動送信されません。送信するかどうかは、ご自身で決められます。</p>
+</div>
+<div class="v3621-email-actions v3632-email-actions"><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%81%B8%E3%81%AE%E5%8F%82%E8%A9%A3%E3%82%92%E8%80%83%E3%81%88%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E6%99%82%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">初めての参詣について：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%8A%E5%B0%8B%E3%81%AD%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%E9%96%A2%E5%BF%83%E3%81%AE%E3%81%82%E3%82%8B%E8%A1%8C%E4%BA%8B%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E7%A8%8B%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法話会・行事について：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%82%92%E8%AA%AD%E3%81%BF%E3%80%81%E8%B3%AA%E5%95%8F%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%AF%BE%E8%B1%A1%E3%81%AE%E7%99%BA%E8%A1%8C%E5%B9%B4%E6%9C%88%EF%BC%9A%0A%E8%A8%98%E4%BA%8B%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%EF%BC%9A%0A%E8%B3%AA%E5%95%8F%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法華講便りについて：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E7%A7%BB%E5%8B%95%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%AE%E4%BA%8B%E5%89%8D%E7%A2%BA%E8%AA%8D&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%83%BB%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E8%A8%AA%E5%95%8F%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E8%A1%8C%E4%BA%8B%E3%83%BB%E6%97%A5%E6%99%82%EF%BC%9A%EF%BC%88%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8C%E3%81%B0%E8%A8%98%E5%85%A5%EF%BC%89%0A%E7%A7%BB%E5%8B%95%E7%B5%8C%E8%B7%AF%E3%83%BB%E5%BA%A7%E5%B8%AD%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%EF%BC%88%E5%BF%85%E8%A6%81%E3%81%AA%E7%AF%84%E5%9B%B2%E3%81%A7%E8%A8%98%E5%85%A5%EF%BC%89%0A">移動・聞こえ方などの事前確認：メール文例を開く（送信はされません） →</a></div>
+<div class="v3629-mail-fallback" id="v3629-mail-fallback" tabindex="-1" aria-labelledby="v3629-mail-title">
 <h3 id="v3629-mail-title">メールアプリが開かない場合は</h3>
 <p>以下の文例を開き、必要な部分だけコピーして、普段お使いのメールサービスに貼り付けてください。宛先は <strong>kobe.myouhonji@gmail.com</strong> です。<strong>このページから自動送信されることはありません。</strong> 電話での確認も可能です。</p>
 <details><summary>初めての参詣についての文例を表示</summary><p class="v3629-template">件名：妙本寺　初めての参詣について
@@ -169,5 +197,20 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 <p><img alt="妙本寺ホームページのQRコード" height="180" loading="lazy" src="myohonji-hp-qr.png" width="180"/></p>
 <p>このQRコードは妙本寺ホームページの案内用です。初めての方向け情報や掲載済みの行事資料をご覧いただけます。行事の日時・会場・参加方法は自動的に最新になるとは限りません。必要な場合だけ寺院へご確認ください。</p></div></section>
 </main>
+<script>/* v36.68: 説明リンク先とメール文例一覧への移動時に焦点を合わせる。送信や外部アプリ起動はしない。 */
+(function(){
+  var safeTargets={'v3636-howakai-mail':true,'v3632-access-question':true,'v3621-contact-topics':true,'v3633-phone-guide':true,'v3629-mail-fallback':true};
+  function focusExplanation(){
+    var id=window.location.hash.slice(1);
+    if(!safeTargets[id])return;
+    var target=document.getElementById(id);
+    if(!target)return;
+    try{target.focus({preventScroll:true});}catch(e){target.focus();}
+  }
+  window.addEventListener('hashchange',focusExplanation);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusExplanation);
+  else focusExplanation();
+})();
+</script>
 </body>
 </html>

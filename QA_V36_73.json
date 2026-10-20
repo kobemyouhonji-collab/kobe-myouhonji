@@ -1,0 +1,129 @@
+{
+  "version": "36.73",
+  "date": "2026-10-19",
+  "iteration": "18/24",
+  "baseline": "36.72",
+  "baseline_zip_sha256": "34faf29ec5ffd85cfd28f086f32928e368dfe2eb3a149523f084a921e22f2839",
+  "baseline_zip_testzip": null,
+  "baseline_documents_opened": [
+    "V36_72_UPDATE_REPORT.md",
+    "QA_V36_72.json",
+    "HOKKEKO_SOURCE_AUDIT_V36_24.md",
+    "HOWAKAI_CONFIRMATION_WORKSHEET_V36_28.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "changed_html": [
+    "first-visit.html"
+  ],
+  "static": {
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "counts": {
+      "href": 947,
+      "local_href": 637,
+      "fragment_href": 285,
+      "images": 23,
+      "aria-labelledby": 80,
+      "inline_js_checked": 31,
+      "aria-describedby": 3,
+      "label_for": 13,
+      "aria-controls": 1
+    },
+    "issues": [],
+    "issues_count": 0
+  },
+  "articles_unchanged": 22,
+  "original_full_collation_new": 0,
+  "formal_author_scope_verified": false,
+  "publication_permission_verified": false,
+  "browser_alternative": {
+    "method": "Chromium set_content; local CSS inline; 1px image placeholders; NOT real URL navigation",
+    "pages": [
+      "annual-events.html",
+      "contact.html",
+      "discover.html",
+      "first-visit.html",
+      "hokeko-dayori.html",
+      "index.html",
+      "news.html",
+      "site-guide.html",
+      "visit-note.html",
+      "kongetsu-shishin.html"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "standard_cases": 40,
+    "extra_root_font_cases": 20,
+    "overflow": [],
+    "js_errors": []
+  },
+  "faq_search_jump": {
+    "initial": {
+      "buttonHidden": true,
+      "questions": 11
+    },
+    "search": {
+      "status": "2問が一致しました（全11問）",
+      "buttonHidden": false,
+      "focused": "v3638-faq-query",
+      "visible": 2
+    },
+    "jump": {
+      "focusedSummary": "SUMMARY",
+      "focusedText": "参詣・法話会の予約や費用、受付時間はどう確認できますか？",
+      "outline": "solid",
+      "query": "法話会",
+      "opened": false,
+      "beforeOpened": false,
+      "url": "about:blank"
+    },
+    "no_matches": {
+      "buttonHidden": true,
+      "status": "0問が一致しました（全11問）",
+      "emptyVisible": true
+    },
+    "clear": {
+      "buttonHidden": true,
+      "status": "全11問を表示中",
+      "visible": 11,
+      "focused": "v3638-faq-query"
+    },
+    "no_js": {
+      "searchHidden": true,
+      "buttonHidden": true,
+      "questions": 11
+    },
+    "keyboard_followup": {
+      "Enter": "focused summary opens its own answer",
+      "Tab": "focus advances to the answer link for annual-events.html",
+      "tested_in": "Chromium set_content at 390px"
+    }
+  },
+  "actual_navigation": {
+    "cross_page_verified": false,
+    "reason": "Local http:// and file:// browser navigation returned net::ERR_BLOCKED_BY_ADMINISTRATOR. Only set_content alternative possible."
+  },
+  "not_tested": [
+    "real cross-page navigation",
+    "physical mobile",
+    "screen reader",
+    "actual 200% and 400% browser zoom",
+    "paper print",
+    "actual mail/phone applications",
+    "real photo rendering"
+  ],
+  "prohibited_external_actions_performed": false,
+  "publishable": false,
+  "zip_exclusions_for_limit": [
+    "V36_66_UPDATE_REPORT.md",
+    "QA_V36_71.json"
+  ],
+  "planned_zip_member_count": 99
+}

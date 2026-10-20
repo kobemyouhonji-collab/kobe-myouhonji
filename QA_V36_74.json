@@ -1,0 +1,100 @@
+{
+  "version": "36.74",
+  "date": "2026-10-19",
+  "iteration": "19/24",
+  "baseline": "36.73",
+  "baseline_zip_sha256": "4ad89b0aa5698eb9c41b987b325f29fa63e50e6f5193f4a7f2342c12e2092fed",
+  "baseline_zip_testzip": null,
+  "baseline_documents_opened": [
+    "V36_73_UPDATE_REPORT.md",
+    "QA_V36_73.json",
+    "HOKKEKO_SOURCE_AUDIT_V36_24.md",
+    "HOWAKAI_CONFIRMATION_WORKSHEET_V36_28.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "changed_html": [
+    "visit-note.html"
+  ],
+  "original_full_collation_new": 0,
+  "formal_author_scope_verified": false,
+  "publication_permission_verified": false,
+  "articles_unchanged": 22,
+  "static": {
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "counts": {
+      "href": 947,
+      "fragment_href": 285,
+      "local_href": 754,
+      "images": 23,
+      "aria-labelledby": 80,
+      "inline_js_checked": 31,
+      "aria-describedby": 3,
+      "label_for": 13,
+      "aria-controls": 1
+    },
+    "issues": [],
+    "issues_count": 0
+  },
+  "browser_alternative": {
+    "method": "Chromium set_content with local v33.css inline, images 1px placeholders; not real URL navigation or physical devices",
+    "pages": [
+      "annual-events.html",
+      "contact.html",
+      "discover.html",
+      "first-visit.html",
+      "hokeko-dayori.html",
+      "index.html",
+      "news.html",
+      "site-guide.html",
+      "visit-note.html",
+      "kongetsu-shishin.html"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "standard_cases": 40,
+    "extra_root_font_cases": 20,
+    "overflow": [],
+    "js_errors": []
+  },
+  "visit_note_print_warning": {
+    "screen": {
+      "display": "none",
+      "visible": false,
+      "text": "神戸妙本寺｜参詣前の確認メモ（非公開・制作中）校閲・公開承認前の確認用です。外部配布・公開はしないでください。参詣・法話会の日時・場所・費用・参加条件は寺院による確認が必要です。記入内容を含む印刷物はご自身で管理してください。"
+    },
+    "print": {
+      "display": "block",
+      "visible": true,
+      "top": -851,
+      "text": "神戸妙本寺｜参詣前の確認メモ（非公開・制作中）校閲・公開承認前の確認用です。外部配布・公開はしないでください。参詣・法話会の日時・場所・費用・参加条件は寺院による確認が必要です。記入内容を含む印刷物はご自身で管理してください。"
+    },
+    "before": {
+      "checked": true,
+      "note": "法話会の日時を確認したい"
+    },
+    "after": {
+      "display": "none",
+      "checked": true,
+      "note": "法話会の日時を確認したい"
+    },
+    "no_js_screen_display": "none",
+    "no_js_print_display": "block",
+    "preview": "V36_74_visit_note_print_preview_390.png",
+    "is_actual_pdf_or_paper_print": false
+  },
+  "limitations": [
+    "Real page-to-page URL navigation not tested: Chromium administrator policy blocks local/remote navigation",
+    "Smartphone hardware, screen readers, actual browser zoom, paper print, phone and mail apps not tested",
+    "The root-font 200%/400% tests are not actual browser zoom",
+    "No original Word or paper source collated in this iteration",
+    "No formal approval for article publication, authorship or howakai details"
+  ]
+}

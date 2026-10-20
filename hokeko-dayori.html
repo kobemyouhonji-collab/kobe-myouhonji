@@ -34,7 +34,16 @@ main section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:clamp(
 .v3623-howto{margin:32px 0;background:#f7faf7;border:1px solid #dde7dd;border-radius:16px;padding:22px}.v3623-howto ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:18px 0}.v3623-howto li{padding:14px;background:white;border-radius:10px;line-height:1.8}.v3623-howto li strong{display:block;color:#294e38}.v3623-howto p{line-height:1.85}.v3623-howto .small{font-size:.94rem}
 @media(max-width:690px){.v3623-howto ol{grid-template-columns:1fr}.v3623-howto{padding:16px}}
 </style>
-</head>
+<style>/* v36.69: 法華講便り入口の淡色背景にある小見出し・注記を読みやすくする。原稿本文は変更しない。 */
+main .eyebrow,.hero .eyebrow{color:#795d31}
+.breadcrumb,.source{color:#605d57}
+</style>
+<style>/* v36.70: 原文確認状態と読み方を別々の到達先として明確化 */
+#editorial-status,#reading-guide{scroll-margin-top:26px}
+#editorial-status:target,#editorial-status:focus,#reading-guide:target,#reading-guide:focus{
+ outline:3px solid #8a6428;outline-offset:4px;
+}
+</style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <div class="breadcrumb"><div class="wrap"><a href="./">トップ</a> › <a href="news.html">お知らせ・活動報告</a> › 法華講便り</div></div>
@@ -42,7 +51,8 @@ main section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:clamp(
 <nav aria-label="法華講便りのページ内案内" class="v3625-quicklinks" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
 <a class="btn primary" href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）を読む</a>
 <a class="btn" href="kongetsu-shishin.html#past-issues">年・月・題名から探す（22号）</a>
-<a class="btn" href="#reading-guide">掲載状態と読み方</a>
+<a class="btn" href="#editorial-status">原文・掲載許可の確認状況</a>
+<a class="btn" href="#reading-guide">読むときの3つの手順</a>
 </nav></div></div>
 <main class="wrap" id="main-content">
 <section aria-labelledby="guidance-heading" id="monthly-guidance">
@@ -66,12 +76,12 @@ main section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:clamp(
 <p>まずは読むだけでも構いません。気になることがあれば、必要なときに<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>を確認できます。</p>
 </div></section>
 
-<aside class="v3627-editorial-status" aria-label="法華講便りの原文確認状況">
+<aside class="v3627-editorial-status" id="editorial-status" tabindex="-1" aria-label="法華講便りの原文確認状況（全22号未確認）">
 <strong>原文と掲載許可の確認状況</strong>
 <p>この非公開版に整理した22号は、すべて原本との全文照合・掲載許可の最終確認が完了していません。掲載状態は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号です。文章が表示されていても、正式に校閲された全文という意味ではありません。</p>
 <p>詳しい確認状況は<a href="first-visit.html#faq-dayori-status">初めての方向けFAQ「原文の確認状態」</a>でもご案内しています。記事の確認が完了するまでは、公開用のHPへ掲載しません。内容を知りたい方は、<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>をご覧ください。</p>
 </aside>
-<section aria-labelledby="v3623-reading-title" class="v3623-howto" id="reading-guide">
+<section aria-labelledby="v3623-reading-title" class="v3623-howto" id="reading-guide" tabindex="-1">
 <h2 id="v3623-reading-title">初めて読む方へ｜3つの手順</h2>
 <p class="v3633-reader-hint" style="background:#f7faf6;border-left:4px solid #5d765e;padding:12px 16px;line-height:1.9"><strong>読みやすさの設定：</strong>各月の記事には「本文の文字を大きくする」ボタンがあります。必要なときだけ文字を拡大し、同じボタンで元に戻せます。切り替えは表示中のページだけに反映され、入力や閲覧状況は送信・保存されません。記事の文章は校閲前の掲載候補であり、文字を拡大しても確認状態は変わりません。</p>
 <ol>
@@ -94,4 +104,18 @@ main section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:clamp(
 </section>
 </main>
 <footer>妙本寺　〒657-0837 兵庫県神戸市灘区原田通3丁目1-1<br/><a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></footer>
-</body></html>
+<script>/* v36.70: 参照先の説明へキーボード焦点を移す。通信・外部操作なし。 */
+(function(){
+  function focusReadingAnchor(){
+    var id=(location.hash||'').slice(1);
+    if(id!=='editorial-status'&&id!=='reading-guide')return;
+    var target=document.getElementById(id);
+    if(!target)return;
+    try{target.focus({preventScroll:true});}catch(e){target.focus();}
+    target.scrollIntoView({block:'start'});
+  }
+  window.addEventListener('hashchange',focusReadingAnchor);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusReadingAnchor);
+  else focusReadingAnchor();
+})();
+</script></body></html>

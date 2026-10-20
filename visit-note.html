@@ -9,7 +9,7 @@
 <style>
 :root{--ink:#26362c;--accent:#355743;--line:#cbd6cd;--paper:#faf9f4}
 *{box-sizing:border-box}html{font-size:16px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;line-height:1.8;overflow-wrap:anywhere}
-a{color:#234e37;text-underline-offset:3px}a:focus-visible,button:focus-visible{outline:3px solid #bd7f26;outline-offset:4px}
+a{color:#234e37;text-underline-offset:3px}a:focus-visible,button:focus-visible,input[type="checkbox"]:focus-visible{outline:3px solid #bd7f26;outline-offset:4px}
 .wrap{width:min(800px,calc(100% - 28px));margin:auto}.skip{position:absolute;left:8px;top:-100px;background:#fff;padding:8px}.skip:focus{top:8px}
 header{background:#fff;border-bottom:1px solid var(--line);padding:14px 0}.brand{font-weight:700;text-decoration:none;font-size:1.1rem}
 .crumb{font-size:.84rem;margin:18px 0;color:#516257}.crumb a{color:inherit}
@@ -17,11 +17,28 @@ main{padding-bottom:50px}h1{font-size:clamp(1.65rem,4.5vw,2.35rem);line-height:1
 .lead{max-width:66ch}.badge{display:inline-block;background:#e7f0e8;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.78rem;font-weight:700}
 .note{border-left:4px solid #668b6e;background:#edf3ec;padding:12px 15px;margin:20px 0}
 .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(16px,3vw,26px);margin:20px 0;break-inside:avoid}
-.checklist{list-style:none;margin:0;padding:0}.checklist li{display:flex;align-items:flex-start;gap:11px;margin:10px 0}.checklist input{width:19px;height:19px;margin-top:5px;flex:0 0 19px;accent-color:var(--accent)}
+.checklist{list-style:none;margin:0;padding:0}
+.checklist li:not(.small) label{display:flex;align-items:center;min-height:44px;cursor:pointer}.v3655-checktext{min-width:0}.v3655-checktext a{display:inline-flex;align-items:center;min-height:44px;padding:7px 0;margin:3px 0 6px;font-size:.9rem}
+.v3655-digital-note{margin:14px 0 18px;padding:15px;border:1px solid #b7c9ba;border-radius:9px;background:#f3f8f2}
+.v3655-digital-note label{display:block;margin-bottom:6px}.v3655-digital-note textarea{display:block;width:100%;max-width:100%;min-height:120px;padding:10px 12px;border:2px solid #6e8b73;border-radius:7px;color:var(--ink);background:#fff;font:inherit;line-height:1.6;resize:vertical}
+.v3655-digital-note textarea:focus-visible,.v3655-note-actions button:focus-visible{outline:3px solid #bd7f26;outline-offset:3px}
+.v3655-note-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:10px}.v3655-note-actions button{font:700 .9rem system-ui,sans-serif;min-height:44px;padding:8px 14px;background:#fff;border:1px solid #5a765f;border-radius:7px;color:#284532;cursor:pointer}
+.v3655-note-actions span{font-size:.9rem}.v3655-print-note{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:560px){.v3655-digital-note{padding:12px}.v3655-digital-note textarea{font-size:16px}}
+.checklist li{display:flex;align-items:flex-start;gap:11px;margin:10px 0}.checklist input{width:24px;height:24px;margin-top:10px;flex:0 0 24px;accent-color:var(--accent)}
 .line{border-bottom:1px dotted #8a9c8e;min-height:2.3rem;margin:8px 0}.prompt{font-weight:700}.small{font-size:.9rem;color:#425b49}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}.btn{display:inline-block;border:1px solid var(--accent);border-radius:7px;padding:10px 15px;text-decoration:none;background:#fff;color:var(--accent);font-weight:700;cursor:pointer;font:700 .95rem system-ui,sans-serif}.btn.primary{background:var(--accent);color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}.btn{display:inline-block;border:1px solid var(--accent);border-radius:7px;padding:10px 15px;text-decoration:none;background:#fff;color:var(--accent);font-weight:700;cursor:pointer;font:700 .95rem system-ui,sans-serif}.btn.primary{background:var(--accent);color:#fff}#v3659-print[hidden]{display:none!important}
 footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
-@media print{@page{size:A4;margin:13mm}html{font-size:10.5pt}body{background:#fff;color:#000}.wrap{width:100%;max-width:none}header,.crumb,.actions,.skip,footer{display:none!important}main{padding:0}.panel{border:1px solid #888;margin:11px 0;padding:11px;border-radius:0}.note{background:#fff;border-color:#666;margin:10px 0;padding:8px}.line{min-height:1.5rem}.checklist li{margin:6px 0}.badge{background:#fff;border-color:#aaa}.lead{margin:5px 0}h1{font-size:20pt}h2{font-size:13pt}.small{font-size:9pt}}
+@media print{.panel{break-inside:auto}/* v36.60: 印刷時に自由記入欄と確認先の枠を途中で分断しない（500文字上限で検証） */.panel[aria-labelledby="questions"],.panel[aria-labelledby="next"]{break-inside:avoid-page;page-break-inside:avoid}.panel h2{break-after:avoid}.checklist li{break-inside:avoid}.checklist li:not(.small) label{min-height:0}.checklist input{width:16px;height:16px;margin-top:4px;flex:0 0 16px}.v3655-checktext a{min-height:0;padding:0}.v3655-digital-note{display:none!important}.v3655-print-note:not([hidden]){display:block;border:1px solid #888;padding:10px;white-space:pre-wrap;overflow-wrap:anywhere;min-height:50px}.v3655-has-print-note .line{display:none}
+@page{size:A4;margin:13mm}html{font-size:10.5pt}body{background:#fff;color:#000}.wrap{width:100%;max-width:none}header,.crumb,.actions,.skip,footer,#v3659-print-help{display:none!important}main{padding:0}.panel{border:1px solid #888;margin:11px 0;padding:11px;border-radius:0}.note{background:#fff;border-color:#666;margin:10px 0;padding:8px}.line{min-height:1.5rem}.checklist li{margin:6px 0}.badge{background:#fff;border-color:#aaa}.lead{margin:5px 0}h1{font-size:20pt}h2{font-size:13pt}.small{font-size:9pt}}
+
+/* v36.74: 印刷して持ち出される確認メモにも、非公開・未承認状態を明示する。 */
+.v3674-print-warning{display:none!important}
+@media print{
+ .v3674-print-warning{display:block!important;border:1.5px solid #222;background:#fff;color:#111;
+   font:700 10pt/1.5 system-ui,sans-serif;padding:7px 10px;margin:0 0 9px;
+   break-inside:avoid-page;page-break-inside:avoid}
+}
 </style>
 </head>
 <body>
@@ -29,14 +46,15 @@ footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
 <header><div class="wrap"><a class="brand" href="./">日蓮正宗 妙本寺</a></div></header>
 <div class="wrap"><nav class="crumb" aria-label="パンくずリスト"><a href="./">トップ</a> › <a href="first-visit.html">初めての方へ</a> › <span aria-current="page">参詣前の確認メモ</span></nav>
 <main id="main">
+<p class="v3674-print-warning" role="note">神戸妙本寺｜参詣前の確認メモ（非公開・制作中）<br>校閲・公開承認前の確認用です。外部配布・公開はしないでください。参詣・法話会の日時・場所・費用・参加条件は寺院による確認が必要です。記入内容を含む印刷物はご自身で管理してください。</p>
 <span class="badge">印刷して使える・記入は任意</span>
 <h1>参詣前の確認メモ</h1>
 <p class="lead">初めての参詣や法話会について、気になることを整理するためのメモです。<strong>参加・入信を申し込む用紙ではありません。</strong>必要なところだけ使ってください。</p>
 <p class="note">このページは記入内容を送信・保存しません。行事の開催日、受付方法、服装、費用、家族同伴の可否などは、訪問前に妙本寺へ確認してください。</p>
 <section class="panel" aria-labelledby="interest"><h2 id="interest">1　関心のあること</h2>
-<ul class="checklist"><li><input type="checkbox" id="i1"><label for="i1">御住職のお言葉・<a href="hokeko-dayori.html">法華講便り</a>を読んでみたい</label></li>
+<ul class="checklist"><li><input type="checkbox" id="i1"><div class="v3655-checktext"><label for="i1">御住職のお言葉・法華講便りを読んでみたい</label><a href="hokeko-dayori.html">法華講便りの案内を読む（別ページ）</a></div></li>
 <li class="small">※ この非公開版の月別22号は原文の正式な全文照合・掲載許可が未完了です。確認済みの全文ではありません。</li>
-<li><input type="checkbox" id="i2"><label for="i2"><a href="news.html#howakai">法話会</a>について知りたい</label></li>
+<li><input type="checkbox" id="i2"><div class="v3655-checktext"><label for="i2">法話会について知りたい</label><a href="news.html#howakai">法話会の確認方法を見る（別ページ）</a></div></li>
 <li><input type="checkbox" id="i3"><label for="i3">初めての参詣について相談したい</label></li>
 <li><input type="checkbox" id="i4"><label for="i4">家族と訪れることについて確認したい</label></li></ul></section>
 <section class="panel" aria-labelledby="confirm"><h2 id="confirm">2　訪問前に確認したいこと</h2>
@@ -50,12 +68,61 @@ footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
 <section class="panel" aria-labelledby="questions"><h2 id="questions">3　聞いてみたいこと（自由記入）</h2>
 <p class="prompt">例：「法話会はどんな内容ですか」「作法が分からなくても大丈夫ですか」</p>
 <p class="small">法華講便りについて質問する場合は、気になった号の<strong>発行年・月・題名</strong>を下の余白に控えると、問い合わせ時に説明しやすくなります。原稿候補は正式な全文校閲・掲載許可が未完了です。</p>
-<div class="line" aria-label="メモ欄"></div><div class="line" aria-hidden="true"></div><div class="line" aria-hidden="true"></div>
+<div class="v3655-digital-note" id="v3655-digital-note" hidden>
+<label for="v3655-note-text"><strong>スマートフォン・パソコンで入力するメモ（任意）</strong></label>
+<p class="small" id="v3655-note-help">入力内容はサイトへ送信されず、このページに保存する機能もありません。印刷時は入力内容を紙面に反映できます。共有端末では「文字メモを消す」と「チェックをすべて外す」をご利用ください。ブラウザの戻る操作などで入力が一時的に復元される場合があります。</p>
+<textarea id="v3655-note-text" rows="4" maxlength="500" autocomplete="off" aria-describedby="v3655-note-help" placeholder="例：法話会の開始時刻を確認したい（名前や個人情報は不要）"></textarea>
+<div class="v3655-note-actions"><button type="button" id="v3655-note-clear">文字メモを消す</button><button type="button" id="v3657-uncheck">チェックをすべて外す</button><span id="v3655-note-status" role="status" aria-live="polite"></span></div>
+</div>
+<div id="v3655-print-note" class="v3655-print-note" hidden aria-hidden="true"></div>
+<div class="line" aria-label="手書き用のメモ欄"></div><div class="line" aria-hidden="true"></div><div class="line" aria-hidden="true"></div>
 <p class="small">自分の名前や詳しい事情を、このメモに書く必要はありません。</p></section>
 <section class="panel" aria-labelledby="next"><h2 id="next">4　次に確認する場所</h2>
 <p><strong>妙本寺</strong>　兵庫県神戸市灘区原田通3丁目1-1<br>電話：078-861-4144<br>メール：kobe.myouhonji@gmail.com</p>
 <p>このメモにある電話番号・メールアドレスは確認用の表示です。押しただけで外部アプリを開くリンクにはしていません。道順・連絡方法・質問文例は<a href="contact.html#v3621-contact-topics">お問い合わせ・アクセスの説明</a>で確認できます。連絡するかどうかは、ご自身の判断でお決めください。</p></section>
-<div class="actions"><button class="btn primary" type="button" onclick="window.print()">このメモを印刷する</button><a class="btn" href="first-visit.html">初めての方向け案内へ戻る</a><a class="btn" href="contact.html#v3621-contact-topics">問い合わせ文例を見る</a></div>
+<div class="actions"><button class="btn primary" type="button" id="v3659-print" hidden>このメモを印刷する</button><a class="btn" href="first-visit.html">初めての方向け案内へ戻る</a><a class="btn" href="contact.html#v3621-contact-topics">問い合わせ文例を見る</a></div>
+<p class="small" id="v3659-print-help">印刷ボタンが表示されない場合や動作しない場合は、ブラウザの「印刷」メニューをご利用ください。パソコンでは Ctrl＋P（Macは Command＋P）でも印刷画面を開けます。印刷しない場合は、このページを読むだけでも構いません。</p>
 </main></div>
 <footer><div class="wrap">日蓮正宗 妙本寺｜<a href="./">トップページ</a></div></footer>
+<script>
+/* v36.55: 画面内だけの任意メモ。ネットワーク送信・ストレージ利用なし。 */
+(function(){
+  var panel=document.getElementById('v3655-digital-note');
+  var note=document.getElementById('v3655-note-text');
+  var clear=document.getElementById('v3655-note-clear');
+  var uncheck=document.getElementById('v3657-uncheck');
+  var status=document.getElementById('v3655-note-status');
+  var printNote=document.getElementById('v3655-print-note');
+  if(!panel||!note||!clear||!uncheck||!status||!printNote)return;
+  panel.hidden=false;
+  // v36.59: JavaScript無効時に反応しない印刷ボタンを表示しない。
+  var printButton=document.getElementById('v3659-print');
+  if(printButton&&typeof window.print==='function'){
+    printButton.hidden=false;
+    printButton.addEventListener('click',function(){window.print();});
+  }
+  clear.addEventListener('click',function(){note.value='';status.textContent='文字メモを消しました。チェック欄は変更していません。';note.focus();});
+  var checks=Array.prototype.slice.call(document.querySelectorAll('main .checklist input[type="checkbox"]'));
+  uncheck.addEventListener('click',function(){
+    checks.forEach(function(box){box.checked=false;});
+    status.textContent='チェックをすべて外しました。文字メモは残っています。';
+    uncheck.focus();
+  });
+  // v36.58: 手動で再チェックした後に「すべて外しました」が残る誤案内を防ぐ。
+  checks.forEach(function(box){box.addEventListener('change',function(){
+    var count=checks.filter(function(item){return item.checked;}).length;
+    status.textContent='チェック欄を変更しました。現在'+count+'件／'+checks.length+'件を選択中です。';
+  });});
+  note.addEventListener('input',function(){status.textContent='';});
+  window.addEventListener('beforeprint',function(){
+    var value=note.value.trim();
+    printNote.textContent=value;
+    printNote.hidden=!value;
+    document.body.classList.toggle('v3655-has-print-note',!!value);
+  });
+  window.addEventListener('afterprint',function(){
+    printNote.hidden=true;printNote.textContent='';document.body.classList.remove('v3655-has-print-note');
+  });
+})();
+</script>
 </body></html>

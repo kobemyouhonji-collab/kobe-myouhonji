@@ -78,6 +78,16 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 #v3637-year-state{font:14px/1.6 system-ui,sans-serif;color:#34513c}
 @media(max-width:500px){.v3637-year-controls button{flex:1 1 100%}}
 @media print{.v3637-year-controls{display:none!important}}
+</style><style>/* v36.72: 検索結果へ任意に焦点を移す。検索中かつ一致時のみ表示。 */
+#v3672-jump-first[hidden]{display:none!important}
+#v3672-jump-first{min-height:44px;max-width:100%;margin:6px 0 8px;padding:10px 14px;border:2px solid #45634e;border-radius:8px;background:#f2f7f0;color:#173c26;font:700 15px/1.6 system-ui,sans-serif;cursor:pointer;white-space:normal;text-align:left}
+#v3672-jump-first:focus-visible{outline:3px solid #b7812d;outline-offset:3px}
+.month-card.v3672-search-focus{outline:3px solid #8a6428;outline-offset:3px}
+@media print{#v3672-jump-first{display:none!important}}
+</style><style>/* v36.71: 年・月別一覧の深いリンク先を視認可能にする */
+#past-issues{scroll-margin-top:26px}
+#past-issues:target,#past-issues:focus{outline:3px solid #8a6428;outline-offset:4px;border-radius:8px}
+@media print{#past-issues:target,#past-issues:focus{outline:none}}
 </style></head>
 <body>
 <a class="skip" href="#main-content">本文へ移動</a>
@@ -88,10 +98,10 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 <section aria-labelledby="current"><h2 id="current">この版で案内する2026年10月号</h2><div class="box"><p><span class="tag">令和8年10月号・抜粋のみ／全文確認待ち</span></p><h3>継続は力なり</h3><p>この非公開版に収録した2026年10月号の短い抜粋です。現在の年月に合わせて自動更新される案内ではありません。著者範囲、全文、校閲、掲載許可は寺院確認待ちです。</p><p><a class="cta" href="hokeko-dayori-2026-10.html">2026年10月号（抜粋・全文確認待ち）を読む →</a></p></div></section>
 
 <div class="v3623-issue-nav" aria-label="法華講便りの探し方"><h2>読みたいところから選べます</h2>
-<div class="links"><a href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）</a><a href="#past-issues">年・月別に探す</a><a href="hokeko-dayori.html#reading-guide">読み方と掲載状態を知る</a></div>
+<div class="links"><a href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）</a><a href="#past-issues">年・月別に探す</a><a href="hokeko-dayori.html#editorial-status">原文・掲載許可の確認状況</a></div>
 <p>令和8年10月号は全文確認待ちです。月別の記事は寺院による原文校閲前の下書きであり、正式な全文確認済みではありません。</p>
 </div>
-<section aria-labelledby="archive" id="past-issues"><h2 id="archive">過去の法華講便り</h2><div class="v3621-archive-help"><strong>読みたい年をタップし、月を選んでください。</strong> この非公開版の22号は「長文原稿候補・未校閲」16号、「本文復元案・未校閲」3号、「抜粋のみ・全文確認待ち」3号に分けています。いずれも原文全文校閲・著者範囲確認・掲載許可は未完了です。 <a href="hokeko-dayori.html#monthly-guidance">表示の違いを見る →</a></div>
+<section aria-labelledby="archive" id="past-issues" tabindex="-1"><h2 id="archive">過去の法華講便り</h2><div class="v3621-archive-help"><strong>読みたい年をタップし、月を選んでください。</strong> この非公開版の22号は「長文原稿候補・未校閲」16号、「本文復元案・未校閲」3号、「抜粋のみ・全文確認待ち」3号に分けています。いずれも原文全文校閲・著者範囲確認・掲載許可は未完了です。 <a href="hokeko-dayori.html#monthly-guidance">表示の違いを見る →</a></div>
 <p>年を開いて月を選ぶと、<strong>御住職のお言葉として整理した本文候補・一部抜粋</strong>を読めます。過去号の行事予定や他の執筆者の文章は掲載対象としていません。ただし、御住職の文章と他の執筆者の文章との境界は寺院による最終確認待ちです。</p>
 <p class="archive-explainer">HP掲載用に整理した令和5年11・12月、令和6年1〜11月、令和7年1月、および令和8年1・2・5〜10月の計22号を掲載。令和8年3月号は御住職の記名はありますが本文を確認できず、4月号は未提供のため、抜粋を掲載していません。</p>
 <p class="v3629-audit-note"><strong>原文確認について：</strong>対象22号の内訳は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号です。22号すべて正式な全文校閲・著者範囲の確認・掲載許可は未完了です。一部の号で原本候補と抜粋の文字列が一致した場合も、著者範囲や全文の正確さまで確認できたという意味ではありません。号ごとの「校閲前」「抜粋」等の表示をご確認ください。<a href="first-visit.html#faq-dayori-status">「正式な全文ですか？」という質問への説明</a>も確認できます。用語が分からない場合は、<a href="glossary.html">はじめての用語案内</a>も参照できます（詳しい教義・掲載内容は寺院確認待ちです）。</p>
@@ -113,6 +123,7 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
 <button type="button" data-v3629-query="2024年9月">2024年9月号</button>
 </div>
 <p id="v3628-result-count" role="status" aria-live="polite" aria-atomic="true">全22号を収録（年を開いて選べます）</p>
+<button type="button" id="v3672-jump-first" hidden>一致した最初の号へ移動（記事は開きません）</button>
 <p id="v3628-no-results" hidden>一致する号がありません。別の言葉で探すか、検索を消してください。掲載のない月や原文確認については、<a href="first-visit.html#faq-dayori-status">原文確認状態のFAQ</a>をご覧ください。質問する場合は<a href="contact.html#v3629-mail-fallback">法華講便りの問い合わせ文例</a>を使えます。連絡は任意です。</p>
 </div>
 <details class="year-archive" open=""><summary>2026年（令和8年）｜8号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2026-10.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>10月号「継続は力なり」</strong><span>掲載中の短い抜粋を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-09.html"><span class="tag">長文原稿候補・未校閲</span><strong>9月号「唱題の意義を考える」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-08.html"><span class="tag">長文原稿候補・未校閲</span><strong>8月号「三世の生命について」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-07.html"><span class="tag">抜粋のみ・全文確認待ち</span><strong>7月号「信心は清浄に」</strong><span>掲載中の短い抜粋を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-06.html"><span class="tag">長文原稿候補・未校閲</span><strong>6月号「五濁悪世の不幸を救うために」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-05.html"><span class="tag">長文原稿候補・未校閲</span><strong>5月号「心自体があなたの生活内容を決める」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-02.html"><span class="tag">長文原稿候補・未校閲</span><strong>2月号「心の時間を有意義に」</strong><span>校閲前の本文候補を見る →</span></a><a class="month-card" href="hokeko-dayori-2026-01.html"><span class="tag">長文原稿候補・未校閲</span><strong>1月号「新年の辞」</strong><span>校閲前の本文候補を見る →</span></a><div class="notice">3月号：御住職の記名はありますが、提供Wordファイルに本文を確認できないため掲載保留。4月号：原稿未提供。</div></div></details><details class="year-archive" open=""><summary>2025年（令和7年）｜1号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2025-01.html"><span class="tag">長文原稿候補・未校閲</span><strong>1月号「充ちる唱題・実る折伏」</strong><span>校閲前の本文候補を見る →</span></a></div></details><details class="year-archive"><summary>2024年（令和6年）｜11号</summary><div class="year-items"><a class="month-card" href="hokeko-dayori-2024-11.html"><span class="tag">長文原稿候補・未校閲</span><strong>11月号「日目上人さま」</strong><span>校閲前の本文候補を見る →</span></a>
@@ -143,6 +154,7 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
   var clear=document.getElementById('v3628-search-clear');
   var count=document.getElementById('v3628-result-count');
   var empty=document.getElementById('v3628-no-results');
+  var jumpFirst=document.getElementById('v3672-jump-first');
   var root=document.getElementById('past-issues');
   if(!area||!input||!clear||!count||!empty||!root)return;
   var years=Array.prototype.slice.call(root.querySelectorAll('details.year-archive'));
@@ -169,6 +181,7 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
   });
   function render(){
     /* v36.34: 「2024年9月」と複数語の両方を検索できるようにする */
+    root.querySelectorAll('.v3672-search-focus').forEach(function(a){a.classList.remove('v3672-search-focus');});
     var raw=(input.value||'').normalize('NFKC').toLocaleLowerCase('ja-JP')
       .replace(/(\d{4}年|令和\s*\d{1,2}年)\s*(\d{1,2})月/g,function(_,year,month){return year+' '+Number(month)+'月';})
       .replace(/(\d{4})[\/.-](\d{1,2})(?:月)?/g,function(_,year,month){return year+'年 '+Number(month)+'月';}).trim();
@@ -188,6 +201,7 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
     });
     count.textContent=q?matches+'号が一致しました':'全'+matches+'号を収録（年を開いて選べます）';
     empty.hidden=matches!==0;
+    if(jumpFirst)jumpFirst.hidden=!q||matches===0;
   }
   area.hidden=false;
   var presets=document.getElementById('v3629-search-presets');
@@ -201,9 +215,36 @@ main section{padding:36px 0 52px;border-bottom:1px solid var(--border)}h2{font-s
       });
     });
   }
+  /* 検索入力中に自動で焦点を奪わず、本人が選んだときだけ最初の一致リンクへ移す。 */
+  if(jumpFirst){jumpFirst.addEventListener('click',function(){
+    var first=null;
+    entries.some(function(group){
+      if(group.year.hidden)return false;
+      return group.links.some(function(item){if(!item.node.hidden){first=item.node;return true;}return false;});
+    });
+    if(!first)return;
+    first.classList.add('v3672-search-focus');
+    first.addEventListener('blur',function(){first.classList.remove('v3672-search-focus');},{once:true});
+    try{first.focus({preventScroll:true});}catch(e){first.focus();}
+    first.scrollIntoView({behavior:'instant',block:'center'});
+  });}
   input.addEventListener('input',render);
   clear.addEventListener('click',function(){input.value='';render();input.focus();});
   render();
+})();
+</script>
+<script>/* v36.71: ページ内／直接リンクで年・月別一覧に着地した場合のみ焦点を移す。外部通信なし。 */
+(function(){
+  function focusArchive(){
+    if(location.hash!=='#past-issues')return;
+    var target=document.getElementById('past-issues');
+    if(!target)return;
+    try{target.focus({preventScroll:true});}catch(e){target.focus();}
+    target.scrollIntoView({block:'start'});
+  }
+  window.addEventListener('hashchange',focusArchive);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusArchive);
+  else focusArchive();
 })();
 </script>
 </body>
