@@ -1,0 +1,147 @@
+{
+  "version": "36.76",
+  "date": "2026-10-19",
+  "iteration": "21/24",
+  "baseline": "36.75",
+  "baseline_zip_sha256": "e93d6c8e257690cb0f661b9fe95d7b7c978dd08aede9670fdbb9d9d98a975079",
+  "baseline_zip_testzip": null,
+  "baseline_documents_opened": [
+    "V36_75_UPDATE_REPORT.md",
+    "QA_V36_75.json",
+    "HOKKEKO_SOURCE_AUDIT_V36_24.md",
+    "HOWAKAI_CONFIRMATION_WORKSHEET_V36_28.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "changed_html": [
+    "first-visit.html"
+  ],
+  "articles_unchanged": 22,
+  "articles_changed": [],
+  "original_full_collation_new": 0,
+  "formal_author_scope_verified": false,
+  "publication_permission_verified": false,
+  "static": {
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "counts": {
+      "href": 780,
+      "local_href": 737,
+      "fragment_href": 285,
+      "jsonld_checked": 47,
+      "images": 23,
+      "aria-labelledby": 80,
+      "inline_js_checked": 31,
+      "aria-describedby": 3,
+      "label_for": 13,
+      "aria-controls": 1
+    },
+    "issues": [],
+    "issues_count": 0
+  },
+  "browser_alternative": {
+    "method": "Chromium set_content, inline local v33.css, 1px image placeholders; no real URL navigation",
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "pages": [
+      "annual-events.html",
+      "contact.html",
+      "discover.html",
+      "first-visit.html",
+      "hokeko-dayori.html",
+      "index.html",
+      "news.html",
+      "site-guide.html",
+      "visit-note.html",
+      "kongetsu-shishin.html"
+    ],
+    "cases": 60,
+    "overflow": [],
+    "js_errors": [],
+    "faq_group_focus": [
+      {
+        "heading": "faq-before-visit",
+        "active_after_click": "faq-before-visit",
+        "outline_width": "3px",
+        "next_tab": {
+          "tag": "SUMMARY",
+          "text": "参詣・法話会の予約や費用、受付時間はどう確認できますか？"
+        },
+        "pass": true
+      },
+      {
+        "heading": "faq-choose",
+        "active_after_click": "faq-choose",
+        "outline_width": "3px",
+        "next_tab": {
+          "tag": "SUMMARY",
+          "text": "まだ訪問を決めていません。読むだけでもよいですか？"
+        },
+        "pass": true
+      },
+      {
+        "heading": "faq-contact-reading",
+        "active_after_click": "faq-contact-reading",
+        "outline_width": "3px",
+        "next_tab": {
+          "tag": "SUMMARY",
+          "text": "電話で問い合わせるとき、何から話せばよいですか？"
+        },
+        "pass": true
+      }
+    ],
+    "faq_search_to_group": {
+      "query_after": "",
+      "focused": "faq-before-visit",
+      "visible_questions": 11
+    },
+    "no_js": {
+      "hash": "#faq-choose",
+      "outline": "3px",
+      "faq_count": 11
+    }
+  },
+  "limitations": [
+    "Real URL page-to-page navigation not tested (Chromium administrator policy blocked previous runs)",
+    "No physical smartphone, screen reader, real browser zoom or paper print tests",
+    "Root font size tests are not browser zoom",
+    "No new Word/paper original compared this run",
+    "Formal authorship boundaries, full collation and publication permissions unverified for all 22 issues",
+    "Event time, place, cost, participation conditions require temple confirmation"
+  ],
+  "faq_print_state_regression": {
+    "before": {
+      "visible": 2,
+      "query": "法話会"
+    },
+    "during": {
+      "visible": 11,
+      "open": 11
+    },
+    "after": {
+      "visible": 2,
+      "query": "法話会",
+      "open_first": true
+    },
+    "note": "Synthetic beforeprint/afterprint events; not paper/PDF print QA"
+  },
+  "package": {
+    "file_limit": 99,
+    "expected_file_count": 99,
+    "removed_from_baseline": [
+      "V36_69_UPDATE_REPORT.md",
+      "QA_V36_74.json"
+    ],
+    "added": [
+      "V36_76_UPDATE_REPORT.md",
+      "QA_V36_76.json"
+    ],
+    "release_zip": "kobe-myohonji-v36.76-under100.zip"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "version": "36.75",
+  "date": "2026-10-19",
+  "iteration": "20/24",
+  "baseline": "36.74",
+  "baseline_zip_sha256": "69d2dc22e2a7897dcdbb119468451f49076fc4fd27e4f87f7574e85644be37ad",
+  "baseline_zip_testzip": null,
+  "baseline_documents_opened": [
+    "V36_74_UPDATE_REPORT.md",
+    "QA_V36_74.json",
+    "HOKKEKO_SOURCE_AUDIT_V36_24.md",
+    "HOWAKAI_CONFIRMATION_WORKSHEET_V36_28.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "changed_html": [
+    "visit-note.html"
+  ],
+  "articles_unchanged": 22,
+  "articles_changed": [],
+  "original_full_collation_new": 0,
+  "formal_author_scope_verified": false,
+  "publication_permission_verified": false,
+  "static": {
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "counts": {
+      "jsonld_checked": 47,
+      "href": 780,
+      "local_href": 737,
+      "fragment_href": 285,
+      "images": 23,
+      "aria-labelledby": 80,
+      "inline_js_checked": 31,
+      "label_for": 13,
+      "aria-describedby": 3,
+      "aria-controls": 1
+    },
+    "issues": [],
+    "issues_count": 0
+  },
+  "browser_alternative": {
+    "method": "Chromium set_content, inline local v33.css, 1px image placeholders; no real URL navigation",
+    "pages": [
+      "annual-events.html",
+      "contact.html",
+      "discover.html",
+      "first-visit.html",
+      "hokeko-dayori.html",
+      "index.html",
+      "news.html",
+      "site-guide.html",
+      "visit-note.html",
+      "kongetsu-shishin.html"
+    ],
+    "widths": [
+      320,
+      390,
+      768,
+      1280
+    ],
+    "standard_cases": 40,
+    "extra_root_font_cases": 20,
+    "cases": 60,
+    "overflow": [],
+    "js_errors": [],
+    "local_navigation_attempts": [
+      {
+        "url": "http://127.0.0.1:8797/first-visit.html",
+        "result": "net::ERR_BLOCKED_BY_ADMINISTRATOR"
+      },
+      {
+        "url": "file:///mnt/data/work_v3675/site/first-visit.html",
+        "result": "net::ERR_BLOCKED_BY_ADMINISTRATOR"
+      }
+    ]
+  },
+  "visit_note_a4_print": {
+    "blank": {
+      "pages": 2,
+      "footer_on_all_pages": true,
+      "footer_presence": [
+        true,
+        true
+      ],
+      "footer_top_points": [
+        [
+          809.0
+        ],
+        [
+          809.0
+        ]
+      ],
+      "first_page_warning": true,
+      "last_page_has_contact": true,
+      "has_user_note": true,
+      "page_errors": [],
+      "screen_warning_hidden": true,
+      "print_warning_visible": true,
+      "checked": true,
+      "user_note_printed": "not applicable"
+    },
+    "short": {
+      "pages": 2,
+      "footer_on_all_pages": true,
+      "footer_presence": [
+        true,
+        true
+      ],
+      "footer_top_points": [
+        [
+          809.0
+        ],
+        [
+          809.0
+        ]
+      ],
+      "first_page_warning": true,
+      "last_page_has_contact": true,
+      "has_user_note": true,
+      "page_errors": [],
+      "screen_warning_hidden": true,
+      "print_warning_visible": true,
+      "checked": true,
+      "user_note_printed": true
+    },
+    "max500": {
+      "pages": 2,
+      "footer_on_all_pages": true,
+      "footer_presence": [
+        true,
+        true
+      ],
+      "footer_top_points": [
+        [
+          809.0
+        ],
+        [
+          809.0
+        ]
+      ],
+      "first_page_warning": true,
+      "last_page_has_contact": true,
+      "has_user_note": true,
+      "page_errors": [],
+      "screen_warning_hidden": true,
+      "print_warning_visible": true,
+      "checked": true,
+      "user_note_full_500_char_printed": true
+    }
+  },
+  "limitations": [
+    "Real URL page-to-page navigation blocked by Chromium administrator policy (previous run and current local/file URL attempts)",
+    "No physical smartphone, screen reader, real browser zoom or paper print tests",
+    "Root font size tests are not browser zoom",
+    "No new Word/paper original compared this run",
+    "Formal authorship boundaries, full collation and publication permissions unverified for all 22 issues",
+    "Event time, place, cost, participation conditions require temple confirmation"
+  ],
+  "a4_pdf_print_engine": "Chromium 144, CSS @page @bottom-center margin box; PDFs only for internal QA, not packaged",
+  "package": {
+    "file_limit": 99,
+    "expected_file_count": 99,
+    "removed_from_baseline": [
+      "V36_68_UPDATE_REPORT.md",
+      "QA_V36_73.json"
+    ],
+    "added": [
+      "V36_75_UPDATE_REPORT.md",
+      "QA_V36_75.json"
+    ],
+    "release_zip": "kobe-myohonji-v36.75-under100.zip"
+  }
+}

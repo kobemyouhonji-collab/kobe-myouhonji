@@ -39,6 +39,17 @@ footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
    font:700 10pt/1.5 system-ui,sans-serif;padding:7px 10px;margin:0 0 9px;
    break-inside:avoid-page;page-break-inside:avoid}
 }
+/* v36.75: A4印刷物の各ページに非公開・未承認の注意を残す。 */
+@media print{
+ @page{
+  size:A4;margin:13mm 13mm 22mm;
+  @bottom-center{
+   content:"神戸妙本寺｜非公開・未承認／配布不可（日時・参加条件は寺院確認待ち）";
+   color:#111;font:8.5pt/1.4 system-ui,sans-serif;
+   border-top:1px solid #777;padding-top:2mm;
+  }
+ }
+}
 </style>
 </head>
 <body>
@@ -82,7 +93,8 @@ footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
 <p>このメモにある電話番号・メールアドレスは確認用の表示です。押しただけで外部アプリを開くリンクにはしていません。道順・連絡方法・質問文例は<a href="contact.html#v3621-contact-topics">お問い合わせ・アクセスの説明</a>で確認できます。連絡するかどうかは、ご自身の判断でお決めください。</p></section>
 <div class="actions"><button class="btn primary" type="button" id="v3659-print" hidden>このメモを印刷する</button><a class="btn" href="first-visit.html">初めての方向け案内へ戻る</a><a class="btn" href="contact.html#v3621-contact-topics">問い合わせ文例を見る</a></div>
 <p class="small" id="v3659-print-help">印刷ボタンが表示されない場合や動作しない場合は、ブラウザの「印刷」メニューをご利用ください。パソコンでは Ctrl＋P（Macは Command＋P）でも印刷画面を開けます。印刷しない場合は、このページを読むだけでも構いません。</p>
-</main></div>
+</main>
+</div>
 <footer><div class="wrap">日蓮正宗 妙本寺｜<a href="./">トップページ</a></div></footer>
 <script>
 /* v36.55: 画面内だけの任意メモ。ネットワーク送信・ストレージ利用なし。 */

@@ -55,6 +55,8 @@ section{padding:68px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 .v3631-faq-index a{display:inline-flex;align-items:center;min-height:44px;padding:9px 14px;background:#edf3eb;border:1px solid #9ab39e;border-radius:8px;color:#234632;text-decoration:underline;text-underline-offset:3px;font:600 15px/1.5 system-ui,sans-serif}
 .v3631-faq-index a:focus-visible{outline:3px solid #b7812d;outline-offset:3px}
 .v3631-faq-group{scroll-margin-top:24px;font-size:clamp(19px,3vw,23px);line-height:1.5;margin:32px 0 12px;color:#254433}
+/* v36.76: FAQ分類へのアンカー移動後の現在位置を、JSの有無にかかわらず示す。 */
+.v3631-faq-group:focus,.v3631-faq-group:target{outline:3px solid #8a6428;outline-offset:5px;border-radius:3px}
 @media(max-width:520px){.v3631-faq-index{display:grid;grid-template-columns:minmax(0,1fr)}.v3631-faq-index a{width:100%;box-sizing:border-box}}
 /* v36.34: FAQのまとめ読みとキーボード操作 */
 .v3634-faq-controls[hidden]{display:none!important}
@@ -208,7 +210,7 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <button id="v3634-faq-close" type="button">すべて閉じる</button>
 <p aria-live="polite" id="v3634-faq-state" role="status">質問を選んで開けます。</p>
 </div>
-<h3 class="v3631-faq-group" id="faq-before-visit">参詣前の準備</h3>
+<h3 class="v3631-faq-group" id="faq-before-visit" tabindex="-1">参詣前の準備</h3>
 <details class="v33-faq" data-search-terms="予約 予約不要 申込 申し込み 申込み 料金 費用 参加費 お金 受付 参拝時間 開門 訪問 当日 事前連絡 法話会" id="faq-visit-terms"><summary>参詣・法話会の予約や費用、受付時間はどう確認できますか？</summary>
 <p>この非公開版では、参詣や法話会の予約の要否、費用、受付時間、参加条件を確定情報として案内していません。<a href="annual-events.html">行事予定</a>や<a href="news.html#howakai">法話会の案内</a>を参考に、訪問を決める前に<a href="contact.html#v3621-contact-topics">寺院へ必要なことだけ確認</a>してください。確認のために質問するだけでも構いません。</p></details>
 <details class="v33-faq" data-search-terms="服 装い 手ぶら マナー 持参"><summary>服装・持ち物や作法が分からない場合は？</summary>
@@ -219,14 +221,14 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <p>段差、移動経路、座席、聞こえ方などについて、<a href="contact.html#v3632-access-question">事前確認用のメール文例</a>を用意しています。診断名や詳しい個人情報を記載する必要はありません。設備や当日の対応は寺院へ確認してください。</p></details>
 <details class="v33-faq" data-search-terms="法話 法話会 時間 途中退出 遅刻 早退 参加"><summary id="v3637-howakai-faq">法話会の所要時間や、途中での入退室が気になる場合は？</summary>
 <p>開始・終了時刻、途中からの参加や途中退出が可能かどうかは、行事や当日の状況によって確認が必要です。<a href="news.html#howakai">法話会の案内</a>をご覧のうえ、必要であれば<a href="contact.html#v3636-howakai-mail">法話会についての質問文例</a>から寺院へ確認できます。参加を決める前に質問するだけでも構いません。</p></details>
-<h3 class="v3631-faq-group" id="faq-choose">自分のペースで知る</h3>
+<h3 class="v3631-faq-group" id="faq-choose" tabindex="-1">自分のペースで知る</h3>
 <details class="v33-faq" data-search-terms="見学 見るだけ 読むだけ 迷う 検討"><summary>まだ訪問を決めていません。読むだけでもよいですか？</summary>
 <p><a href="hokeko-dayori.html">法華講便り</a>や<a href="discover.html">妙本寺の紹介</a>は、HP上でご覧いただけます。気になる点が出てきたときに、<a href="contact.html">質問方法</a>を確かめてください。閲覧にあたって連絡や入信の申し込みは必要ありません。</p></details>
 <details class="v33-faq" data-search-terms="入会 法華講員 強制 勧誘 信徒 宗教"><summary>信仰や入信について、すぐに決める必要がありますか？</summary>
 <p>このHPには入信の申込機能はありません。教えや入信の条件、説明の進め方など、分からないことは<a href="contact.html#v3621-contact-topics">寺院へ質問</a>できます。説明を受けた内容について、ご自身の意思で判断してください。</p></details>
 <details class="v33-faq" data-search-terms="予定 日程 未定 開催 中止 確定 最新 更新 古い 何月 今月"><summary>掲載されている行事予定や「今月」の情報は最新ですか？</summary>
 <p>行事資料の年月や法華講便りの発行月は、その時点の掲載資料を示します。トップページの「2026年10月の行事資料」も当時の資料に基づく案内で、過去の日付を含みます。現在の開催情報へ自動更新されるとは限りません。<a href="annual-events.html">年間行事予定</a>には検討中の資料もあるため、記載の日付だけで訪問を決めず、希望する行事の開催の有無・開始時刻・参加方法を<a href="contact.html#v3621-contact-topics">寺院へご確認</a>ください。確認のために質問するだけでも構いません。</p></details>
-<h3 class="v3631-faq-group" id="faq-contact-reading">連絡・記事の確認</h3>
+<h3 class="v3631-faq-group" id="faq-contact-reading" tabindex="-1">連絡・記事の確認</h3>
 <details class="v33-faq" data-search-terms="電話 話し方 相談 連絡"><summary>電話で問い合わせるとき、何から話せばよいですか？</summary>
 <p>最初に「初めての参詣（または法話会）について、確認したいことがあります」と伝え、知りたいことを一つずつ質問する方法があります。詳しい事情を最初からすべて話す必要はありません。<a href="contact.html#v3633-phone-guide">電話での確認例と連絡先を見る →</a>。寺院の受付時間や回答可否は事前に保証できません。</p></details>
 <details class="v33-faq" data-search-terms="メール メールアプリ 送信 コピー"><summary>メールの文例を押しても何も起きない場合は？</summary>
@@ -304,6 +306,21 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
   }
   window.addEventListener('hashchange',revealLinkedQuestion);
   revealLinkedQuestion();
+  /* v36.76: FAQ分類の3つの見出しへの移動でも焦点を着地点へ移す。
+     次のTabでその分類の最初の質問へ進める。リンクを押したときだけ移動。 */
+  function focusFaqGroup(){
+    var id='';
+    try{id=decodeURIComponent((location.hash||'').slice(1));}catch(e){return;}
+    var heading=id&&document.getElementById(id);
+    if(!heading||!heading.matches('h3.v3631-faq-group')||!section.contains(heading))return;
+    var search=document.getElementById('v3638-faq-query');
+    if(search&&search.value){search.value='';search.dispatchEvent(new Event('input'));}
+    heading.hidden=false;
+    try{heading.focus({preventScroll:true});}catch(e){heading.focus();}
+    heading.scrollIntoView({block:'start'});
+  }
+  window.addEventListener('hashchange',focusFaqGroup);
+  focusFaqGroup();
   /* v36.64: 印刷時の開閉状態管理は下の検索スクリプトに一本化。 */
   controls.hidden=false;announce();
 })();
