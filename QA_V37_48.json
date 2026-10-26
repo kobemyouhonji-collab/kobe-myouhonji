@@ -1,0 +1,338 @@
+{
+  "version": "37.48",
+  "iteration": 72,
+  "date": "2026-10-26",
+  "baseline": "37.47",
+  "baseline_sha256": "4b6c5419ae1c7e512431c1ab349c9da89ab51c57749f844a15136f48b7dec1b4",
+  "static": {
+    "baseline_version": "37.47",
+    "baseline_sha256": "4b6c5419ae1c7e512431c1ab349c9da89ab51c57749f844a15136f48b7dec1b4",
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "local_refs_checked": 944,
+    "fragment_refs_checked": 347,
+    "inline_scripts_syntax_checked": 59,
+    "duplicate_ids": [],
+    "protected_files_count": 27,
+    "protected_files_byte_identical": true,
+    "news_visible_text_and_links_unchanged": true,
+    "errors": []
+  },
+  "browser": {
+    "method": "Playwright Chromium about:blank set_content with embedded local CSS, NOT real URL navigation",
+    "cases": 15,
+    "results": [
+      {
+        "width": 256,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 256,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 256,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 256,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 320,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 320,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 320,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 320,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 360,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 360,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 360,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 360,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 390,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 390,
+        "js_errors": [],
+        "pass": true,
+        "focus_howakai": {
+          "hash": "#howakai",
+          "focused": "howakai"
+        },
+        "focus_reports": {
+          "hash": "#reports",
+          "focused": "reports"
+        },
+        "repeat_reports": {
+          "hash": "#reports",
+          "focused": "reports"
+        }
+      },
+      {
+        "width": 390,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 390,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 640,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 640,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 640,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 16,
+        "minimum_link_height_px": 48,
+        "document_scroll_width": 640,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 768,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 13,
+        "minimum_link_height_px": 38,
+        "document_scroll_width": 768,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 768,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 13,
+        "minimum_link_height_px": 38,
+        "document_scroll_width": 768,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 1280,
+        "javascript": true,
+        "links": 7,
+        "minimum_font_px": 13,
+        "minimum_link_height_px": 38,
+        "document_scroll_width": 1280,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 1280,
+        "javascript": false,
+        "links": 7,
+        "minimum_font_px": 13,
+        "minimum_link_height_px": 38,
+        "document_scroll_width": 1280,
+        "js_errors": [],
+        "pass": true
+      },
+      {
+        "width": 390,
+        "javascript": true,
+        "forced_colors": true,
+        "reduced_motion": true,
+        "links": 7,
+        "minimum_link_height_px": 48,
+        "js_errors": [],
+        "pass": true
+      }
+    ],
+    "fragment_simulation_cases": 8,
+    "fragment_simulation_results": [
+      {
+        "page": "first-visit.html",
+        "fragment": "#faq-visit-terms",
+        "javascript": true,
+        "result": {
+          "hash": "#faq-visit-terms",
+          "focused": "",
+          "tag": "SUMMARY",
+          "summary": true,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "first-visit.html",
+        "fragment": "#faq-visit-terms",
+        "javascript": false,
+        "result": {
+          "hash": "#faq-visit-terms",
+          "focused": "",
+          "tag": "BODY",
+          "summary": false,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "contact.html",
+        "fragment": "#v3689-first-visit-copy",
+        "javascript": true,
+        "result": {
+          "hash": "#v3689-first-visit-copy",
+          "focused": "",
+          "tag": "SUMMARY",
+          "summary": true,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "contact.html",
+        "fragment": "#v3689-first-visit-copy",
+        "javascript": false,
+        "result": {
+          "hash": "#v3689-first-visit-copy",
+          "focused": "",
+          "tag": "BODY",
+          "summary": false,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "first-visit.html",
+        "fragment": "#visit-faq",
+        "javascript": true,
+        "result": {
+          "hash": "#visit-faq",
+          "focused": "visit-faq-title",
+          "tag": "H2",
+          "summary": false,
+          "targetExists": true,
+          "open": null
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "first-visit.html",
+        "fragment": "#visit-faq",
+        "javascript": false,
+        "result": {
+          "hash": "#visit-faq",
+          "focused": "visit-faq",
+          "tag": "SECTION",
+          "summary": false,
+          "targetExists": true,
+          "open": null
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "contact.html",
+        "fragment": "#v3678-howakai-copy",
+        "javascript": true,
+        "result": {
+          "hash": "#v3678-howakai-copy",
+          "focused": "",
+          "tag": "SUMMARY",
+          "summary": true,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      },
+      {
+        "page": "contact.html",
+        "fragment": "#v3678-howakai-copy",
+        "javascript": false,
+        "result": {
+          "hash": "#v3678-howakai-copy",
+          "focused": "",
+          "tag": "BODY",
+          "summary": false,
+          "targetExists": true,
+          "open": true
+        },
+        "errors": [],
+        "pass": true
+      }
+    ],
+    "real_url_navigation": "blocked by administrator (file/http/data)",
+    "real_cross_page_back_forward": "not tested",
+    "real_new_tab": "not tested",
+    "mobile_device": "not tested",
+    "screen_reader": "not tested"
+  },
+  "modified_existing_files": [
+    "news.html",
+    "CHANGELOG.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md"
+  ],
+  "new_files": [
+    "V37_48_UPDATE_REPORT.md",
+    "QA_V37_48.json"
+  ],
+  "removed_from_next_zip": [
+    "V37_43_UPDATE_REPORT.md",
+    "QA_V37_44.json"
+  ],
+  "source_original_collation_completed": 0,
+  "author_scope_confirmed": 0,
+  "publication_permissions_confirmed": 0,
+  "published": false,
+  "external_messages_sent": false,
+  "financial_actions": false,
+  "issues": []
+}

@@ -1,7 +1,61 @@
 <!DOCTYPE html>
-
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>ページが見つかりません｜妙本寺</title><meta name="robots" content="noindex,follow"/>
-<style>body{margin:0;background:#f7f4ed;color:#282822;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;display:grid;place-items:center;min-height:100vh;text-align:center;padding:24px}h1{font-size:34px;letter-spacing:.1em}a{display:inline-block;margin-top:20px;padding:12px 22px;background:#31463a;color:white;text-decoration:none}</style>
-<meta content="お探しのページが見つかりません。妙本寺公式ホームページのトップページからご覧ください。" name="description"/><link href="v33.css" rel="stylesheet"/><meta content="#26382f" name="theme-color"/></head><body><a class="skip-link" href="#main-content">本文へ移動</a><main id="main-content"><p>404</p><h1>ページが見つかりません</h1><p>URLをご確認いただくか、トップページへお戻りください。</p><a href="./">妙本寺トップへ</a></main><footer><p class="contact-email">メール：<a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></p></footer>
-</body></html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="妙本寺ホームページでページが見つからない場合のご案内。初めての方向けFAQ、法華講便り一覧、法話会の案内、問い合わせ方法へ移動できます。">
+  <meta name="theme-color" content="#26382f">
+  <title>ページが見つかりません｜妙本寺</title>
+  <link rel="stylesheet" href="/kobe-myouhonji/v33.css">
+  <link rel="icon" href="/kobe-myouhonji/favicon.svg" type="image/svg+xml">
+  <style>
+    /* v37.01: GitHub Pagesプロジェクト配下の深い404 URLでも導線が壊れないようにする。 */
+    .notfound, .notfound * { box-sizing: border-box; }
+    /* ローカル単体表示でもスキップリンクが使えるよう最小限のスタイルを内包 */
+    .skip-link { position: absolute; left: 10px; top: -100px; z-index: 1000; padding: 10px 14px; background: #fff; color: #182d1d; border: 2px solid currentColor; }
+    .skip-link:focus { top: 10px; }
+    body { margin: 0; background: #f7f4ed; color: #282822; font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; line-height: 1.85; }
+    .notfound { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: clamp(30px, 6vw, 64px) 0; }
+    .notfound .eyebrow { font: 700 0.9rem/1.5 system-ui, sans-serif; color: #395b46; margin: 0 0 8px; }
+    .notfound h1 { font-size: clamp(1.8rem, 5vw, 2.65rem); line-height: 1.4; margin: 0 0 18px; }
+    .notfound .lead { max-width: 45em; margin: 0 0 20px; }
+    .notfound h2 { font-size: clamp(1.35rem, 3.5vw, 1.7rem); margin: 34px 0 14px; }
+    .notfound .return-top { display: inline-flex; align-items: center; min-height: 44px; padding: 9px 17px; border-radius: 8px; background: #31463a; color: #fff; font: 700 1rem/1.5 system-ui, sans-serif; text-decoration: none; }
+    .notfound .choices { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; padding: 0; margin: 0; }
+    .notfound .choices li { min-width: 0; padding: 18px; border: 1px solid #bccbbb; border-radius: 10px; background: #fff; }
+    .notfound .choices a { display: inline-flex; align-items: center; min-height: 44px; color: #214934; font: 700 1.05rem/1.6 system-ui, sans-serif; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    .notfound .choices p { margin: 6px 0 0; font-size: 0.95rem; line-height: 1.8; }
+    .notfound .caution { margin-top: 24px; padding: 15px 18px; border-inline-start: 4px solid #6c806c; background: #eaf0e8; }
+    .notfound .caution p { margin: 0; }
+    .notfound a:focus-visible { outline: 3px solid #a36a1d; outline-offset: 4px; }
+    .notfound-footer { width: min(880px, calc(100% - 32px)); margin: 0 auto; padding: 12px 0 28px; border-top: 1px solid #cbd4c8; font-size: 0.9rem; }
+    .notfound-footer a { color: #214934; }
+    @media (max-width: 620px) { .notfound .choices { grid-template-columns: minmax(0, 1fr); } .notfound .choices li { padding: 14px 16px; } }
+    @media (forced-colors: active) { .notfound .choices li, .notfound .caution { border: 1px solid CanvasText; } .notfound .return-top { border: 2px solid ButtonText; } .notfound a:focus-visible { outline-color: Highlight; } }
+    @media print { .notfound { padding: 12px 0; } .notfound .choices { display: block; } .notfound .choices li { margin: 0 0 10px; break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+  <main class="notfound" id="main-content" tabindex="-1">
+    <p class="eyebrow">404 / ページが見つかりません</p>
+    <h1>お探しのページが見つかりません</h1>
+    <p class="lead">URLが変更されたか、入力したアドレスが異なる可能性があります。必要な情報を、下の案内から選び直せます。閲覧だけでも構いません。</p>
+    <a class="return-top" href="/kobe-myouhonji/">妙本寺のトップページへ戻る</a>
+    <nav aria-labelledby="notfound-choices-title">
+      <h2 id="notfound-choices-title">お探しの情報から選ぶ</h2>
+      <ul class="choices">
+        <li><a href="/kobe-myouhonji/first-visit.html#visit-faq">初めての方・よくある質問</a><p>参詣前に気になることをFAQで確認できます。</p></li>
+        <li><a href="/kobe-myouhonji/kongetsu-shishin.html">法華講便りの年・月別一覧</a><p>22号の掲載状態を確認できます。原文全文照合・著者範囲・掲載許可は未完了です。</p></li>
+        <li><a href="/kobe-myouhonji/news.html#howakai">法話会の案内</a><p>開催日時・会場・費用・参加条件などは寺院への確認が必要です。</p></li>
+        <li><a href="/kobe-myouhonji/contact.html#v3621-contact-topics">問い合わせ方法・質問文例</a><p>送信せずに文例を読むこともできます。連絡するかどうかは任意です。</p></li>
+      </ul>
+    </nav>
+    <aside class="caution" aria-label="確認が必要な情報">
+      <p>このサイトの制作中資料には、校閲や掲載許可が完了していない内容が含まれます。日時や参加条件は推測せず、必要に応じて寺院へご確認ください。</p>
+    </aside>
+  </main>
+  <footer class="notfound-footer"><p>神戸妙本寺のご案内については、<a href="/kobe-myouhonji/contact.html">問い合わせページ</a>をご覧ください。</p></footer>
+</body>
+</html>

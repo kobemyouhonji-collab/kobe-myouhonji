@@ -16,7 +16,7 @@ main section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:clamp(
 
 /* v36.27: 掲載状態を色だけに頼らず説明する */
 .v3627-editorial-status{margin:24px 0;background:#fff9e8;border:2px solid #c6a976;border-radius:12px;padding:16px 20px;line-height:1.85}
-.v3627-editorial-status strong{display:block;color:#543d1b;font-size:1.1rem;margin-bottom:6px}
+.v3627-editorial-status h2{display:block;color:#543d1b;font:700 1.1rem/1.6 system-ui,sans-serif;letter-spacing:normal;margin:0 0 6px}
 .v3627-editorial-status p{margin:0 0 6px}
 </style>
 <link href="v33.css" rel="stylesheet"/><link href="favicon.svg" rel="icon" type="image/svg+xml"/><link href="site.webmanifest" rel="manifest"/><script data-v332="breadcrumb" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"妙本寺","item":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/"},{"@type":"ListItem","position":2,"name":"法華講便り","item":"https://kobemyouhonji-collab.github.io/kobe-myouhonji/hokeko-dayori.html"}]}</script><meta content="website" property="og:type"/><meta content="ja_JP" property="og:locale"/>
@@ -43,28 +43,39 @@ main .eyebrow,.hero .eyebrow{color:#795d31}
 #editorial-status:target,#editorial-status:focus,#reading-guide:target,#reading-guide:focus{
  outline:3px solid #8a6428;outline-offset:4px;
 }
+</style>
+<style>/* v37.47: 未校閲状態の確認を先に選べる任意導線。本文・リンク先は不変更。 */
+.v3625-quicklinks a:focus-visible{outline:3px solid #9a6820;outline-offset:4px}
+@media(max-width:640px){
+ .v3625-quicklinks{display:grid!important;grid-template-columns:minmax(0,1fr);gap:10px}
+ .v3625-quicklinks a{display:flex;align-items:center;justify-content:flex-start;min-width:0;min-height:48px;padding:11px 16px;font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+}
+@media(forced-colors:active){
+ .v3625-quicklinks a{border:2px solid LinkText;color:LinkText;background:Canvas}
+ .v3625-quicklinks a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
 </style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <div class="breadcrumb"><div class="wrap"><a href="./">トップ</a> › <a href="news.html">お知らせ・活動報告</a> › 法華講便り</div></div>
-<div class="hero"><div class="wrap"><div class="eyebrow">HOKKEKO DAYORI</div><h1>法華講便り</h1><p class="lead">法華講便りから、鈴木道雅御住職のお言葉として編集上整理された月別原稿候補を案内します。著者範囲・原文の全文照合・掲載許可は確認待ちです。発行年と月を選び、掲載状態を確かめながらご覧ください。</p>
+<div class="hero"><div class="wrap"><div class="eyebrow">HOKKEKO DAYORI</div><h1>法華講便り</h1><p class="lead">法華講便りから編集上抽出した月別原稿候補を案内します。鈴木道雅御住職の本文範囲・原文全文照合・掲載許可は22号すべて未確認です。発行年と月を選び、掲載状態を確かめながらご覧ください。</p>
 <nav aria-label="法華講便りのページ内案内" class="v3625-quicklinks" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
-<a class="btn primary" href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）を読む</a>
+<a class="btn primary" href="#editorial-status">原文・掲載許可の確認状況</a>
 <a class="btn" href="kongetsu-shishin.html#past-issues">年・月・題名から探す（22号）</a>
-<a class="btn" href="#editorial-status">原文・掲載許可の確認状況</a>
 <a class="btn" href="#reading-guide">読むときの3つの手順</a>
+<a class="btn" href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）を読む</a>
 </nav></div></div>
-<main class="wrap" id="main-content">
+<main class="wrap" id="main-content" tabindex="-1">
 <section aria-labelledby="guidance-heading" id="monthly-guidance">
 <div class="eyebrow">MONTHLY GUIDANCE</div>
 <h2 id="guidance-heading">年・月別の掲載候補を探す</h2>
-<p>御住職のお言葉として整理された原稿候補を、令和5年から令和8年までの22号から年・月ごとに探せます。本文と著者範囲は寺院の正式な確認前です。</p>
+<p>法華講便りから抽出した原稿候補を、令和5年から令和8年までの22号から年・月ごとに探せます。御住職の本文範囲と原文の正確性は寺院の正式な確認前です。</p>
 <div class="box">
 <h3>月別の法華講便りを見る</h3>
-<p>鈴木道雅御住職のお言葉として整理した原稿候補を、22号の月別ページにまとめています。著者範囲は寺院確認待ちです。原稿から復元した長文の下書きと、一部抜粋・全文確認待ちの号を区別しています。令和8年10月号は抜粋のみで、全文確認待ちです。</p>
+<p>法華講便りから抽出した原稿候補を、22号の月別ページにまとめています。鈴木道雅御住職の本文範囲は寺院確認待ちです。原稿から復元した長文の下書きと、一部抜粋・全文確認待ちの号を区別しています。令和8年10月号は抜粋のみで、全文確認待ちです。</p>
 <div class="actions"><a class="btn primary" href="kongetsu-shishin.html">年・月別一覧を見る →</a><a class="btn" href="kongetsu-shishin.html#past-issues">過去の法華講便りを探す →</a></div>
 </div>
-<p class="source" style="margin-top:18px">掲載対象：鈴木御住職のお言葉として整理した原稿候補です。著者範囲・本文の正確性・掲載許可は寺院による確認待ちです。</p>
+<p class="source" style="margin-top:18px">掲載対象：法華講便りから抽出した原稿候補です。鈴木道雅御住職の本文範囲・原文の正確性・掲載許可は寺院による確認待ちです。</p>
 <div aria-label="法華講便りの読み方" class="v3621-reader">
 <h3>初めて読む方へ</h3>
 <p>月別ページは、御住職のお言葉と考えられる部分を編集上の候補として整理したものです。他の執筆者の文章との区分を含め、原本との照合は未完了です。月を選ぶと、掲載状態を確認できます。</p>
@@ -77,9 +88,9 @@ main .eyebrow,.hero .eyebrow{color:#795d31}
 </div></section>
 
 <aside class="v3627-editorial-status" id="editorial-status" tabindex="-1" aria-label="法華講便りの原文確認状況（全22号未確認）">
-<strong>原文と掲載許可の確認状況</strong>
+<h2>原文と掲載許可の確認状況</h2>
 <p>この非公開版に整理した22号は、すべて原本との全文照合・掲載許可の最終確認が完了していません。掲載状態は、長文原稿候補・未校閲16号、本文復元案・未校閲3号、抜粋のみ・全文確認待ち3号です。文章が表示されていても、正式に校閲された全文という意味ではありません。</p>
-<p>詳しい確認状況は<a href="first-visit.html#faq-dayori-status">初めての方向けFAQ「原文の確認状態」</a>でもご案内しています。記事の確認が完了するまでは、公開用のHPへ掲載しません。内容を知りたい方は、<a href="contact.html#v3621-contact-topics">寺院への質問方法</a>をご覧ください。</p>
+<p>詳しい確認状況は<a href="first-visit.html#faq-dayori-status">初めての方向けFAQ「原文の確認状態」</a>でもご案内しています。記事の確認が完了するまでは、公開用のHPへ掲載しません。内容を知りたい方は、<a href="contact.html#v3686-dayori-copy">法華講便りの質問文例を画面で読む（送信なし）</a>こともできます。連絡するかどうかはご自身で決められます。</p>
 </aside>
 <section aria-labelledby="v3623-reading-title" class="v3623-howto" id="reading-guide" tabindex="-1">
 <h2 id="v3623-reading-title">初めて読む方へ｜3つの手順</h2>

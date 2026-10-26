@@ -83,22 +83,150 @@ section{padding:65px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(28
 }
 </style><style>/* v36.69: 淡色背景の小見出し・カードラベルを濃くする。暗色ヒーローの配色は変更しない。 */
 main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
+</style><style>/* v36.78: 法話会のコピー用文例への到着位置を明確にする。 */
+#v3678-howakai-copy{scroll-margin-top:22px}
+#v3678-howakai-copy:target{outline:3px solid #88621d;outline-offset:3px}
+#v3678-howakai-copy:target summary{background:#f4f1e8}
+#v3678-howakai-copy summary:focus-visible,#v3686-dayori-copy summary:focus-visible{outline:3px solid #88621d;outline-offset:2px}
+#v3686-dayori-copy{scroll-margin-top:22px}
+#v3686-dayori-copy:target{outline:3px solid #88621d;outline-offset:3px}
+#v3686-dayori-copy:target summary{background:#f4f1e8}
+@media print{#v3678-howakai-copy:target,#v3686-dayori-copy:target{outline:none}}
+</style>
+<style>/* v36.90: 初参詣の質問文例の直リンク先を、JS無効時も見つけやすくする。 */
+#v3689-first-visit-copy{scroll-margin-top:22px}
+#v3689-first-visit-copy:target{outline:3px solid #88621d;outline-offset:3px}
+#v3689-first-visit-copy:target summary{background:#f4f1e8}
+#v3689-first-visit-copy summary:focus-visible{outline:3px solid #88621d;outline-offset:2px}
+@media print{#v3689-first-visit-copy:target{outline:none}}
+</style>
+<style>/* v37.08: 配慮事項の送信なし文例に直接到着し、JSなしでも場所を判別できる。 */
+#v3708-access-copy{scroll-margin-top:22px}
+#v3708-access-copy:target{outline:3px solid #88621d;outline-offset:3px}
+#v3708-access-copy:target summary{background:#f4f1e8}
+#v3708-access-copy summary:focus-visible{outline:3px solid #88621d;outline-offset:2px}
+@media print{#v3708-access-copy:target{outline:none}}
+</style>
+<style>/* v37.09: QR画像が読めない場合の文字リンク。JSや画像がなくても使える。 */
+.v3709-qr-text-routes{max-width:780px;margin:1.1rem 0 0;padding:1rem 1.2rem;border:1px solid #b9cdbd;border-radius:12px;background:#f6faf6;color:#263c2c}
+.v3709-qr-text-routes p{margin:.25rem 0 .7rem;line-height:1.75}
+.v3709-qr-text-routes ul{margin:.5rem 0 .8rem;padding-left:1.4em}
+.v3709-qr-text-routes li{margin:.5rem 0;line-height:1.7;overflow-wrap:anywhere}
+.v3709-qr-text-routes a{text-decoration:underline;text-underline-offset:.16em;overflow-wrap:anywhere}
+.v3709-qr-text-routes a:focus-visible{outline:3px solid #88621d;outline-offset:3px}
+@media(max-width:420px){.v3709-qr-text-routes{padding:.85rem .9rem}}
+@media(forced-colors:active){.v3709-qr-text-routes{background:Canvas;color:CanvasText;border:2px solid CanvasText}.v3709-qr-text-routes a{color:LinkText}}
+</style><style>/* v37.10: 文例だけを任意に選択する補助。コピー・送信は行わない。 */
+.v3710-selection-help{background:#f2f7f1;border-left:4px solid #45634e;padding:12px 15px;line-height:1.85;margin:14px 0}
+.v3710-select-tools{margin:8px 0 14px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.v3710-select-button{min-height:44px;max-width:100%;white-space:normal;text-align:left;padding:10px 14px;border:2px solid #45634e;border-radius:8px;background:#fff;color:#193d28;font:700 15px/1.6 system-ui,sans-serif;cursor:pointer}
+.v3710-select-button:focus-visible{outline:3px solid #a76f20;outline-offset:3px}
+.v3710-select-status{font:14px/1.7 system-ui,sans-serif;color:#23412b;overflow-wrap:anywhere}
+.v3629-template::selection{background:#315c44;color:#fff}
+@media(forced-colors:active){.v3710-select-button{border-color:ButtonText;background:ButtonFace;color:ButtonText}.v3710-selection-help{border-color:CanvasText}.v3629-template::selection{background:Highlight;color:HighlightText}}
+@media print{.v3710-selection-help,.v3710-select-tools{display:none!important}}
+/* v37.12: 印刷物は問い合わせ記録でも寺院からの回答でもないことを明示。 */
+.v3712-print-note{display:none}
+.v3712-print-help{font-size:.94em;line-height:1.8;padding:.6em .8em;border-left:3px solid #45634e;margin:.8em 0}
+@media print{
+ .v3712-print-note{display:block!important;color:#000!important;background:#fff!important;border:2px solid #000;padding:7px 10px;margin:8px 12px 2px;font-size:11pt;line-height:1.55;font-weight:700;break-inside:avoid}
+ .v3712-print-help{border:1px solid #000;color:#000!important;background:#fff!important;break-inside:avoid}
+ .v3629-mail-fallback details[open]{break-inside:avoid-page}
+}
+/* v37.13: 印刷した問い合わせ案内の各ページに、非公開・未送信を繰り返し明示する。
+   文例ごとの詳しい注意書きはv37.12のまま保持。画面には影響しない。 */
+@media print{
+ @page{
+  size:A4;
+  margin:15mm 12mm 23mm;
+  @bottom-center{
+   content:"神戸妙本寺｜非公開・配布禁止｜問い合わせ文例は未送信・未回答｜参詣・法話会の条件は寺院確認待ち";
+   color:#111;
+   font:700 8pt/1.35 sans-serif;
+   border-top:1px solid #333;
+   padding-top:2mm;
+  }
+ }
+}
+
+/* v37.14: JavaScriptで明示的に選んだ1件だけを印刷する場合の非公開レイアウト。 */
+.v3714-print-one-button{font:600 15px/1.6 system-ui,sans-serif;border:2px solid #45634e;border-radius:8px;background:#fff;color:#24412c;padding:10px 14px;margin:8px 12px 12px;cursor:pointer;min-height:44px}
+.v3714-print-one-button:focus-visible{outline:3px solid #9b7130;outline-offset:3px}
+.v3714-print-instruction{font:14px/1.7 system-ui,sans-serif;color:#23412b;margin:0 12px 10px}
+.v3714-print-intro{display:none}
+@media(forced-colors:active){.v3714-print-one-button{color:ButtonText;background:ButtonFace;border-color:ButtonText}}
+@media print{
+ .v3714-print-one-button,.v3714-print-instruction{display:none!important}
+ body.v3714-print-one > :not(main){display:none!important}
+ body.v3714-print-one main > :not(#v3621-contact-topics){display:none!important}
+ body.v3714-print-one #v3621-contact-topics > .wrap > :not(#v3629-mail-fallback){display:none!important}
+ body.v3714-print-one #v3629-mail-fallback > :not(details):not(.v3714-print-intro){display:none!important}
+ body.v3714-print-one #v3629-mail-fallback > details:not(.v3714-print-target){display:none!important}
+ body.v3714-print-one .v3714-print-intro{display:block!important;font:700 12pt/1.5 sans-serif;border-bottom:1px solid #333;padding:0 0 8px;margin:0 0 12px;color:#000!important}
+ body.v3714-print-one,body.v3714-print-one main,body.v3714-print-one #v3621-contact-topics{background:#fff!important;min-height:0!important}
+ body.v3714-print-one #v3621-contact-topics{padding:0!important;margin:0!important}
+ body.v3714-print-one #v3621-contact-topics .wrap{width:auto!important;max-width:none!important;margin:0!important;padding:0!important}
+ body.v3714-print-one #v3629-mail-fallback{margin:0!important;padding:0!important;background:#fff!important;border:0!important}
+ body.v3714-print-one #v3629-mail-fallback > details.v3714-print-target{margin:0!important;background:#fff!important;break-inside:avoid-page}
+ body.v3714-print-one #v3629-mail-fallback .v3679-back-links{display:none!important}
+}
+</style><style>/* v37.16: 文例内のTab順と、見出しへの任意の復帰操作。 */
+.v3716-keyboard-help{font:15px/1.8 system-ui,sans-serif;padding:12px 15px;margin:14px 0;background:#eef4eb;border-left:4px solid #45634e;color:#213c2b}
+.v3716-back-to-summary{display:inline-block;min-height:44px;padding:9px 12px;margin:6px 12px 14px;border:2px solid #45634e;border-radius:8px;background:#fff;color:#213c2b;font:700 15px/1.6 system-ui,sans-serif;cursor:pointer;text-align:left}
+.v3716-back-to-summary:focus-visible,.v3629-mail-fallback .v3679-back-links a:focus-visible{outline:3px solid #9b7130;outline-offset:3px}
+@media(forced-colors:active){.v3716-keyboard-help{background:Canvas;color:CanvasText;border-color:CanvasText}.v3716-back-to-summary{background:ButtonFace;color:ButtonText;border-color:ButtonText}}
+@media print{.v3716-keyboard-help,.v3716-back-to-summary{display:none!important}}
+</style><style>/* v37.17: 画面で読む経路とメールアプリ起動経路を区別する。 */
+.v3717-read-only-routes{margin:18px 0 24px;padding:clamp(14px,3vw,20px);background:#f0f6ef;border:2px solid #79977f;border-radius:12px;font:15px/1.75 system-ui,sans-serif;color:#213b29}
+.v3717-read-only-routes p{margin:0 0 12px;line-height:1.8}
+.v3717-read-only-routes ul{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.v3717-read-only-routes li{margin:0;min-width:0}
+.v3717-read-only-routes a{display:flex;align-items:center;min-height:48px;padding:10px 12px;border:1px solid #66836c;border-radius:8px;background:#fff;color:#1b432c;font-weight:700;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.v3717-read-only-routes a:focus-visible{outline:3px solid #966c20;outline-offset:3px}
+.v3717-read-only-routes .v3717-no-pressure{margin:10px 0 0;font-weight:600}
+#v3661-email-action-help{scroll-margin-top:24px}
+#v3661-email-action-help:target,#v3661-email-action-help:focus{outline:3px solid #88621d;outline-offset:3px;border-radius:5px}
+@media(max-width:640px){.v3717-read-only-routes ul{grid-template-columns:minmax(0,1fr)}}
+@media(forced-colors:active){.v3717-read-only-routes{background:Canvas;color:CanvasText;border-color:CanvasText}.v3717-read-only-routes a{background:ButtonFace;color:LinkText;border-color:ButtonText}}
+@media print{.v3717-read-only-routes{display:none!important}#v3661-email-action-help:target,#v3661-email-action-help:focus{outline:none}}
+</style><style>/* v37.18: 文例末尾の「戻る」リンクをスマートフォンで押しやすくする。 */
+#v3629-mail-fallback .v3679-back-links a{display:inline-block;min-height:44px;padding:8px 4px;line-height:1.7;overflow-wrap:anywhere;text-underline-offset:3px}
+#v3629-mail-fallback .v3679-back-links a:focus-visible{outline:3px solid #9b7130;outline-offset:3px;border-radius:3px}
+@media(forced-colors:active){#v3629-mail-fallback .v3679-back-links a{color:LinkText}}
+</style><style>/* v37.24: optional read-only route has a large keyboard/touch target. */
+.v3625-contact-steps .v3724-read-only-link{display:inline-flex;align-items:center;min-height:48px;max-width:100%;box-sizing:border-box;padding:10px 12px;border:2px solid #45634e;border-radius:8px;background:#fff;color:#1b432c;font-weight:700;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.v3625-contact-steps .v3724-read-only-link:focus-visible{outline:3px solid #966c20;outline-offset:3px}
+@media(forced-colors:active){.v3625-contact-steps .v3724-read-only-link{background:ButtonFace;color:LinkText;border-color:ButtonText}}
+</style><style>/* v37.43: 送信なし質問文例からの「戻る」操作を小画面で選びやすくする。
+   FAQ回答内リンクのv37.38調整とは異なり、対象は問い合わせ文例4件の戻り操作のみ。 */
+@media screen and (max-width:640px){
+  #v3629-mail-fallback .v3679-back-links a{
+    display:inline-flex;align-items:center;min-height:48px;max-width:100%;
+    box-sizing:border-box;padding:10px 8px;font-size:16px;
+    overflow-wrap:anywhere;vertical-align:middle;
+  }
+  #v3629-mail-fallback .v3716-back-to-summary{
+    min-height:48px;max-width:100%;box-sizing:border-box;
+    font:700 16px/1.6 system-ui,sans-serif;overflow-wrap:anywhere;
+  }
+}
 </style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 <section class="hero">
 <div class="wrap">
 <div class="eyebrow">CONTACT</div>
 <h1>お問い合わせ</h1>
-<p class="lead">電話・メール・アクセスの3つから、ご都合のよい方法をご利用ください。</p>
+<p class="lead">まず案内や質問文例を画面で読むだけでも構いません。必要なときに電話・メール・アクセスの情報をお選びください。問い合わせや参詣を決める必要はありません。</p>
 </div>
 </section>
 <nav class="v3634-contact-shortcuts" aria-label="問い合わせ方法を選ぶ">
 <div class="wrap"><strong>ご自身に合う方法を選べます</strong>
 <a href="#v3633-phone-guide">電話での話し方を見る</a>
-<a href="#v3621-contact-topics">メールの文例を選ぶ</a>
-<a href="#v3629-mail-fallback">メールアプリを使わず文例をコピー</a>
+<a href="#v3661-email-action-help">メールアプリで下書きを開く方法（送信なし）</a>
+<a href="#v3629-mail-fallback">4種類の文例を画面で読む（送信なし）</a>
+<a href="first-visit.html#visit-faq">初めての方のFAQへ戻る</a>
 <p>案内を読むだけでは連絡されません。日時・参加条件などは寺院への確認が必要です。</p>
 </div></nav>
 <section class="v33-context" data-v33="context-photo"><div class="wrap"><div class="v33-context-grid"><figure class="v33-context-photo"><img alt="妙本寺の外観" loading="lazy" src="14521_1.jpg"/><figcaption>妙本寺 外観</figcaption></figure><div class="v33-context-copy"><div class="eyebrow">ACCESS</div><h2>初めてお越しになる方へ。</h2><p>妙本寺は神戸市灘区原田通3丁目1-1にあります。JR灘駅北口、阪急王子公園駅から徒歩約5分です。</p></div></div></div></section>
@@ -130,13 +258,16 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
 </section><section aria-labelledby="v3621-contact-title" class="v3621-contact-topics" id="v3621-contact-topics" tabindex="-1"><div class="wrap">
 <p class="eyebrow">ASK A QUESTION</p>
 <h2 id="v3621-contact-title">何を伝えればよいか迷う方へ</h2>
-<p>お問い合わせでは、最初から詳しく説明する必要はありません。目的に近い文例を選ぶと、メールアプリに下書きが表示されます。内容を確認・修正してから、ご自身で送信してください。</p>
+<p>お問い合わせでは、最初から詳しく説明する必要はありません。このページには、<strong>文例を画面で読む方法</strong>と、<strong>メールアプリで下書きを開く方法</strong>があります。どちらも自動送信されません。読むだけで終えることも、ご自身で連絡を選ぶこともできます。</p>
 <div class="v3623-question-prep" aria-label="問い合わせ前にまとめておくこと"><h3>問い合わせ前に整理しておくと便利なこと</h3>
 <ol><li>何を知りたいか（例：法話会・初めての参詣・法華講便り）</li><li>希望する日付や時間帯（決まっていなければ空欄で構いません）</li><li>特に確認したいこと（服装、費用、家族同伴、行事の開催状況など）</li></ol>
 <p>個人情報や詳しいご事情を、最初からすべて伝える必要はありません。寺院からの返信の方法・受付時間などは、ご自身で確認してください。</p><p><a href="visit-note.html">印刷して使える「参詣前の確認メモ」もあります →</a></p></div><div class="v3625-contact-steps" style="background:#f7faf6;border:1px solid #d4dfd3;border-radius:12px;padding:18px;margin:20px 0">
-<strong>お問い合わせから参詣までの流れ</strong>
-<ol style="padding-left:1.5em;line-height:1.9;margin:9px 0 10px"><li>下の文例を選び、必要な箇所だけ編集する。</li><li>送信内容を確認し、ご自身でメールを送る。または電話で尋ねる。</li><li>寺院に日時・参加条件を確認してから、訪問を検討する。</li></ol>
-<p style="margin:0">このHPには自動予約・自動送信機能はありません。返信までの時間や受け入れ可否は確約していません。</p>
+<h3 style="margin:0 0 8px">読むだけで終了しても構いません</h3>
+<p>このページの質問文例は、連絡をする前に内容を確かめるためにも読めます。画面で読むだけなら、メールアプリは開かず、問い合わせも送信されません。読んだ後は、そのままページを閉じても構いません。</p>
+<p><a class="v3724-read-only-link" href="#v3629-mail-fallback">4種類の文例を画面で読む（送信なし）</a></p>
+<h3 style="margin:16px 0 8px">連絡を希望する場合の3ステップ（任意）</h3>
+<ol style="padding-left:1.5em;line-height:1.9;margin:9px 0 10px"><li>確認したいことがあれば、文例を参考に必要な内容だけ整理する。</li><li>連絡する場合は、メールの下書き内容を自分で確認して送信するか、電話で質問する。</li><li>参詣や法話会を検討する場合は、日時・参加条件などを寺院に確認してから判断する。</li></ol>
+<p style="margin:0">このHPには自動予約・自動送信機能はありません。返信までの時間や受け入れ可否は確約していません。連絡・参詣・入信をこの案内から求めるものではありません。</p>
 </div>
 <div class="v3633-phone-guide" id="v3633-phone-guide" tabindex="-1" aria-labelledby="v3633-phone-title" style="border:1px solid #cbd7ca;border-radius:12px;background:#f7faf6;padding:18px;margin:18px 0">
 <h3 id="v3633-phone-title" style="margin-top:0">電話で質問したい方へ｜短い話し方の例</h3>
@@ -148,36 +279,50 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
 <p style="font-size:.95em">電話の受付時間、つながるかどうか、参加可否、費用はこのページでは確約していません。個人情報や詳しい事情は必要な範囲でのみお伝えください。</p>
 </div>
 <div class="v3661-mail-entry" aria-label="メール文例を選ぶ前の案内">
-<p id="v3636-howakai-mail" tabindex="-1"><strong>法話会・行事について確認したい方へ：</strong> 下の「法話会・行事について」の文例を選ぶと、メールアプリの下書き画面が開きます。<strong>選ぶだけでは送信されません。</strong> まだ連絡しない場合は、<a href="#v3629-mail-fallback">画面上で読める文例</a>をご覧ください。</p>
-<p id="v3632-access-question" tabindex="-1"><strong>移動・座席・聞こえ方について確認したい方へ：</strong> 下の専用文例を利用できます。必要なことだけ質問し、診断名など詳しい個人情報は書かなくても構いません。<a href="#v3629-mail-fallback">アプリを開かずに文例を見る</a>こともできます。</p>
-<p id="v3661-email-action-help">以下の4つのリンクはメールアプリを開く操作です。このページからメールは自動送信されません。送信するかどうかは、ご自身で決められます。</p>
+<p id="v3636-howakai-mail" tabindex="-1"><strong>法話会・行事について確認したい方へ：</strong> 下の「法話会・行事について」の文例を選ぶと、メールアプリの下書き画面が開きます。<strong>選ぶだけでは送信されません。</strong> まだ連絡しない場合は、<a href="#v3678-howakai-copy">法話会・行事の文例を画面上で読む（送信なし）</a>こともできます。</p>
+<p id="v3632-access-question" tabindex="-1"><strong>移動・座席・聞こえ方について確認したい方へ：</strong> 下の専用文例を利用できます。必要なことだけ質問し、診断名など詳しい個人情報は書かなくても構いません。<a href="#v3708-access-copy">アプリを開かずに専用の文例を読む（送信なし）</a>こともできます。</p>
+<p id="v3661-email-action-help" tabindex="-1">以下の4つのリンクはメールアプリを開く操作です。このページからメールは自動送信されません。送信するかどうかは、ご自身で決められます。</p>
 </div>
 <div class="v3621-email-actions v3632-email-actions"><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%81%B8%E3%81%AE%E5%8F%82%E8%A9%A3%E3%82%92%E8%80%83%E3%81%88%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E6%99%82%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">初めての参詣について：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%83%BB%E8%A1%8C%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%8A%E5%B0%8B%E3%81%AD%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%E9%96%A2%E5%BF%83%E3%81%AE%E3%81%82%E3%82%8B%E8%A1%8C%E4%BA%8B%EF%BC%9A%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E6%97%A5%E7%A8%8B%EF%BC%9A%0A%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法話会・行事について：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6&amp;body=%E6%B3%95%E8%8F%AF%E8%AC%9B%E4%BE%BF%E3%82%8A%E3%82%92%E8%AA%AD%E3%81%BF%E3%80%81%E8%B3%AA%E5%95%8F%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%AF%BE%E8%B1%A1%E3%81%AE%E7%99%BA%E8%A1%8C%E5%B9%B4%E6%9C%88%EF%BC%9A%0A%E8%A8%98%E4%BA%8B%E3%81%AE%E3%83%86%E3%83%BC%E3%83%9E%EF%BC%9A%0A%E8%B3%AA%E5%95%8F%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%0A">法華講便りについて：メール文例を開く（送信はされません） →</a><a href="mailto:kobe.myouhonji@gmail.com?subject=%E5%A6%99%E6%9C%AC%E5%AF%BA%E3%80%80%E7%A7%BB%E5%8B%95%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%AE%E4%BA%8B%E5%89%8D%E7%A2%BA%E8%AA%8D&amp;body=%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AE%E5%8F%82%E8%A9%A3%E3%83%BB%E6%B3%95%E8%A9%B1%E4%BC%9A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E8%A8%AA%E5%95%8F%E5%89%8D%E3%81%AB%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%E5%B8%8C%E6%9C%9B%E3%81%99%E3%82%8B%E8%A1%8C%E4%BA%8B%E3%83%BB%E6%97%A5%E6%99%82%EF%BC%9A%EF%BC%88%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8C%E3%81%B0%E8%A8%98%E5%85%A5%EF%BC%89%0A%E7%A7%BB%E5%8B%95%E7%B5%8C%E8%B7%AF%E3%83%BB%E5%BA%A7%E5%B8%AD%E3%83%BB%E8%81%9E%E3%81%93%E3%81%88%E6%96%B9%E3%81%AA%E3%81%A9%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%97%E3%81%9F%E3%81%84%E3%81%93%E3%81%A8%EF%BC%9A%EF%BC%88%E5%BF%85%E8%A6%81%E3%81%AA%E7%AF%84%E5%9B%B2%E3%81%A7%E8%A8%98%E5%85%A5%EF%BC%89%0A">移動・聞こえ方などの事前確認：メール文例を開く（送信はされません） →</a></div>
 <div class="v3629-mail-fallback" id="v3629-mail-fallback" tabindex="-1" aria-labelledby="v3629-mail-title">
-<h3 id="v3629-mail-title">メールアプリが開かない場合は</h3>
-<p>以下の文例を開き、必要な部分だけコピーして、普段お使いのメールサービスに貼り付けてください。宛先は <strong>kobe.myouhonji@gmail.com</strong> です。<strong>このページから自動送信されることはありません。</strong> 電話での確認も可能です。</p>
-<details><summary>初めての参詣についての文例を表示</summary><p class="v3629-template">件名：妙本寺　初めての参詣について
+<p class="v3714-print-intro">神戸妙本寺｜問い合わせ文例（非公開・未送信・未回答）<br>これは下書きであり、寺院からの回答や参詣・法話会の確定案内ではありません。</p>
+<h3 id="v3629-mail-title">メールアプリを開かずに文例を読む・コピーする</h3>
+<p>以下の文例は<strong>画面で読むだけでも構いません</strong>。必要になった場合だけ、文章を選択し、普段お使いのメールサービスへ貼り付けることもできます。宛先は <strong>kobe.myouhonji@gmail.com</strong> です。<strong>このページから自動送信されることはありません。</strong> 電話での確認も選べます。</p>
+<p class="v3712-print-help">印刷する場合は、必要な文例を開いてから印刷してください。<strong>文例は未記入の下書きです。印刷しても問い合わせは送信されず、寺院からの回答にもなりません。</strong>連絡や参詣はご自身の判断でお選びください。</p>
+<p class="v3710-selection-help" id="v3710-copy-help">各文例には、<strong>「件名：」で始まる件名の行</strong>と、その下の<strong>メール本文</strong>が含まれます。「件名と本文をまとめて選択（送信なし）」を押すと、両方が一度に選択されます。メールに貼り付ける際は、件名の行を件名欄に、空行より下の文章を本文欄に分け、内容を確認してください。<strong>選択だけではコピー・送信されません。</strong> コピー・貼り付け・送信はご自身で判断できます。ボタンが使えない場合は、文字を手で選べます。読むだけでも構いません。</p>
+<p class="v3716-keyboard-help" id="v3716-keyboard-help"><strong>キーボードで操作する方へ：</strong>Tabキーで文例の見出しへ移動し、EnterまたはSpaceで開閉できます。開いた後はTabキーで「件名と本文を選択」→「この文例だけを印刷」→案内へ戻るリンク（複数ある場合があります）→「この文例の見出しに戻る」の順に移動できます。Shift＋Tabで前へ戻れます。印刷・メール送信は自動実行されず、読むだけでも構いません。</p>
+<nav class="v3717-read-only-routes" aria-label="送信せず画面で読む4種類の質問文例">
+<p><strong>どのことを確認したいですか？</strong> 下のリンクは、このページ内の文例に移動するだけです。メールアプリは開かず、送信もされません。JavaScriptを使わない場合は、移動先の見出しを押すと文例を開けます。</p>
+<ul>
+<li><a href="#v3689-first-visit-copy">初めての参詣について読む（送信なし）</a></li>
+<li><a href="#v3678-howakai-copy">法話会・行事について読む（送信なし）</a></li>
+<li><a href="#v3686-dayori-copy">法華講便りについて読む（全22号の原文照合・掲載許可は未完了）</a></li>
+<li><a href="#v3708-access-copy">移動・聞こえ方について読む（送信なし）</a></li>
+</ul>
+<p class="v3717-no-pressure">どれも選ばずに、このページを閉じても構いません。参詣・法話会の日時や参加条件は寺院確認待ちです。</p>
+</nav>
+<details id="v3689-first-visit-copy" open><summary>初めての参詣についての文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　初めての参詣について
 
 初めて妙本寺への参詣を考えています。
 希望する日時：（必要に応じて記入）
-確認したいこと：（必要に応じて記入）</p></details>
-<details><summary>法話会・行事についての文例を表示</summary><p class="v3629-template">件名：妙本寺　法話会・行事について
+確認したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="first-visit.html#faq-visit-terms">初参詣FAQの「予約・費用」の質問へ戻る</a> ／ <a href="first-visit.html#visit-faq">FAQ全11問の入口へ戻る</a></p></details>
+<details id="v3678-howakai-copy" open><summary>法話会・行事についての文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　法話会・行事について
 
 法話会・行事についてお尋ねします。
 関心のある行事：（必要に応じて記入）
 希望する日程：（必要に応じて記入）
-確認したいこと：（必要に応じて記入）</p></details>
-<details><summary>法華講便りについての文例を表示</summary><p class="v3629-template">件名：妙本寺　法華講便りについて
+確認したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="news.html#howakai">法話会の案内へ戻る</a> ／ <a href="first-visit.html#v3637-howakai-faq">初参詣のFAQへ戻る</a></p></details>
+<details id="v3686-dayori-copy" open><summary>法華講便りについての文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　法華講便りについて
 
 法華講便りについて質問があります。
 対象の発行年月：（分かる範囲で記入）
 記事のテーマ：（分かる範囲で記入）
-質問したいこと：（必要に応じて記入）</p></details>
-<details><summary>移動・聞こえ方などの事前確認の文例を表示</summary><p class="v3629-template">件名：妙本寺　移動・聞こえ方などの事前確認
+質問したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="kongetsu-shishin.html#past-issues">法華講便り22号の年・月別一覧へ戻る</a> ／ <a href="hokeko-dayori.html#editorial-status">法華講便りの掲載状態へ戻る</a> ／ <a href="first-visit.html#faq-dayori-status">初参詣FAQの原文確認説明へ戻る</a></p></details>
+<details id="v3708-access-copy" open><summary>移動・聞こえ方などの事前確認の文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　移動・聞こえ方などの事前確認
 
 初めての参詣・法話会について、訪問前に確認したいことがあります。
 希望する行事・日時：（決まっていれば記入）
-移動経路・座席・聞こえ方などで確認したいこと：（必要な範囲で記入）</p></details>
+移動経路・座席・聞こえ方などで確認したいこと：（必要な範囲で記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="first-visit.html#faq-access-needs">初参詣FAQの「移動や聞こえ方」の質問へ戻る</a></p></details>
 <p class="v3632-access-note">設備や対応の可否を保証するものではありません。診断名や詳しい個人情報を記載する必要はありません。必要なことだけを寺院へ確認してください。</p>
 <p>連絡するかどうかはご自身でお決めください。氏名・連絡先・詳しい事情をこのHPに入力する必要はありません。返信の時期は保証していません。</p>
 </div>
@@ -195,11 +340,28 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
 </section>
 <section><div class="wrap"><div class="eyebrow">QR CODE</div><h2>妙本寺のご案内をスマートフォンでも</h2>
 <p><img alt="妙本寺ホームページのQRコード" height="180" loading="lazy" src="myohonji-hp-qr.png" width="180"/></p>
-<p>このQRコードは妙本寺ホームページの案内用です。初めての方向け情報や掲載済みの行事資料をご覧いただけます。行事の日時・会場・参加方法は自動的に最新になるとは限りません。必要な場合だけ寺院へご確認ください。</p></div></section>
+<p>このQRコードは妙本寺ホームページの案内用です。初めての方向け情報や掲載済みの行事資料をご覧いただけます。行事の日時・会場・参加方法は自動的に最新になるとは限りません。必要な場合だけ寺院へご確認ください。</p>
+<nav class="v3709-qr-text-routes" aria-label="QRコードを使わずに読む案内先">
+<p><strong>QRコードを読み取れない場合</strong>も、文字のリンクから必要なページを開けます。カメラアプリやQRコードの読み取りは必要ありません。</p>
+<ul>
+<li><a href="index.html">ホームページのトップへ</a></li>
+<li><a href="first-visit.html#visit-faq">初めての方のよくある質問へ</a></li>
+<li><a href="kongetsu-shishin.html#past-issues">法華講便り22号の年・月別一覧へ（原文照合・掲載許可は未完了）</a></li>
+<li><a href="news.html#howakai">法話会の案内へ（日時・会場・参加条件は寺院確認待ち）</a></li>
+</ul>
+<p>どのページも読むだけで構いません。問い合わせや参詣を決める必要はありません。</p>
+</nav></div></section>
 </main>
+<script>/* v37.26: JavaScriptが無効な場合は4文例をHTML標準のopen属性で表示。
+   JSが使える場合のみ通常は折りたたみ、既存のハッシュ到着処理が指定文例を開く。
+   入力・通信・保存・自動送信なし。 */
+(function(){
+  document.querySelectorAll('#v3629-mail-fallback > details[id]').forEach(function(item){item.open=false;});
+})();
+</script>
 <script>/* v36.68: 説明リンク先とメール文例一覧への移動時に焦点を合わせる。送信や外部アプリ起動はしない。 */
 (function(){
-  var safeTargets={'v3636-howakai-mail':true,'v3632-access-question':true,'v3621-contact-topics':true,'v3633-phone-guide':true,'v3629-mail-fallback':true};
+  var safeTargets={'v3636-howakai-mail':true,'v3632-access-question':true,'v3621-contact-topics':true,'v3633-phone-guide':true,'v3629-mail-fallback':true,'v3661-email-action-help':true};
   function focusExplanation(){
     var id=window.location.hash.slice(1);
     if(!safeTargets[id])return;
@@ -210,6 +372,190 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
   window.addEventListener('hashchange',focusExplanation);
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusExplanation);
   else focusExplanation();
+})();
+</script>
+<script>/* v36.89: 既存の法話会・法華講便りに初参詣の文例を追加し、アンカー移動を共通処理。
+   指定された文例だけを開き、summaryに焦点を移す。送信・保存なし。 */
+(function(){
+  var supported={'v3678-howakai-copy':true,'v3686-dayori-copy':true,'v3689-first-visit-copy':true,'v3708-access-copy':true};
+  function revealQuestionExample(){
+    var id=window.location.hash.slice(1);
+    if(!supported[id])return;
+    var details=document.getElementById(id);
+    if(!details)return;
+    details.open=true;
+    var summary=details.querySelector('summary');
+    if(!summary)return;
+    try{summary.focus({preventScroll:true});}catch(e){summary.focus();}
+    summary.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  window.addEventListener('hashchange',revealQuestionExample);
+  /* v37.23: a link to the fragment already in the address bar does not fire
+     hashchange. Reopen a manually closed example when the visitor selects
+     that same on-page shortcut again; keyboard activation also fires click. */
+  document.addEventListener('click',function(event){
+    var link=event.target.closest && event.target.closest('a[href^="#"]');
+    if(!link)return;
+    var fragment=link.getAttribute('href');
+    if(fragment!==window.location.hash || !supported[fragment.slice(1)])return;
+    window.setTimeout(revealQuestionExample,0);
+  });
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){revealQuestionExample();setTimeout(function(){if(document.activeElement===document.body)revealQuestionExample();},80);});
+  else {revealQuestionExample();setTimeout(function(){if(document.activeElement===document.body)revealQuestionExample();},80);}
+})();
+</script>
+<script>/* v37.11: 件名行と本文を含む表示中の文例pを選択。クリップボード・通信・送信は使用しない。 */
+(function(){
+  function setup(){
+    var entries=document.querySelectorAll('.v3629-mail-fallback details[id]');
+    entries.forEach(function(details){
+      var template=details.querySelector('.v3629-template');
+      var summary=details.querySelector('summary');
+      if(!template || !summary || details.querySelector('.v3710-select-button'))return;
+      var tools=document.createElement('div');
+      tools.className='v3710-select-tools';
+      var button=document.createElement('button');
+      button.type='button';
+      button.className='v3710-select-button';
+      button.textContent='件名と本文をまとめて選択（送信なし）';
+      button.setAttribute('aria-label',summary.textContent.replace(/を表示.*$/,'')+'の件名と本文を選択（送信なし）');
+      button.setAttribute('aria-describedby','v3710-copy-help');
+      var status=document.createElement('span');
+      status.className='v3710-select-status';
+      status.setAttribute('role','status');
+      status.setAttribute('aria-live','polite');
+      button.addEventListener('click',function(){
+        var selection=window.getSelection && window.getSelection();
+        if(!selection || !document.createRange){
+          status.textContent='自動選択に対応していません。文字を手で選んでください。';
+          return;
+        }
+        try{
+          var range=document.createRange();
+          range.selectNodeContents(template);
+          selection.removeAllRanges();
+          selection.addRange(range);
+          status.textContent=selection.toString().trim() ? '件名と本文をまとめて選択しました。メールでは件名欄と本文欄に分けてください。コピー・送信はされません。' : '選択できませんでした。文字を手で選んでください。';
+        }catch(e){status.textContent='選択できませんでした。文字を手で選んでください。';}
+      });
+      tools.appendChild(button);
+      tools.appendChild(status);
+      template.insertAdjacentElement('afterend',tools);
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);
+  else setup();
+})();
+</script>
+<style>/* v37.15: 印刷画面の終了後だけ短い状態通知を表示する。 */
+.v3715-print-status{font:14px/1.65 system-ui,sans-serif;color:#25432d;margin:0 12px 10px;overflow-wrap:anywhere}
+.v3715-print-status:empty{display:none}
+@media print{.v3715-print-status{display:none!important}}
+@media(forced-colors:active){.v3715-print-status{color:CanvasText}}
+</style>
+<script>/* v37.15: 1件印刷後の表示復帰を明示し、複数回操作での復帰処理の重複を防ぐ。 */
+(function(){
+  function setup(){
+    var entries=document.querySelectorAll('#v3629-mail-fallback > details[id]');
+    var activeCleanup=null;
+    entries.forEach(function(details){
+      var summary=details.querySelector('summary');
+      var template=details.querySelector('.v3629-template');
+      if(!summary || !template || details.querySelector('.v3714-print-one-button'))return;
+      var button=document.createElement('button');
+      button.type='button';
+      button.className='v3714-print-one-button';
+      button.textContent='この文例だけを印刷（送信なし）';
+      button.setAttribute('aria-label',summary.textContent.replace(/を表示.*$/,'')+'を1件だけ印刷（送信なし）');
+      var hint=document.createElement('p');
+      hint.className='v3714-print-instruction';
+      hint.textContent='このボタンは印刷画面を開くだけです。印刷・PDF保存するかどうかはご自身で選べます。問い合わせは送信されません。';
+      var status=document.createElement('p');
+      status.className='v3715-print-status';
+      status.setAttribute('role','status');
+      status.setAttribute('aria-live','polite');
+      status.setAttribute('aria-atomic','true');
+      var holder=document.createElement('div');
+      holder.appendChild(button);
+      holder.appendChild(hint);
+      holder.appendChild(status);
+      // v37.16: キーボード操作は「文例を選択」→「1件印刷」→「戻る」の順。
+      // 選択補助の後に配置し、画面上の説明とTab順を一致させる。
+      var selectTools=details.querySelector('.v3710-select-tools');
+      (selectTools || template).insertAdjacentElement('afterend',holder);
+      button.addEventListener('click',function(){
+        if(activeCleanup)activeCleanup(false);
+        document.querySelectorAll('#v3629-mail-fallback > details.v3714-print-target').forEach(function(el){el.classList.remove('v3714-print-target');});
+        details.classList.add('v3714-print-target');
+        document.body.classList.add('v3714-print-one');
+        status.textContent='印刷画面を開きます。印刷するかどうかは選べます。送信はされません。';
+        var cleaned=false, fallbackTimer=null;
+        function cleanup(announce){
+          if(cleaned)return;
+          cleaned=true;
+          document.body.classList.remove('v3714-print-one');
+          details.classList.remove('v3714-print-target');
+          window.removeEventListener('afterprint',onAfterPrint);
+          window.removeEventListener('focus',onFocus);
+          window.removeEventListener('pagehide',onPageHide);
+          if(fallbackTimer!==null)window.clearTimeout(fallbackTimer);
+          if(activeCleanup===cleanup)activeCleanup=null;
+          if(announce)status.textContent='印刷画面を閉じました。通常の表示に戻りました。問い合わせは送信されていません。';
+        }
+        function onAfterPrint(){cleanup(true);}
+        function onPageHide(){cleanup(false);}
+        function onFocus(){
+          // afterprintを通知しない環境でも、印刷プレビューを閉じて画面へ戻った後に復帰する。
+          window.setTimeout(function(){
+            if(cleaned)return;
+            var printing=window.matchMedia && window.matchMedia('print').matches;
+            if(!printing)cleanup(true);
+          },300);
+        }
+        activeCleanup=cleanup;
+        window.addEventListener('afterprint',onAfterPrint);
+        window.addEventListener('focus',onFocus);
+        window.addEventListener('pagehide',onPageHide);
+        try{window.print();}catch(e){cleanup(false);status.textContent='印刷画面を開けませんでした。文例は画面で読めます。問い合わせは送信されていません。';return;}
+        // 印刷画面が長時間開いている場合は印刷CSSを維持。閉じた後のfocus/afterprintで復帰。
+        // 例外的にイベントが来ない場合の最終保険。印刷中なら延長する。
+        function fallback(){
+          if(cleaned)return;
+          if(window.matchMedia && window.matchMedia('print').matches){fallbackTimer=window.setTimeout(fallback,60000);return;}
+          cleanup(true);
+        }
+        fallbackTimer=window.setTimeout(fallback,60000);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);
+  else setup();
+})();
+</script>
+
+
+<script>/* v37.16: 各文例の最後から見出しへ戻る。移動・送信・コピーなし。 */
+(function(){
+  function setup(){
+    document.querySelectorAll('#v3629-mail-fallback > details[id]').forEach(function(details){
+      var summary=details.querySelector('summary');
+      var backLinks=details.querySelector('.v3679-back-links');
+      if(!summary || !backLinks || details.querySelector('.v3716-back-to-summary'))return;
+      var button=document.createElement('button');
+      button.type='button';
+      button.className='v3716-back-to-summary';
+      button.textContent='この文例の見出しに戻る（ページ移動なし）';
+      button.setAttribute('aria-label',summary.textContent.replace(/を表示.*$/,'')+'の見出しに戻る（送信なし）');
+      button.addEventListener('click',function(){
+        details.open=true;
+        try{summary.focus({preventScroll:true});}catch(e){summary.focus();}
+        summary.scrollIntoView({block:'start',behavior:'auto'});
+      });
+      backLinks.insertAdjacentElement('afterend',button);
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);
+  else setup();
 })();
 </script>
 </body>

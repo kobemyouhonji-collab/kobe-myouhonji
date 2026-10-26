@@ -34,17 +34,57 @@ section.block{padding:56px 0;border-top:1px solid var(--line)}.news{border-top:1
 </style><style>/* v36.69: 淡色背景の小見出し・活動カードラベル・パンくずの視認性。法話会の濃緑背景は従来の明色を維持。 */
 main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d31}
 .breadcrumb{color:#605d57}
+</style><style>/* v37.29: 法話会の任意の3導線をタッチ・キーボード・強制色で選びやすくする。案内文と開催条件は変更しない。 */
+#howakai .v3637-howakai-links{list-style:none;margin:0!important;padding:0!important;display:grid;gap:10px;max-width:760px}
+#howakai .v3637-howakai-links li{margin:0!important;min-width:0}
+#howakai .v3637-howakai-links a{display:flex;align-items:center;min-height:48px;padding:11px 14px;border:2px solid #8da993;border-radius:9px;background:#fff;color:#20442e;text-decoration:underline;text-underline-offset:3px;font:600 15px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}
+#howakai .v3637-howakai-links a:focus-visible{outline:3px solid #88621d;outline-offset:3px}
+@media(forced-colors:active){#howakai .v3637-howakai-links a{background:Canvas;color:LinkText;border:2px solid LinkText}#howakai .v3637-howakai-links a:focus-visible{outline:3px solid Highlight}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{#howakai .v3637-howakai-links a{background:#fff;color:#000;border:1px solid #777;text-decoration:underline}}
+</style><style>/* v37.42: お知らせ内の4つのページ内入口は、スクロールだけでなく
+   キーボードの焦点位置も見えるようにする。JS無効時は :target を利用。 */
+#news,#shakubuku,#reports{scroll-margin-top:24px}
+#news:target,#news:focus,#shakubuku:target,#shakubuku:focus,#reports:target,#reports:focus{outline:3px solid #88621d;outline-offset:5px;border-radius:8px}
+.jump a:focus-visible{outline:3px solid #88621d;outline-offset:3px}
+@media(forced-colors:active){#news:target,#news:focus,#howakai:target,#howakai:focus,#shakubuku:target,#shakubuku:focus,#reports:target,#reports:focus,.jump a:focus-visible{outline:3px solid Highlight}}
+@media print{#news:target,#news:focus,#shakubuku:target,#shakubuku:focus,#reports:target,#reports:focus{outline:none}}
+</style><style>
+/* v37.48: お知らせ・法話会のページ内メニューを小画面で押しやすくする。
+   v37.42の焦点移動とは別の、文字・タッチ領域・折り返しの改善。 */
+@media (max-width:640px){
+  nav.jump{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  nav.jump > a{
+    display:flex;align-items:center;box-sizing:border-box;min-width:0;width:100%;
+    min-height:48px;padding:10px 15px;border-radius:12px;
+    font:600 16px/1.6 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+  nav.jump > p{min-width:0;margin:2px 0;padding:12px 14px;line-height:1.8;
+    border:1px solid var(--line);border-radius:12px}
+  nav.jump > p a{
+    display:inline-flex;align-items:center;box-sizing:border-box;max-width:100%;
+    min-height:48px;padding:9px 12px;border-radius:8px;
+    font:600 16px/1.6 system-ui,sans-serif;white-space:normal;overflow-wrap:anywhere;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+}
+@media (forced-colors:active){
+  nav.jump > a,nav.jump > p a{color:LinkText;border:2px solid LinkText;background:Canvas}
+  nav.jump > a:focus-visible,nav.jump > p a:focus-visible{
+    outline:3px solid Highlight;outline-offset:3px}
+}
 </style></head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <div class="breadcrumb"><div class="wrap"><a href="./">トップ</a> › お知らせ・活動報告</div></div>
-<main class="wrap" id="main-content">
+<main class="wrap" id="main-content" tabindex="-1">
 <div class="eyebrow">NEWS &amp; ACTIVITY</div>
 <h1>お知らせ・活動報告</h1><p class="v3638-first-help">初めて法話会を検討する方は、<a href="first-visit.html#v3637-howakai-faq">所要時間・途中入退室などの確認方法</a>や<a href="first-visit.html#visit-faq">初参詣の質問集</a>もご覧ください。参加の判断は説明を確認してから、ご自身で行えます。</p>
 <p class="lead">行事資料や活動の紹介を掲載しています。資料の記載と、現在の開催状況・参加条件が確認済みであることは別です。ご覧になったうえで、必要な場合だけ寺院へお確かめください。</p>
 <nav aria-label="ページ内メニュー" class="jump"><a href="#news">行事・日程の確認</a><a href="#howakai">法話会と三つの視点</a><a href="#shakubuku">4月・9月の活動案内（過去）</a><a href="#reports">活動報告</a><a href="hokeko-dayori.html">法華講便り</a><p>法華講便り22号は校閲・著者範囲・掲載許可の確認待ちです。<a href="first-visit.html#faq-dayori-status">掲載状態のFAQ</a>をご覧ください。過去の行事日程は現在の開催確定情報ではありません。</p><a href="annual-events.html">年間行事を見る</a></nav>
-<section class="block" id="news">
-<div class="eyebrow">EVENT INFORMATION</div><h2>行事の予定と確認先</h2>
+<section class="block" id="news" tabindex="-1" aria-labelledby="v3742-news-heading">
+<div class="eyebrow">EVENT INFORMATION</div><h2 id="v3742-news-heading">行事の予定と確認先</h2>
 <p class="notice" data-v352="freshness">掲載資料：法華講便り令和8年10月号（御会式）・2026年年間案内（定例予定）。ページ整理日：2026年10月11日。<strong>寺院への最新の開催確認は行っていません。</strong>日時・参加方法は変更になる場合があります。</p>
 <div class="contact-box" data-v352="schedule-check"><strong>参詣・参加の前に確認する</strong><p>予定表は開催確定の証明ではありません。当日の実施状況や参加方法は寺院へ直接ご確認ください。下のボタンは情報・連絡方法の案内を開き、電話を自動発信しません。</p><div class="actions"><a class="btn primary" href="annual-events.html">2026年の年間行事を見る</a><a class="btn" href="contact.html">寺院への問い合わせ方法を見る</a><a class="btn" href="contact.html#v3633-phone-guide">電話番号・質問方法を見る</a></div></div>
 <div class="notice" style="margin-top:22px"><strong>2027年（令和9年）の年間行事予定案を追加しました。</strong>ご提供の予定表には「検討資料」と記載されています。手書き訂正、要検討、未定の行事を含むため、<strong>開催確定のご案内ではありません。</strong> <a href="annual-events.html#annual-2027">2027年の予定案を見る →</a></div>
@@ -56,16 +96,16 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 <ol style="margin:10px 0 14px;padding-left:1.5em;line-height:1.9"><li>希望する日の開催が確定しているか</li><li>初めての方の参加条件や事前連絡の要否</li><li>開始・終了の目安と当日の流れ</li><li>服装・持ち物・費用などの確認事項</li></ol>
 <p style="margin:0 0 12px">未確認の項目は寺院へお尋ねください。参加するかどうかは、内容を確認してからご自身で判断できます。</p>
 <p class="v3643-route-label" style="margin:16px 0 8px"><strong>迷ったら、次の3つからお選びください。</strong>読むだけでも構いません。</p>
-<ul class="v3637-howakai-links" style="margin:0;padding-left:1.5em;line-height:1.8">
+<nav aria-label="法話会を知るための任意の確認方法"><ul class="v3637-howakai-links" style="margin:0;padding-left:1.5em;line-height:1.8">
 <li style="margin:0 0 7px"><a href="first-visit.html#v3637-howakai-faq">① 所要時間・途中入退室のFAQを読む →</a></li>
 <li style="margin:0 0 7px"><a href="visit-note.html">② 参詣前に確かめたいことをメモする →</a></li>
-<li style="margin:0 0 7px"><a href="contact.html#v3636-howakai-mail">③ 必要なら法話会の質問文例を見る →</a></li>
-</ul>
+<li style="margin:0 0 7px"><a href="contact.html#v3678-howakai-copy">③ 必要なら法話会の質問文例を画面で読む（送信なし） →</a></li>
+</ul></nav>
 <details class="v3643-more-contact" style="margin:14px 0 0;padding:10px 14px;border:1px solid #cbd7ca;border-radius:9px;background:#fff">
 <summary style="cursor:pointer;min-height:44px;display:list-item;padding:9px 2px;font-weight:700">電話・メールアプリ以外の方法や移動の相談先も見る</summary>
 <ul style="margin:10px 0 4px;padding-left:1.5em;line-height:1.9">
 <li><a href="contact.html#v3633-phone-guide">電話で質問するときの話し方 →</a></li>
-<li><a href="contact.html#v3629-mail-fallback">メール文例をコピーして使う方法 →</a></li>
+<li><a href="contact.html#v3678-howakai-copy">法話会・行事の質問文例を画面上で読む（送信なし） →</a></li>
 <li><a href="contact.html#v3632-access-question">移動・座席・聞こえ方の事前確認 →</a></li>
 </ul>
 </details>
@@ -73,9 +113,9 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 <article class="item"><div class="label">定例活動（日程は要確認）</div><div><strong>青年部・少年部合同部会</strong><p>毎月、御講日の午前11時30分（御講前）から合同部会を行っています。</p></div></article>
 </div>
 </section>
-<section class="feature" id="shakubuku">
+<section class="feature" id="shakubuku" tabindex="-1" aria-labelledby="v3742-shakubuku-heading">
 <div class="eyebrow">PAST ACTIVITY NOTICES</div>
-<h2>2026年4月・9月の折伏活動案内</h2>
+<h2 id="v3742-shakubuku-heading">2026年4月・9月の折伏活動案内</h2>
 <p class="feature-intro">4月と9月について、期間中は毎日活動する旨が掲載されていた案内を記録として残しています。<strong>現在の活動予定を示すものではありません。</strong></p>
 <div class="activity-grid">
 <article class="activity-card"><div class="month">APRIL · 2026年4月</div><strong>4月折伏活動</strong><p>4月の期間中、毎日活動する旨の案内が掲載されていました。</p></article>
@@ -85,12 +125,12 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 </section>
 <section class="block" id="dayori">
 <div class="eyebrow">HOKKEKO DAYORI</div><h2>法華講便り</h2>
-<p>この非公開改修版では、鈴木道雅御住職のお言葉として整理した<strong>法華講便り22号の原稿候補</strong>を年・月別に案内しています。長文原稿候補16号、本文復元案3号、抜粋のみ3号です。<strong>全22号とも原本との正式な全文校閲・著者範囲確認・掲載許可は未完了</strong>であり、確定した御住職の全文として紹介するものではありません。</p>
+<p>この非公開改修版では、法華講便りから編集上抽出した<strong>22号の原稿候補</strong>を年・月別に案内しています。鈴木道雅御住職の本文範囲は未確認です。長文原稿候補16号、本文復元案3号、抜粋のみ3号です。<strong>全22号とも原本との正式な全文校閲・著者範囲確認・掲載許可は未完了</strong>であり、確定した御住職の全文として紹介するものではありません。</p>
 <p>まずは掲載状態を確認し、ご自身のペースでご覧ください。読むだけで終えても構いません。法話会や参詣を検討する場合も、参加や問い合わせは任意です。</p>
 <div class="actions"><a class="btn primary" href="hokeko-dayori.html#editorial-status">読み方と掲載状態を確認する</a><a class="btn" href="kongetsu-shishin.html#past-issues">年・月別一覧を探す</a><a class="btn" href="first-visit.html#faq-dayori-status">原文確認のFAQを見る</a></div>
 </section>
-<section class="block" id="reports">
-<div class="eyebrow">ACTIVITY REPORT</div><h2>妙本寺だより・活動報告</h2>
+<section class="block" id="reports" tabindex="-1" aria-labelledby="v3742-reports-heading">
+<div class="eyebrow">ACTIVITY REPORT</div><h2 id="v3742-reports-heading">妙本寺だより・活動報告</h2>
 <p>行事のご報告や、各部・役員がそれぞれの役割で取り組む活動を継続してお伝えします。写真や内容を確認できたものから順次掲載し、妙本寺の日々の歩みを記録していきます。</p>
 <div class="report-grid">
 <article class="report-card"><small>SHARE THE DAYS</small><h3>日々の活動</h3><p>折伏活動や寺院での取り組みを、確認できた内容から掲載していきます。</p></article>
@@ -103,18 +143,29 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 </main>
 <footer>妙本寺　〒657-0837 兵庫県神戸市灘区原田通3丁目1-1<br/><a href="mailto:kobe.myouhonji@gmail.com">kobe.myouhonji@gmail.com</a></footer>
 <script defer="" src="share-v353.js"></script>
-<script>/* v36.66: 法話会の説明位置へのフォーカスのみ。外部操作なし。 */
+<script>/* v37.42: ページ内4入口で見える位置とキーボード焦点を一致させる。
+   v36.66の法話会直リンクも維持。URLが同じリンクを再選択した場合にも対応。
+   送信・保存・外部操作は行わない。JS無効時は通常の # リンクで移動する。 */
 (function(){
-  function focusHowakai(){
-    if(window.location.hash!=='#howakai')return;
-    var target=document.getElementById('howakai');
+  var allowed={news:true,howakai:true,shakubuku:true,reports:true};
+  function focusJump(){
+    var id=window.location.hash.slice(1);
+    if(!allowed[id])return;
+    var target=document.getElementById(id);
     if(!target)return;
     try{target.focus({preventScroll:true});}catch(e){target.focus();}
-    target.scrollIntoView({block:'start'});
+    target.scrollIntoView({block:'start',behavior:'auto'});
   }
-  window.addEventListener('hashchange',focusHowakai);
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusHowakai);
-  else focusHowakai();
+  window.addEventListener('hashchange',focusJump);
+  var menu=document.querySelector('nav.jump');
+  if(menu)menu.addEventListener('click',function(event){
+    var link=event.target.closest && event.target.closest('a[href^="#"]');
+    if(!link||!menu.contains(link))return;
+    var id=link.getAttribute('href').slice(1);
+    if(allowed[id]&&window.location.hash==='#'+id)window.setTimeout(focusJump,0);
+  });
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',focusJump);
+  else focusJump();
 })();
 </script></body>
 </html>

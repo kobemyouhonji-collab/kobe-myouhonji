@@ -1,0 +1,448 @@
+{
+  "version": "37.47",
+  "iteration": 71,
+  "date": "2026-10-26",
+  "baseline": "37.46",
+  "baseline_sha256": "57d38552168902f2983fd4abb4800cdba5daec5f03c97bbed22cfed25e369fd8",
+  "static": {
+    "html": 50,
+    "articles": 22,
+    "faq": 11,
+    "local_refs_checked": 952,
+    "fragment_refs_checked": 350,
+    "inline_scripts_syntax_checked": 59,
+    "protected_files_count": 27,
+    "protected_files_byte_identical": true,
+    "nav_link_labels_and_targets_unchanged": true,
+    "visible_text_multiset_unchanged": true,
+    "changed_existing_files_before_plan_report": [
+      "hokeko-dayori.html"
+    ]
+  },
+  "browser": {
+    "method": "Playwright Chromium about:blank set_content with embedded local CSS; not real URL navigation",
+    "cases": 15,
+    "results": [
+      {
+        "width": 256,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 75.2
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 75.2
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 256,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 256,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 75.2
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 75.2
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 256,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 320,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 320,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 320,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 320,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 360,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 360,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 360,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 360,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 390,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 390,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 390,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 390,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 640,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 640,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 640,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          },
+          {
+            "font": 16.0,
+            "height": 49.6
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 640,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 768,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 768,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 768,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 768,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 1280,
+        "javascript": true,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 1280,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 1280,
+        "javascript": false,
+        "nav_first": "#editorial-status",
+        "sizes": [
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          },
+          {
+            "font": 14.0,
+            "height": 42
+          }
+        ],
+        "fragment": "#editorial-status",
+        "focused_id": "editorial-status",
+        "target_visible": true,
+        "document_scroll_width": 1280,
+        "errors": [],
+        "pass": true
+      },
+      {
+        "width": 390,
+        "javascript": true,
+        "forced_colors": true,
+        "reduced_motion": true,
+        "outline_style": "solid",
+        "document_scroll_width": 390,
+        "errors": [],
+        "pass": true
+      }
+    ],
+    "real_html_navigation": "not tested: Chromium blocked http://127.0.0.1, file:// and intercepted URLs with ERR_BLOCKED_BY_ADMINISTRATOR",
+    "smartphone_real_device": "not tested",
+    "screen_reader": "not tested"
+  },
+  "issues": []
+}
