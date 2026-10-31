@@ -54,18 +54,85 @@ main .eyebrow,.hero .eyebrow{color:#795d31}
  .v3625-quicklinks a{border:2px solid LinkText;color:LinkText;background:Canvas}
  .v3625-quicklinks a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
 }
-</style></head>
+</style><style>
+/* v37.59: reading the UNVERIFIED editorial status and optional routes, screen only.
+   No article text, links, review status, or publication permissions change. */
+@media screen {
+ .breadcrumb{font-size:16px;line-height:1.7}
+ .breadcrumb a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+ .source,.note,.v3621-reader p,.v3621-reader dd,.v3623-howto .small{font-size:16px;line-height:1.85}
+ .actions .btn{display:inline-flex;align-items:center;min-height:48px;font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+}
+@media screen and (min-width:641px){
+ .v3625-quicklinks a{display:inline-flex;align-items:center;min-height:48px;font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+}
+@media screen and (forced-colors:active){
+ .breadcrumb a:focus-visible,.actions .btn:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
+</style>
+<style id="v3774-editorial-action-links">
+/* v37.74: only the optional inline choices inside the 22-issue editorial-status
+   explanation and the reading-guide question panel. No editorial text changes. */
+@media screen {
+ #editorial-status p a,
+ #reading-guide .v3624-questions a {
+   box-sizing:border-box;display:inline-flex;align-items:center;
+   min-height:48px;max-width:100%;margin:4px 3px;padding:10px 12px;
+   border:1.5px solid #58735e;border-radius:8px;
+   color:#204a30;background:#fff;
+   font:600 16px/1.6 system-ui,sans-serif;
+   text-decoration:underline;text-underline-offset:3px;
+   white-space:normal;overflow-wrap:anywhere;vertical-align:middle;
+ }
+ #editorial-status p a:focus-visible,
+ #reading-guide .v3624-questions a:focus-visible {
+   outline:3px solid #926720;outline-offset:3px;
+ }
+}
+@media screen and (max-width:520px) {
+ #editorial-status p a,
+ #reading-guide .v3624-questions a {display:flex;width:100%;margin:7px 0;}
+}
+@media screen and (forced-colors:active) {
+ #editorial-status p a,
+ #reading-guide .v3624-questions a {
+   background:Canvas;color:LinkText;border:2px solid LinkText;
+ }
+ #editorial-status p a:focus-visible,
+ #reading-guide .v3624-questions a:focus-visible {
+   outline:3px solid Highlight;outline-offset:3px;
+ }
+}
+</style>
+<style id="v3779-reading-landmarks">
+/* v37.79: name two existing optional reading-support regions for assistive technology.
+   No monthly article, status classification, contact route, or editorial text changes. */
+.v3624-questions h3 {
+  margin:0 0 8px;
+  font:700 16px/1.65 system-ui,sans-serif;
+  color:#264235;
+}
+.v3779-optional-nav {display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+@media screen and (max-width:520px) {
+  .v3779-optional-nav {display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  .v3779-optional-nav a {margin:0!important;width:100%;min-height:48px}
+}
+@media (forced-colors:active) {
+  .v3624-questions h3 {color:CanvasText}
+}
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <div class="breadcrumb"><div class="wrap"><a href="./">トップ</a> › <a href="news.html">お知らせ・活動報告</a> › 法華講便り</div></div>
-<div class="hero"><div class="wrap"><div class="eyebrow">HOKKEKO DAYORI</div><h1>法華講便り</h1><p class="lead">法華講便りから編集上抽出した月別原稿候補を案内します。鈴木道雅御住職の本文範囲・原文全文照合・掲載許可は22号すべて未確認です。発行年と月を選び、掲載状態を確かめながらご覧ください。</p>
+<div class="hero"><div class="wrap"><div class="eyebrow">HOKKEKO DAYORI</div><h1 id="v3758-dayori-title">法華講便り</h1><p class="lead" id="v3758-dayori-intro">法華講便りから編集上抽出した月別原稿候補を案内します。鈴木道雅御住職の本文範囲・原文全文照合・掲載許可は22号すべて未確認です。発行年と月を選び、掲載状態を確かめながらご覧ください。</p>
 <nav aria-label="法華講便りのページ内案内" class="v3625-quicklinks" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
 <a class="btn primary" href="#editorial-status">原文・掲載許可の確認状況</a>
 <a class="btn" href="kongetsu-shishin.html#past-issues">年・月・題名から探す（22号）</a>
 <a class="btn" href="#reading-guide">読むときの3つの手順</a>
 <a class="btn" href="hokeko-dayori-2026-10.html">令和8年10月号（抜粋）を読む</a>
 </nav></div></div>
-<main class="wrap" id="main-content" tabindex="-1">
+<main class="wrap" id="main-content" tabindex="-1" aria-labelledby="v3758-dayori-title" aria-describedby="v3758-dayori-intro">
 <section aria-labelledby="guidance-heading" id="monthly-guidance">
 <div class="eyebrow">MONTHLY GUIDANCE</div>
 <h2 id="guidance-heading">年・月別の掲載候補を探す</h2>
@@ -76,8 +143,8 @@ main .eyebrow,.hero .eyebrow{color:#795d31}
 <div class="actions"><a class="btn primary" href="kongetsu-shishin.html">年・月別一覧を見る →</a><a class="btn" href="kongetsu-shishin.html#past-issues">過去の法華講便りを探す →</a></div>
 </div>
 <p class="source" style="margin-top:18px">掲載対象：法華講便りから抽出した原稿候補です。鈴木道雅御住職の本文範囲・原文の正確性・掲載許可は寺院による確認待ちです。</p>
-<div aria-label="法華講便りの読み方" class="v3621-reader">
-<h3>初めて読む方へ</h3>
+<div class="v3621-reader" role="region" aria-labelledby="v3779-reading-legend-title">
+<h3 id="v3779-reading-legend-title">初めて読む方へ</h3>
 <p>月別ページは、御住職のお言葉と考えられる部分を編集上の候補として整理したものです。他の執筆者の文章との区分を含め、原本との照合は未完了です。月を選ぶと、掲載状態を確認できます。</p>
 <dl class="v3621-legend">
 <div><dt>長文原稿候補・未校閲</dt><dd>原稿から長文を復元した下書きです。原文との全文照合・著者範囲の確認・掲載許可は未完了です。</dd></div>
@@ -102,10 +169,14 @@ main .eyebrow,.hero .eyebrow{color:#795d31}
 </ol>
 <p class="small">※ この非公開版に載せた文章は、寺院による原文・掲載許可の最終確認前です。校閲前の記事を「確認済み全文」とは表記していません。</p>
 <a class="btn primary" href="kongetsu-shishin.html#past-issues">22号分の年・月別一覧を開く →</a>
-<div class="v3624-questions" aria-label="読むときに役立つ問い" style="margin-top:22px;padding:17px 20px;background:#fff;border:1px solid #cbd7ca;border-radius:12px">
-<strong>読みながら考えてみたいこと</strong>
+<div class="v3624-questions" role="region" aria-labelledby="v3779-reading-questions-title" style="margin-top:22px;padding:17px 20px;background:#fff;border:1px solid #cbd7ca;border-radius:12px">
+<h3 id="v3779-reading-questions-title">読みながら考えてみたいこと</h3>
 <ul><li>心に残った一文はどこですか。</li><li>意味を知りたい言葉はありますか。</li><li>御住職に直接聞いてみたいことはありますか。</li></ul>
-<p>答えを出す必要はありません。疑問を整理したい方は、<a href="visit-note.html">印刷できる確認メモ</a>や<a href="contact.html#v3621-contact-topics">質問文例</a>をご利用ください。</p>
+<p>答えを出す必要はありません。疑問を整理したい方は、次の案内を必要に応じてご利用ください。</p>
+<nav class="v3779-optional-nav" aria-label="読後に選べる任意の案内">
+<a href="visit-note.html">印刷できる確認メモ</a>
+<a href="contact.html#v3621-contact-topics">質問文例</a>
+</nav>
 </div>
 </section>
 <section aria-labelledby="related-heading">

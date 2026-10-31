@@ -1,0 +1,224 @@
+{
+  "version": "37.91",
+  "iteration": 115,
+  "date": "2026-10-28",
+  "baseline": "37.90",
+  "baseline_sha256": "57a2b7e4ad88f4f5c46e7f2cdaba06acb469b6d2c686ac27c29aaaa149ece996",
+  "scope": "first-visit.html 法話会FAQから開催前の確認4点への任意の直接リンク",
+  "static": {
+    "html_pages": 50,
+    "monthly_articles": 22,
+    "faq_questions": 11,
+    "relative_file_refs": 964,
+    "fragment_refs": 359,
+    "aria_idrefs": 176,
+    "jsonld": 47,
+    "inline_js": 62,
+    "protected_byte_identical": 29,
+    "new_direct_link_count": 1,
+    "original_faq_questions_unchanged": true,
+    "original_faq_answer_paragraphs_unchanged": true
+  },
+  "static_issues": [],
+  "source_audit_status": "22号すべて正式原本全文照合・著者範囲確認・掲載許可が未完了。原本候補の部分一致は正式校閲ではない",
+  "browser": {
+    "method": "Chromium about:blank set_content with local CSS embedded; not real file URL or actual inter-page navigation",
+    "cases": [
+      {
+        "case": "width-256",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 108.390625,
+          "width": 224,
+          "visible": true,
+          "scrollWidth": 256,
+          "innerWidth": 256
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-320",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 79.59375,
+          "width": 288,
+          "visible": true,
+          "scrollWidth": 320,
+          "innerWidth": 320
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-390",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 79.59375,
+          "width": 354,
+          "visible": true,
+          "scrollWidth": 390,
+          "innerWidth": 390
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-520",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 50.796875,
+          "width": 484,
+          "visible": true,
+          "scrollWidth": 520,
+          "innerWidth": 520
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-640",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 50.796875,
+          "width": 468.015625,
+          "visible": true,
+          "scrollWidth": 640,
+          "innerWidth": 640
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-641",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 51.1875,
+          "width": 470.015625,
+          "visible": true,
+          "scrollWidth": 641,
+          "innerWidth": 641
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-768",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 51.1875,
+          "width": 470.015625,
+          "visible": true,
+          "scrollWidth": 768,
+          "innerWidth": 768
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-900",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 51.1875,
+          "width": 470.015625,
+          "visible": true,
+          "scrollWidth": 900,
+          "innerWidth": 900
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-1024",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 51.1875,
+          "width": 470.015625,
+          "visible": true,
+          "scrollWidth": 1024,
+          "innerWidth": 1024
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "width-1280",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を先に読む（日時・条件は要確認／送信なし）",
+          "href": "news.html#v3782-howakai-check",
+          "font": 16,
+          "height": 51.1875,
+          "width": 470.015625,
+          "visible": true,
+          "scrollWidth": 1280,
+          "innerWidth": 1280
+        },
+        "pageerrors": []
+      },
+      {
+        "case": "keyboard-focus",
+        "pass": true,
+        "metrics": {
+          "active": true,
+          "outline": "solid",
+          "width": 3
+        }
+      },
+      {
+        "case": "forced-colors",
+        "pass": true,
+        "metrics": {
+          "active": true,
+          "outline": "solid",
+          "width": 3,
+          "border": "solid"
+        }
+      },
+      {
+        "case": "js-disabled",
+        "pass": true,
+        "metrics": {
+          "faq_open": true,
+          "link_visible": true,
+          "link_count": 1
+        }
+      },
+      {
+        "case": "target-independent-render",
+        "pass": true,
+        "metrics": {
+          "exists": true,
+          "visible": true,
+          "heading": "初めて法話会を考える方へ｜確認しておきたい4点"
+        }
+      }
+    ],
+    "limitations": [
+      "actual URL inter-page navigation blocked ERR_BLOCKED_BY_ADMINISTRATOR",
+      "browser history between pages not tested",
+      "mobile physical device not tested",
+      "screen reader not tested"
+    ],
+    "passed": 14,
+    "total": 14
+  }
+}

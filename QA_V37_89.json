@@ -1,0 +1,230 @@
+{
+  "version": "37.89",
+  "iteration": 113,
+  "date": "2026-10-28",
+  "baseline": "37.88",
+  "baseline_sha256": "003a7cefb127252daecf2e6bb11db111b001223b96640d8296f204ee7a839671",
+  "scope": "first-visit.html FAQ11問の質問名索引のPC・タブレット幅の可読性",
+  "static": {
+    "html_pages": 50,
+    "monthly_articles": 22,
+    "faq_questions": 11,
+    "relative_file_refs": 838,
+    "fragment_refs": 357,
+    "aria_idrefs": 189,
+    "jsonld": 47,
+    "inline_js": 62,
+    "protected_byte_identical": 29
+  },
+  "changed_files_before_new_docs": [
+    "CHANGELOG.md",
+    "HOKKEKO_90DAY_ACTION_PLAN_V36_21.md",
+    "README.md",
+    "first-visit.html"
+  ],
+  "static_issues": [],
+  "protected_byte_identical": 29,
+  "faq_question_answer_unchanged": true,
+  "faq_links_unchanged": true,
+  "source_audit_status": "正式原本全文照合・著者範囲確認・掲載許可は22号すべて未完了",
+  "browser": {
+    "method": "Chromium about:blank set_content with inline local CSS; not real file URL",
+    "cases": [
+      {
+        "case": "viewport-256",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 256,
+          "viewport": 256,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-320",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 320,
+          "viewport": 320,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-390",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 390,
+          "viewport": 390,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-520",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 520,
+          "viewport": 520,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-640",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 640,
+          "viewport": 640,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-641",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 641,
+          "viewport": 641,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-768",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 768,
+          "viewport": 768,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "question-index-link",
+        "pass": true,
+        "data": {
+          "hash": "#v3637-howakai-faq",
+          "open": true,
+          "focused": "SUMMARY"
+        }
+      },
+      {
+        "case": "faq-zero-result",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "faq-reset",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "viewport-900",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 1,
+          "scroll": 900,
+          "viewport": 900,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-901",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 2,
+          "scroll": 901,
+          "viewport": 901,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-1024",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 2,
+          "scroll": 1024,
+          "viewport": 1024,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "viewport-1280",
+        "pass": true,
+        "data": {
+          "font": 16,
+          "height": 48.390625,
+          "descFont": 16,
+          "cols": 2,
+          "scroll": 1280,
+          "viewport": 1280,
+          "links": 11,
+          "errors": []
+        }
+      },
+      {
+        "case": "forced-colors",
+        "pass": true,
+        "data": {
+          "border": "solid",
+          "outline": "solid",
+          "forced": true
+        }
+      },
+      {
+        "case": "no-js-11-question-index",
+        "pass": true,
+        "data": {}
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "limitations": [
+    "実URLはERR_BLOCKED_BY_ADMINISTRATORのためページ間往復・実URL履歴・別タブは未検証",
+    "スマートフォン実機・スクリーンリーダー・実紙印刷は未検証",
+    "法話会日時・会場・費用・参加条件・予約要否は寺院確認待ち"
+  ],
+  "passed": true
+}

@@ -74,7 +74,113 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
   nav.jump > a:focus-visible,nav.jump > p a:focus-visible{
     outline:3px solid Highlight;outline-offset:3px}
 }
-</style></head>
+</style><style>/* v37.60: 法話会の「質問方法」「FAQ」「読むだけの確認先」を画面幅によらず読みやすくする。
+   寺院未確認の日時・条件・案内文、リンク先、送信の動作は変更しない。 */
+#howakai .v360-howakai .actions .btn{
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:11px 15px;font-size:16px;line-height:1.6;
+  white-space:normal;overflow-wrap:anywhere;text-align:center
+}
+#howakai .v3637-howakai-links a{font-size:16px;line-height:1.65}
+#howakai .v3643-more-contact summary{min-height:48px!important;font-size:16px;line-height:1.6}
+#howakai .v3643-more-contact li a{
+  box-sizing:border-box;display:flex;align-items:center;min-height:48px;
+  max-width:100%;padding:8px 10px;font-size:16px;line-height:1.65;
+  white-space:normal;overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px
+}
+#howakai .v360-howakai .actions .btn:focus-visible,
+#howakai .v3643-more-contact summary:focus-visible,
+#howakai .v3643-more-contact li a:focus-visible{outline:3px solid #88621d;outline-offset:3px}
+@media (max-width:640px){
+  #howakai .v360-howakai .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  #howakai .v360-howakai .actions .btn{width:100%;min-width:0}
+}
+@media (forced-colors:active){
+  #howakai .v360-howakai .actions .btn:focus-visible,
+  #howakai .v3643-more-contact summary:focus-visible,
+  #howakai .v3643-more-contact li a:focus-visible{outline:3px solid Highlight}
+  #howakai .v3643-more-contact li a{color:LinkText;text-decoration:underline}
+}
+</style><style>/* v37.66: 行事の確認先3件と法華講便りの確認先3件を、
+   文字サイズと操作領域の両面から選びやすくする。案内内容・リンク先は不変更。 */
+#news .contact-box[data-v352="schedule-check"] .actions .btn,
+#dayori .actions .btn{
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;max-width:100%;padding:11px 15px;
+  font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere;
+  text-align:center;text-decoration:underline;text-underline-offset:3px
+}
+#news .contact-box[data-v352="schedule-check"] .actions .btn:focus-visible,
+#dayori .actions .btn:focus-visible{outline:3px solid #88621d;outline-offset:3px}
+@media(max-width:640px){
+  #news .contact-box[data-v352="schedule-check"] .actions,
+  #dayori .actions{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  #news .contact-box[data-v352="schedule-check"] .actions .btn,
+  #dayori .actions .btn{width:100%;min-width:0}
+}
+@media(forced-colors:active){
+  #news .contact-box[data-v352="schedule-check"] .actions .btn,
+  #dayori .actions .btn{border:2px solid LinkText;color:LinkText;background:Canvas}
+  #news .contact-box[data-v352="schedule-check"] .actions .btn:focus-visible,
+  #dayori .actions .btn:focus-visible{outline:3px solid Highlight}
+}
+@media print{
+  #news .contact-box[data-v352="schedule-check"] .actions,
+  #dayori .actions{display:block!important}
+  #news .contact-box[data-v352="schedule-check"] .actions .btn,
+  #dayori .actions .btn{min-height:0;padding:3px 0;border:0;display:inline;text-align:left}
+}
+</style><style>/* v37.68: 641px以上のお知らせ入口6件と掲載状態FAQリンク1件の操作性。
+   v37.48の640px以下、v37.66の行事・便り各3リンクとは別の領域。 */
+@media screen and (min-width:641px){
+ nav.jump > a{
+   box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+   min-height:48px;max-width:100%;padding:10px 15px;
+   font:600 16px/1.6 system-ui,sans-serif;white-space:normal;
+   overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px;
+ }
+ nav.jump > p{
+   box-sizing:border-box;flex:1 0 100%;min-width:0;margin:2px 0;
+   padding:10px 14px;border:1px solid var(--line);border-radius:10px;
+   line-height:1.8;
+ }
+ nav.jump > p a{
+   box-sizing:border-box;display:inline-flex;align-items:center;
+   min-height:48px;max-width:100%;padding:9px 12px;
+   font:600 16px/1.6 system-ui,sans-serif;white-space:normal;
+   overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px;
+ }
+}
+@media(forced-colors:active) and (min-width:641px){
+ nav.jump > p{border-color:CanvasText;color:CanvasText}
+ nav.jump > a,nav.jump > p a{border:2px solid LinkText;color:LinkText;background:Canvas}
+ nav.jump > a:focus-visible,nav.jump > p a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
+@media print{
+ nav.jump > a,nav.jump > p a{min-height:0;padding:3px 6px}
+}
+</style><style id="v3782-howakai-check-style">
+/* v37.82: 既存の法話会4点チェックを独立した見出し・領域として案内。
+   日時・会場・費用・参加条件は寺院確認待ち。本文と質問先は変更しない。 */
+#howakai #v3782-howakai-check{scroll-margin-top:24px;min-width:0}
+#howakai #v3782-howakai-check-title{margin:0 0 10px;font:700 18px/1.6 system-ui,sans-serif;color:#263e30;overflow-wrap:anywhere}
+#howakai #v3782-howakai-check:target,
+#howakai #v3782-howakai-check:focus{outline:3px solid #88621d;outline-offset:4px}
+@media(forced-colors:active){
+ #howakai #v3782-howakai-check{background:Canvas!important;border:2px solid CanvasText!important;color:CanvasText}
+ #howakai #v3782-howakai-check-title{color:CanvasText}
+ #howakai #v3782-howakai-check:target,#howakai #v3782-howakai-check:focus{outline:3px solid Highlight}
+}
+@media print{#howakai #v3782-howakai-check:target,#howakai #v3782-howakai-check:focus{outline:none}}
+</style><style id="v3783-past-record-style">
+/* v37.83: past dates are not proof of actual attendance or future events. */
+.news .v3783-past-record{margin:12px 0;padding:14px 16px;border:2px solid #9aa99a;border-left:5px solid #48664d;border-radius:8px;background:#f5f8f3;color:#253d2b;font:400 16px/1.75 system-ui,sans-serif;overflow-wrap:anywhere}
+.news .v3783-past-record strong{display:block;font-weight:750;margin-bottom:3px}
+@media(max-width:520px){.news .v3783-past-record{padding:12px 13px}}
+@media(forced-colors:active){.news .v3783-past-record{border:2px solid CanvasText;background:Canvas;color:CanvasText}}
+@media print{.news .v3783-past-record{background:#fff;color:#111;border:1.5px solid #333;break-inside:avoid}}
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <div class="breadcrumb"><div class="wrap"><a href="./">トップ</a> › お知らせ・活動報告</div></div>
@@ -82,17 +188,17 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 <div class="eyebrow">NEWS &amp; ACTIVITY</div>
 <h1>お知らせ・活動報告</h1><p class="v3638-first-help">初めて法話会を検討する方は、<a href="first-visit.html#v3637-howakai-faq">所要時間・途中入退室などの確認方法</a>や<a href="first-visit.html#visit-faq">初参詣の質問集</a>もご覧ください。参加の判断は説明を確認してから、ご自身で行えます。</p>
 <p class="lead">行事資料や活動の紹介を掲載しています。資料の記載と、現在の開催状況・参加条件が確認済みであることは別です。ご覧になったうえで、必要な場合だけ寺院へお確かめください。</p>
-<nav aria-label="ページ内メニュー" class="jump"><a href="#news">行事・日程の確認</a><a href="#howakai">法話会と三つの視点</a><a href="#shakubuku">4月・9月の活動案内（過去）</a><a href="#reports">活動報告</a><a href="hokeko-dayori.html">法華講便り</a><p>法華講便り22号は校閲・著者範囲・掲載許可の確認待ちです。<a href="first-visit.html#faq-dayori-status">掲載状態のFAQ</a>をご覧ください。過去の行事日程は現在の開催確定情報ではありません。</p><a href="annual-events.html">年間行事を見る</a></nav>
+<nav aria-label="ページ内メニュー" class="jump"><a href="#news">行事・日程の確認</a><a href="#howakai">法話会と三つの視点</a><a href="#v3782-howakai-check">法話会の確認4点（開催は要確認）</a><a href="#shakubuku">4月・9月の活動案内（過去）</a><a href="#reports">活動報告</a><a href="hokeko-dayori.html">法華講便り</a><p>法華講便り22号は校閲・著者範囲・掲載許可の確認待ちです。<a href="first-visit.html#faq-dayori-status">掲載状態のFAQ</a>をご覧ください。過去の行事日程は現在の開催確定情報ではありません。</p><a href="annual-events.html">年間行事を見る</a></nav>
 <section class="block" id="news" tabindex="-1" aria-labelledby="v3742-news-heading">
 <div class="eyebrow">EVENT INFORMATION</div><h2 id="v3742-news-heading">行事の予定と確認先</h2>
 <p class="notice" data-v352="freshness">掲載資料：法華講便り令和8年10月号（御会式）・2026年年間案内（定例予定）。ページ整理日：2026年10月11日。<strong>寺院への最新の開催確認は行っていません。</strong>日時・参加方法は変更になる場合があります。</p>
 <div class="contact-box" data-v352="schedule-check"><strong>参詣・参加の前に確認する</strong><p>予定表は開催確定の証明ではありません。当日の実施状況や参加方法は寺院へ直接ご確認ください。下のボタンは情報・連絡方法の案内を開き、電話を自動発信しません。</p><div class="actions"><a class="btn primary" href="annual-events.html">2026年の年間行事を見る</a><a class="btn" href="contact.html">寺院への問い合わせ方法を見る</a><a class="btn" href="contact.html#v3633-phone-guide">電話番号・質問方法を見る</a></div></div>
 <div class="notice" style="margin-top:22px"><strong>2027年（令和9年）の年間行事予定案を追加しました。</strong>ご提供の予定表には「検討資料」と記載されています。手書き訂正、要検討、未定の行事を含むため、<strong>開催確定のご案内ではありません。</strong> <a href="annual-events.html#annual-2027">2027年の予定案を見る →</a></div>
 <div class="news">
-<article class="item"><div class="label">令和8年10月号記載<br/>御会式のご案内</div><div><strong>10月24日（土）御逮夜・10月25日（日）御正当会</strong><p>いずれも午後2時から。ご提供の法華講便り令和8年10月号に基づき、以前のHPにあった「25日が御逮夜」という表記を訂正しました。参詣前に日時と参加方法を寺院へご確認ください。</p><p><a href="annual-events.html#october-2026">10月の行事一覧を見る →</a></p></div></article>
+<article class="item"><div class="label">令和8年10月号記載<br/>御会式のご案内</div><div><strong>10月24日（土）御逮夜・10月25日（日）御正当会</strong><p>いずれも午後2時から。ご提供の法華講便り令和8年10月号に基づき、以前のHPにあった「25日が御逮夜」という表記を訂正しました。参詣前に日時と参加方法を寺院へご確認ください。</p><p class="v3783-past-record" role="note"><strong>過去の日付を記した資料です。</strong>2026年10月24日・25日はすでに過ぎています。ここにある日時は当時の掲載内容であり、行事が実際に開催されたことや、今後の開催日を確認したものではありません。今後の予定や参加方法は、寺院の最新の案内でご確認ください。</p><p><a href="annual-events.html#october-2026">2026年10月の行事資料を見る（過去の掲載内容） →</a></p></div></article>
 <article class="item" id="howakai" tabindex="-1" aria-label="法話会のご案内（開催日は要確認）"><div class="label">法話会のご案内<br/>（開催日は要確認）</div><div><strong>法話会は、人生の境涯を変えるための知識を得る機会</strong><p>年齢や立場にかかわらず、人生を歩むうえで大切にしたいことを考える入口として、法話会をご紹介します。</p><div aria-labelledby="v360-howakai-title" class="v360-howakai"><h3 id="v360-howakai-title">人生を歩むために大切にしたい三つのこと</h3><ol><li>未来に備えるために今を大事に生きること</li><li>悪縁と善縁がある中で善縁に就くこと</li><li>損得だけで動くのではなく、それよりも正徳を積むこと</li></ol><p>老若男女を問わず、人生を考えるきっかけとしてご覧ください。ここに挙げた三つは法話会への入口としての紹介であり、日蓮正宗の教義・儀式のすべてを説明するものではありません。</p><p class="v360-invite"><strong>詳しくは、お寺でお話を聞いてください。</strong></p><div class="actions"><a class="btn primary" href="contact.html#v3621-contact-topics">参加・内容の質問方法を見る</a><a class="btn" href="first-visit.html#faq-visit-terms">予約・費用の確認FAQ</a></div></div><p class="v360-schedule"><strong>開催日時・会場・参加条件は寺院確認待ちです。</strong> 過去の案内や定例の目安だけで訪問日を決めず、希望する回の開催日・開始時刻・場所・参加方法を<a href="contact.html#v3636-howakai-mail">事前にご確認</a>ください。問い合わせだけでも構いません。</p>
-<div class="v3625-event-check" style="margin-top:18px;padding:18px;border:1px solid #cbd7ca;border-radius:12px;background:#f7faf6">
-<strong>初めて法話会を考える方へ｜確認しておきたい4点</strong>
+<section class="v3625-event-check" id="v3782-howakai-check" tabindex="-1" aria-labelledby="v3782-howakai-check-title" style="margin-top:18px;padding:18px;border:1px solid #cbd7ca;border-radius:12px;background:#f7faf6">
+<h3 id="v3782-howakai-check-title">初めて法話会を考える方へ｜確認しておきたい4点</h3>
 <ol style="margin:10px 0 14px;padding-left:1.5em;line-height:1.9"><li>希望する日の開催が確定しているか</li><li>初めての方の参加条件や事前連絡の要否</li><li>開始・終了の目安と当日の流れ</li><li>服装・持ち物・費用などの確認事項</li></ol>
 <p style="margin:0 0 12px">未確認の項目は寺院へお尋ねください。参加するかどうかは、内容を確認してからご自身で判断できます。</p>
 <p class="v3643-route-label" style="margin:16px 0 8px"><strong>迷ったら、次の3つからお選びください。</strong>読むだけでも構いません。</p>
@@ -109,7 +215,7 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
 <li><a href="contact.html#v3632-access-question">移動・座席・聞こえ方の事前確認 →</a></li>
 </ul>
 </details>
-</div></div></article>
+</section></div></article>
 <article class="item"><div class="label">定例活動（日程は要確認）</div><div><strong>青年部・少年部合同部会</strong><p>毎月、御講日の午前11時30分（御講前）から合同部会を行っています。</p></div></article>
 </div>
 </section>
@@ -147,7 +253,7 @@ main > .eyebrow,main section.block .eyebrow,main .report-card small{color:#795d3
    v36.66の法話会直リンクも維持。URLが同じリンクを再選択した場合にも対応。
    送信・保存・外部操作は行わない。JS無効時は通常の # リンクで移動する。 */
 (function(){
-  var allowed={news:true,howakai:true,shakubuku:true,reports:true};
+  var allowed={news:true,howakai:true,"v3782-howakai-check":true,shakubuku:true,reports:true};
   function focusJump(){
     var id=window.location.hash.slice(1);
     if(!allowed[id])return;

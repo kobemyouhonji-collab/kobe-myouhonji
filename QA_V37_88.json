@@ -1,0 +1,163 @@
+{
+  "version": "37.88",
+  "iteration": 112,
+  "date": "2026-10-28",
+  "baseline": "37.87",
+  "baseline_sha256": "2646b6ee20b587f699330d7a4b7a4bc7703ad5523e8c744c1aa816b970334a2a",
+  "scope": "annual-events.htmlの3つのページ内リンク先の焦点・履歴・再選択対応",
+  "static": {
+    "html_pages": 50,
+    "monthly_articles": 22,
+    "faq_questions": 11,
+    "relative_file_refs": 830,
+    "fragment_refs": 354,
+    "aria_idrefs": 189,
+    "jsonld": 47,
+    "inline_js": 62,
+    "protected_byte_identical": 27
+  },
+  "static_issues": [],
+  "protected_byte_identical": 27,
+  "event_visible_text_unchanged": true,
+  "event_links_unchanged": true,
+  "source_audit_status": "22号すべて正式原本全文照合・著者範囲確認・掲載許可未完了",
+  "browser": {
+    "method": "Chromium about:blank set_content, inline CSS, no external access",
+    "cases": [
+      {
+        "case": "initial-no-forced-focus",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "viewport-256",
+        "pass": true,
+        "data": {
+          "width": 256,
+          "scroll": 256,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-320",
+        "pass": true,
+        "data": {
+          "width": 320,
+          "scroll": 320,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-390",
+        "pass": true,
+        "data": {
+          "width": 390,
+          "scroll": 390,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-520",
+        "pass": true,
+        "data": {
+          "width": 520,
+          "scroll": 520,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-768",
+        "pass": true,
+        "data": {
+          "width": 768,
+          "scroll": 768,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-1024",
+        "pass": true,
+        "data": {
+          "width": 1024,
+          "scroll": 1024,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "viewport-1280",
+        "pass": true,
+        "data": {
+          "width": 1280,
+          "scroll": 1280,
+          "active": "october-2026",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "same-hash-reselect",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "hash-annual-2027",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "hash-annual-2027-regular",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "hash-october-2026",
+        "pass": true,
+        "data": {}
+      },
+      {
+        "case": "forced-colors",
+        "pass": true,
+        "data": {
+          "focus": "annual-2027",
+          "outline": "solid"
+        }
+      },
+      {
+        "case": "history-back-hash",
+        "pass": true,
+        "data": {
+          "hash": "#october-2026",
+          "focus": "october-2026"
+        }
+      },
+      {
+        "case": "no-js-fragment-targets",
+        "pass": true,
+        "data": {
+          "targets": true,
+          "links": 4
+        }
+      },
+      {
+        "case": "js-errors",
+        "pass": true,
+        "data": {
+          "errors": []
+        }
+      }
+    ],
+    "passed": 16,
+    "total": 16
+  },
+  "limitations": [
+    "実URLでのページ間移動・別タブ・実機スマートフォン・スクリーンリーダーは未検証",
+    "about:blank内のハッシュ履歴検査は実URLの履歴検査とは異なる",
+    "法話会の日時・会場・費用・参加条件・予約要否は寺院確認待ち"
+  ],
+  "passed": true
+}

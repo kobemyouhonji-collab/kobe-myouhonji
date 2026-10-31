@@ -268,6 +268,342 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
  .v3626-visit-quick a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
 }
 </style>
+<style>/* v37.52: FAQ検索0件の次の選択を、文章に埋もれない独立した操作として提示。 */
+#visit-faq #v3638-faq-empty[hidden]{display:none!important}
+#visit-faq .v3752-faq-zero{border-left:4px solid #42684b;padding:10px 12px;margin-top:14px;background:#fff}
+#visit-faq .v3752-faq-zero p{margin:7px 0;line-height:1.7}
+#visit-faq .v3752-faq-zero-action{margin:10px 0 16px}
+#visit-faq .v3752-faq-zero-action :is(a,button){box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;padding:10px 12px;font:700 16px/1.6 system-ui,sans-serif;overflow-wrap:anywhere;text-align:center}
+#visit-faq .v3752-faq-zero-action a{border:2px solid #42684b;border-radius:8px;background:#fff;color:#20442e;text-decoration:underline;text-underline-offset:3px}
+#visit-faq .v3752-faq-zero-action :is(a,button):focus-visible{outline:3px solid #88621d;outline-offset:4px}
+@media(max-width:640px){
+ #visit-faq .v3752-faq-zero-action :is(a,button){width:100%}
+ #visit-faq .v3722-faq-index-return a{min-height:48px}
+}
+@media(forced-colors:active){
+ #visit-faq .v3752-faq-zero{border-left-color:CanvasText;background:Canvas;color:CanvasText}
+ #visit-faq .v3752-faq-zero-action a{border-color:LinkText;background:Canvas;color:LinkText}
+ #visit-faq .v3752-faq-zero-action :is(a,button):focus-visible{outline-color:Highlight}
+}
+@media print{#visit-faq .v3752-faq-zero{display:none!important}}
+</style>
+<style>/* v37.54: FAQ検索の補助説明・件数・折りたたみ手順の可読性。
+   v37.52の検索0件時のボタン/リンクとは別の、常時表示される検索補助情報。
+   質問回答・リンク・検索処理・原文校閲状態は変更しない。 */
+#visit-faq .v3703-faq-search-guide{
+  margin:12px 0 14px;border:1px solid #a5b9a8;border-radius:9px;
+  background:#fff;color:#234632;
+}
+#visit-faq .v3703-faq-search-guide > summary{
+  box-sizing:border-box;min-height:48px;padding:11px 14px;
+  font:700 16px/1.65 system-ui,sans-serif;cursor:pointer;
+  text-decoration:underline;text-underline-offset:3px;
+}
+#visit-faq .v3703-faq-search-guide > summary:focus-visible{
+  outline:3px solid #88621d;outline-offset:3px;border-radius:5px;
+}
+#visit-faq .v3703-faq-search-guide > p{
+  margin:0;padding:2px 14px 14px;font:16px/1.75 system-ui,sans-serif;
+  color:#344b3a;overflow-wrap:anywhere;
+}
+@media(max-width:640px){
+ #visit-faq .v3638-faq-search input{min-height:48px}
+ #visit-faq #v3638-faq-help,#visit-faq #v3638-faq-result{font-size:16px;line-height:1.75}
+ #visit-faq .v3703-faq-search-guide > p{font-size:16px;line-height:1.75}
+}
+@media(forced-colors:active){
+ #visit-faq .v3703-faq-search-guide{border:2px solid CanvasText;background:Canvas;color:CanvasText}
+ #visit-faq .v3703-faq-search-guide > summary{color:LinkText}
+ #visit-faq .v3703-faq-search-guide > summary:focus-visible{outline:3px solid Highlight}
+ #visit-faq .v3703-faq-search-guide > p{color:CanvasText}
+}
+@media print{#visit-faq .v3703-faq-search-guide{display:none!important}}
+</style>
+<style>/* v37.56: FAQの任意索引・開閉状態・印刷注意を小文字に頼らず読めるようにする。
+   v37.37の小画面向け索引ボタン調整、v37.54の検索欄説明とは別箇所。本文・JS・リンクは不変更。 */
+#visit-faq .v3720-question-index > p,
+#visit-faq .v3634-faq-controls > p,
+#visit-faq .v3665-faq-print-control > p{
+  font-size:16px;line-height:1.75;overflow-wrap:anywhere;
+}
+#visit-faq .v3720-question-index a{
+  min-height:48px;font-size:16px;line-height:1.65;
+}
+#visit-faq .v3720-question-index ol{row-gap:10px}
+@media(forced-colors:active){
+ #visit-faq .v3720-question-index > p,
+ #visit-faq .v3634-faq-controls > p,
+ #visit-faq .v3665-faq-print-control > p{color:CanvasText}
+}
+</style>
+<style>/* v37.57: 641px以上の初参詣入口4件とFAQ分類3件の読みやすさ。
+   v37.49/37は640px以下の改善。質問回答・リンク先・参加条件は不変更。 */
+@media screen and (min-width:641px){
+ .v3626-visit-quick a{
+  box-sizing:border-box;min-height:48px;padding:10px 12px;
+  font-size:16px;line-height:1.6;overflow-wrap:anywhere;
+ }
+ #visit-faq .v3631-faq-index > a{
+  box-sizing:border-box;min-height:48px;padding:10px 14px;
+  font-size:16px;line-height:1.6;overflow-wrap:anywhere;
+ }
+}
+@media(forced-colors:active){
+ #visit-faq .v3631-faq-index > a{border-color:LinkText;background:Canvas;color:LinkText}
+ #visit-faq .v3631-faq-index > a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
+</style>
+<style>
+/* v37.65: FAQ回答本文内の任意リンクを641px以上でも指・キーボードで選びやすくする。
+   640px以下はv37.38の既存対応を維持。質問・回答・リンク先は変更しない。 */
+@media (min-width:641px){
+ #visit-faq details.v33-faq > p a{
+   display:inline-block;box-sizing:border-box;max-width:100%;min-height:48px;
+   padding:10px 5px;font-size:16px;line-height:1.7;vertical-align:middle;
+   text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+ }
+ #visit-faq details.v33-faq > p a:focus-visible{
+   outline:3px solid #88621d;outline-offset:3px;border-radius:4px;
+ }
+}
+@media (forced-colors:active) and (min-width:641px){
+ #visit-faq details.v33-faq > p a:focus-visible{outline-color:Highlight}
+}
+@media print{
+ #visit-faq details.v33-faq > p a{display:inline;min-height:0;padding:0;vertical-align:baseline}
+}
+</style>
+<style>
+/* v37.67: FAQ検索・開閉・索引への復帰をタブレット/PCでも操作しやすくする。
+   640px以下はv37.37/v37.52の既存対応を保持。質問・回答・リンク先・JSは変更しない。 */
+@media screen and (min-width:641px){
+ #visit-faq .v3638-faq-search button,
+ #visit-faq #v3673-faq-jump-first,
+ #visit-faq .v3634-faq-controls button{
+   box-sizing:border-box;min-height:48px;padding:10px 14px;
+   font-size:16px;line-height:1.6;max-width:100%;white-space:normal;
+   overflow-wrap:anywhere;
+ }
+ #visit-faq .v3722-faq-index-return a{
+   box-sizing:border-box;min-height:48px;padding:10px 14px;
+   font-size:16px;line-height:1.6;max-width:100%;overflow-wrap:anywhere;
+ }
+}
+@media (forced-colors:active){
+ #visit-faq .v3722-faq-index-return a:focus-visible,
+ #visit-faq .v3638-faq-search button:focus-visible,
+ #visit-faq .v3634-faq-controls button:focus-visible{
+   outline:3px solid Highlight;outline-offset:4px;
+ }
+}
+@media print{
+ #visit-faq .v3722-faq-index-return{display:none!important}
+}
+</style>
+<style id="v3781-faq-search-landmark">
+/* v37.81: FAQ検索を支援技術の「検索」領域として識別し、
+   タブレット・PCでも補助説明と検索件数を16pxで読めるようにする。
+   11問の質問・回答、検索処理、連絡先、教義・開催条件は変更しない。 */
+@media screen and (min-width:641px){
+ #visit-faq .v3638-faq-search input[type="search"]{min-height:48px}
+ #visit-faq #v3638-faq-help,
+ #visit-faq #v3638-faq-result,
+ #visit-faq #v3687-faq-announcement{
+  font-size:16px;line-height:1.75;overflow-wrap:anywhere;
+ }
+}
+@media (forced-colors:active){
+ #visit-faq .v3638-faq-search input[type="search"]:focus-visible{
+  outline:3px solid Highlight;outline-offset:3px;
+ }
+}
+</style>
+<style>
+/* v37.69: 初参詣の「HP内で読める案内」3リンクを全画面幅で独立した
+   48px以上の操作対象に。掲載＝確定と誤読しない注記を読みやすく表示する。
+   FAQ11問・法華講便り22号・寺院未確認条件は変更しない。 */
+.v3627-trust .v3627-panel:first-child ul{list-style:none;padding-left:0}
+.v3627-trust .v3627-panel:first-child li{margin:8px 0}
+.v3627-trust .v3627-panel:first-child li a{
+ display:flex;align-items:center;box-sizing:border-box;width:100%;min-height:48px;
+ padding:10px 12px;border:1px solid #8ba790;border-radius:8px;
+ background:#f4f8f2;color:#20442e;font:600 16px/1.65 system-ui,sans-serif;
+ text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+}
+.v3627-trust .v3627-panel:first-child li a:focus-visible{
+ outline:3px solid #946b24;outline-offset:3px;
+}
+.v3627-trust .v3769-trust-note{
+ margin:12px 0 0;padding:10px 12px;border-left:3px solid #64836d;
+ background:#fffaf0;color:#2d4031;font:400 16px/1.75 system-ui,sans-serif;
+ overflow-wrap:anywhere;
+}
+@media (forced-colors:active){
+ .v3627-trust .v3627-panel:first-child li a{
+  color:LinkText;background:Canvas;border:2px solid LinkText;
+ }
+ .v3627-trust .v3627-panel:first-child li a:focus-visible{
+  outline:3px solid Highlight;outline-offset:3px;
+ }
+ .v3627-trust .v3769-trust-note{
+  color:CanvasText;background:Canvas;border-left:3px solid CanvasText;
+ }
+}
+@media print{
+ .v3627-trust .v3627-panel:first-child li a{
+  display:inline;min-height:0;padding:0;border:0;background:transparent;
+  color:inherit;font-weight:600;
+ }
+ .v3627-trust .v3769-trust-note{background:transparent;border-left:2px solid #555}
+}
+</style>
+<style>
+/* v37.70: 初めての方向け「気になることから確認できます」6カード内の7リンク。
+   FAQ回答・冒頭メニュー・問い合わせ文例の既存操作領域とは別の対象。 */
+section[data-v346="first-visit-needs"] .card p a[href]{
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:flex-start;
+  min-height:48px;max-width:100%;margin:4px 8px 4px 0;padding:10px 13px;
+  border:1.5px solid #587963;border-radius:8px;background:#fff;color:#234632;
+  font:600 16px/1.55 system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px;
+  overflow-wrap:anywhere;white-space:normal;
+}
+section[data-v346="first-visit-needs"] .card p a[href]:focus-visible{
+  outline:3px solid #91651f;outline-offset:3px;
+}
+@media(min-width:701px) and (max-width:960px){
+  section[data-v346="first-visit-needs"] .grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:520px){
+  section[data-v346="first-visit-needs"] .card p a[href]{display:flex;width:100%;margin:6px 0;}
+}
+@media(forced-colors:active){
+  section[data-v346="first-visit-needs"] .card p a[href]{
+    background:Canvas;color:LinkText;border:2px solid LinkText;
+  }
+  section[data-v346="first-visit-needs"] .card p a[href]:focus-visible{
+    outline:3px solid Highlight;outline-offset:3px;
+  }
+}
+@media print{
+  section[data-v346="first-visit-needs"] .card p a[href]{
+    display:inline;color:#000;background:transparent;border:0;border-radius:0;
+    min-height:0;padding:0;margin:0 5px 0 0;font:inherit;text-decoration:underline;
+  }
+}
+</style>
+<style>/* v37.72: 参詣前の四つの確認へページ内移動したときの見出し位置・焦点表示。 */
+#v3623-visit-title{scroll-margin-top:24px}
+#v3623-visit-title:focus{outline:3px solid #88621d;outline-offset:5px;border-radius:4px}
+@media(forced-colors:active){#v3623-visit-title:focus{outline-color:Highlight}}
+</style>
+
+<style>/* v37.75: FAQ読了後の補足2リンクを独立した名前付き案内にする。 */
+.v3775-next-more-nav ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px;padding:0;margin:10px 0 0}
+.v3775-next-more-nav li{min-width:0;margin:0;padding:0}
+@media screen{
+ #main-content .v3775-next-more-nav a{
+  box-sizing:border-box;display:flex;align-items:center;width:100%;min-height:48px;padding:10px 14px;
+  font:600 16px/1.6 system-ui,sans-serif;color:#204b32;background:#f3f8f0;
+  border:1.5px solid #668a6c;border-radius:8px;text-decoration:underline;text-underline-offset:3px;
+  overflow-wrap:anywhere;white-space:normal;
+ }
+ #main-content .v3775-next-more-nav a:focus-visible{outline:3px solid #a46b16;outline-offset:4px}
+}
+@media (forced-colors:active){
+ #main-content .v3775-next-more-nav a{color:LinkText;background:Canvas;border:2px solid LinkText}
+ #main-content .v3775-next-more-nav a:focus-visible{outline:3px solid Highlight;outline-offset:4px}
+}
+@media print{.v3775-next-more-nav ul{display:block}.v3775-next-more-nav li{display:list-item;list-style:disc;margin-left:1.4em}
+ #main-content .v3775-next-more-nav a{display:inline;color:#000;background:transparent;border:0;padding:0;margin:0;text-decoration:underline}}
+</style>
+<style>/* v37.80: 初参詣「来寺前に確認できる3つ」のカードに、任意の次の確認先を設置。
+  v37.70の別の6カードと区別。日時・連絡・参加を確約しない。 */
+.v3780-before-visit .v3780-choices{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 0}
+.v3780-before-visit .v3780-choices a{
+ box-sizing:border-box;display:inline-flex;align-items:center;min-height:48px;max-width:100%;
+ padding:10px 12px;border:2px solid #53745b;border-radius:8px;background:#f5faf3;color:#21452c;
+ font:600 16px/1.6 system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px;
+ overflow-wrap:anywhere;white-space:normal;
+}
+.v3780-before-visit .v3780-choices a:focus-visible{outline:3px solid #99651c;outline-offset:3px}
+@media(min-width:701px) and (max-width:960px){.v3780-before-visit .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.v3780-before-visit .v3780-choices{display:grid;grid-template-columns:minmax(0,1fr)}.v3780-before-visit .v3780-choices a{width:100%}}
+@media(forced-colors:active){
+ .v3780-before-visit .v3780-choices a{color:LinkText;background:Canvas;border:2px solid LinkText}
+ .v3780-before-visit .v3780-choices a:focus-visible{outline-color:Highlight}
+}
+@media print{
+ .v3780-before-visit .v3780-choices{display:block}
+ .v3780-before-visit .v3780-choices a{display:block;min-height:0;padding:2px 0;margin:2px 0;border:0;background:transparent;color:#000;border-radius:0;font:inherit;text-decoration:underline}
+}
+</style>
+<style id="v3784-visit-step-links">
+/* v37.84: 参詣前の4ステップ内だけの4つの任意確認リンク。
+   既存の文章・リンク先・行事条件・FAQ回答は変更しない。 */
+@media screen {
+ .v3623-visit ol li p a{
+  box-sizing:border-box;display:inline-flex;align-items:center;min-height:48px;
+  max-width:100%;margin:2px 1px;padding:9px 8px;
+  border:1.5px solid #68836e;border-radius:7px;background:#f6faf4;
+  color:#21452e;font:600 16px/1.65 system-ui,sans-serif;
+  text-decoration:underline;text-underline-offset:3px;
+  overflow-wrap:anywhere;white-space:normal;vertical-align:middle;
+ }
+ .v3623-visit ol li p a:focus-visible{outline:3px solid #99651c;outline-offset:4px}
+}
+@media(forced-colors:active){
+ .v3623-visit ol li p a{border:2px solid LinkText;background:Canvas;color:LinkText}
+ .v3623-visit ol li p a:focus-visible{outline:3px solid Highlight;outline-offset:4px}
+}
+@media print{
+ .v3623-visit ol li p a{display:inline;min-height:0;margin:0;padding:0;
+  border:0;background:transparent;color:#000;font:inherit;text-decoration:underline}
+}
+</style>
+<style>/* v37.89: 641px以上でもFAQ11問の質問名索引を読みやすくする。
+   既存の640px以下の対応は維持。質問・回答・検索・リンク先は不変更。 */
+@media (min-width:641px){
+ #visit-faq .v3720-question-index > p{font-size:16px;line-height:1.7}
+ #visit-faq .v3720-question-index a{
+   box-sizing:border-box;min-height:48px;padding:10px 12px;
+   font-size:16px;line-height:1.65;
+ }
+}
+@media (min-width:641px) and (max-width:900px){
+ #visit-faq .v3720-question-index ol{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+<style id="v3791-howakai-faq-direct-link">
+/* v37.91: 法話会FAQから「開催前の確認4点」へ直接移動。
+   日時・費用・参加条件を確定させず、送信・申込は行わない。 */
+#visit-faq .v3791-howakai-check-route{margin:12px 0 18px}
+#visit-faq .v3791-howakai-check-route a{
+  display:inline-flex;align-items:center;box-sizing:border-box;
+  min-height:48px;max-width:100%;padding:10px 14px;
+  font-size:16px;line-height:1.65;font-weight:600;
+  border:2px solid #50725d;border-radius:9px;
+  background:#f4f8f4;color:#183d2b;text-decoration:underline;
+  overflow-wrap:anywhere;
+}
+#visit-faq .v3791-howakai-check-route a:focus-visible{
+  outline:3px solid #a46b16;outline-offset:3px;
+}
+@media(max-width:520px){
+  #visit-faq .v3791-howakai-check-route a{display:flex;width:100%}
+}
+@media(forced-colors:active){
+  #visit-faq .v3791-howakai-check-route a{
+    background:Canvas;color:LinkText;border:2px solid LinkText;
+  }
+  #visit-faq .v3791-howakai-check-route a:focus-visible{outline:3px solid Highlight}
+}
+@media print{
+  #visit-faq .v3791-howakai-check-route a{
+    display:inline;min-height:0;padding:0;border:0;background:transparent;
+    color:#000;font:inherit;text-decoration:underline;
+  }
+}
+</style>
 </head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
@@ -283,11 +619,11 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <div class="eyebrow">INFORMATION CHECK</div><h2 id="v3627-trust-title">ホームページで分かること、寺院に確かめること</h2>
 <p>掲載されている情報と、訪問前に確認が必要な情報を分けてご案内します。行事への参加や信仰について、急いで決める必要はありません。</p>
 <div class="v3627-columns">
-<div class="v3627-panel"><h3>このHPで確認できること</h3><ul>
+<div class="v3627-panel"><h3>HP内で読める案内</h3><ul>
 <li><a href="contact.html">寺院の所在地と連絡先</a></li>
 <li><a href="annual-events.html">年間行事の掲載資料と検討状況</a></li>
 <li><a href="hokeko-dayori.html">法華講便りの掲載状態（校閲前・抜粋など）</a></li>
-</ul></div>
+</ul><p class="v3769-trust-note" role="note">ここで読めることは、行事の開催日時・参加条件が確定したことや、法華講便りの原文照合・掲載許可が完了したことを意味しません。</p></div>
 <div class="v3627-panel"><h3>来寺前に寺院へ確認すること</h3><ul>
 <li>希望する行事の開催日時と参加条件</li>
 <li>服装・持ち物・費用や事前連絡の要否</li>
@@ -296,7 +632,7 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <div class="v3627-actions"><a class="button primary" href="contact.html#v3621-contact-topics">質問方法と文例を見る →</a><a href="visit-note.html">自分用の確認メモを使う →</a></div>
 </div></section>
 <section aria-labelledby="v3623-visit-title" class="v3623-visit" id="visit-ready"><div class="wrap">
-<div class="eyebrow">BEFORE YOU VISIT</div><h2 id="v3623-visit-title">初めての参詣まで、四つの確認</h2>
+<div class="eyebrow">BEFORE YOU VISIT</div><h2 id="v3623-visit-title" tabindex="-1">初めての参詣まで、四つの確認</h2>
 <p>初めてのお寺は、分からないことがあって当然です。参加するかどうかを決める前に、必要な情報を一つずつ確かめられます。</p>
 <ol>
 <li><strong>① 関心のある内容を選ぶ</strong><p><a href="hokeko-dayori.html">法華講便り</a>や<a href="news.html#howakai">法話会の案内</a>から、知りたいことを見つけてください。読むだけでも構いません。</p></li>
@@ -305,15 +641,15 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <li><strong>④ 連絡先と道順を確かめる</strong><p><a href="contact.html">所在地と連絡先</a>を確認し、分からないことは寺院にご相談ください。訪問後も、納得できるまで質問できます。</p></li>
 </ol>
 <p class="v3623-note">このページは参加や入信を申し込むフォームではありません。行事・信仰・費用に関する判断は、寺院から説明を受けてご自身で行えます。</p>
-<div class="actions"><a class="button primary" href="contact.html#v3621-contact-topics">問い合わせ文例を見る →</a><a class="button" href="visit-note.html">参詣前の確認メモを使う →</a><a class="button" href="kongetsu-shishin.html#past-issues">御住職のお言葉から読む →</a></div>
+<div class="actions"><a class="button primary" href="contact.html#v3621-contact-topics">問い合わせ文例を見る →</a><a class="button" href="visit-note.html">参詣前の確認メモを使う →</a><a class="button" href="kongetsu-shishin.html#past-issues">法華講便りの掲載状態を見て読む →</a></div>
 </div></section>
 <section class="v33-context" data-v33="context-photo"><div class="wrap"><div class="v33-context-grid"><figure class="v33-context-photo"><img alt="妙本寺を彩る緑" loading="lazy" src="myohonji-greenery.jpg"/><figcaption>妙本寺を彩る緑</figcaption></figure><div class="v33-context-copy"><div class="eyebrow">WELCOME</div><h2>まず、寺院の雰囲気を知るところから。</h2><p>初めての方にも、妙本寺を身近に感じていただけるよう、実際の寺院の風景とともにご案内します。</p><p><a href="glossary.html#shikimi">しきみの意味について知る →</a></p></div></div></div></section>
-<section><div class="wrap">
-<h2>来寺前に、確認できる3つのこと</h2>
+<section aria-labelledby="v3780-before-visit-title" class="v3780-before-visit"><div class="wrap">
+<h2 id="v3780-before-visit-title">来寺前に、確認できる3つのこと</h2>
 <div class="grid">
-<article class="card"><small>01 · ACCESS</small><h3>場所を確認</h3><p>妙本寺は神戸市灘区原田通にあり、JR灘駅北口から徒歩約5分、阪急王子公園駅から徒歩約5分です。</p></article>
-<article class="card"><small>02 · EVENTS</small><h3>予定を確認</h3><p>2026年の行事資料と、2027年の検討中の予定案を年間行事ページで区別して案内しています。日時は寺院へ確認してください。</p></article>
-<article class="card"><small>03 · CONTACT</small><h3>必要なら電話で確認</h3><p>参拝時間や当日の予定など、確実な確認が必要な場合は寺院へお問い合わせください。</p></article>
+<article class="card"><small>01 · ACCESS</small><h3>場所を確認</h3><p>妙本寺は神戸市灘区原田通にあり、JR灘駅北口から徒歩約5分、阪急王子公園駅から徒歩約5分です。</p><p class="v3780-choices"><a href="index.html#access">所在地・アクセスの案内を見る</a></p></article>
+<article class="card"><small>02 · EVENTS</small><h3>予定を確認</h3><p>2026年の行事資料と、2027年の検討中の予定案を年間行事ページで区別して案内しています。日時は寺院へ確認してください。</p><p class="v3780-choices"><a href="annual-events.html">年間行事資料を見る（開催は要確認）</a><a href="news.html#howakai">法話会の案内を見る（条件は要確認）</a></p></article>
+<article class="card"><small>03 · CONTACT</small><h3>必要なら電話で確認</h3><p>参拝時間や当日の予定など、確実な確認が必要な場合は寺院へお問い合わせください。</p><p class="v3780-choices"><a href="contact.html">連絡方法を見る（このリンクでは発信・送信しません）</a></p></article>
 </div>
 </div></section>
 <section class="check" data-v346="first-visit-needs"><div class="wrap">
@@ -338,7 +674,7 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <p class="v3667-faq-print-notice" role="note">神戸妙本寺｜初参詣FAQ（非公開・制作中）<br>この印刷物は校閲・公開承認前の確認用です。配布・公開しないでください。参詣・法話会の日時、場所、費用、参加条件はこの紙では確定できません。寺院への確認が必要です。</p>
 <h2 id="visit-faq-title" tabindex="-1">初めての参詣で、気になること</h2>
 <p>気になる項目だけを選んで読めるよう、質問を3つのグループに整理しました。ここに掲載のない参加条件や当日の対応は、寺院へ直接ご確認ください。聞き慣れない言葉があれば、<a href="glossary.html">はじめての用語案内</a>もご覧いただけます。用語案内は詳細な教義解説ではなく、公開前の寺院確認が必要な説明も含みます。</p>
-<div class="v3638-faq-search" hidden="" id="v3638-faq-search">
+<div class="v3638-faq-search" hidden="" id="v3638-faq-search" role="search" aria-label="初参詣FAQ11問のページ内検索">
 <label for="v3638-faq-query">質問を言葉で探す（このページ内のみ）</label>
 <div class="v3638-faq-search-row"><input aria-describedby="v3638-faq-help" autocomplete="off" id="v3638-faq-query" placeholder="例：予約、費用、法話会、読み方" type="search"/><button id="v3638-faq-clear" type="button">検索を消す</button></div>
 <p id="v3638-faq-help">「申込み」「こども」「車イス」などの言葉でも探せます。予約・費用などの未確認事項は、確定情報と区別して案内します。入力内容は送信・保存されません。</p>
@@ -346,7 +682,13 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <p id="v3638-faq-result"></p>
 <p class="v3687-faq-announcement" id="v3687-faq-announcement" aria-atomic="true" aria-live="polite" role="status"></p>
 <button type="button" id="v3673-faq-jump-first" hidden>一致した最初の質問へ移動（回答は自動で開きません）</button>
-<p hidden="" id="v3638-faq-empty">このFAQの11問では一致する質問が見つかりませんでした。別の言葉で探すか、<button id="v3638-faq-reset" type="button">すべての質問に戻す</button>ことができます。まだ連絡を決めていない場合は、<a href="contact.html#v3689-first-visit-copy">初参詣の質問文例を画面で読む（送信なし）</a>こともできます。読むだけで終了して構いません。</p>
+<div hidden="" id="v3638-faq-empty" class="v3752-faq-zero">
+<p>このFAQの11問では一致する質問が見つかりませんでした。別の言葉で探すか、次のボタンで全11問に戻れます。</p>
+<p class="v3752-faq-zero-action"><button id="v3638-faq-reset" type="button">すべての質問に戻す</button></p>
+<p>まだ連絡を決めていない場合は、質問文例を送信せずに画面で確認できます。</p>
+<p class="v3752-faq-zero-action"><a href="contact.html#v3689-first-visit-copy">初参詣の質問文例を画面で読む（送信なし）</a></p>
+<p>読むだけで終了して構いません。</p>
+</div>
 </div>
 <nav aria-label="よくある質問の分類と11問の索引" class="v3631-faq-index" id="v3722-faq-index" tabindex="-1">
 <a href="#faq-before-visit">参詣前の準備（5問）</a><a href="#faq-choose">自分のペースで知る（3問）</a><a href="#faq-contact-reading">連絡・記事の確認（3問）</a>
@@ -371,9 +713,9 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <button id="v3665-faq-print" type="button">FAQの11問だけを印刷する</button>
 <p>このボタンはFAQの質問と回答だけを印刷対象にします。印刷するかどうかはブラウザの画面で選べます。検索中でも11問すべてが対象です。非公開の制作版のため、印刷した紙も配布しないでください。</p>
 </div>
-<div aria-label="質問の表示切替" class="v3634-faq-controls" hidden="" id="v3634-faq-controls">
-<button id="v3634-faq-open" type="button">11問の回答をまとめて開く</button>
-<button id="v3634-faq-close" type="button">すべて閉じる</button>
+<div aria-label="FAQ11問の回答をまとめて開閉" aria-describedby="v3634-faq-state" role="group" class="v3634-faq-controls" hidden="" id="v3634-faq-controls">
+<button aria-controls="faq-visit-terms faq-clothing faq-family faq-access-needs faq-howakai-time faq-reading-only faq-belief-choice faq-events-freshness faq-phone-help faq-email-help faq-dayori-status" id="v3634-faq-open" type="button">11問の回答をまとめて開く</button>
+<button aria-controls="faq-visit-terms faq-clothing faq-family faq-access-needs faq-howakai-time faq-reading-only faq-belief-choice faq-events-freshness faq-phone-help faq-email-help faq-dayori-status" id="v3634-faq-close" type="button">すべて閉じる</button>
 <p aria-live="polite" id="v3634-faq-state" role="status">質問を選んで開けます。</p>
 </div>
 <noscript><p class="note" role="note">この端末では検索・まとめて開閉する機能を使わず、11問の回答を最初からすべて表示しています。質問名の索引から直接移動して読めます。連絡・登録・送信は行われません。</p></noscript>
@@ -386,8 +728,8 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <p><a href="for-family.html">家族向けの案内</a>から関連情報をご覧いただけます。行事への参加対象や当日の受け入れについては、<a href="contact.html">寺院にご確認</a>ください。</p></details>
 <details open="" class="v33-faq" data-search-terms="段差 車椅子 車いす 車イス くるまいす バリアフリー 座席 聴覚 聞こえにくい" id="faq-access-needs"><summary>移動や聞こえ方などに不安がある場合は？</summary>
 <p>段差、移動経路、座席、聞こえ方などについて、<a href="contact.html#v3708-access-copy">事前確認用のメール文例</a>を用意しています。診断名や詳しい個人情報を記載する必要はありません。設備や当日の対応は寺院へ確認してください。</p></details>
-<details open="" class="v33-faq" data-search-terms="法話 法話会 時間 途中退出 遅刻 早退 参加"><summary id="v3637-howakai-faq">法話会の所要時間や、途中での入退室が気になる場合は？</summary>
-<p>開始・終了時刻、途中からの参加や途中退出が可能かどうかは、行事や当日の状況によって確認が必要です。<a href="news.html#howakai">法話会の案内</a>をご覧のうえ、必要であれば<a href="contact.html#v3678-howakai-copy">法話会についての質問文例を画面で読む（送信なし）</a>ことができます。連絡するかどうかは、ご自身で決められます。参加を決める前に質問するだけでも構いません。</p></details>
+<details open="" class="v33-faq" data-search-terms="法話 法話会 時間 途中退出 遅刻 早退 参加" id="faq-howakai-time"><summary id="v3637-howakai-faq">法話会の所要時間や、途中での入退室が気になる場合は？</summary>
+<p>開始・終了時刻、途中からの参加や途中退出が可能かどうかは、行事や当日の状況によって確認が必要です。<a href="news.html#howakai">法話会の案内</a>をご覧のうえ、必要であれば<a href="contact.html#v3678-howakai-copy">法話会についての質問文例を画面で読む（送信なし）</a>ことができます。連絡するかどうかは、ご自身で決められます。参加を決める前に質問するだけでも構いません。</p><p class="v3791-howakai-check-route"><a href="news.html#v3782-howakai-check">開催前の確認4点を先に読む（日時・条件は要確認／送信なし）</a></p></details>
 <p class="v3722-faq-index-return"><a href="#v3722-faq-index">質問の分類・11問の索引へ戻る（送信なし）</a></p>
 <h3 class="v3631-faq-group" id="faq-choose" tabindex="-1">自分のペースで知る</h3>
 <details open="" class="v33-faq" data-search-terms="見学 見るだけ 読むだけ 迷う 検討" id="faq-reading-only"><summary>まだ訪問を決めていません。読むだけでもよいですか？</summary>
@@ -425,7 +767,7 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
 <li><a href="news.html#howakai"><strong>法話会の案内を確認する</strong><span>日時・会場・費用・参加条件は寺院確認待ちです。</span></a></li>
 <li><a href="contact.html#v3689-first-visit-copy"><strong>初参詣の質問文例を画面で読む</strong><span>送信せずに文例を確認できます。連絡するかどうかは任意です。</span></a></li>
 </ul></nav>
-<p class="v3688-next-more">ほかに、<a href="discover.html">妙本寺の紹介</a>や<a href="annual-events.html">年間・月別の行事資料（開催は要確認）</a>もご覧いただけます。</p>
+<div class="v3688-next-more"><p>ほかに、次の案内もご覧いただけます。</p><nav class="v3775-next-more-nav" aria-label="FAQの補足案内"><ul><li><a href="discover.html">妙本寺の紹介</a></li><li><a href="annual-events.html">年間・月別の行事資料（開催は要確認）</a></li></ul></nav></div>
 </div></section>
 <section class="v33-context" data-v343="local-route"><div class="wrap"><div class="v33-context-copy"><div class="eyebrow">LOCAL ACCESS</div><h2>神戸市灘区から、初めて妙本寺へ。</h2><p>妙本寺は神戸市灘区原田通3丁目1-1にあり、JR灘駅北口・阪急王子公園駅から徒歩約5分です。初めてお越しになる方は、場所と当日の確認方法をあわせてご覧ください。</p><div class="actions"><a class="button" href="contact.html">アクセス・お問い合わせを見る</a><a class="button" href="annual-events.html">行事予定を見る</a></div></div></div></section>
 <section aria-labelledby="v361-more-title" class="v361-more" data-v361="next-reading"><div class="wrap">
@@ -705,6 +1047,27 @@ main section:not(.hero) .eyebrow, main .card small{color:#795d31}
     render('silent');
     document.body.classList.remove('v3665-faq-only');
   });
+})();
+</script>
+<script>
+/* v37.72: 「参詣までの確認」へ移動した際に視覚上の位置とキーボード焦点を揃える。
+   同じリンクの再選択と直リンクに対応。JS無効時は通常の#visit-ready移動を維持。 */
+(function(){
+  var target=document.getElementById('visit-ready');
+  var heading=document.getElementById('v3623-visit-title');
+  if(!target||!heading)return;
+  function focusVisitReady(){
+    if(location.hash!=='#visit-ready')return;
+    try{heading.focus({preventScroll:true});}catch(e){heading.focus();}
+    heading.scrollIntoView({block:'start'});
+  }
+  window.addEventListener('hashchange',focusVisitReady);
+  document.querySelectorAll('a[href="#visit-ready"]').forEach(function(link){
+    link.addEventListener('click',function(){
+      if(location.hash==='#visit-ready')window.setTimeout(focusVisitReady,0);
+    });
+  });
+  focusVisitReady();
 })();
 </script>
 </body>

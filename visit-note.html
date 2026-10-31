@@ -78,6 +78,18 @@ footer{padding:22px 0;border-top:1px solid var(--line);font-size:.85rem}
 #questions:target,#questions:focus{outline:3px solid #8a6428;outline-offset:5px;border-radius:3px}
 @media(forced-colors:active){#questions:target,#questions:focus{outline:3px solid Highlight}}
 @media print{#questions:target,#questions:focus{outline:none}}
+/* v37.55: 初参詣の確認メモで、未確認情報・入力の扱い・任意利用の注記を
+   小画面でも本文と同程度に読めるようにする。v37.40の操作ボタン調整とは別。 */
+@media screen and (max-width:640px){
+ .crumb{font-size:16px;line-height:1.7}
+ .crumb a{display:inline-flex;align-items:center;min-height:44px;padding:0 2px}
+ .badge{font-size:16px;line-height:1.6;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+ .small,.v3655-note-actions span{font-size:16px;line-height:1.75}
+}
+@media(forced-colors:active){
+ .crumb a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+ .badge{border:1px solid CanvasText}
+}
 </style>
 </head>
 <body>

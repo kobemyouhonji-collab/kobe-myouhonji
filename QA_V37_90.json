@@ -1,0 +1,237 @@
+{
+  "version": "37.90",
+  "iteration": 114,
+  "date": "2026-10-28",
+  "baseline": "37.89",
+  "baseline_sha256": "633f29fd76abc31fc9c68f80cdeec6f196dda56646caf670c28112fe68976778",
+  "scope": "contact.html 法話会の送信なし文例から開催前の確認4点への直接リンク",
+  "static": {
+    "html_pages": 50,
+    "monthly_articles": 22,
+    "faq_questions": 11,
+    "relative_file_refs": 963,
+    "fragment_refs": 358,
+    "aria_idrefs": 189,
+    "jsonld": 47,
+    "inline_js": 62,
+    "protected_byte_identical": 29,
+    "new_direct_link_count": 1
+  },
+  "static_issues": [],
+  "protected_byte_identical": 29,
+  "faq_question_answer_unchanged": true,
+  "contact_four_example_text_unchanged": true,
+  "source_audit_status": "正式原本全文照合・著者範囲確認・掲載許可は22号すべて未完了",
+  "browser": {
+    "method": "Chromium about:blank set_content with local CSS embedded; not real file URL",
+    "cases": [
+      {
+        "case": "width-256",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 74.375,
+          "width": 200,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 256,
+          "innerWidth": 256,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-320",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 74.375,
+          "width": 264,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 320,
+          "innerWidth": 320,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-390",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 312.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-520",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 312.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 520,
+          "innerWidth": 520,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-640",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 312.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 640,
+          "innerWidth": 640,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-641",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 316.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 641,
+          "innerWidth": 641,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-768",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 316.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 768,
+          "innerWidth": 768,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-900",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 316.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 900,
+          "innerWidth": 900,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-1024",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 316.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 1024,
+          "innerWidth": 1024,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "width-1280",
+        "pass": true,
+        "metrics": {
+          "text": "開催前の確認4点を読む（条件は要確認）",
+          "font": 16,
+          "height": 48,
+          "width": 316.015625,
+          "visible": true,
+          "href": "news.html#v3782-howakai-check",
+          "scrollWidth": 1280,
+          "innerWidth": 1280,
+          "pageerrors": []
+        }
+      },
+      {
+        "case": "forced-colors-focus",
+        "pass": true,
+        "metrics": {
+          "outline": "solid",
+          "outlineWidth": "3px",
+          "color": "rgb(0, 0, 159)",
+          "border": "0px"
+        }
+      },
+      {
+        "case": "js-disabled",
+        "pass": true,
+        "metrics": {
+          "open": true,
+          "linkVisible": true
+        }
+      }
+    ],
+    "pass_count": 12,
+    "case_count": 12,
+    "synthetic_news_hash_target": {
+      "hash": "#v3782-howakai-check",
+      "target": true,
+      "focus": "v3782-howakai-check",
+      "outline": "solid",
+      "errors": []
+    },
+    "real_url_test": {
+      "attempted": "http://127.0.0.1 local HTTP server",
+      "result": "ERR_BLOCKED_BY_ADMINISTRATOR",
+      "verified": false
+    },
+    "unverified": [
+      "実ページ間移動",
+      "実URLの戻る・進む",
+      "別タブ",
+      "スマートフォン実機",
+      "スクリーンリーダー",
+      "紙印刷"
+    ]
+  },
+  "external_operations": {
+    "github": false,
+    "publication": false,
+    "sns": false,
+    "external_contact": false,
+    "membership": false,
+    "billing": false,
+    "purchase": false,
+    "permission_changes": false
+  },
+  "zip": {
+    "max_files": 99,
+    "removed_older_docs_from_this_zip_only": [
+      "V37_85_UPDATE_REPORT.md",
+      "QA_V37_86.json"
+    ]
+  }
+}

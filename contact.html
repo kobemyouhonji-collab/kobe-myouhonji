@@ -210,7 +210,142 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
     font:700 16px/1.6 system-ui,sans-serif;overflow-wrap:anywhere;
   }
 }
-</style></head>
+</style><style>/* v37.53: 問い合わせ冒頭の選択肢と送信なし文例入口を小画面で読みやすくする。 */
+@media(max-width:640px){
+  .v3634-contact-shortcuts .wrap{display:grid;grid-template-columns:minmax(0,1fr)}
+  .v3634-contact-shortcuts a{box-sizing:border-box;width:100%;min-width:0;min-height:48px;font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
+  .v3717-read-only-routes a{box-sizing:border-box;min-height:48px;font-size:16px;line-height:1.6;overflow-wrap:anywhere}
+}
+@media(forced-colors:active){
+  .v3634-contact-shortcuts a{background:ButtonFace;color:LinkText;border-color:ButtonText}
+  .v3634-contact-shortcuts a:focus-visible,.v3717-read-only-routes a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
+</style><style>/* v37.61: 問い合わせの任意選択と送信なし文例の説明を、
+   タブレット/PCでも読みやすくする。v37.53の640px以下の操作領域は維持。 */
+.v3634-contact-shortcuts a{
+  box-sizing:border-box;min-height:48px;max-width:100%;
+  font-size:16px;line-height:1.6;white-space:normal;overflow-wrap:anywhere;
+}
+.v3634-contact-shortcuts p{font-size:16px;line-height:1.7}
+.v3717-read-only-routes{font-size:16px;line-height:1.75}
+.v3716-keyboard-help{font-size:16px;line-height:1.8}
+.v3621-contact-hint{font-size:16px;line-height:1.75}
+@media(forced-colors:active){
+  .v3634-contact-shortcuts a:focus-visible,
+  .v3717-read-only-routes a:focus-visible{outline:3px solid Highlight;outline-offset:3px}
+}
+</style>
+<style>/* v37.64: 文例4件の戻り先リンク8件と、見出し復帰ボタン4件を
+   641px以上でも読みやすく・押しやすくする。v37.43の640px以下を補完。
+   文例・リンク先・通信・送信・JavaScriptには変更を加えない。 */
+@media screen and (min-width:641px){
+  #v3629-mail-fallback .v3679-back-links a{
+    display:inline-flex;align-items:center;vertical-align:middle;
+    box-sizing:border-box;min-height:48px;max-width:100%;
+    padding:10px 10px;font-size:16px;line-height:1.6;
+    text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+  }
+  #v3629-mail-fallback .v3716-back-to-summary{
+    box-sizing:border-box;min-height:48px;max-width:100%;
+    font:700 16px/1.6 system-ui,sans-serif;overflow-wrap:anywhere;
+  }
+}
+@media(forced-colors:active){
+  #v3629-mail-fallback .v3679-back-links a:focus-visible,
+  #v3629-mail-fallback .v3716-back-to-summary:focus-visible{
+    outline:3px solid Highlight;outline-offset:3px;
+  }
+}
+</style>
+<style>
+/* v37.71: 問い合わせ方法を選ぶ前に、連絡先とメール下書きの違いを
+   小さな文字に頼らず確認できるようにする。内容・href・送信機能は変更しない。 */
+.contact-grid .contact-card p{
+  font-size:16px;line-height:1.8;color:#35443a;overflow-wrap:anywhere;
+}
+.contact-grid .contact-card a.action{
+  display:inline-flex;align-items:center;justify-content:center;
+  box-sizing:border-box;min-height:48px;max-width:100%;
+  padding:10px 15px;font:700 16px/1.65 system-ui,sans-serif;
+  text-decoration:underline;text-underline-offset:3px;
+  overflow-wrap:anywhere;
+}
+.contact-grid .contact-card a.action:focus-visible{
+  outline:3px solid #88621d;outline-offset:4px;border-radius:4px;
+}
+#v3661-email-action-help{
+  font-size:16px;line-height:1.8;overflow-wrap:anywhere;
+}
+.v3621-email-actions a{
+  box-sizing:border-box;min-height:76px;font-size:16px;line-height:1.65;
+  text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;
+}
+.v3621-email-actions a:focus-visible{
+  outline:3px solid #88621d;outline-offset:4px;
+}
+@media(max-width:520px){
+  .contact-grid .contact-card a.action{width:100%;}
+}
+@media(forced-colors:active){
+  .contact-grid .contact-card a.action,
+  .v3621-email-actions a{border:2px solid LinkText;background:Canvas;color:LinkText;}
+  .contact-grid .contact-card a.action:focus-visible,
+  .v3621-email-actions a:focus-visible{outline:3px solid Highlight;}
+  .contact-grid .contact-card p,#v3661-email-action-help{color:CanvasText;}
+}
+@media print{
+  .contact-grid .contact-card a.action,.v3621-email-actions a{
+    min-height:0;padding:2px 0;border:0;background:transparent;
+    color:#111;text-decoration:underline;
+  }
+}
+</style>
+<style id="v3778-readonly-example-tools">
+/* v37.78: read-only example actions, distinct from v37.64 return links/buttons.
+   CSS only: selecting text and opening print preview never sends a message. */
+@media screen {
+  #v3629-mail-fallback .v3710-select-button,
+  #v3629-mail-fallback .v3714-print-one-button {
+    box-sizing:border-box;display:inline-flex;align-items:center;
+    justify-content:flex-start;min-height:48px;max-width:100%;
+    padding:10px 14px;font:700 16px/1.65 system-ui,sans-serif;
+    white-space:normal;overflow-wrap:anywhere;text-align:left;
+  }
+  #v3629-mail-fallback .v3710-select-status,
+  #v3629-mail-fallback .v3715-print-status,
+  #v3629-mail-fallback .v3714-print-instruction,
+  #v3629-mail-fallback .v3710-selection-help {
+    font-size:16px;line-height:1.75;overflow-wrap:anywhere;
+  }
+  #v3629-mail-fallback .v3710-select-button:focus-visible,
+  #v3629-mail-fallback .v3714-print-one-button:focus-visible {
+    outline:3px solid #926720;outline-offset:3px;
+  }
+}
+@media screen and (max-width:520px) {
+  #v3629-mail-fallback .v3710-select-tools {align-items:stretch;}
+  #v3629-mail-fallback .v3710-select-button,
+  #v3629-mail-fallback .v3714-print-one-button {width:100%;}
+  #v3629-mail-fallback .v3714-print-one-button {margin-left:0;margin-right:0;}
+  #v3629-mail-fallback .v3714-print-instruction,
+  #v3629-mail-fallback .v3715-print-status {margin-left:0;margin-right:0;}
+}
+@media screen and (forced-colors:active) {
+  #v3629-mail-fallback .v3710-select-button,
+  #v3629-mail-fallback .v3714-print-one-button {
+    background:ButtonFace;color:ButtonText;border:2px solid ButtonText;
+  }
+  #v3629-mail-fallback .v3710-select-button:focus-visible,
+  #v3629-mail-fallback .v3714-print-one-button:focus-visible {
+    outline:3px solid Highlight;outline-offset:3px;
+  }
+  #v3629-mail-fallback .v3710-select-status,
+  #v3629-mail-fallback .v3715-print-status,
+  #v3629-mail-fallback .v3714-print-instruction {color:CanvasText;}
+}
+/* Existing print CSS continues to hide interactive controls on paper. */
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">本文へ移動</a>
 <header><div class="wrap"><a class="brand" href="./">妙本寺</a></div></header>
 <main id="main-content" tabindex="-1">
@@ -305,24 +440,24 @@ main section:not(.hero) .eyebrow,main .contact-card small{color:#795d31}
 
 初めて妙本寺への参詣を考えています。
 希望する日時：（必要に応じて記入）
-確認したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="first-visit.html#faq-visit-terms">初参詣FAQの「予約・費用」の質問へ戻る</a> ／ <a href="first-visit.html#visit-faq">FAQ全11問の入口へ戻る</a></p></details>
+確認したいこと：（必要に応じて記入）</p><nav class="v3679-back-links" aria-label="初参詣の質問文例を読んだ後の確認先">読むだけで終了して構いません。<a href="first-visit.html#faq-visit-terms">初参詣FAQの「予約・費用」の質問へ戻る</a> ／ <a href="first-visit.html#visit-faq">FAQ全11問の入口へ戻る</a></nav></details>
 <details id="v3678-howakai-copy" open><summary>法話会・行事についての文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　法話会・行事について
 
 法話会・行事についてお尋ねします。
 関心のある行事：（必要に応じて記入）
 希望する日程：（必要に応じて記入）
-確認したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="news.html#howakai">法話会の案内へ戻る</a> ／ <a href="first-visit.html#v3637-howakai-faq">初参詣のFAQへ戻る</a></p></details>
+確認したいこと：（必要に応じて記入）</p><nav class="v3679-back-links" aria-label="法話会の質問文例を読んだ後の確認先">読むだけで終了して構いません。<a href="news.html#howakai">法話会の案内へ戻る</a> ／ <a href="news.html#v3782-howakai-check">開催前の確認4点を読む（条件は要確認）</a> ／ <a href="first-visit.html#v3637-howakai-faq">初参詣のFAQへ戻る</a></nav></details>
 <details id="v3686-dayori-copy" open><summary>法華講便りについての文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　法華講便りについて
 
 法華講便りについて質問があります。
 対象の発行年月：（分かる範囲で記入）
 記事のテーマ：（分かる範囲で記入）
-質問したいこと：（必要に応じて記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="kongetsu-shishin.html#past-issues">法華講便り22号の年・月別一覧へ戻る</a> ／ <a href="hokeko-dayori.html#editorial-status">法華講便りの掲載状態へ戻る</a> ／ <a href="first-visit.html#faq-dayori-status">初参詣FAQの原文確認説明へ戻る</a></p></details>
+質問したいこと：（必要に応じて記入）</p><nav class="v3679-back-links" aria-label="法華講便りの質問文例を読んだ後の確認先">読むだけで終了して構いません。<a href="kongetsu-shishin.html#past-issues">法華講便り22号の年・月別一覧へ戻る</a> ／ <a href="hokeko-dayori.html#editorial-status">法華講便りの掲載状態へ戻る</a> ／ <a href="first-visit.html#faq-dayori-status">初参詣FAQの原文確認説明へ戻る</a></nav></details>
 <details id="v3708-access-copy" open><summary>移動・聞こえ方などの事前確認の文例を表示（送信なし）</summary><p class="v3712-print-note">【未送信・未回答の文例】これは問い合わせの下書きです。寺院への送信記録や寺院からの回答ではありません。日時・参加条件は寺院確認待ちです。非公開作業版のため配布・公開しないでください。</p><p class="v3629-template">件名：妙本寺　移動・聞こえ方などの事前確認
 
 初めての参詣・法話会について、訪問前に確認したいことがあります。
 希望する行事・日時：（決まっていれば記入）
-移動経路・座席・聞こえ方などで確認したいこと：（必要な範囲で記入）</p><p class="v3679-back-links">読むだけで終了して構いません。<a href="first-visit.html#faq-access-needs">初参詣FAQの「移動や聞こえ方」の質問へ戻る</a></p></details>
+移動経路・座席・聞こえ方などで確認したいこと：（必要な範囲で記入）</p><nav class="v3679-back-links" aria-label="移動・聞こえ方の質問文例を読んだ後の確認先">読むだけで終了して構いません。<a href="first-visit.html#faq-access-needs">初参詣FAQの「移動や聞こえ方」の質問へ戻る</a></nav></details>
 <p class="v3632-access-note">設備や対応の可否を保証するものではありません。診断名や詳しい個人情報を記載する必要はありません。必要なことだけを寺院へ確認してください。</p>
 <p>連絡するかどうかはご自身でお決めください。氏名・連絡先・詳しい事情をこのHPに入力する必要はありません。返信の時期は保証していません。</p>
 </div>
