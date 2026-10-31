@@ -1,0 +1,402 @@
+{
+  "version": "v37.93",
+  "date": "2026-10-31",
+  "base_version": "v37.92",
+  "site_files": 95,
+  "paper_scans_embedded": 0,
+  "priest_article_source": "user supplied November 2026 paper, lower section of first image",
+  "transcription_status": "first-pass visual transcription, full line-by-line source verification PENDING",
+  "publication_permission": "not confirmed",
+  "publications_or_external_actions": "none",
+  "review_cases": [],
+  "warnings": [],
+  "html_pages": 51,
+  "existing_monthly_articles_identical": 22,
+  "protected_content_modified": [],
+  "visitor_relevant_november_event_rows": 4,
+  "photo_scans_inside_workdir": [],
+  "photo_assets_in_new_article": 0,
+  "chief_priest_article_paragraphs": 5,
+  "chief_priest_article_characters": 936,
+  "local_references_checked": 982,
+  "fragment_references_checked": 364,
+  "missing_or_stale_refs": [],
+  "duplicate_ids": [],
+  "javascript_blocks_syntax_checked": 62,
+  "javascript_errors": [],
+  "json_ld_blocks_checked": 47,
+  "success_static": true,
+  "remaining": [
+    "11月号御住職本文の原紙逐語照合、出典と引用漢字、仮名遣い、掲載許可は未確認",
+    "寺院による11月行事の開催・参加条件・費用・予約要否の最終確認なし",
+    "スマートフォン実機・スクリーンリーダーでの確認未実施"
+  ],
+  "browser_tests": [
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "profile": "nojs",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-"
+    },
+    {
+      "profile": "forced",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-"
+    }
+  ],
+  "browser_test_total": 22,
+  "browser_test_errors": [
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "hokeko-dayori-2026-11.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "annual-events.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/annual-events.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "index.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/index.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/index.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "kongetsu-shishin.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/kongetsu-shishin.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 320,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 390,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 768,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "page": "chief-priest-words.html",
+      "width": 1280,
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/chief-priest-words.html\", waiting until \"load\"\n"
+    },
+    {
+      "profile": "nojs",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-"
+    },
+    {
+      "profile": "forced",
+      "error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-2026-11.html\nCall log:\n  - navigating to \"file:///mnt/data/myohonji_v37_93_private/hokeko-dayori-"
+    }
+  ],
+  "screenshot_files": [],
+  "inline_browser_tests": [
+    {
+      "html": "hokeko-dayori-2026-11.html",
+      "width": 256,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation",
+      "article_p": 5,
+      "photo_count": 0
+    },
+    {
+      "html": "hokeko-dayori-2026-11.html",
+      "width": 320,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation",
+      "article_p": 5,
+      "photo_count": 0
+    },
+    {
+      "html": "hokeko-dayori-2026-11.html",
+      "width": 390,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation",
+      "article_p": 5,
+      "photo_count": 0
+    },
+    {
+      "html": "hokeko-dayori-2026-11.html",
+      "width": 768,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation",
+      "article_p": 5,
+      "photo_count": 0
+    },
+    {
+      "html": "hokeko-dayori-2026-11.html",
+      "width": 1280,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation",
+      "article_p": 5,
+      "photo_count": 0
+    },
+    {
+      "html": "annual-events.html",
+      "width": 256,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "annual-events.html",
+      "width": 320,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "annual-events.html",
+      "width": 390,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "annual-events.html",
+      "width": 768,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "annual-events.html",
+      "width": 1280,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "kongetsu-shishin.html",
+      "width": 256,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "kongetsu-shishin.html",
+      "width": 320,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "kongetsu-shishin.html",
+      "width": 390,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "kongetsu-shishin.html",
+      "width": 768,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "html": "kongetsu-shishin.html",
+      "width": 1280,
+      "overflow": false,
+      "js_errors": [],
+      "mode": "inline HTML; not real page navigation"
+    },
+    {
+      "mode": "forced",
+      "article_p": 5,
+      "notice_visible": true,
+      "html_loaded": true
+    },
+    {
+      "mode": "nojs",
+      "article_p": 5,
+      "notice_visible": true,
+      "html_loaded": true
+    }
+  ],
+  "inline_browser_cases": 17,
+  "inline_browser_issues": [],
+  "screenshots": [
+    "V37_93_article_390.png",
+    "V37_93_november_schedule_390.png",
+    "V37_93_article_forced_390.png"
+  ],
+  "real_url_navigation": "not tested successfully; Chromium blocks file:// (ERR_BLOCKED_BY_ADMINISTRATOR)",
+  "real_mobile_devices": "not tested",
+  "screenreader": "not tested",
+  "browser_qa_summary": "17/17 inline HTML representation tests passed; real URL navigation blocked by browser policy",
+  "before_release_required": [
+    "human source proofreading of 2026 November chief priest column",
+    "explicit temple publication approval",
+    "verification of four November event entries",
+    "real browser navigation and screenreader testing"
+  ]
+}
