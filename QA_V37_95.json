@@ -1,0 +1,57 @@
+{
+  "version": "v37.95",
+  "date": "2026-11-02",
+  "source": "v37.94",
+  "static": {
+    "html_pages": 51,
+    "local_links_checked": 951,
+    "fragment_links_checked": 368,
+    "inline_javascript_syntax_checked": 62,
+    "jsonld_checked": 47,
+    "issues": [],
+    "november_transcribed_rows": 23,
+    "november_main_navigation": 6,
+    "all_rows_initially_visible": true,
+    "schedule_as_images": false,
+    "previous_23_cell_contents_unchanged": true,
+    "existing_article_pages_unchanged": 23,
+    "source_audit_unchanged": true,
+    "first_visit_and_contact_unchanged": true,
+    "changed_existing_files": [
+      "README.md",
+      "annual-events.html",
+      "CHANGELOG.md"
+    ]
+  },
+  "browser": {
+    "method": "Chromium set_content (実URL遷移とは別の代替表示)",
+    "viewport_widths": [
+      256,
+      320,
+      390,
+      768,
+      1280
+    ],
+    "javascript_enabled_disabled": "各画面幅で確認",
+    "forced_colors": "390pxで確認",
+    "test_cases": 11,
+    "all_23_rows_visible_without_user_action": true,
+    "jump_to_matching_row": "390pxと768pxで成功",
+    "horizontal_overflow_detected": false,
+    "javascript_errors_detected": false,
+    "issues": [],
+    "not_tested": [
+      "実URLのページ間移動",
+      "戻る・進む操作（別ページ間）",
+      "別タブ",
+      "スマートフォン実機",
+      "実機スクリーンリーダー",
+      "紙印刷"
+    ]
+  },
+  "site_zip": {
+    "file_count": 99,
+    "crc_error": null,
+    "schedule_photos_included": false
+  }
+}

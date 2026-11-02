@@ -1,0 +1,141 @@
+{
+  "version": "v37.94",
+  "iteration": 116,
+  "date": "2026-10-31",
+  "source_zip": "kobe-myohonji-v37.93-private-text-only.zip",
+  "source_zip_integrity": "PASS",
+  "transcribed_sheet": "令和8年11月度行事予定表 (user-supplied photo)",
+  "all_schedule_rows": 23,
+  "main_schedule_rows": 6,
+  "schedule_image_embedded": false,
+  "text_only": true,
+  "transcription_review_status": "写真との目視転記。配布元による最終校閲は未完了",
+  "original_unmodified_html_articles": 23,
+  "baseline_modified_files": [
+    "CHANGELOG.md",
+    "README.md",
+    "annual-events.html",
+    "news.html"
+  ],
+  "external_actions": [],
+  "checks": {
+    "html_page_count": 51,
+    "local_links_checked": 850,
+    "same_page_fragments_checked": 126,
+    "broken_link_errors": [],
+    "source_content_unchanged": true,
+    "zip_file_count": 97,
+    "zip_integrity": "PASS",
+    "max_99_files": "PASS"
+  },
+  "unverified": [
+    "寺院による行事・参加条件の確認",
+    "原文の正式校閲",
+    "紙での印刷",
+    "実機スクリーンリーダー",
+    "公開許可"
+  ],
+  "browser_qa": {
+    "method": "Playwright Chromium local file HTML; real page-to-page navigation not tested",
+    "cases": [
+      {
+        "width": 256,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      },
+      {
+        "width": 320,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      },
+      {
+        "width": 390,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      },
+      {
+        "width": 768,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      },
+      {
+        "width": 1280,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      },
+      {
+        "width": 390,
+        "js": false,
+        "status": "BLOCKED",
+        "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/work_v3794/site/annual-events.html\nCall log:\n  - navigating to \"file:///mnt/data/work_v3794/site/annual-events.html\", waiting until \"do"
+      }
+    ],
+    "alternative": {
+      "method": "Chromium page.set_content (HTML & inline CSS/JS); not real navigation",
+      "cases": [
+        {
+          "viewport": 256,
+          "main_rows": 6,
+          "all_rows": 23,
+          "full_schedule_expanded": true,
+          "font_px": 16,
+          "summary_height_px": 103.2,
+          "horizontal_page_overflow": false,
+          "javascript_exceptions": [],
+          "status": "PASS"
+        },
+        {
+          "viewport": 320,
+          "main_rows": 6,
+          "all_rows": 23,
+          "full_schedule_expanded": true,
+          "font_px": 16,
+          "summary_height_px": 76.8,
+          "horizontal_page_overflow": false,
+          "javascript_exceptions": [],
+          "status": "PASS"
+        },
+        {
+          "viewport": 390,
+          "main_rows": 6,
+          "all_rows": 23,
+          "full_schedule_expanded": true,
+          "font_px": 16,
+          "summary_height_px": 76.8,
+          "horizontal_page_overflow": false,
+          "javascript_exceptions": [],
+          "status": "PASS"
+        },
+        {
+          "viewport": 768,
+          "main_rows": 6,
+          "all_rows": 23,
+          "full_schedule_expanded": true,
+          "font_px": 16,
+          "summary_height_px": 50.4,
+          "horizontal_page_overflow": false,
+          "javascript_exceptions": [],
+          "status": "PASS"
+        },
+        {
+          "viewport": 1280,
+          "main_rows": 6,
+          "all_rows": 23,
+          "full_schedule_expanded": true,
+          "font_px": 16,
+          "summary_height_px": 50.4,
+          "horizontal_page_overflow": false,
+          "javascript_exceptions": [],
+          "status": "PASS"
+        },
+        {
+          "viewport": 390,
+          "javascript_enabled": false,
+          "expanded_rows": 23,
+          "details_open": true,
+          "status": "PASS"
+        }
+      ]
+    }
+  }
+}
